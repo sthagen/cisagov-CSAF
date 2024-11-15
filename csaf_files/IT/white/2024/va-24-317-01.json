@@ -88,7 +88,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "0 < 22.6R2",
+                "name": "<22.6R2",
                 "product": {
                   "name": "Ivanti Connect Secure 0 < 22.6R2",
                   "product_id": "CSAFPID-0001"
@@ -104,7 +104,7 @@
               },
               {
                 "category": "product_version_range",
-                "name": "0 < 9.1R18.7",
+                "name": "<9.1R18.7",
                 "product": {
                   "name": "Ivanti Connect Secure 0 < 9.1R18.7",
                   "product_id": "CSAFPID-0003"
@@ -120,7 +120,7 @@
               },
               {
                 "category": "product_version_range",
-                "name": "0 < 22.7R2.1",
+                "name": "<22.7R2.1",
                 "product": {
                   "name": "Ivanti Connect Secure 0 < 22.7R2.1",
                   "product_id": "CSAFPID-0007"
@@ -136,7 +136,7 @@
               },
               {
                 "category": "product_version_range",
-                "name": "0 < 9.1R18.9",
+                "name": "<9.1R18.9",
                 "product": {
                   "name": "Ivanti Connect Secure 0 < 9.1R18.9",
                   "product_id": "CSAFPID-0009"
@@ -152,7 +152,7 @@
               },
               {
                 "category": "product_version_range",
-                "name": "0 < 22.7R2.2",
+                "name": "<22.7R2.2",
                 "product": {
                   "name": "Ivanti Connect Secure 0 < 22.7R2.2",
                   "product_id": "CSAFPID-0011"
@@ -174,7 +174,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "0 < 22.7R1",
+                "name": "<22.7R1",
                 "product": {
                   "name": "Ivanti Policy Secure 0 < 22.7R1",
                   "product_id": "CSAFPID-0013"
@@ -190,7 +190,7 @@
               },
               {
                 "category": "product_version_range",
-                "name": "0 < 22.7R1.1",
+                "name": "<22.7R1.1",
                 "product": {
                   "name": "Ivanti Policy Secure 0 < 22.7R1.1",
                   "product_id": "CSAFPID-0015"
@@ -206,7 +206,7 @@
               },
               {
                 "category": "product_version_range",
-                "name": "0 < 22.7R1.2",
+                "name": "<22.7R1.2",
                 "product": {
                   "name": "Ivanti Policy Secure 0 < 22.7R1.2",
                   "product_id": "CSAFPID-0017"
