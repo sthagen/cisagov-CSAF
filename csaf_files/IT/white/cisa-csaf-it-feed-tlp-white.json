@@ -9,6 +9,34 @@
     "entry": [
       {
         "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-317-01.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        },
+        "id": "VA-24-317-01",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-317-01.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-317-01.json.sha512",
+            "ref": "hash"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-317-01.json.asc",
+            "ref": "signature"
+          }
+        ],
+        "published": "2024-11-13T20:32:00Z",
+        "title": "Ivanti Connect Secure and Ivanti Policy Secure Multiple Vulnerabilities",
+        "updated": "2024-11-13T20:32:00Z"
+      },
+      {
+        "content": {
           "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-254-02.json",
           "type": "application/json"
         },
@@ -128,6 +156,6 @@
       }
     ],
     "title": "CISA CSAF IT feed (TLP:WHITE)",
-    "updated": "2024-10-10T18:21:27Z"
+    "updated": "2024-11-13T17:08:53Z"
   }
 }
