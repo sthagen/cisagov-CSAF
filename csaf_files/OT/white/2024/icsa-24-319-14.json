@@ -29,7 +29,7 @@
       },
       {
         "category": "other",
-        "text": "Critical Infrastructure",
+        "text": "Critical Manufacturing",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -171,9 +171,9 @@
         "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
-    "title": "Rockwell Automation FactoryTalk Updater",
+    "title": "Rockwell Automation FactoryTalk Updater (Update A)",
     "tracking": {
-      "current_release_date": "2024-11-14T07:00:00.000000Z",
+      "current_release_date": "2024-11-18T07:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -188,10 +188,16 @@
           "legacy_version": "Initial",
           "number": "1",
           "summary": "Initial Publication"
+        },
+        {
+          "date": "2024-11-18T07:00:00.000000Z",
+          "legacy_version": "Update A",
+          "number": "2",
+          "summary": "Update A - Clarified version information, corrected critical infrastructure sector"
         }
       ],
       "status": "final",
-      "version": "1"
+      "version": "2"
     }
   },
   "product_tree": {
@@ -201,10 +207,10 @@
           {
             "branches": [
               {
-                "category": "product_version",
-                "name": "4.00.00",
+                "category": "product_version_range",
+                "name": ">=4.00.00|<4.20.00",
                 "product": {
-                  "name": "Rockwell Automation FactoryTalk Updater - Web Client: 4.00.00",
+                  "name": "Rockwell Automation FactoryTalk Updater - Web Client: >=4.00.00|<4.20.00",
                   "product_id": "CSAFPID-0001"
                 }
               }
@@ -216,9 +222,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<4.20.00",
                 "product": {
-                  "name": "Rockwell Automation FactoryTalk Updater - Client: vers:all/*",
+                  "name": "Rockwell Automation FactoryTalk Updater - Client: <4.20.00",
                   "product_id": "CSAFPID-0002"
                 }
               }
@@ -230,9 +236,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<4.20.00",
                 "product": {
-                  "name": "Rockwell Automation FactoryTalk Updater - Agent: vers:all/*",
+                  "name": "Rockwell Automation FactoryTalk Updater - Agent: <4.20.00",
                   "product_id": "CSAFPID-0003"
                 }
               }
@@ -333,7 +339,7 @@
         },
         {
           "category": "mitigation",
-          "details": "Click the ‘Scan' button, which will update the database",
+          "details": "Click the 'Scan' button, which will update the database",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -368,7 +374,7 @@
             "CSAFPID-0002",
             "CSAFPID-0003"
           ],
-          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories.html"
+          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD%201710.html"
         }
       ],
       "scores": [
@@ -396,7 +402,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "A remote code execution vulnerability exists in the affected product. The vulnerability requires a high level of permissions and exists due to improper input validation resulting in the possibility of a malicious updated agent being deployed.",
+          "text": "A Remote Code Execution vulnerability exists in the affected product. The vulnerability requires a high level of permissions and exists due to improper input validation resulting in the possibility of a malicious Updated Agent being deployed.",
           "title": "Vulnerability Summary"
         }
       ],
@@ -473,7 +479,7 @@
         },
         {
           "category": "mitigation",
-          "details": "Click the ‘Scan' button, which will update the database",
+          "details": "Click the 'Scan' button, which will update the database",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -508,7 +514,7 @@
             "CSAFPID-0002",
             "CSAFPID-0003"
           ],
-          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories.html"
+          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD%201710.html"
         }
       ],
       "scores": [
@@ -536,7 +542,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "A local privilege escalation vulnerability requires a local, low privileged threat actor to replace certain files during update and exists due to a failure to perform proper security checks before installation. ",
+          "text": "A Local Privilege Escalation vulnerability exists in the affected product. The vulnerability requires a local, low privileged threat actor to replace certain files during update and exists due to a failure to perform proper security checks before installation.",
           "title": "Vulnerability Summary"
         }
       ],
@@ -613,7 +619,7 @@
         },
         {
           "category": "mitigation",
-          "details": "Click the ‘Scan' button, which will update the database",
+          "details": "Click the 'Scan' button, which will update the database",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -648,7 +654,7 @@
             "CSAFPID-0002",
             "CSAFPID-0003"
           ],
-          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories.html"
+          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD%201710.html"
         }
       ],
       "scores": [

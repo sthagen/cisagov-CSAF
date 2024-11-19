@@ -14,8 +14,92 @@
         "term": "csaf"
       }
     ],
-    "updated": "2024-11-14T23:16:07.728876Z",
+    "updated": "2024-11-19T21:07:54.842444Z",
     "entry": [
+      {
+        "id": "ICSA-24-324-01",
+        "title": "Mitsubishi Electric MELSEC iQ-F Series",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-324-01.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-324-01.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-324-01.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2024-11-19T07:00:00.000000Z",
+        "updated": "2024-11-19T07:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-324-01.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-24-319-14",
+        "title": "Rockwell Automation FactoryTalk Updater (Update A)",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-14.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-14.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-14.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2024-11-14T07:00:00.000000Z",
+        "updated": "2024-11-18T07:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-14.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-24-319-13",
+        "title": "Rockwell Automation Verve Reporting (Update A)",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-13.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-13.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-13.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2024-11-14T07:00:00.000000Z",
+        "updated": "2024-11-18T07:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-13.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
       {
         "id": "ICSMA-24-319-01",
         "title": "Baxter Life2000 Ventilation System",
@@ -121,62 +205,6 @@
         "updated": "2024-11-14T07:00:00.000000Z",
         "content": {
           "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-15.json",
-          "type": "application/json"
-        },
-        "format": {
-          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
-          "version": "2.0"
-        }
-      },
-      {
-        "id": "ICSA-24-319-14",
-        "title": "Rockwell Automation FactoryTalk Updater",
-        "link": [
-          {
-            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-14.json",
-            "rel": "self"
-          },
-          {
-            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-14.json.asc",
-            "rel": "signature"
-          },
-          {
-            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-14.json.sha512",
-            "rel": "hash"
-          }
-        ],
-        "published": "2024-11-14T07:00:00.000000Z",
-        "updated": "2024-11-14T07:00:00.000000Z",
-        "content": {
-          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-14.json",
-          "type": "application/json"
-        },
-        "format": {
-          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
-          "version": "2.0"
-        }
-      },
-      {
-        "id": "ICSA-24-319-13",
-        "title": "Rockwell Automation Verve Asset Manager",
-        "link": [
-          {
-            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-13.json",
-            "rel": "self"
-          },
-          {
-            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-13.json.asc",
-            "rel": "signature"
-          },
-          {
-            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-13.json.sha512",
-            "rel": "hash"
-          }
-        ],
-        "published": "2024-11-14T07:00:00.000000Z",
-        "updated": "2024-11-14T07:00:00.000000Z",
-        "content": {
-          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-13.json",
           "type": "application/json"
         },
         "format": {

@@ -171,9 +171,9 @@
         "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
-    "title": "Rockwell Automation Verve Asset Manager",
+    "title": "Rockwell Automation Verve Reporting (Update A)",
     "tracking": {
-      "current_release_date": "2024-11-14T07:00:00.000000Z",
+      "current_release_date": "2024-11-18T07:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -188,10 +188,16 @@
           "legacy_version": "Initial",
           "number": "1",
           "summary": "Initial Publication"
+        },
+        {
+          "date": "2024-11-18T07:00:00.000000Z",
+          "legacy_version": "Update A",
+          "number": "2",
+          "summary": "Update A - Corrected affected product name and version range"
         }
       ],
       "status": "final",
-      "version": "1"
+      "version": "2"
     }
   },
   "product_tree": {
@@ -202,15 +208,15 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "<=1.39",
+                "name": "<1.39",
                 "product": {
-                  "name": "Rockwell Automation Verve Asset Manager: <=1.39",
+                  "name": "Rockwell Automation Verve Reporting: <1.39",
                   "product_id": "CSAFPID-0001"
                 }
               }
             ],
             "category": "product_name",
-            "name": "Verve Asset Manager"
+            "name": "Verve Reporting"
           }
         ],
         "category": "vendor",
@@ -228,7 +234,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "Verve Asset Manager utilizes Kibana, which contains a remote code execution vulnerability that allows an attacker with access to ML and alerting connecting features as well as write access to internal ML to trigger a prototype pollution vulnerability, which can ultimately lead to arbitrary code execution. The code execution is limited to the container.",
+          "text": "Verve Reporting utilizes Kibana, which contains a remote code execution vulnerability that allows an attacker with access to ML and alerting connecting features as well as write access to internal ML to trigger a prototype pollution vulnerability, which can ultimately lead to arbitrary code execution. The code execution is limited to the container.",
           "title": "Vulnerability Summary"
         }
       ],
@@ -264,13 +270,12 @@
         },
         {
           "category": "mitigation",
-          "details": "Restrict Access to Built-in Verve Account Access to the built-in \"verve\" account should be limited to only administrators who need to perform administrative functions and should only be used for administrative purposes. Separate accounts should be used for day-to-day functions. Change the password for the built-in \"verve\" account if it has been shared.",
+          "details": "Restrict Access to Built-in Verve Account",
           "product_ids": [
             "CSAFPID-0001"
           ]
         },
         {
-      
           "category": "mitigation",
           "details": "Access to the built-in \"verve\" account should be limited to only administrators who need to perform administrative functions and should only be used for administrative purposes. Separate accounts should be used for day-to-day functions.",
           "product_ids": [
@@ -285,15 +290,15 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "Restrict Privileges for Other Accounts Verve Reporting comes with built-in roles to simplify the delegation of user permissions. Assigning a user the following two roles will allow them access to most Verve Reporting features (excluding user administration), but will not give them permission to execute this vulnerability. Roles: all-all and feature-all-all",
+          "category": "vendor_fix",
+          "details": "Restrict Privileges for Other Accounts *-* Verve Reporting comes with built-in roles to simplify the delegation of user permissions. Assigning a user the following two roles will allow them access to most Verve Reporting features (excluding user administration), but will not give them permission to execute this vulnerability. *-* Role: all-all *-* Role: feature-all-all",
           "product_ids": [
             "CSAFPID-0001"
           ]
         },
         {
-          "category": "mitigation",
-          "details": "Verve Reporting comes with built-in roles to simplify the delegation of user permissions. Assigning a user the following two roles will allow them access to most Verve Reporting features (excluding user administration), but will not give them permission to execute this vulnerability.",
+          "category": "vendor_fix",
+          "details": "Verve Reporting comes with built-in roles to simplify the delegation of user permissions. Assigning a user the following two roles will allow them access to most Verve Reporting features (excluding user administration), but will not give them permission to execute this vulnerability. *-* Role: all-all *-* Role: feature-all-all",
           "product_ids": [
             "CSAFPID-0001"
           ]
@@ -313,15 +318,15 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "Disable Machine Learning Machine learning can be disabled in the Elasticsearch configuration override. Contact Verve support for assistance if needed. Connect to the Reporting server via SSH or terminal. Copy the Elasticsearch configuration override to the working directory.   docker exec $(docker ps --filter \"name=Reporting_elasticsearch\" --format \"{{ .ID }}\") cat /usr/share/elasticsearch/config-templates/elasticsearch.override.yml > elasticsearch.override.yml",
+          "category": "vendor_fix",
+          "details": "Disable Machine Learning *-* Machine learning can be disabled in the Elasticsearch configuration override. Contact Verve support for assistance if needed. *-* Connect to the Reporting server via SSH or terminal. *-* Copy the Elasticsearch configuration override to the working directory. *-* docker exec $(docker ps --filter \"name=Reporting_elasticsearch\" --format \"{{ .ID }}\") cat /usr/share/elasticsearch/config-templates/elasticsearch.override.yml > elasticsearch.override.yml *-*  *-*  *-* Add the following line and save. *-* xpack.ml.enabled: false *-*  *-*  *-* Disable Verve Reporting from the Verve Software Manager. *-* Update the Elasticsearch configuration override. *-* docker config rm elasticsearchymloverride *-* docker config create elasticsearchymloverride ./elasticsearch.override.yml *-*  *-*  *-* Enable Verve Reporting from the Verve Software Manager and confirm that the application starts and \"Machine Learning\" is no longer listed in the main navigation bar under Analytics. *-* Delete the copy of the Elasticsearch configuration override.  *-* rm elasticsearch.override.yml",
           "product_ids": [
             "CSAFPID-0001"
           ]
         },
         {
-          "category": "mitigation",
-          "details": "Machine learning can be disabled in the Elasticsearch configuration override. Contact Verve support for assistance if needed. Connect to the Reporting server via SSH or terminal. Copy the Elasticsearch configuration override to the working directory.",
+          "category": "vendor_fix",
+          "details": "Machine learning can be disabled in the Elasticsearch configuration override. Contact Verve support for assistance if needed. *-* Connect to the Reporting server via SSH or terminal. *-* Copy the Elasticsearch configuration override to the working directory. *-* docker exec $(docker ps --filter \"name=Reporting_elasticsearch\" --format \"{{ .ID }}\") cat /usr/share/elasticsearch/config-templates/elasticsearch.override.yml > elasticsearch.override.yml *-*  *-*  *-* Add the following line and save. *-* xpack.ml.enabled: false *-*  *-*  *-* Disable Verve Reporting from the Verve Software Manager. *-* Update the Elasticsearch configuration override. *-* docker config rm elasticsearchymloverride *-* docker config create elasticsearchymloverride ./elasticsearch.override.yml *-*  *-*  *-* Enable Verve Reporting from the Verve Software Manager and confirm that the application starts and \"Machine Learning\" is no longer listed in the main navigation bar under Analytics. *-* Delete the copy of the Elasticsearch configuration override.  *-* rm elasticsearch.override.yml",
           "product_ids": [
             "CSAFPID-0001"
           ]
@@ -335,7 +340,7 @@
         },
         {
           "category": "mitigation",
-          "details": "Copy the Elasticsearch configuration override to the working directory.",
+          "details": "Copy the Elasticsearch configuration override to the working directory. *-* docker exec $(docker ps --filter \"name=Reporting_elasticsearch\" --format \"{{ .ID }}\") cat /usr/share/elasticsearch/config-templates/elasticsearch.override.yml > elasticsearch.override.yml",
           "product_ids": [
             "CSAFPID-0001"
           ]
@@ -349,7 +354,7 @@
         },
         {
           "category": "mitigation",
-          "details": "Add the following line and save. xpack.ml.enabled: false",
+          "details": "Add the following line and save. *-* xpack.ml.enabled: false",
           "product_ids": [
             "CSAFPID-0001"
           ]
@@ -362,7 +367,7 @@
           ]
         },
         {
-          "category": "mitigation",
+          "category": "vendor_fix",
           "details": "Disable Verve Reporting from the Verve Software Manager.",
           "product_ids": [
             "CSAFPID-0001"
@@ -370,7 +375,7 @@
         },
         {
           "category": "mitigation",
-          "details": "Update the Elasticsearch configuration override.   docker config rm elasticsearchymloverride docker config create elasticsearchymloverride ./elasticsearch.override.yml",
+          "details": "Update the Elasticsearch configuration override. *-* docker config rm elasticsearchymloverride *-* docker config create elasticsearchymloverride ./elasticsearch.override.yml",
           "product_ids": [
             "CSAFPID-0001"
           ]
@@ -384,6 +389,13 @@
         },
         {
           "category": "mitigation",
+          "details": "docker config create elasticsearchymloverride ./elasticsearch.override.yml",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
           "details": "Enable Verve Reporting from the Verve Software Manager and confirm that the application starts and \"Machine Learning\" is no longer listed in the main navigation bar under Analytics.",
           "product_ids": [
             "CSAFPID-0001"
@@ -391,11 +403,17 @@
         },
         {
           "category": "mitigation",
-          "details": "Delete the copy of the Elasticsearch configuration override.    rm elasticsearch.override.yml Security Best Practices",
+          "details": "Delete the copy of the Elasticsearch configuration override.  *-* rm elasticsearch.override.yml",
           "product_ids": [
             "CSAFPID-0001"
-          ],
-          "url": "https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1085012/loc/en_US"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "rm elasticsearch.override.yml",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
         },
         {
           "category": "mitigation",
@@ -411,7 +429,7 @@
           "product_ids": [
             "CSAFPID-0001"
           ],
-          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories.html"
+          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1712.html"
         }
       ],
       "scores": [
