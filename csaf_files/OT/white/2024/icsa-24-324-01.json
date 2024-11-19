@@ -2,11 +2,8 @@
   "document": {
     "acknowledgments": [
       {
-        "names": [
-          "Floris Hendriks"
-        ],
-        "organization": "Radboud University",
-        "summary": "reporting these vulnerabilities to CISA"
+        "organization": "Mitsubishi Electric",
+        "summary": "reporting this vulnerability to CISA"
       }
     ],
     "category": "csaf_security_advisory",
@@ -27,12 +24,12 @@
       },
       {
         "category": "summary",
-        "text": "Successful exploitation of these vulnerabilities could allow remote code execution.",
+        "text": "Successful exploitation of this vulnerability could allow a remote attacker to cause a denial-of-service condition in Ethernet communication on the module. A system reset of the module is required for recovery.",
         "title": "Risk evaluation"
       },
       {
         "category": "other",
-        "text": "Energy, Water and Wastewater, Transportation",
+        "text": "Critical Manufacturing",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -42,12 +39,12 @@
       },
       {
         "category": "other",
-        "text": "Slovenia",
+        "text": "Japan",
         "title": "Company headquarters location"
       },
       {
         "category": "general",
-        "text": "CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Specifically, users should:",
+        "text": "CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability, such as:",
         "title": "Recommended Practices"
       },
       {
@@ -62,7 +59,7 @@
       },
       {
         "category": "general",
-        "text": "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize VPN is only as secure as the connected devices.",
+        "text": "When remote access is required, use more secure methods, such as virtual private networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize VPN is only as secure as the connected devices.",
         "title": "Recommended Practices"
       },
       {
@@ -92,7 +89,7 @@
       },
       {
         "category": "general",
-        "text": "No known public exploits specifically target these vulnerabilities.",
+        "text": "No known public exploitation specifically targeting this vulnerability has been reported to CISA at this time.",
         "title": "Recommended Practices"
       }
     ],
@@ -105,13 +102,13 @@
     "references": [
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-23-304-02 JSON",
-        "url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2023/icsa-23-304-02.json"
+        "summary": "ICS Advisory ICSA-24-324-01 JSON",
+        "url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-324-01.json"
       },
       {
         "category": "self",
-        "summary": "ICSA Advisory ICSA-23-304-02 - Web Version",
-        "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-23-304-02"
+        "summary": "ICSA Advisory ICSA-24-324-01 - Web Version",
+        "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-24-324-01"
       },
       {
         "category": "external",
@@ -142,22 +139,32 @@
         "category": "external",
         "summary": "Recommended Practices",
         "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/uscert/sites/default/files/publications/emailscams0905.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/uscert/ncas/tips/ST04-014"
       }
     ],
-    "title": "INEA ME RTU",
+    "title": "Mitsubishi Electric MELSEC iQ-F Series",
     "tracking": {
-      "current_release_date": "2023-10-31T06:00:00.000000Z",
+      "current_release_date": "2024-11-19T07:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
           "version": "1.0.0"
         }
       },
-      "id": "ICSA-23-304-02",
-      "initial_release_date": "2023-10-31T06:00:00.000000Z",
+      "id": "ICSA-24-324-01",
+      "initial_release_date": "2024-11-19T07:00:00.000000Z",
       "revision_history": [
         {
-          "date": "2023-10-31T06:00:00.000000Z",
+          "date": "2024-11-19T07:00:00.000000Z",
           "legacy_version": "Initial",
           "number": "1",
           "summary": "Initial Publication"
@@ -175,127 +182,148 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "<=3.36b",
+                "name": ">=1.100",
                 "product": {
-                  "name": "ME RTU: <=3.36b",
+                  "name": "Mitsubishi Electric Corporation MELSEC iQ-F Series FX5-ENET: >=1.100",
                   "product_id": "CSAFPID-0001"
                 }
               }
             ],
             "category": "product_name",
-            "name": "ME RTU"
+            "name": "MELSEC iQ-F Series FX5-ENET"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": ">=1.100|<1.104",
+                "product": {
+                  "name": "Mitsubishi Electric Corporation MELSEC iQ-F Series FX5-ENET/IP: >=1.100|<1.104",
+                  "product_id": "CSAFPID-0002"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "MELSEC iQ-F Series FX5-ENET/IP"
           }
         ],
         "category": "vendor",
-        "name": "INEA"
+        "name": "Mitsubishi Electric Corporation"
       }
     ]
   },
   "vulnerabilities": [
     {
-      "cve": "CVE-2023-35762",
+      "cve": "CVE-2024-8403",
       "cwe": {
-        "id": "CWE-78",
-        "name": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+        "id": "CWE-1287",
+        "name": "Improper Validation of Specified Type of Input"
       },
       "notes": [
         {
           "category": "summary",
-          "text": "Versions of INEA ME RTU firmware 3.36b and prior are vulnerable to operating system (OS) command injection, which could allow remote code execution.",
+          "text": "A denial-of-service vulnerability due to improper validation of a specified type of input exists in MELSEC iQ-F Ethernet Module and EtherNet/IP Module.",
           "title": "Vulnerability Summary"
         }
       ],
       "product_status": {
         "known_affected": [
-          "CSAFPID-0001"
+          "CSAFPID-0001",
+          "CSAFPID-0002"
         ]
       },
       "references": [
         {
           "category": "external",
           "summary": "www.cve.org",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2023-35762"
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-8403"
         },
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
         }
       ],
       "remediations": [
         {
           "category": "vendor_fix",
-          "details": "INEA recommends users to upgrade ME RTU to firmware version 3.37.",
+          "details": "Mitsubishi Electric has fixed this issue in MELSEC iQ-F Series FX5-ENET/IP version 1.106 or later.  The firmware update file can be found on Mitsubishi Electric's download page.  Refer to \"9 FIRMWARE UPDATE FUNCTION\" in the \"MELSEC iQ-F FX5 User's Manual (Application)\" for information on how to update the firmware.",
           "product_ids": [
-            "CSAFPID-0001"
+            "CSAFPID-0001",
+            "CSAFPID-0002"
           ],
-          "url": "https://www.inea.si/en/telemetrija-in-m2m-produkti/mertu-en/"
-        }
-      ],
-      "scores": [
+          "url": "https://www.mitsubishielectric.com/fa/download/index.html"
+        },
         {
-          "cvss_v3": {
-            "baseScore": 9.9,
-            "baseSeverity": "CRITICAL",
-            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
-            "version": "3.1"
-          },
-          "products": [
-            "CSAFPID-0001"
+          "category": "mitigation",
+          "details": "Mitsubishi Electric recommends that customers take the following mitigations/workarounds to minimize the risk of exploiting this vulnerability:",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002"
           ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2023-29155",
-      "cwe": {
-        "id": "CWE-306",
-        "name": "Missing Authentication for Critical Function"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "Versions of INEA ME RTU firmware 3.36b and prior do not require authentication to the \"root\" account on the host system of the device. This could allow an attacker to obtain admin-level access to the host system.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "www.cve.org",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2023-29155"
         },
         {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "vendor_fix",
-          "details": "INEA recommends users to upgrade ME RTU to firmware version 3.37.",
+          "category": "mitigation",
+          "details": "Use within a LAN and block access from untrusted networks and hosts through firewalls.",
           "product_ids": [
-            "CSAFPID-0001"
+            "CSAFPID-0001",
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Restrict physical access to the product, as well as to computers and network devices located within the same network as the product.",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Use a firewall or virtual private network (VPN), etc. to prevent unauthorized access when internet access is required.",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Use IP filter function to block access from untrusted hosts. For details on the IP filter function, please refer to the following manual: MELSEC iQ-F FX5 User's Manual (Communication) \"13.1 IP Filter Function\"",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "For specific update instructions and additional details see the Mitsubishi Electric advisory.",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002"
           ],
-          "url": "https://www.inea.si/en/telemetrija-in-m2m-produkti/mertu-en/"
+          "url": "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2024-009_en.pdf"
+        },
+        {
+          "category": "mitigation",
+          "details": "Please contact your local Mitsubishi Electric representative.",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002"
+          ],
+          "url": "https://www.mitsubishielectric.com/fa/support/index.html"
         }
       ],
       "scores": [
         {
           "cvss_v3": {
-            "baseScore": 9.8,
-            "baseSeverity": "CRITICAL",
-            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
             "version": "3.1"
           },
           "products": [
-            "CSAFPID-0001"
+            "CSAFPID-0001",
+            "CSAFPID-0002"
           ]
         }
       ]
