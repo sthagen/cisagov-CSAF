@@ -11,32 +11,32 @@
     },
     "title": "TopQuadrant TopBraid EDG Insecure External Password Storage and XXE Vulnerabilities",
     "tracking": {
-      "current_release_date": "2024-11-14T01:00:00.000Z",
+      "current_release_date": "2024-11-14T01:00:00Z",
       "generator": {
         "engine": {
           "name": "Secvisogram",
           "version": "2.5.14"
         },
-        "date": "2024-11-14T00:48:38.926Z"
+        "date": "2024-11-14T00:48:38Z"
       },
       "id": "VA-24-254-02",
-      "initial_release_date": "2024-09-10T16:03:00.000Z",
+      "initial_release_date": "2024-09-10T16:03:00Z",
       "status": "final",
       "version": "1.0.2",
       "revision_history": [
         {
           "number": "1.0.0",
           "summary": "Initial publication",
-          "date": "2024-09-10T16:03:00.000Z"
+          "date": "2024-09-10T16:03:00Z"
         },
         {
           "number": "1.0.1",
           "summary": "Correct reporter affiliation from RAF to FAST",
-          "date": "2024-10-03T10:00:00.000Z"
+          "date": "2024-10-03T10:00:00Z"
         },
         {
           "number": "1.0.2",
-          "date": "2024-11-14T01:00:00.000Z",
+          "date": "2024-11-14T01:00:00Z",
           "summary": "Fix acknowledgements, section headings, version range"
         }
       ]
@@ -137,7 +137,7 @@
         {
           "category": "details",
           "title": "SSVC",
-          "text": "SSVCv2/E:P/A:N/T:P/2024-09-10T16:16:26.845290+00:00/"
+          "text": "SSVCv2/E:P/A:N/T:P/2024-09-10T16:16:26Z/"
         }
       ],
       "title": "TopQuadrant TopBraid EDG password manager stores external credentials insecurely",
@@ -198,7 +198,7 @@
           "organization": "CISA Federal Attack Surface Testing"
         }
       ],
-      "release_date": "2024-09-10T16:00:00.000Z"
+      "release_date": "2024-09-10T16:00:00Z"
     },
     {
       "cve": "CVE-2024-45745",
@@ -215,7 +215,7 @@
         {
           "category": "details",
           "title": "SSVC",
-          "text": "SSVCv2/E:P/A:N/T:P/2024-09-10T15:30:07.300765+00:00/"
+          "text": "SSVCv2/E:P/A:N/T:P/2024-09-10T15:30:07Z/"
         },
         {
           "category": "description",
@@ -284,7 +284,7 @@
           "organization": "CISA Federal Attack Surface Testing"
         }
       ],
-      "release_date": "2024-09-10T16:00:00.000Z"
+      "release_date": "2024-09-10T16:00:00Z"
     }
   ]
 }

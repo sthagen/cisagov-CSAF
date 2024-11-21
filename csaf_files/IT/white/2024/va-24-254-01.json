@@ -11,27 +11,27 @@
     },
     "title": "IBM webMethods Integration Multiple Vulnerabilities",
     "tracking": {
-      "current_release_date": "2024-09-10T20:08:00.000Z",
+      "current_release_date": "2024-09-10T20:08:00Z",
       "generator": {
         "engine": {
           "name": "Secvisogram",
           "version": "2.5.14"
         },
-        "date": "2024-11-14T00:59:43.001Z"
+        "date": "2024-11-14T00:59:43Z"
       },
       "id": "VA-24-254-01",
-      "initial_release_date": "2024-09-10T20:08:00.000Z",
+      "initial_release_date": "2024-09-10T20:08:00Z",
       "status": "final",
       "version": "1.0.1",
       "revision_history": [
         {
           "number": "1.0.0",
           "summary": "Initial publication",
-          "date": "2024-09-10T20:08:00.000Z"
+          "date": "2024-09-10T20:08:00Z"
         },
         {
           "number": "1.0.1",
-          "date": "2024-11-14T01:00:00.000Z",
+          "date": "2024-11-14T01:00:00Z",
           "summary": "Fix acknowledgments, section headings"
         }
       ]
@@ -129,7 +129,7 @@
         {
           "category": "details",
           "title": "SSVC",
-          "text": "SSVCv2/E:P/A:N/T:T/2024-09-10T17:02:15.765344+00:00/"
+          "text": "SSVCv2/E:P/A:N/T:T/2024-09-10T17:02:15Z/"
         }
       ],
       "title": "IBM webMethods Integration allows privilege escalation via scheduled task using runAsUser",
@@ -187,7 +187,7 @@
           "organization": "CISA Rapid Action Force"
         }
       ],
-      "release_date": "2024-09-04T16:00:00.000Z"
+      "release_date": "2024-09-04T16:00:00Z"
     },
     {
       "cve": "CVE-2024-45076",
@@ -204,7 +204,7 @@
         {
           "category": "details",
           "title": "SSVC",
-          "text": "SSVCv2/E:P/A:N/T:T/2024-09-18T19:03:10.322481+00:00/"
+          "text": "SSVCv2/E:P/A:N/T:T/2024-09-18T19:03:10Z/"
         }
       ],
       "title": "IBM webMethods Integration allows arbitrary file upload and execution",
@@ -262,7 +262,7 @@
           "organization": "CISA Rapid Action Force"
         }
       ],
-      "release_date": "2024-09-04T16:00:00.000Z"
+      "release_date": "2024-09-04T16:00:00Z"
     },
     {
       "cve": "CVE-2024-45074",
@@ -279,7 +279,7 @@
         {
           "category": "details",
           "title": "SSVC",
-          "text": "SSVCv2/E:P/A:N/T:P/2024-09-10T17:04:49.167638+00:00/"
+          "text": "SSVCv2/E:P/A:N/T:P/2024-09-10T17:04:49Z/"
         }
       ],
       "title": "IBM webMethods Integration allows arbitrary file read via checkFileRead bypass",
@@ -319,7 +319,7 @@
           "product_ids": [
             "CSAFPID-0001"
           ],
-          "date": "2024-09-04T04:00:00.000Z"
+          "date": "2024-09-04T04:00:00Z"
         },
         {
           "category": "vendor_fix",
@@ -328,7 +328,7 @@
           "product_ids": [
             "CSAFPID-0002"
           ],
-          "date": "2024-09-04T04:00:00.000Z"
+          "date": "2024-09-04T04:00:00Z"
         }
       ],
       "acknowledgments": [
@@ -339,7 +339,7 @@
           "organization": "CISA Rapid Action Force"
         }
       ],
-      "release_date": "2024-09-04T16:00:00.000Z"
+      "release_date": "2024-09-04T16:00:00Z"
     }
   ]
 }

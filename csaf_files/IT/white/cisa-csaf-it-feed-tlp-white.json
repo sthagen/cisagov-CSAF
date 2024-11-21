@@ -24,11 +24,11 @@
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-325-01.json.sha512",
-            "ref": "hash"
+            "rel": "hash"
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-325-01.json.asc",
-            "ref": "signature"
+            "rel": "signature"
           }
         ],
         "published": "2024-11-20T18:33:57Z",
@@ -52,11 +52,11 @@
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-201-01.json.sha512",
-            "ref": "hash"
+            "rel": "hash"
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-201-01.json.asc",
-            "ref": "signature"
+            "rel": "signature"
           }
         ],
         "published": "2024-07-19T16:00:00Z",
@@ -80,11 +80,11 @@
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-254-02.json.sha512",
-            "ref": "hash"
+            "rel": "hash"
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-254-02.json.asc",
-            "ref": "signature"
+            "rel": "signature"
           }
         ],
         "published": "2024-09-10T16:03:00Z",
@@ -108,11 +108,11 @@
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-317-01.json.sha512",
-            "ref": "hash"
+            "rel": "hash"
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-317-01.json.asc",
-            "ref": "signature"
+            "rel": "signature"
           }
         ],
         "published": "2024-11-13T20:32:00Z",
@@ -136,11 +136,11 @@
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-262-01.json.sha512",
-            "ref": "hash"
+            "rel": "hash"
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-262-01.json.asc",
-            "ref": "signature"
+            "rel": "signature"
           }
         ],
         "published": "2024-09-18T15:26:00Z",
@@ -164,11 +164,11 @@
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-254-01.json.sha512",
-            "ref": "hash"
+            "rel": "hash"
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-254-01.json.asc",
-            "ref": "signature"
+            "rel": "signature"
           }
         ],
         "published": "2024-09-10T20:08:00Z",
@@ -184,6 +184,6 @@
       }
     ],
     "title": "CISA CSAF IT feed (TLP:WHITE)",
-    "updated": "2024-11-20T14:18:31Z"
+    "updated": "2024-11-21T00:01:39Z"
   }
 }
