@@ -20,7 +20,7 @@
         "link": [
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-325-01.json",
-            "rel": "self"
+            "ref": "self"
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-325-01.json.sha512",
@@ -48,7 +48,7 @@
         "link": [
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-201-01.json",
-            "rel": "self"
+            "ref": "self"
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-201-01.json.sha512",
@@ -76,7 +76,7 @@
         "link": [
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-254-02.json",
-            "rel": "self"
+            "ref": "self"
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-254-02.json.sha512",
@@ -104,7 +104,7 @@
         "link": [
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-317-01.json",
-            "rel": "self"
+            "ref": "self"
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-317-01.json.sha512",
@@ -132,7 +132,7 @@
         "link": [
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-262-01.json",
-            "rel": "self"
+            "ref": "self"
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-262-01.json.sha512",
@@ -160,7 +160,7 @@
         "link": [
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-254-01.json",
-            "rel": "self"
+            "ref": "self"
           },
           {
             "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/2024/va-24-254-01.json.sha512",
@@ -180,7 +180,7 @@
     "link": [
       {
         "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/IT/white/cisa-csaf-it-feed-tlp-white.json",
-        "rel": "self"
+        "ref": "self"
       }
     ],
     "title": "CISA CSAF IT feed (TLP:WHITE)",
