@@ -11,23 +11,23 @@
     },
     "title": "Versa Networks Versa Director insecure default PostgreSQL configuration",
     "tracking": {
-      "current_release_date": "2024-11-20T18:33:57.168849Z",
+      "current_release_date": "2024-11-20T18:33:57Z",
       "generator": {
         "engine": {
           "name": "Secvisogram",
           "version": "2.5.15"
         },
-        "date": "2024-11-20T19:16:03.778Z"
+        "date": "2024-11-20T19:16:03Z"
       },
       "id": "VA-24-325-01",
-      "initial_release_date": "2024-11-20T18:33:57.168849Z",
+      "initial_release_date": "2024-11-20T18:33:57Z",
       "status": "final",
       "version": "1.0.0",
       "revision_history": [
         {
           "number": "1.0.0",
           "summary": "Initial release",
-          "date": "2024-11-20T18:33:57.168849Z"
+          "date": "2024-11-20T18:33:57Z"
         }
       ]
     },
@@ -125,7 +125,7 @@
         {
           "category": "details",
           "title": "SSVC",
-          "text": "SSVCv2/E:P/A:Y/T:T/2024-11-20T18:23:05.686749+00:00/"
+          "text": "SSVCv2/E:P/A:Y/T:T/2024-11-20T18:23:05Z/"
         }
       ],
       "title": "Versa Networks Versa Director insecure default PostgreSQL configuration",
@@ -170,7 +170,7 @@
           "product_ids": [
             "CSAFPID-0001"
           ],
-          "date": "2024-11-11T06:00:00.000Z"
+          "date": "2024-11-11T06:00:00Z"
         },
         {
           "category": "vendor_fix",
@@ -179,7 +179,7 @@
           "product_ids": [
             "CSAFPID-0002"
           ],
-          "date": "2024-11-11T06:00:00.000Z"
+          "date": "2024-11-11T06:00:00Z"
         }
       ],
       "acknowledgments": [
@@ -189,7 +189,7 @@
           ]
         }
       ],
-      "release_date": "2024-11-14T00:00:00"
+      "release_date": "2024-11-14T00:00:00Z"
     }
   ]
 }

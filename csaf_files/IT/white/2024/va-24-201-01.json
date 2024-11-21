@@ -11,31 +11,31 @@
     },
     "title": "Adminer and AdminerEvo Multiple Vulnerabilities",
     "tracking": {
-      "current_release_date": "2024-11-14T17:00:00.000Z",
+      "current_release_date": "2024-11-14T17:00:00Z",
       "generator": {
         "engine": {
           "name": "Secvisogram",
           "version": "2.5.14"
         },
-        "date": "2024-11-14T00:33:50.647Z"
+        "date": "2024-11-14T00:33:50Z"
       },
       "id": "VA-24-201-01",
-      "initial_release_date": "2024-07-19T16:00:00.000Z",
+      "initial_release_date": "2024-07-19T16:00:00Z",
       "status": "final",
       "version": "1.0.2",
       "revision_history": [
         {
           "number": "1.0.0",
           "summary": "initial publication",
-          "date": "2024-07-19T18:37:00.000Z"
+          "date": "2024-07-19T18:37:00Z"
         },
         {
-          "date": "2024-09-18T16:00:00.000Z",
+          "date": "2024-09-18T16:00:00Z",
           "number": "1.0.1",
           "summary": "Legal notice, release_date, style consistency"
         },
         {
-          "date": "2024-11-13T17:00:00.000Z",
+          "date": "2024-11-13T17:00:00Z",
           "number": "1.0.2",
           "summary": "Fix acknowledgements, section headings, version ranges"
         }
@@ -227,7 +227,7 @@
             "CSAFPID-0077",
             "CSAFPID-0007"
           ],
-          "date": "2024-01-25T14:58:00.000Z",
+          "date": "2024-01-25T14:58:00Z",
           "url": "https://github.com/adminerevo/adminerevo/releases/tag/v4.8.4"
         }
       ],
@@ -273,7 +273,7 @@
           "url": "https://github.com/adminerevo/adminerevo/pull/102/commits/18f3167bbcbec3bc746f62db72e016aa99144efc"
         }
       ],
-      "release_date": "2024-01-25T17:00:00.000Z"
+      "release_date": "2024-01-25T17:00:00Z"
     },
     {
       "cwe": {
@@ -319,7 +319,7 @@
             "CSAFPID-0077"
           ],
           "url": "https://github.com/adminerevo/adminerevo/releases/tag/v4.8.4",
-          "date": "2024-01-25T14:58:00.000Z"
+          "date": "2024-01-25T14:58:00Z"
         }
       ],
       "acknowledgments": [
@@ -365,7 +365,7 @@
         }
       ],
       "cve": "CVE-2023-45196",
-      "release_date": "2024-01-25T17:00:00.000Z"
+      "release_date": "2024-01-25T17:00:00Z"
     },
     {
       "cve": "CVE-2023-45197",
@@ -394,7 +394,7 @@
             "CSAFPID-0077"
           ],
           "url": "https://github.com/adminerevo/adminerevo/releases/tag/v4.8.3",
-          "date": "2023-10-17T21:19:00.000Z"
+          "date": "2023-10-17T21:19:00Z"
         },
         {
           "category": "none_available",
@@ -456,7 +456,7 @@
           "url": "https://github.com/adminerevo/adminerevo/commit/1cc06d6a1005fd833fa009701badd5641627a1d4"
         }
       ],
-      "release_date": "2023-10-17T21:19:00.000Z"
+      "release_date": "2023-10-17T21:19:00Z"
     }
   ]
 }
