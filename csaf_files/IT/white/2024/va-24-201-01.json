@@ -11,18 +11,18 @@
     },
     "title": "Adminer and AdminerEvo Multiple Vulnerabilities",
     "tracking": {
-      "current_release_date": "2024-09-18T16:00:00.000Z",
+      "current_release_date": "2024-11-14T17:00:00.000Z",
       "generator": {
         "engine": {
           "name": "Secvisogram",
-          "version": "2.5.12"
+          "version": "2.5.14"
         },
-        "date": "2024-09-18T22:30:32.920Z"
+        "date": "2024-11-14T00:33:50.647Z"
       },
       "id": "VA-24-201-01",
       "initial_release_date": "2024-07-19T16:00:00.000Z",
       "status": "final",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "revision_history": [
         {
           "number": "1.0.0",
@@ -33,6 +33,11 @@
           "date": "2024-09-18T16:00:00.000Z",
           "number": "1.0.1",
           "summary": "Legal notice, release_date, style consistency"
+        },
+        {
+          "date": "2024-11-13T17:00:00.000Z",
+          "number": "1.0.2",
+          "summary": "Fix acknowledgements, section headings, version ranges"
         }
       ]
     },
@@ -46,30 +51,30 @@
       {
         "category": "summary",
         "text": "Adminer and AdminerEvo contain multiple vulnerabilities. Successful exploitation of these vulnerabilities could allow a remote, unauthenticated attacker to deny service, enumerate and access systems indirectly, upload arbitrary files, and execute arbitrary code. Adminer is no longer maintained. All of these vulnerabilities are fixed in AdminerEvo 4.8.4.",
-        "title": "Risk evaluation"
+        "title": "Risk Evaluation"
       },
       {
         "category": "legal_disclaimer",
         "text": "All information products included in https://github.com/cisagov/CSAF/tree/develop/csaf_files/IT/white are provided \"as is\" for informational purposes only. The Department of Homeland Security (DHS) does not provide any warranties of any kind regarding any information contained within. DHS does not endorse any commercial product or service, referenced in this product or otherwise. Further dissemination of this product is governed by the Traffic Light Protocol (TLP) marking in the header. For more information about TLP, see https://us-cert.cisa.gov/tlp/.",
-        "title": "Legal notice"
+        "title": "Legal Notice"
       },
       {
-        "title": "Countries/areas deployed",
+        "title": "Countries and Areas Deployed",
         "category": "other",
         "text": "Worldwide"
       },
       {
         "category": "general",
-        "title": "Recommended practices",
-        "text": "Upgrade to AdminerEvo 4.8.4: https://github.com/adminerevo/adminerevo/releases/tag/v4.8.4"
+        "title": "Recommended Practices",
+        "text": "Upgrade to AdminerEvo [4.8.4](https://github.com/adminerevo/adminerevo/releases/tag/v4.8.4)."
       },
       {
         "category": "other",
-        "title": "Company headquarters location",
+        "title": "Company Headquarters Location",
         "text": "Unknown"
       },
       {
-        "title": "Critical infrastructure sectors",
+        "title": "Critical Infrastructure Sectors",
         "text": "Information Technology",
         "category": "other"
       }
@@ -94,7 +99,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "all versions",
+                "name": "vers:all/*",
                 "product": {
                   "name": "Adminer (all versions)",
                   "product_id": "CSAFPID-0006"
@@ -158,7 +163,7 @@
                   "product_id": "CSAFPID-0078"
                 },
                 "category": "product_version_range",
-                "name": "all versions"
+                "name": "vers:all/*"
               }
             ]
           }
@@ -172,7 +177,7 @@
         "relates_to_product_reference": "CSAFPID-0004",
         "full_product_name": {
           "product_id": "CSAFPID-0005",
-          "name": "Adminer contained in AdminerEvo"
+          "name": "Adminer external component of AdminerEvo"
         }
       }
     ]
@@ -229,8 +234,9 @@
       "acknowledgments": [
         {
           "names": [
-            "Matthew Galligan, CISA Rapid Action Force"
-          ]
+            "Matthew Galligan"
+          ],
+          "organization": "CISA Rapid Action Force"
         }
       ],
       "scores": [
@@ -319,8 +325,9 @@
       "acknowledgments": [
         {
           "names": [
-            "Matthew Galligan, CISA Rapid Action Force"
-          ]
+            "Matthew Galligan"
+          ],
+          "organization": "CISA Rapid Action Force"
         }
       ],
       "scores": [
@@ -409,8 +416,9 @@
       "acknowledgments": [
         {
           "names": [
-            "Matthew Galligan, CISA Rapid Action Force"
-          ]
+            "Matthew Galligan"
+          ],
+          "organization": "CISA Rapid Action Force"
         }
       ],
       "scores": [
