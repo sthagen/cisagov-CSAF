@@ -9,6 +9,13 @@ csaf_files/OT/white/2024/icsma-24-065-01.json
 csaf_files/OT/white/2024/icsma-24-060-01.json
 csaf_files/OT/white/2024/icsma-24-058-01.json
 csaf_files/OT/white/2024/icsma-24-023-01.json
+csaf_files/OT/white/2024/icsa-24-326-07.json
+csaf_files/OT/white/2024/icsa-24-326-06.json
+csaf_files/OT/white/2024/icsa-24-326-05.json
+csaf_files/OT/white/2024/icsa-24-326-04.json
+csaf_files/OT/white/2024/icsa-24-326-03.json
+csaf_files/OT/white/2024/icsa-24-326-02.json
+csaf_files/OT/white/2024/icsa-24-326-01.json
 csaf_files/OT/white/2024/icsa-24-324-01.json
 csaf_files/OT/white/2024/icsa-24-319-17.json
 csaf_files/OT/white/2024/icsa-24-319-16.json
