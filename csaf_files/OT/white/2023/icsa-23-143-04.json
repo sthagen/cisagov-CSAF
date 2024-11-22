@@ -217,8 +217,8 @@
       "references": [
         {
           "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-29503"
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-29503"
         },
         {
           "category": "external",
@@ -289,8 +289,8 @@
       "references": [
         {
           "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32281"
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-32281"
         },
         {
           "category": "external",
@@ -361,8 +361,8 @@
       "references": [
         {
           "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32289"
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-32289"
         },
         {
           "category": "external",
@@ -433,8 +433,8 @@
       "references": [
         {
           "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32545"
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-32545"
         },
         {
           "category": "external",
@@ -505,8 +505,8 @@
       "references": [
         {
           "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-27916"
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-27916"
         },
         {
           "category": "external",
@@ -577,8 +577,8 @@
       "references": [
         {
           "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-28653"
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-28653"
         },
         {
           "category": "external",
@@ -649,8 +649,8 @@
       "references": [
         {
           "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31244"
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-31244"
         },
         {
           "category": "external",
@@ -702,8 +702,8 @@
     {
       "cve": "CVE-2023-32203",
       "cwe": {
-        "id": "CWE-119",
-        "name": "Improper Restriction of Operations within the Bounds of a Memory Buffer"
+        "id": "CWE-787",
+        "name": "Out-of-bounds Write"
       },
       "notes": [
         {
@@ -721,8 +721,8 @@
       "references": [
         {
           "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32203"
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-32203"
         },
         {
           "category": "external",
@@ -774,8 +774,8 @@
     {
       "cve": "CVE-2023-32539",
       "cwe": {
-        "id": "CWE-119",
-        "name": "Improper Restriction of Operations within the Bounds of a Memory Buffer"
+        "id": "CWE-787",
+        "name": "Out-of-bounds Write"
       },
       "notes": [
         {
@@ -793,8 +793,8 @@
       "references": [
         {
           "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32539"
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-32539"
         },
         {
           "category": "external",
@@ -846,8 +846,8 @@
     {
       "cve": "CVE-2023-31278",
       "cwe": {
-        "id": "CWE-119",
-        "name": "Improper Restriction of Operations within the Bounds of a Memory Buffer"
+        "id": "CWE-125",
+        "name": "Out-of-bounds Read"
       },
       "notes": [
         {
@@ -865,8 +865,8 @@
       "references": [
         {
           "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31278"
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-31278"
         },
         {
           "category": "external",
