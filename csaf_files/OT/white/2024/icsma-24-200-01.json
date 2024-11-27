@@ -6,9 +6,7 @@
         "summary": "reporting these vulnerabilities to Philips"
       },
       {
-        "names": [
-          "Camiel van Es"
-        ],
+        "organization": "Camiel van Es",
         "summary": "reporting these vulnerabilities to Philips"
       }
     ],
@@ -30,7 +28,7 @@
       },
       {
         "category": "summary",
-        "text": "Successful exploitation of these vulnerabilities could allow an unauthorized person or process to eavesdrop, view or modify data, gain system access, perform code execution, install unauthorized software, or affect system data integrity to negatively impact system confidentiality, integrity, or availability.",
+        "text": "Successful exploitation of these vulnerabilities could allow an attacker to gain access to the database, which could impact system availability and data integrity or cause a denial-of-service condition.",
         "title": "Risk evaluation"
       },
       {
@@ -95,7 +93,7 @@
       },
       {
         "category": "general",
-        "text": "No known public exploitation specifically targeting these vulnerabilities has been reported to CISA at this time.",
+        "text": "No known public exploitation specifically targeting these vulnerabilities has been reported to CISA at this time. These vulnerabilities are not exploitable remotely.",
         "title": "Recommended Practices"
       }
     ],
@@ -157,9 +155,9 @@
         "url": "https://www.cisa.gov/uscert/ncas/tips/ST04-014"
       }
     ],
-    "title": "Philips Vue PACS",
+    "title": "Philips Vue PACS (Update A)",
     "tracking": {
-      "current_release_date": "2024-07-18T06:00:00.000000Z",
+      "current_release_date": "2024-11-21T07:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -174,10 +172,16 @@
           "legacy_version": "Initial",
           "number": "1",
           "summary": "Initial Publication"
+        },
+        {
+          "date": "2024-11-21T07:00:00.000000Z",
+          "legacy_version": "Update A",
+          "number": "2",
+          "summary": "Update A - Vulnerabilities removed due to further analysis by Philips showing they did not affect the device or had no security impact."
         }
       ],
       "status": "final",
-      "version": "1"
+      "version": "2"
     }
   },
   "product_tree": {
@@ -206,663 +210,15 @@
   },
   "vulnerabilities": [
     {
-      "cve": "CVE-2020-36518",
-      "cwe": {
-        "id": "CWE-787",
-        "name": "Out-of-bounds Write"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "A third-party product component writes data past the end, or before the beginning, of the intended buffer.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-36518"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "Philips recommends the following mitigations:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For vulnerabilities CVE-2020-36518, CVE-2020-11113, CVE-2020-35728, CVE-2021-20190, CVE-2020-14061, CVE-2020-10673, CVE-2019-12814, CVE-2017-17485, CVE-2023-40223, and CVE-2023-40159, Philips recommends upgrading to the latest Vue PACS version 12.2.8.400* released in August 2023.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For managed services customers, new releases will be made available upon resource availability. Releases are subject to country specific regulations. Users with questions regarding their specific Philips Vue PACS installations and new release eligibility should contact their local Philips Sales representative or submit a request in the Philips Informatics Support portal.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.informatics.support.philips.com/csm"
-        },
-        {
-          "category": "mitigation",
-          "details": "Refer to the Philips advisory for more details.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.philips.com/productsecurity"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 5.3,
-            "baseSeverity": "MEDIUM",
-            "vectorString": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
-            "version": "3.1"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2020-11113",
-      "cwe": {
-        "id": "CWE-502",
-        "name": "Deserialization of Untrusted Data"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "A third-party product component deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-11113"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "Philips recommends the following mitigations:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For vulnerabilities CVE-2020-36518, CVE-2020-11113, CVE-2020-35728, CVE-2021-20190, CVE-2020-14061, CVE-2020-10673, CVE-2019-12814, CVE-2017-17485, CVE-2023-40223, and CVE-2023-40159, Philips recommends upgrading to the latest Vue PACS version 12.2.8.400* released in August 2023.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For managed services customers, new releases will be made available upon resource availability. Releases are subject to country specific regulations. Users with questions regarding their specific Philips Vue PACS installations and new release eligibility should contact their local Philips Sales representative or submit a request in the Philips Informatics Support portal.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.informatics.support.philips.com/csm"
-        },
-        {
-          "category": "mitigation",
-          "details": "Refer to the Philips advisory for more details.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.philips.com/productsecurity"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 8.8,
-            "baseSeverity": "HIGH",
-            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-            "version": "3.1"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2020-35728",
-      "cwe": {
-        "id": "CWE-502",
-        "name": "Deserialization of Untrusted Data"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "A third-party product component deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-35728"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "Philips recommends the following mitigations:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For vulnerabilities CVE-2020-36518, CVE-2020-11113, CVE-2020-35728, CVE-2021-20190, CVE-2020-14061, CVE-2020-10673, CVE-2019-12814, CVE-2017-17485, CVE-2023-40223, and CVE-2023-40159, Philips recommends upgrading to the latest Vue PACS version 12.2.8.400* released in August 2023.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For managed services customers, new releases will be made available upon resource availability. Releases are subject to country specific regulations. Users with questions regarding their specific Philips Vue PACS installations and new release eligibility should contact their local Philips Sales representative or submit a request in the Philips Informatics Support portal.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.informatics.support.philips.com/csm"
-        },
-        {
-          "category": "mitigation",
-          "details": "Refer to the Philips advisory for more details.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.philips.com/productsecurity"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 8.1,
-            "baseSeverity": "HIGH",
-            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-            "version": "3.1"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2021-20190",
-      "cwe": {
-        "id": "CWE-502",
-        "name": "Deserialization of Untrusted Data"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "A third-party product component deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-20190"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "Philips recommends the following mitigations:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For vulnerabilities CVE-2020-36518, CVE-2020-11113, CVE-2020-35728, CVE-2021-20190, CVE-2020-14061, CVE-2020-10673, CVE-2019-12814, CVE-2017-17485, CVE-2023-40223, and CVE-2023-40159, Philips recommends upgrading to the latest Vue PACS version 12.2.8.400* released in August 2023.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For managed services customers, new releases will be made available upon resource availability. Releases are subject to country specific regulations. Users with questions regarding their specific Philips Vue PACS installations and new release eligibility should contact their local Philips Sales representative or submit a request in the Philips Informatics Support portal.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.informatics.support.philips.com/csm"
-        },
-        {
-          "category": "mitigation",
-          "details": "Refer to the Philips advisory for more details.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.philips.com/productsecurity"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 8.1,
-            "baseSeverity": "HIGH",
-            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-            "version": "3.1"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2020-14061",
-      "cwe": {
-        "id": "CWE-502",
-        "name": "Deserialization of Untrusted Data"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "A third-party product component deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-14061"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "Philips recommends the following mitigations:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For vulnerabilities CVE-2020-36518, CVE-2020-11113, CVE-2020-35728, CVE-2021-20190, CVE-2020-14061, CVE-2020-10673, CVE-2019-12814, CVE-2017-17485, CVE-2023-40223, and CVE-2023-40159, Philips recommends upgrading to the latest Vue PACS version 12.2.8.400* released in August 2023.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For managed services customers, new releases will be made available upon resource availability. Releases are subject to country specific regulations. Users with questions regarding their specific Philips Vue PACS installations and new release eligibility should contact their local Philips Sales representative or submit a request in the Philips Informatics Support portal.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.informatics.support.philips.com/csm"
-        },
-        {
-          "category": "mitigation",
-          "details": "Refer to the Philips advisory for more details.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.philips.com/productsecurity"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 8.1,
-            "baseSeverity": "HIGH",
-            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-            "version": "3.1"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2020-10673",
-      "cwe": {
-        "id": "CWE-502",
-        "name": "Deserialization of Untrusted Data"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "A third-party product component deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-10673"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "Philips recommends the following mitigations:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For vulnerabilities CVE-2020-36518, CVE-2020-11113, CVE-2020-35728, CVE-2021-20190, CVE-2020-14061, CVE-2020-10673, CVE-2019-12814, CVE-2017-17485, CVE-2023-40223, and CVE-2023-40159, Philips recommends upgrading to the latest Vue PACS version 12.2.8.400* released in August 2023.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For managed services customers, new releases will be made available upon resource availability. Releases are subject to country specific regulations. Users with questions regarding their specific Philips Vue PACS installations and new release eligibility should contact their local Philips Sales representative or submit a request in the Philips Informatics Support portal.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.informatics.support.philips.com/csm"
-        },
-        {
-          "category": "mitigation",
-          "details": "Refer to the Philips advisory for more details.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.philips.com/productsecurity"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 8.8,
-            "baseSeverity": "HIGH",
-            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-            "version": "3.1"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2019-12814",
-      "cwe": {
-        "id": "CWE-502",
-        "name": "Deserialization of Untrusted Data"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "A third-party product component deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-12814"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "Philips recommends the following mitigations:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For vulnerabilities CVE-2020-36518, CVE-2020-11113, CVE-2020-35728, CVE-2021-20190, CVE-2020-14061, CVE-2020-10673, CVE-2019-12814, CVE-2017-17485, CVE-2023-40223, and CVE-2023-40159, Philips recommends upgrading to the latest Vue PACS version 12.2.8.400* released in August 2023.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For managed services customers, new releases will be made available upon resource availability. Releases are subject to country specific regulations. Users with questions regarding their specific Philips Vue PACS installations and new release eligibility should contact their local Philips Sales representative or submit a request in the Philips Informatics Support portal.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.informatics.support.philips.com/csm"
-        },
-        {
-          "category": "mitigation",
-          "details": "Refer to the Philips advisory for more details.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.philips.com/productsecurity"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 5.9,
-            "baseSeverity": "MEDIUM",
-            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
-            "version": "3.1"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2017-17485",
-      "cwe": {
-        "id": "CWE-502",
-        "name": "Deserialization of Untrusted Data"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "A third-party product component deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2017-17485"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "Philips recommends the following mitigations:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For vulnerabilities CVE-2020-36518, CVE-2020-11113, CVE-2020-35728, CVE-2021-20190, CVE-2020-14061, CVE-2020-10673, CVE-2019-12814, CVE-2017-17485, CVE-2023-40223, and CVE-2023-40159, Philips recommends upgrading to the latest Vue PACS version 12.2.8.400* released in August 2023.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For managed services customers, new releases will be made available upon resource availability. Releases are subject to country specific regulations. Users with questions regarding their specific Philips Vue PACS installations and new release eligibility should contact their local Philips Sales representative or submit a request in the Philips Informatics Support portal.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.informatics.support.philips.com/csm"
-        },
-        {
-          "category": "mitigation",
-          "details": "Refer to the Philips advisory for more details.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.philips.com/productsecurity"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 9.8,
-            "baseSeverity": "CRITICAL",
-            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-            "version": "3.1"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
       "cve": "CVE-2021-28165",
       "cwe": {
-        "id": "CWE-400",
-        "name": "Uncontrolled Resource Consumption"
+        "id": "CWE-770",
+        "name": "Allocation of Resources Without Limits or Throttling"
       },
       "notes": [
         {
           "category": "summary",
-          "text": "A third-party product component does not properly control the allocation and maintenance of CPU use upon receiving a large invalid packet frame.",
+          "text": "Attackers can exploit this vulnerability by making numerous requests or sending large amounts of data to the application, leading to resource exhaustion (e.g., memory, CPU), which can cause the application to crash or become unresponsive. This vulnerability does not expose patient data or allow for its modification. It allows an attacker, with access to the hospital's private network, which is protected by security controls (e.g., firewalls, VPNs), to send messages to the server, leading to potential CPU overload and a denial-of-service (DoS) condition. No response is sent back to the attacker, and patient information remains secure.",
           "title": "Vulnerability Summary"
         }
       ],
@@ -872,6 +228,16 @@
         ]
       },
       "references": [
+        {
+          "category": "external",
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2021-28165"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
         {
           "category": "external",
           "summary": "web.nvd.nist.gov",
@@ -880,12 +246,7 @@
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N"
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:H/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
         }
       ],
       "remediations": [
@@ -898,7 +259,7 @@
         },
         {
           "category": "vendor_fix",
-          "details": "For CVE-2021-28165, Philips recommends configuring the Vue PACS environment per D000763414 – Vue_PACS_12_Ports_Protocols_Services_Guide available on Incenter. Philips also recommends upgrading to the Vue PACS version 12.2.8.410* released in October 2023.",
+          "details": "For CVE-2021-28165, Philips recommends configuring the Vue PACS environment per D000763414 – Vue_PACS_12_Ports_Protocols_Services_Guide available on Incenter. Vue PACS version 12.2.8.410* released in October 2023 prevents this vulnerability.",
           "product_ids": [
             "CSAFPID-0001"
           ],
@@ -906,7 +267,7 @@
         },
         {
           "category": "vendor_fix",
-          "details": "For managed services customers, new releases will be made available upon resource availability. Releases are subject to country specific regulations. Users with questions regarding their specific Philips Vue PACS installations and new release eligibility should contact their local Philips Sales representative or submit a request in the Philips Informatics Support portal.",
+          "details": "For managed services customers, new releases will be made available upon resource availability. Releases are subject to country specific regulations. Users with questions regarding their specific Philips Vue PACS installations and new release eligibility should contact their local Philips sales representative or submit a request in the Philips Informatics Support portal.",
           "product_ids": [
             "CSAFPID-0001"
           ],
@@ -924,90 +285,9 @@
       "scores": [
         {
           "cvss_v3": {
-            "baseScore": 7.5,
-            "baseSeverity": "HIGH",
-            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-            "version": "3.1"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2023-40223",
-      "cwe": {
-        "id": "CWE-269",
-        "name": "Improper Privilege Management"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "Philips Vue PACS does not properly assign, modify, track, or check actor privileges, creating an unintended sphere of control for that actor.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-40223"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "Philips recommends the following mitigations:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For vulnerabilities CVE-2020-36518, CVE-2020-11113, CVE-2020-35728, CVE-2021-20190, CVE-2020-14061, CVE-2020-10673, CVE-2019-12814, CVE-2017-17485, CVE-2023-40223, and CVE-2023-40159, Philips recommends upgrading to the latest Vue PACS version 12.2.8.400* released in August 2023.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For managed services customers, new releases will be made available upon resource availability. Releases are subject to country specific regulations. Users with questions regarding their specific Philips Vue PACS installations and new release eligibility should contact their local Philips Sales representative or submit a request in the Philips Informatics Support portal.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.informatics.support.philips.com/csm"
-        },
-        {
-          "category": "mitigation",
-          "details": "Refer to the Philips advisory for more details.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.philips.com/productsecurity"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 4.4,
+            "baseScore": 6.5,
             "baseSeverity": "MEDIUM",
-            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+            "vectorString": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
             "version": "3.1"
           },
           "products": [
@@ -1025,7 +305,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "Philips Vue PACS uses default credentials for potentially critical functionality.",
+          "text": "The product does not require unique and complex passwords to be created during installation. Using Philips's default password could jeopardize the PACS system if the password was hacked or leaked. An attacker could gain access to the database impacting system availability and data integrity.",
           "title": "Vulnerability Summary"
         }
       ],
@@ -1035,6 +315,16 @@
         ]
       },
       "references": [
+        {
+          "category": "external",
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-40704"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:A/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+        },
         {
           "category": "external",
           "summary": "web.nvd.nist.gov",
@@ -1043,12 +333,7 @@
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:H/AT:N/PR:H/UI:N/VC:H/VI:L/VA:H/SC:N/SI:N/SA:N"
         }
       ],
       "remediations": [
@@ -1060,16 +345,15 @@
           ]
         },
         {
-          "category": "vendor_fix",
-          "details": "For CVE-2023-40704 and CVE-2023-40539, Philips recommends configuring the Vue PACS environment per 8G7607 – Vue PACS User Guide Rev G available on Incenter.",
+          "category": "mitigation",
+          "details": "For CVE-2023-40704, Philips recommends no action needed due to low risk of exploitability, but customers can request that Philips update database password(s).",
           "product_ids": [
             "CSAFPID-0001"
-          ],
-          "url": "https://incenter.medical.philips.com/Default.aspx?tabid=867"
+          ]
         },
         {
           "category": "vendor_fix",
-          "details": "For managed services customers, new releases will be made available upon resource availability. Releases are subject to country specific regulations. Users with questions regarding their specific Philips Vue PACS installations and new release eligibility should contact their local Philips Sales representative or submit a request in the Philips Informatics Support portal.",
+          "details": "For managed services customers, new releases will be made available upon resource availability. Releases are subject to country specific regulations. Users with questions regarding their specific Philips Vue PACS installations and new release eligibility should contact their local Philips sales representative or submit a request in the Philips Informatics Support portal.",
           "product_ids": [
             "CSAFPID-0001"
           ],
@@ -1087,172 +371,9 @@
       "scores": [
         {
           "cvss_v3": {
-            "baseScore": 7.1,
-            "baseSeverity": "HIGH",
-            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
-            "version": "3.1"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2023-40539",
-      "cwe": {
-        "id": "CWE-521",
-        "name": "Weak Password Requirements"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "Philips Vue PACS does not require that users have strong passwords, which could make it easier for attackers to compromise user accounts.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-40539"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "Philips recommends the following mitigations:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For CVE-2023-40704 and CVE-2023-40539, Philips recommends configuring the Vue PACS environment per 8G7607 – Vue PACS User Guide Rev G available on Incenter.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://incenter.medical.philips.com/Default.aspx?tabid=867"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For managed services customers, new releases will be made available upon resource availability. Releases are subject to country specific regulations. Users with questions regarding their specific Philips Vue PACS installations and new release eligibility should contact their local Philips Sales representative or submit a request in the Philips Informatics Support portal.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.informatics.support.philips.com/csm"
-        },
-        {
-          "category": "mitigation",
-          "details": "Refer to the Philips advisory for more details.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.philips.com/productsecurity"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 4.4,
+            "baseScore": 6.8,
             "baseSeverity": "MEDIUM",
-            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
-            "version": "3.1"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2023-40159",
-      "cwe": {
-        "id": "CWE-200",
-        "name": "Exposure of Sensitive Information to an Unauthorized Actor"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "A validated user not explicitly authorized to have access to certain sensitive information could access Philips Vue PACS on the same network to expose that information.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-40159"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:H/VA:N/SC:N/SI:N/SA:N"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "Philips recommends the following mitigations:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For vulnerabilities CVE-2020-36518, CVE-2020-11113, CVE-2020-35728, CVE-2021-20190, CVE-2020-14061, CVE-2020-10673, CVE-2019-12814, CVE-2017-17485, CVE-2023-40223, and CVE-2023-40159, Philips recommends upgrading to the latest Vue PACS version 12.2.8.400* released in August 2023.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "For managed services customers, new releases will be made available upon resource availability. Releases are subject to country specific regulations. Users with questions regarding their specific Philips Vue PACS installations and new release eligibility should contact their local Philips Sales representative or submit a request in the Philips Informatics Support portal.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.informatics.support.philips.com/csm"
-        },
-        {
-          "category": "mitigation",
-          "details": "Refer to the Philips advisory for more details.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.philips.com/productsecurity"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 8.2,
-            "baseSeverity": "HIGH",
-            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N",
+            "vectorString": "CVSS:3.1/AV:A/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
             "version": "3.1"
           },
           "products": [
