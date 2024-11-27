@@ -14,7 +14,7 @@
         "term": "csaf"
       }
     ],
-    "updated": "2024-11-22T00:16:51.745543Z",
+    "updated": "2024-11-27T22:02:43.293157Z",
     "entry": [
       {
         "id": "ICSA-24-326-07",
@@ -93,6 +93,34 @@
         "updated": "2024-11-21T07:00:00.000000Z",
         "content": {
           "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-326-01.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSMA-24-200-01",
+        "title": "Philips Vue PACS (Update A)",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsma-24-200-01.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsma-24-200-01.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsma-24-200-01.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2024-07-18T06:00:00.000000Z",
+        "updated": "2024-11-21T07:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsma-24-200-01.json",
           "type": "application/json"
         },
         "format": {
@@ -1277,6 +1305,34 @@
         }
       },
       {
+        "id": "ICSA-24-331-01",
+        "title": "Schneider Electric PowerLogic PM55xx and PowerLogic PM8ECC",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-01.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-01.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-01.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2021-06-08T00:00:00.000000Z",
+        "updated": "2024-11-12T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-01.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
         "id": "ICSA-24-312-03",
         "title": "Bosch Rexroth IndraDrive",
         "link": [
@@ -1465,6 +1521,34 @@
         "updated": "2024-10-31T06:00:00.000000Z",
         "content": {
           "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2023/icsa-23-157-02.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-24-331-04",
+        "title": "Hitachi Energy MicroSCADA Pro/X SYS600",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-04.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-04.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-04.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2024-08-27T12:30:00.000000Z",
+        "updated": "2024-10-29T13:30:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-04.json",
           "type": "application/json"
         },
         "format": {
@@ -3825,6 +3909,34 @@
         }
       },
       {
+        "id": "ICSA-24-331-02",
+        "title": "Schneider Electric PowerLogic P5",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-02.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-02.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-02.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2024-06-11T00:00:00.000000Z",
+        "updated": "2024-09-10T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-02.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
         "id": "ICSMA-24-249-01",
         "title": "Baxter Connex Health Portal",
         "link": [
@@ -5225,34 +5337,6 @@
         }
       },
       {
-        "id": "ICSMA-24-200-01",
-        "title": "Philips Vue PACS",
-        "link": [
-          {
-            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsma-24-200-01.json",
-            "rel": "self"
-          },
-          {
-            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsma-24-200-01.json.asc",
-            "rel": "signature"
-          },
-          {
-            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsma-24-200-01.json.sha512",
-            "rel": "hash"
-          }
-        ],
-        "published": "2024-07-18T06:00:00.000000Z",
-        "updated": "2024-07-18T06:00:00.000000Z",
-        "content": {
-          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsma-24-200-01.json",
-          "type": "application/json"
-        },
-        "format": {
-          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
-          "version": "2.0"
-        }
-      },
-      {
         "id": "ICSA-24-200-02",
         "title": "Subnet Solutions PowerSYSTEM Center",
         "link": [
@@ -5973,6 +6057,34 @@
         "updated": "2024-07-09T00:00:00.000000Z",
         "content": {
           "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-193-01.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-24-331-03",
+        "title": "Schneider Electric EcoStruxure Control Expert, EcoStruxure Process Expert, and Modicon M340, M580 and M580 Safety PLCs",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-03.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-03.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-03.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2024-02-13T12:41:43.000000Z",
+        "updated": "2024-07-09T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-03.json",
           "type": "application/json"
         },
         "format": {
@@ -11405,6 +11517,34 @@
         "updated": "2023-12-21T07:00:00.000000Z",
         "content": {
           "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2023/icsa-23-355-01.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-24-331-05",
+        "title": "Hitachi Energy RTU500 Scripting Interface",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-05.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-05.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-05.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2023-12-19T13:30:00.000000Z",
+        "updated": "2023-12-19T13:30:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-331-05.json",
           "type": "application/json"
         },
         "format": {
