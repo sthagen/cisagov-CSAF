@@ -11,18 +11,18 @@
     },
     "title": "TopQuadrant TopBraid EDG Insecure External Password Storage and XXE Vulnerabilities",
     "tracking": {
-      "current_release_date": "2024-11-14T01:00:00Z",
+      "current_release_date": "2024-11-28T01:00:00Z",
       "generator": {
         "engine": {
           "name": "Secvisogram",
-          "version": "2.5.14"
+          "version": "2.5.15"
         },
-        "date": "2024-11-14T00:48:38Z"
+        "date": "2024-11-27T03:30:11Z"
       },
       "id": "VA-24-254-02",
       "initial_release_date": "2024-09-10T16:03:00Z",
       "status": "final",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "revision_history": [
         {
           "number": "1.0.0",
@@ -38,6 +38,11 @@
           "number": "1.0.2",
           "date": "2024-11-14T01:00:00Z",
           "summary": "Fix acknowledgements, section headings, version range"
+        },
+        {
+          "date": "2024-11-27T17:00:00Z",
+          "number": "1.0.3",
+          "summary": "Added Hashicorp Vault mitigation, Recommended Practices section, language"
         }
       ]
     },
@@ -59,7 +64,7 @@
       },
       {
         "text": "Worldwide",
-        "title": "Countries Areas Deployed",
+        "title": "Countries and Areas Deployed",
         "category": "other"
       },
       {
@@ -71,6 +76,11 @@
         "text": "Information Technology",
         "title": "Critical Infrastructure Sectors",
         "category": "other"
+      },
+      {
+        "category": "general",
+        "title": "Recommended Practices",
+        "text": "Upgrade to TopQuadrant TopBraid EDG 8.0.1 and use the Hashicorp Vault integration."
       }
     ],
     "references": [
@@ -79,7 +89,8 @@
         "summary": "Vulnerability Advisory VA-24-254-02 CSAF",
         "category": "self"
       }
-    ]
+    ],
+    "lang": "en-US"
   },
   "product_tree": {
     "branches": [
@@ -113,6 +124,14 @@
                 "product": {
                   "name": "TopQuadrant TopBraid EDG 8.0.1",
                   "product_id": "CSAFPID-0003"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": ">=7.3",
+                "product": {
+                  "name": "TopQuadrant TopBraid EDG >= 7.3.0",
+                  "product_id": "CSAFPID-0004"
                 }
               }
             ]
@@ -184,9 +203,18 @@
       "remediations": [
         {
           "category": "none_available",
-          "details": "Fix not yet announced.",
+          "details": "No information available.",
           "product_ids": [
             "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Use the [Hashicorp Vault](https://www.topquadrant.com/doc/latest/administrator_guide/edg_installation_and_authentication/hashicorp_integration.html) to store credentials. Hashicorp Vault integration was first available in TopBraid EDG [7.3.0](https://www.topquadrant.com/release-note/7-3/).",
+          "url": "https://www.topquadrant.com/doc/latest/administrator_guide/edg_installation_and_authentication/hashicorp_integration.html",
+          "date": "2022-11-15T18:50:00Z",
+          "product_ids": [
+            "CSAFPID-0004"
           ]
         }
       ],

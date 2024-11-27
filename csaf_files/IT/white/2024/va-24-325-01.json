@@ -17,17 +17,22 @@
           "name": "Secvisogram",
           "version": "2.5.15"
         },
-        "date": "2024-11-20T19:16:03Z"
+        "date": "2024-11-27T04:20:32Z"
       },
       "id": "VA-24-325-01",
       "initial_release_date": "2024-11-20T18:33:57Z",
       "status": "final",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "revision_history": [
         {
           "number": "1.0.0",
-          "summary": "Initial release",
+          "summary": "Initial publication",
           "date": "2024-11-20T18:33:57Z"
+        },
+        {
+          "number": "1.0.1",
+          "date": "2024-11-27T17:00:00Z",
+          "summary": "Added Recommended Practices and document language"
         }
       ]
     },
@@ -39,7 +44,7 @@
     "notes": [
       {
         "text": "All information products included in https://github.com/cisagov/CSAF/tree/develop/csaf_files/IT/white are provided \\\"as is\\\" for informational purposes only. The Department of Homeland Security (DHS) does not provide any warranties of any kind regarding any information contained within. DHS does not endorse any commercial product or service, referenced in this product or otherwise. Further dissemination of this product is governed by the Traffic Light Protocol (TLP) marking in the header. For more information about TLP, see https://us-cert.cisa.gov/tlp/.",
-        "title": "Legal Disclaimer",
+        "title": "Legal Notice",
         "category": "legal_disclaimer"
       },
       {
@@ -61,6 +66,11 @@
         "text": "Versa Networks Versa Director, by default, configures PostgreSQL to listen on all network interfaces using database credentials shared by multiple installations. From [Advising Vulnerability In Versa Director](https://security-portal.versa-networks.com/emailbulletins/6735a300415abb89e9a8a9d3): \"This combination allows an unauthenticated attacker to access and administer the database or read local filesystem contents to escalate privileges on the system.... Starting with the latest 22.1.4 version of Versa Director, the software will automatically restrict access to the Postgres and HA ports to only the local and peer Versa Directors.\" The advisory does not directly address the \"...common password across all instances of Versa Director.\"",
         "title": "Risk Evaluation",
         "category": "summary"
+      },
+      {
+        "category": "general",
+        "title": "Recommended Practices",
+        "text": "From the Versa Networks [bulletin](https://security-portal.versa-networks.com/emailbulletins/6735a300415abb89e9a8a9d3):\n\n> Starting with the latest 22.1.4 version of Versa Director, the software will automatically restrict access to the Postgres and HA ports to only the local and peer Versa Directors. For older releases, Versa recommends performing [manual hardening of HA ports](https://docs.versa-networks.com/Solutions/System_Hardening/Perform_Manual_Hardening_for_Versa_Director#Secure_HA_Ports)."
       }
     ],
     "references": [
@@ -69,7 +79,8 @@
         "summary": "Vulnerability Advisory VA-24-325-01 CSAF",
         "category": "self"
       }
-    ]
+    ],
+    "lang": "en-US"
   },
   "product_tree": {
     "branches": [
