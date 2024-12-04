@@ -3,13 +3,10 @@
     "acknowledgments": [
       {
         "names": [
-          "Haviv Vaizman",
-          "Hay Mizrachi",
-          "Alik Koldobsky",
-          "Ofir Manzur",
-          "Nikolay Sokolik"
+          "Tomer Goldschmidt",
+          "Noam Moshe"
         ],
-        "organization": "OTORIO",
+        "organization": "Claroty Team82",
         "summary": "reporting these vulnerabilities to CISA"
       }
     ],
@@ -31,8 +28,23 @@
       },
       {
         "category": "summary",
-        "text": "Successful exploitation of these vulnerabilities could allow an attacker to obtain sensitive information and compromise the vulnerable device and other connected machines.",
+        "text": "Successful exploitation of this vulnerabilities could allow attackers to take near full control over the device. ",
         "title": "Risk evaluation"
+      },
+      {
+        "category": "other",
+        "text": "Communications",
+        "title": "Critical infrastructure sectors"
+      },
+      {
+        "category": "other",
+        "text": "Worldwide",
+        "title": "Countries/areas deployed"
+      },
+      {
+        "category": "other",
+        "text": "China",
+        "title": "Company headquarters location"
       },
       {
         "category": "general",
@@ -114,13 +126,13 @@
     "references": [
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-22-307-01 JSON",
-        "url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2022/icsa-22-307-01.json"
+        "summary": "ICS Advisory ICSA-24-338-01 JSON",
+        "url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-338-01.json"
       },
       {
         "category": "self",
-        "summary": "ICSA Advisory ICSA-22-307-01 - Web Version",
-        "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-22-307-01"
+        "summary": "ICSA Advisory ICSA-24-338-01 - Web Version",
+        "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-24-338-01"
       },
       {
         "category": "external",
@@ -163,7 +175,7 @@
         "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
-    "title": "ETIC Telecom Remote Access Server (RAS) (Update B)",
+    "title": "Ruijie Reyee OS",
     "tracking": {
       "current_release_date": "2024-12-03T07:00:00.000000Z",
       "generator": {
@@ -172,30 +184,18 @@
           "version": "1.0.0"
         }
       },
-      "id": "ICSA-22-307-01",
-      "initial_release_date": "2022-11-03T06:00:00.000000Z",
+      "id": "ICSA-24-338-01",
+      "initial_release_date": "2024-12-03T07:00:00.000000Z",
       "revision_history": [
         {
-          "date": "2022-11-03T06:00:00.000000Z",
+          "date": "2024-12-03T07:00:00.000000Z",
           "legacy_version": "Initial",
           "number": "1",
           "summary": "Initial Publication"
-        },
-        {
-          "date": "2023-07-27T06:00:00.000000Z",
-          "legacy_version": "Update A",
-          "number": "2",
-          "summary": "Update A - Added new vulnerabilities"
-        },
-        {
-          "date": "2024-12-03T07:00:00.000000Z",
-          "legacy_version": "Update B",
-          "number": "3",
-          "summary": "Update B - Modified vulnerabilities to include CVSS 4.0 score. Added mitigations, and vulnerabilities CVE-2024-26156, CVE-2024-26157, CVE-2024-26154, CVE-2024-26155, and CVE-2024-26153."
         }
       ],
       "status": "final",
-      "version": "3"
+      "version": "1"
     }
   },
   "product_tree": {
@@ -206,47 +206,33 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "<4.5.0",
+                "name": ">=2.206.x|<2.320.x",
                 "product": {
-                  "name": "ETIC Telecom ETIC Telecom RAS: <4.5.0",
+                  "name": "Ruijie Reyee OS: >=2.206.x|<2.320.x",
                   "product_id": "CSAFPID-0001"
                 }
               }
             ],
             "category": "product_name",
-            "name": "ETIC Telecom RAS"
-          },
-          {
-            "branches": [
-              {
-                "category": "product_version_range",
-                "name": "<4.11.0",
-                "product": {
-                  "name": "ETIC Telecom ETIC Telecom RAS: <4.11.0",
-                  "product_id": "CSAFPID-0002"
-                }
-              }
-            ],
-            "category": "product_name",
-            "name": "ETIC Telecom RAS"
+            "name": "Reyee OS"
           }
         ],
         "category": "vendor",
-        "name": "ETIC Telecom"
+        "name": "Ruijie"
       }
     ]
   },
   "vulnerabilities": [
     {
-      "cve": "CVE-2022-3703",
+      "cve": "CVE-2024-47547",
       "cwe": {
-        "id": "CWE-345",
-        "name": "Insufficient Verification of Data Authenticity"
+        "id": "CWE-640",
+        "name": "Weak Password Recovery Mechanism for Forgotten Password"
       },
       "notes": [
         {
           "category": "summary",
-          "text": "All versions of ETIC Telecom Remote Access Server (RAS) 4.5.0 and prior's web portal is vulnerable to accepting malicious firmware packages that could provide a backdoor to an attacker and provide privilege escalation to the device. ",
+          "text": "Ruijie Reyee OS versions 2.206.x up to but not including 2.320.x contains a weak mechanism for its users to change their passwords which leaves authentication vulnerable to brute force attacks.",
           "title": "Vulnerability Summary"
         }
       ],
@@ -259,43 +245,209 @@
         {
           "category": "external",
           "summary": "www.cve.org",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2022-3703"
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-47547"
         },
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:A/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H"
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L"
         },
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:H/AT:N/PR:H/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:H"
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N"
         }
       ],
       "remediations": [
         {
           "category": "mitigation",
-          "details": "For the installed devices, ETIC Telecom recommends:",
+          "details": "Ruijie reports that the issues have been fixed on the cloud and no action is needed by end users.",
           "product_ids": [
             "CSAFPID-0001"
           ]
-        },
-        {
-          "category": "mitigation",
-          "details": "CVE-2022-3703: For all firmware versions 4.7.0 and above, there is a code signature verification for firmware packages. To reduce the attack surface in versions prior to 4.7.0, ETIC Telecom advises users to verify: (1) That the downloaded firmware comes from a trusted source (ETIC Telecom web site), and (2) The hash of the firmware files.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.etictelecom.com/en/softwares-download/"
         }
       ],
       "scores": [
         {
           "cvss_v3": {
-            "baseScore": 7.6,
+            "baseScore": 9.4,
+            "baseSeverity": "CRITICAL",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0001"
+          ]
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-42494",
+      "cwe": {
+        "id": "CWE-359",
+        "name": "Exposure of Private Personal Information to an Unauthorized Actor"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "Ruijie Reyee OS versions 2.206.x up to but not including 2.320.x contains a a feature that could enable sub accounts or attackers attackers to view and exfiltrate sensitive information from all cloud accounts registered to Ruijie's services",
+          "title": "Vulnerability Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0001"
+        ]
+      },
+      "references": [
+        {
+          "category": "external",
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-42494"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "remediations": [
+        {
+          "category": "mitigation",
+          "details": "Ruijie reports that the issues have been fixed on the cloud and no action is needed by end users.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 6.5,
+            "baseSeverity": "MEDIUM",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0001"
+          ]
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-51727",
+      "cwe": {
+        "id": "CWE-826",
+        "name": "Premature Release of Resource During Expected Lifetime"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "Ruijie Reyee OS versions 2.206.x up to but not including 2.320.x contains a a feature that could enable attackers to invalidate a legitimate users session and cause a denial-of-service attack on a user's account.",
+          "title": "Vulnerability Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0001"
+        ]
+      },
+      "references": [
+        {
+          "category": "external",
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-51727"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "remediations": [
+        {
+          "category": "mitigation",
+          "details": "Ruijie reports that the issues have been fixed on the cloud and no action is needed by end users.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 6.5,
+            "baseSeverity": "MEDIUM",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0001"
+          ]
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-47043",
+      "cwe": {
+        "id": "CWE-922",
+        "name": "Insecure Storage of Sensitive Information"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "Ruijie Reyee OS versions 2.206.x up to but not including 2.320.x could enable an attacker to correlate a device serial number and the owner's phone number and part of the email address.",
+          "title": "Vulnerability Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0001"
+        ]
+      },
+      "references": [
+        {
+          "category": "external",
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-47043"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "remediations": [
+        {
+          "category": "mitigation",
+          "details": "Ruijie reports that the issues have been fixed on the cloud and no action is needed by end users.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 7.5,
             "baseSeverity": "HIGH",
-            "vectorString": "CVSS:3.0/AV:A/AC:H/PR:H/UI:N/S:C/C:H/I:H/A:H",
-            "version": "3.0"
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "version": "3.1"
           },
           "products": [
             "CSAFPID-0001"
@@ -304,15 +456,15 @@
       ]
     },
     {
-      "cve": "CVE-2022-41607",
+      "cve": "CVE-2024-45722",
       "cwe": {
-        "id": "CWE-22",
-        "name": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+        "id": "CWE-1391",
+        "name": "Use of Weak Credentials"
       },
       "notes": [
         {
           "category": "summary",
-          "text": "All versions of ETIC Telecom Remote Access Server (RAS) 4.5.0 and prior's application programmable interface (API) is vulnerable to directory traversal through several different methods. This could allow an attacker to read sensitive files from the server, including SSH private keys, passwords, scripts, python objects, database files, and more.",
+          "text": "Ruijie Reyee OS versions 2.206.x up to but not including 2.320.x uses weak credential mechanism that could allow an attacker to easily calculate MQTT credentials.",
           "title": "Vulnerability Summary"
         }
       ],
@@ -325,442 +477,328 @@
         {
           "category": "external",
           "summary": "www.cve.org",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2022-41607"
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-45722"
         },
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:A/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N"
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
         },
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:L/AT:N/PR:H/UI:N/VC:N/VI:N/VA:N/SC:H/SI:N/SA:N"
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
         }
       ],
       "remediations": [
         {
           "category": "mitigation",
-          "details": "For the installed devices, ETIC Telecom recommends:",
+          "details": "Ruijie reports that the issues have been fixed on the cloud and no action is needed by end users.",
           "product_ids": [
             "CSAFPID-0001"
           ]
-        },
-        {
-          "category": "mitigation",
-          "details": "CVE-2022-41607: This issue has been fixed in version 4.7.0. To reduce the attack surface in versions prior to 4.7.0, ETIC Telecom advises users to verify in the router configuration that: (1) The administration web page is accessible only through the LAN side over HTTPS, and (2) The administration web page is protected with authentication.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.etictelecom.com/en/softwares-download/"
         }
       ],
       "scores": [
         {
           "cvss_v3": {
-            "baseScore": 6.2,
-            "baseSeverity": "MEDIUM",
-            "vectorString": "CVSS:3.0/AV:A/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N",
-            "version": "3.0"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2022-40981",
-      "cwe": {
-        "id": "CWE-434",
-        "name": "Unrestricted Upload of File with Dangerous Type"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "All versions of ETIC Telecom Remote Access Server (RAS) 4.5.0 and prior is vulnerable to malicious file upload. An attacker could take advantage of this to store malicious files on the server, which could override sensitive and useful existing files on the filesystem, fill the hard disk to full capacity, or compromise the affected device or computers with administrator level privileges connected to the affected device.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "www.cve.org",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2022-40981"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:A/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:L"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:L/AT:N/PR:H/UI:N/VC:N/VI:N/VA:N/SC:L/SI:L/SA:L"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "For the installed devices, ETIC Telecom recommends:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "mitigation",
-          "details": "CVE-2022-40981: For all firmware versions 4.7.0 and above, only valid configuration files can be uploaded to the device.  To reduce the attack surface in versions prior to 4.7.0, ETIC Telecom advises users to verify in the router configuration that: (1) The administration web page is accessible only through the LAN side over HTTPS, and (2) The administration web page is protected with authentication.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.etictelecom.com/en/softwares-download/"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 5.9,
-            "baseSeverity": "MEDIUM",
-            "vectorString": "CVSS:3.0/AV:A/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:L",
-            "version": "3.0"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2024-26156",
-      "cwe": {
-        "id": "CWE-79",
-        "name": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "All versions of ETIC Telecom Remote Access Server (RAS) prior to 4.5.0 are vulnerable to reflected cross site scripting (XSS) attacks in the method parameter. The ETIC RAS web server uses dynamic pages that gets their input from the client side and reflects the input in its response to the client.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "www.cve.org",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2024-26156"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "For the installed devices, ETIC Telecom recommends:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "mitigation",
-          "details": "CVE-2024-26156: For all firmware versions 4.5.0 and above, this issue is fixed. To reduce the attack surface in versions prior to 4.5.0, ETIC Telecom advises users to verify in the router configuration that: (1) The administration web page is accessible only through the LAN side over HTTPS, and (2) The administration web page is protected with authentication.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.etictelecom.com/en/softwares-download/"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 4.8,
-            "baseSeverity": "MEDIUM",
-            "vectorString": "CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
-            "version": "3.0"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2024-26157",
-      "cwe": {
-        "id": "CWE-79",
-        "name": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "All versions of ETIC Telecom Remote Access Server (RAS) prior to 4.5.0 are vulnerable to reflected cross site scripting (XSS) attacks in get_view method under view parameter. The ETIC RAS web server uses dynamic pages that get their input from the client side and reflect the input in their response to the client.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "www.cve.org",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2024-26157"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "For the installed devices, ETIC Telecom recommends:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "mitigation",
-          "details": "CVE-2024-26157: This issue has been fixed in version 4.5.0. Update to firmware version 4.5.0 and above.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.etictelecom.com/en/softwares-download/"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 6.1,
-            "baseSeverity": "MEDIUM",
-            "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
-            "version": "3.0"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2024-26154",
-      "cwe": {
-        "id": "CWE-79",
-        "name": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "All versions of ETIC Telecom Remote Access Server (RAS) prior to 4.5.0 are vulnerable to reflected cross site scripting in the appliance site name. The ETIC RAS web server saves the site name and then presents it to the administrators in a few different pages.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "www.cve.org",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2024-26154"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "For the installed devices, ETIC Telecom recommends:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "mitigation",
-          "details": "CVE-2024-26154: For all firmware versions 4.5.0 and above, this issue is fixed. For versions prior to 4.5.0, to reduce the attack surface, ETIC Telecom advise the user to verify in the router configuration that: (1) The administration web page is accessible only through the LAN side over HTTPS, and (2) The administration web page is protected with authentication.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.etictelecom.com/en/softwares-download/"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 4.8,
-            "baseSeverity": "MEDIUM",
-            "vectorString": "CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
-            "version": "3.0"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2024-26155",
-      "cwe": {
-        "id": "CWE-319",
-        "name": "Cleartext Transmission of Sensitive Information"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "All versions of ETIC Telecom Remote Access Server (RAS) prior to 4.5.0 expose clear text credentials in the web portal. An attacker can access the ETIC RAS web portal and view the HTML code which is configured to be hidden, thus allowing a connection to the ETIC RAS ssh server, which could enable an attacker to perform actions on the device.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0001"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "www.cve.org",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2024-26155"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:N/VI:N/VA:N/SC:H/SI:N/SA:N"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "For the installed devices, ETIC Telecom recommends:",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "mitigation",
-          "details": "CVE-2024-26155: For all firmware versions 4.5.0 and above, this issue is fixed. For versions prior to 4.5.0, to reduce the attack surface, ETIC Telecom advise the user to verify in the router configuration that: (1) The administration web page is accessible only through the LAN side over HTTPS, and (2) The administration web page is protected with authentication.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://www.etictelecom.com/en/softwares-download/"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 6.8,
-            "baseSeverity": "MEDIUM",
-            "vectorString": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N",
-            "version": "3.0"
-          },
-          "products": [
-            "CSAFPID-0001"
-          ]
-        }
-      ]
-    },
-    {
-      "cve": "CVE-2024-26153",
-      "cwe": {
-        "id": "CWE-352",
-        "name": "Cross-Site Request Forgery (CSRF)"
-      },
-      "notes": [
-        {
-          "category": "summary",
-          "text": "All versions of ETIC Telecom Remote Access Server (RAS) prior to 4.9.19 are vulnerable to cross-site request forgery (CSRF). An external attacker with no access to the device can force the end user into submitting a \"setconf\" method request, not requiring any CSRF token, which can lead into denial of service on the device.",
-          "title": "Vulnerability Summary"
-        }
-      ],
-      "product_status": {
-        "known_affected": [
-          "CSAFPID-0002"
-        ]
-      },
-      "references": [
-        {
-          "category": "external",
-          "summary": "www.cve.org",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2024-26153"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:N/A:H"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:N/VA:N/SC:N/SI:N/SA:H"
-        }
-      ],
-      "remediations": [
-        {
-          "category": "mitigation",
-          "details": "For the installed devices, ETIC Telecom recommends:",
-          "product_ids": [
-            "CSAFPID-0002"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "CVE-2024-26153: ETIC Telecom RAS recommends updating the affected devices' firmware to version 4.11.0  or later.",
-          "product_ids": [
-            "CSAFPID-0002"
-          ],
-          "url": "https://www.etictelecom.com/en/softwares-download/"
-        }
-      ],
-      "scores": [
-        {
-          "cvss_v3": {
-            "baseScore": 7.4,
+            "baseScore": 7.5,
             "baseSeverity": "HIGH",
-            "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:N/A:H",
-            "version": "3.0"
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "version": "3.1"
           },
           "products": [
-            "CSAFPID-0002"
+            "CSAFPID-0001"
+          ]
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-47791",
+      "cwe": {
+        "id": "CWE-155",
+        "name": "Improper Neutralization of Wildcards or Matching Symbols"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "Ruijie Reyee OS versions 2.206.x up to but not including 2.320.x could allow an attacker to subscribe to partial possible topics in Ruijie MQTT broker, and receive partial messages being sent to and from devices.",
+          "title": "Vulnerability Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0001"
+        ]
+      },
+      "references": [
+        {
+          "category": "external",
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-47791"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "remediations": [
+        {
+          "category": "mitigation",
+          "details": "Ruijie reports that the issues have been fixed on the cloud and no action is needed by end users.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0001"
+          ]
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-46874",
+      "cwe": {
+        "id": "CWE-280",
+        "name": "Improper Handling of Insufficient Permissions or Privileges "
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "Ruijie Reyee OS versions 2.206.x up to but not including 2.320.x could allow MQTT clients connecting with device credentials to send messages to some topics. Attackers with device credentials could issue commands to other devices on behalf of Ruijie's cloud.",
+          "title": "Vulnerability Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0001"
+        ]
+      },
+      "references": [
+        {
+          "category": "external",
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-46874"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "remediations": [
+        {
+          "category": "mitigation",
+          "details": "Ruijie reports that the issues have been fixed on the cloud and no action is needed by end users.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 8.1,
+            "baseSeverity": "HIGH",
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0001"
+          ]
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-48874",
+      "cwe": {
+        "id": "CWE-918",
+        "name": "Server-Side Request Forgery (SSRF)"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "Ruijie Reyee OS versions 2.206.x up to but not including 2.320.x could give attackers the ability to force Ruijie's proxy servers to perform any request the attackers choose. Using this, attackers could access internal services used by Ruijie and their internal cloud infrastructure via AWS cloud metadata services.",
+          "title": "Vulnerability Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0001"
+        ]
+      },
+      "references": [
+        {
+          "category": "external",
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-48874"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "remediations": [
+        {
+          "category": "mitigation",
+          "details": "Ruijie reports that the issues have been fixed on the cloud and no action is needed by end users.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 9.8,
+            "baseSeverity": "CRITICAL",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0001"
+          ]
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-52324",
+      "cwe": {
+        "id": "CWE-242",
+        "name": "Use of Inherently Dangerous Function"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "Ruijie Reyee OS versions 2.206.x up to but not including 2.320.x uses an inherently dangerous function which could allow an attacker to send a malicious MQTT message which could result in devices executing arbitrary OS commands.",
+          "title": "Vulnerability Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0001"
+        ]
+      },
+      "references": [
+        {
+          "category": "external",
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-52324"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "remediations": [
+        {
+          "category": "mitigation",
+          "details": "Ruijie reports that the issues have been fixed on the cloud and no action is needed by end users.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 9.8,
+            "baseSeverity": "CRITICAL",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0001"
+          ]
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-47146",
+      "cwe": {
+        "id": "CWE-402",
+        "name": "Transmission of Private Resources into a New Sphere ('Resource Leak')"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "Ruijie Reyee OS versions 2.206.x up to but not including 2.320.x could allow an attacker to obtain the devices serial number if physically adjacent and sniffing the RAW WIFI signal.",
+          "title": "Vulnerability Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0001"
+        ]
+      },
+      "references": [
+        {
+          "category": "external",
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-47146"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "remediations": [
+        {
+          "category": "mitigation",
+          "details": "Ruijie reports that the issues have been fixed on the cloud and no action is needed by end users.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 6.5,
+            "baseSeverity": "MEDIUM",
+            "vectorString": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0001"
           ]
         }
       ]
