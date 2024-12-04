@@ -3,10 +3,11 @@
     "acknowledgments": [
       {
         "names": [
-          "Asher Davila"
+          "Asher Davila",
+          "Malav Vyas"
         ],
         "organization": "Palo Alto Networks",
-        "summary": "reporting AlarmWorX64 MMX Pager Agent vulnerability  to ICONICS"
+        "summary": "reporting AlarmWorX64 MMX Pager Agent vulnerability to ICONICS"
       }
     ],
     "category": "csaf_security_advisory",
@@ -27,7 +28,7 @@
       },
       {
         "category": "summary",
-        "text": "Successful exploitation of these vulnerabilities could result in denial-of-service, improper privilege management, or potentially remote code execution.",
+        "text": "Successful exploitation of these vulnerabilities could result in denial of service, improper privilege management, or potentially remote code execution.",
         "title": "Risk evaluation"
       },
       {
@@ -174,14 +175,15 @@
         "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
-    "title": "ICONICS and Mitsubishi Electric Products",
+    "title": "ICONICS and Mitsubishi Electric Products (Update A)",
     "tracking": {
-      "current_release_date": "2024-07-02T06:00:00.000000Z",
+      "current_release_date": "2024-12-03T07:00:00.000000Z",
       "generator": {
         "engine": {
-          "name": "CISA CSAF Generator",
-          "version": "1.0.0"
-        }
+          "name": "Secvisogram",
+          "version": "2.5.16"
+        },
+        "date": "2024-12-03T22:50:52.079Z"
       },
       "id": "ICSA-24-184-03",
       "initial_release_date": "2024-07-02T06:00:00.000000Z",
@@ -191,10 +193,16 @@
           "legacy_version": "Initial",
           "number": "1",
           "summary": "Initial Publication"
+        },
+        {
+          "date": "2024-12-03T07:00:00.000000Z",
+          "legacy_version": "Update A",
+          "number": "2",
+          "summary": "Update A - Added Mitsubishi Electric MC Works64, re-categorized CVE-2023-4807 as CWE-347."
         }
       ],
       "status": "final",
-      "version": "1"
+      "version": "2"
     }
   },
   "product_tree": {
@@ -249,7 +257,7 @@
                 "category": "product_version_range",
                 "name": "<10.97.3",
                 "product": {
-                  "name": "ICONICS, Mitsubishi Electric ICONICS Suite including GENESIS64, Hyper Historian, AnalytiX, and MobileHMI: <10.97.3",
+                  "name": "ICONICS Suite including GENESIS64, Hyper Historian, AnalytiX, and MobileHMI: <10.97.3",
                   "product_id": "CSAFPID-0004"
                 }
               }
@@ -259,7 +267,27 @@
           }
         ],
         "category": "vendor",
-        "name": "ICONICS, Mitsubishi Electric"
+        "name": "ICONICS"
+      },
+      {
+        "name": "Mitsubishi Electric",
+        "category": "vendor",
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Mitsubishi Electric MC Works64",
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "vers:all/*",
+                "product": {
+                  "name": "Mitsubishi Electric MC Works64: vers:all/*",
+                  "product_id": "CSAFPID-0005"
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -285,8 +313,8 @@
       "references": [
         {
           "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-2650"
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-2650"
         },
         {
           "category": "external",
@@ -297,7 +325,7 @@
       "remediations": [
         {
           "category": "mitigation",
-          "details": "Versions 10.97.3 and later have mitigations for these vulnerabilities.  ICONICS recommends that users of its products take the following mitigation steps:",
+          "details": "ICONICS Product Suite versions 10.97.3 and later have mitigations for these vulnerabilities.  ICONICS and Mitsubishi Electric recommends that users of its products take the following mitigation steps:",
           "product_ids": [
             "CSAFPID-0001"
           ]
@@ -314,7 +342,8 @@
           "details": "If planning to use the AlarmWorX64 MMX Pager agent, follow the guidelines provided in the ICONICS Whitepaper on Security Vulnerabilities June 2024 edition.",
           "product_ids": [
             "CSAFPID-0001"
-          ]
+          ],
+          "url": "https://iconics.com/About/Security/CERT"
         },
         {
           "category": "mitigation",
@@ -326,7 +355,7 @@
         },
         {
           "category": "mitigation",
-          "details": "ICONICS and Mitsubishi Electric is releasing security updates as critical fixes/rollup releases. Refer to the ICONICS Whitepaper on Security Vulnerabilities, the most recent version of which can be found here, and to the Mitsubishi Electric security advisory for information on the availability of the security updates.",
+          "details": "ICONICS is releasing security updates as critical fixes/rollup releases. Refer to the ICONICS whitepaper on security vulnerabilities, the most recent version of which can be found here.",
           "product_ids": [
             "CSAFPID-0001"
           ],
@@ -334,7 +363,7 @@
         },
         {
           "category": "mitigation",
-          "details": "ICONICS and Mitsubishi Electric is releasing security updates as critical fixes/rollup releases. Refer to the ICONICS Whitepaper on Security Vulnerabilities, the most recent version of which can be found here, and to the Mitsubishi Electric security advisory for information on the availability of the security updates.",
+          "details": "MC Works64 users should take the mitigations described in the Mitsubishi Electric security advisory, since there are no plans to release a fix version.",
           "product_ids": [
             "CSAFPID-0001"
           ],
@@ -376,8 +405,8 @@
       "references": [
         {
           "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4807"
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-4807"
         },
         {
           "category": "external",
@@ -388,7 +417,7 @@
       "remediations": [
         {
           "category": "mitigation",
-          "details": "Versions 10.97.3 and later have mitigations for these vulnerabilities.  ICONICS recommends that users of its products take the following mitigation steps:",
+          "details": "ICONICS Product Suite versions 10.97.3 and later have mitigations for these vulnerabilities.  ICONICS and Mitsubishi Electric recommends that users of its products take the following mitigation steps:",
           "product_ids": [
             "CSAFPID-0001"
           ]
@@ -405,7 +434,8 @@
           "details": "If planning to use the AlarmWorX64 MMX Pager agent, follow the guidelines provided in the ICONICS Whitepaper on Security Vulnerabilities June 2024 edition.",
           "product_ids": [
             "CSAFPID-0001"
-          ]
+          ],
+          "url": "https://iconics.com/About/Security/CERT"
         },
         {
           "category": "mitigation",
@@ -417,7 +447,7 @@
         },
         {
           "category": "mitigation",
-          "details": "ICONICS and Mitsubishi Electric is releasing security updates as critical fixes/rollup releases. Refer to the ICONICS Whitepaper on Security Vulnerabilities, the most recent version of which can be found here, and to the Mitsubishi Electric security advisory for information on the availability of the security updates.",
+          "details": "ICONICS is releasing security updates as critical fixes/rollup releases. Refer to the ICONICS whitepaper on security vulnerabilities, the most recent version of which can be found here.",
           "product_ids": [
             "CSAFPID-0001"
           ],
@@ -425,7 +455,7 @@
         },
         {
           "category": "mitigation",
-          "details": "ICONICS and Mitsubishi Electric is releasing security updates as critical fixes/rollup releases. Refer to the ICONICS Whitepaper on Security Vulnerabilities, the most recent version of which can be found here, and to the Mitsubishi Electric security advisory for information on the availability of the security updates.",
+          "details": "MC Works64 users should take the mitigations described in the Mitsubishi Electric security advisory, since there are no plans to release a fix version.",
           "product_ids": [
             "CSAFPID-0001"
           ],
@@ -461,14 +491,15 @@
       ],
       "product_status": {
         "known_affected": [
-          "CSAFPID-0002"
+          "CSAFPID-0002",
+          "CSAFPID-0005"
         ]
       },
       "references": [
         {
           "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2024-1182"
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-1182"
         },
         {
           "category": "external",
@@ -479,46 +510,53 @@
       "remediations": [
         {
           "category": "mitigation",
-          "details": "Versions 10.97.3 and later have mitigations for these vulnerabilities.  ICONICS recommends that users of its products take the following mitigation steps:",
+          "details": "ICONICS Product Suite versions 10.97.3 and later have mitigations for these vulnerabilities.  ICONICS and Mitsubishi Electric recommends that users of its products take the following mitigation steps:",
           "product_ids": [
-            "CSAFPID-0002"
+            "CSAFPID-0002",
+            "CSAFPID-0005"
           ]
         },
         {
           "category": "mitigation",
           "details": "Use the 10.97.3 version.",
           "product_ids": [
-            "CSAFPID-0002"
+            "CSAFPID-0002",
+            "CSAFPID-0005"
           ]
         },
         {
           "category": "mitigation",
           "details": "If planning to use the AlarmWorX64 MMX Pager agent, follow the guidelines provided in the ICONICS Whitepaper on Security Vulnerabilities June 2024 edition.",
           "product_ids": [
-            "CSAFPID-0002"
-          ]
-        },
-        {
-          "category": "mitigation",
-          "details": "ICONICS and Mitsubishi Electric recommends updating the ICONICS Suite with the latest security patches as they become available. ICONICS Suite security patches may be found here (login required).",
-          "product_ids": [
-            "CSAFPID-0002"
-          ],
-          "url": "https://partners.iconics.com/Home.aspx"
-        },
-        {
-          "category": "mitigation",
-          "details": "ICONICS and Mitsubishi Electric is releasing security updates as critical fixes/rollup releases. Refer to the ICONICS Whitepaper on Security Vulnerabilities, the most recent version of which can be found here, and to the Mitsubishi Electric security advisory for information on the availability of the security updates.",
-          "product_ids": [
-            "CSAFPID-0002"
+            "CSAFPID-0002",
+            "CSAFPID-0005"
           ],
           "url": "https://iconics.com/About/Security/CERT"
         },
         {
           "category": "mitigation",
-          "details": "ICONICS and Mitsubishi Electric is releasing security updates as critical fixes/rollup releases. Refer to the ICONICS Whitepaper on Security Vulnerabilities, the most recent version of which can be found here, and to the Mitsubishi Electric security advisory for information on the availability of the security updates.",
+          "details": "ICONICS and Mitsubishi Electric recommends updating the ICONICS Suite with the latest security patches as they become available. ICONICS Suite security patches may be found here (login required).",
           "product_ids": [
-            "CSAFPID-0002"
+            "CSAFPID-0002",
+            "CSAFPID-0005"
+          ],
+          "url": "https://partners.iconics.com/Home.aspx"
+        },
+        {
+          "category": "mitigation",
+          "details": "ICONICS is releasing security updates as critical fixes/rollup releases. Refer to the ICONICS whitepaper on security vulnerabilities, the most recent version of which can be found here.",
+          "product_ids": [
+            "CSAFPID-0002",
+            "CSAFPID-0005"
+          ],
+          "url": "https://iconics.com/About/Security/CERT"
+        },
+        {
+          "category": "mitigation",
+          "details": "MC Works64 users should take the mitigations described in the Mitsubishi Electric security advisory, since there are no plans to release a fix version.",
+          "product_ids": [
+            "CSAFPID-0002",
+            "CSAFPID-0005"
           ],
           "url": "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2024-004_en.pdf"
         }
@@ -526,13 +564,14 @@
       "scores": [
         {
           "cvss_v3": {
-            "baseScore": 7.0,
+            "baseScore": 7,
             "baseSeverity": "HIGH",
             "vectorString": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
             "version": "3.1"
           },
           "products": [
-            "CSAFPID-0002"
+            "CSAFPID-0002",
+            "CSAFPID-0005"
           ]
         }
       ]
@@ -552,14 +591,15 @@
       ],
       "product_status": {
         "known_affected": [
-          "CSAFPID-0003"
+          "CSAFPID-0003",
+          "CSAFPID-0005"
         ]
       },
       "references": [
         {
           "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2024-1573"
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-1573"
         },
         {
           "category": "external",
@@ -570,46 +610,53 @@
       "remediations": [
         {
           "category": "mitigation",
-          "details": "Versions 10.97.3 and later have mitigations for these vulnerabilities.  ICONICS recommends that users of its products take the following mitigation steps:",
+          "details": "ICONICS Product Suite versions 10.97.3 and later have mitigations for these vulnerabilities.  ICONICS and Mitsubishi Electric recommends that users of its products take the following mitigation steps:",
           "product_ids": [
-            "CSAFPID-0003"
+            "CSAFPID-0003",
+            "CSAFPID-0005"
           ]
         },
         {
           "category": "mitigation",
           "details": "Use the 10.97.3 version.",
           "product_ids": [
-            "CSAFPID-0003"
+            "CSAFPID-0003",
+            "CSAFPID-0005"
           ]
         },
         {
           "category": "mitigation",
           "details": "If planning to use the AlarmWorX64 MMX Pager agent, follow the guidelines provided in the ICONICS Whitepaper on Security Vulnerabilities June 2024 edition.",
           "product_ids": [
-            "CSAFPID-0003"
-          ]
-        },
-        {
-          "category": "mitigation",
-          "details": "ICONICS and Mitsubishi Electric recommends updating the ICONICS Suite with the latest security patches as they become available. ICONICS Suite security patches may be found here (login required).",
-          "product_ids": [
-            "CSAFPID-0003"
-          ],
-          "url": "https://partners.iconics.com/Home.aspx"
-        },
-        {
-          "category": "mitigation",
-          "details": "ICONICS and Mitsubishi Electric is releasing security updates as critical fixes/rollup releases. Refer to the ICONICS Whitepaper on Security Vulnerabilities, the most recent version of which can be found here, and to the Mitsubishi Electric security advisory for information on the availability of the security updates.",
-          "product_ids": [
-            "CSAFPID-0003"
+            "CSAFPID-0003",
+            "CSAFPID-0005"
           ],
           "url": "https://iconics.com/About/Security/CERT"
         },
         {
           "category": "mitigation",
-          "details": "ICONICS and Mitsubishi Electric is releasing security updates as critical fixes/rollup releases. Refer to the ICONICS Whitepaper on Security Vulnerabilities, the most recent version of which can be found here, and to the Mitsubishi Electric security advisory for information on the availability of the security updates.",
+          "details": "ICONICS and Mitsubishi Electric recommends updating the ICONICS Suite with the latest security patches as they become available. ICONICS Suite security patches may be found here (login required).",
           "product_ids": [
-            "CSAFPID-0003"
+            "CSAFPID-0003",
+            "CSAFPID-0005"
+          ],
+          "url": "https://partners.iconics.com/Home.aspx"
+        },
+        {
+          "category": "mitigation",
+          "details": "ICONICS is releasing security updates as critical fixes/rollup releases. Refer to the ICONICS whitepaper on security vulnerabilities, the most recent version of which can be found here.",
+          "product_ids": [
+            "CSAFPID-0003",
+            "CSAFPID-0005"
+          ],
+          "url": "https://iconics.com/About/Security/CERT"
+        },
+        {
+          "category": "mitigation",
+          "details": "MC Works64 users should take the mitigations described in the Mitsubishi Electric security advisory, since there are no plans to release a fix version.",
+          "product_ids": [
+            "CSAFPID-0003",
+            "CSAFPID-0005"
           ],
           "url": "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2024-004_en.pdf"
         }
@@ -623,7 +670,8 @@
             "version": "3.1"
           },
           "products": [
-            "CSAFPID-0003"
+            "CSAFPID-0003",
+            "CSAFPID-0005"
           ]
         }
       ]
@@ -637,20 +685,21 @@
       "notes": [
         {
           "category": "summary",
-          "text": "Use of externally-controlled input to select classes or code (‘Unsafe Reflection') condition in the licensing service (used by ICONICS licensing) can result in an improper authorization condition.    ",
+          "text": "Use of externally-controlled input to select classes or code (‘unsafe reflection') condition in the licensing service (used by ICONICS licensing) can result in an improper authorization condition.    ",
           "title": "Vulnerability Summary"
         }
       ],
       "product_status": {
         "known_affected": [
-          "CSAFPID-0004"
+          "CSAFPID-0004",
+          "CSAFPID-0005"
         ]
       },
       "references": [
         {
           "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2024-1574"
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-1574"
         },
         {
           "category": "external",
@@ -661,46 +710,53 @@
       "remediations": [
         {
           "category": "mitigation",
-          "details": "Versions 10.97.3 and later have mitigations for these vulnerabilities.  ICONICS recommends that users of its products take the following mitigation steps:",
+          "details": "ICONICS Product Suite versions 10.97.3 and later have mitigations for these vulnerabilities.  ICONICS and Mitsubishi Electric recommends that users of its products take the following mitigation steps:",
           "product_ids": [
-            "CSAFPID-0004"
+            "CSAFPID-0004",
+            "CSAFPID-0005"
           ]
         },
         {
           "category": "mitigation",
           "details": "Use the 10.97.3 version.",
           "product_ids": [
-            "CSAFPID-0004"
+            "CSAFPID-0004",
+            "CSAFPID-0005"
           ]
         },
         {
           "category": "mitigation",
           "details": "If planning to use the AlarmWorX64 MMX Pager agent, follow the guidelines provided in the ICONICS Whitepaper on Security Vulnerabilities June 2024 edition.",
           "product_ids": [
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "mitigation",
-          "details": "ICONICS and Mitsubishi Electric recommends updating the ICONICS Suite with the latest security patches as they become available. ICONICS Suite security patches may be found here (login required).",
-          "product_ids": [
-            "CSAFPID-0004"
-          ],
-          "url": "https://partners.iconics.com/Home.aspx"
-        },
-        {
-          "category": "mitigation",
-          "details": "ICONICS and Mitsubishi Electric is releasing security updates as critical fixes/rollup releases. Refer to the ICONICS Whitepaper on Security Vulnerabilities, the most recent version of which can be found here, and to the Mitsubishi Electric security advisory for information on the availability of the security updates.",
-          "product_ids": [
-            "CSAFPID-0004"
+            "CSAFPID-0004",
+            "CSAFPID-0005"
           ],
           "url": "https://iconics.com/About/Security/CERT"
         },
         {
           "category": "mitigation",
-          "details": "ICONICS and Mitsubishi Electric is releasing security updates as critical fixes/rollup releases. Refer to the ICONICS Whitepaper on Security Vulnerabilities, the most recent version of which can be found here, and to the Mitsubishi Electric security advisory for information on the availability of the security updates.",
+          "details": "ICONICS and Mitsubishi Electric recommends updating the ICONICS Suite with the latest security patches as they become available. ICONICS Suite security patches may be found here (login required).",
           "product_ids": [
-            "CSAFPID-0004"
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ],
+          "url": "https://partners.iconics.com/Home.aspx"
+        },
+        {
+          "category": "mitigation",
+          "details": "ICONICS is releasing security updates as critical fixes/rollup releases. Refer to the ICONICS whitepaper on security vulnerabilities, the most recent version of which can be found here.",
+          "product_ids": [
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ],
+          "url": "https://iconics.com/About/Security/CERT"
+        },
+        {
+          "category": "mitigation",
+          "details": "MC Works64 users should take the mitigations described in the Mitsubishi Electric security advisory, since there are no plans to release a fix version.",
+          "product_ids": [
+            "CSAFPID-0004",
+            "CSAFPID-0005"
           ],
           "url": "https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2024-004_en.pdf"
         }
@@ -714,7 +770,8 @@
             "version": "3.1"
           },
           "products": [
-            "CSAFPID-0004"
+            "CSAFPID-0004",
+            "CSAFPID-0005"
           ]
         }
       ]

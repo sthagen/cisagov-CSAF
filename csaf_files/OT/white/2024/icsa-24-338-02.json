@@ -2,16 +2,8 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens ProductCERT",
-        "summary": "reporting this vulnerability to CISA."
-      },
-      {
-        "names": [
-          "Raquel Gálvez",
-          "Julián Menéndez"
-        ],
-        "organization": "Hispasec Sistemas",
-        "summary": "reporting the vulnerability to Siemens"
+        "organization": "Siemens",
+        "summary": "reporting these vulnerabilities to CISA."
       }
     ],
     "category": "csaf_security_advisory",
@@ -27,12 +19,12 @@
     "notes": [
       {
         "category": "summary",
-        "text": "Mendix Runtime contains an observable response discrepancy vulnerability when validating usernames during authentication. This could allow unauthenticated remote attackers to distinguish between valid and invalid usernames.\n\nSiemens has released new versions for the affected products and recommends to update to the latest versions.",
+        "text": "Palo Alto Networks has published [1] information on vulnerabilities in PAN-OS. This advisory lists the related Siemens Industrial products affected by these vulnerabilities.\n\nSiemens is preparing fix versions and recommends countermeasures for products where fixes are not, or not yet available.\n\n[1]  https://security.paloaltonetworks.com/",
         "title": "Summary"
       },
       {
         "category": "general",
-        "text": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: \nhttps://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\nAdditional information on Industrial Security by Siemens can be found at: \nhttps://www.siemens.com/industrialsecurity",
+        "text": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: \nhttps://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
         "title": "General Recommendations"
       },
       {
@@ -57,7 +49,7 @@
       },
       {
         "category": "other",
-        "text": "Multiple",
+        "text": "Energy",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -72,7 +64,7 @@
       },
       {
         "category": "general",
-        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of these vulnerabilities.",
+        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability.",
         "title": "Recommended Practices"
       },
       {
@@ -120,23 +112,23 @@
     "references": [
       {
         "category": "self",
-        "summary": "SSA-097435: Usernames Disclosure Vulnerability in Mendix Runtime - CSAF Version",
-        "url": "https://cert-portal.siemens.com/productcert/csaf/ssa-097435.json"
+        "summary": "SSA-354569: Multiple Vulnerabilities in Palo Alto Networks Virtual NGFW on RUGGEDCOM APE1808 Devices - CSAF Version",
+        "url": "https://cert-portal.siemens.com/productcert/csaf/ssa-354569.json"
       },
       {
         "category": "self",
-        "summary": "SSA-097435: Usernames Disclosure Vulnerability in Mendix Runtime - HTML Version",
-        "url": "https://cert-portal.siemens.com/productcert/html/ssa-097435.html"
+        "summary": "SSA-354569: Multiple Vulnerabilities in Palo Alto Networks Virtual NGFW on RUGGEDCOM APE1808 Devices - HTML Version",
+        "url": "https://cert-portal.siemens.com/productcert/html/ssa-354569.html"
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-24-256-05 JSON",
-        "url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-256-05.json"
+        "summary": "ICS Advisory ICSA-24-338-02 JSON",
+        "url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-338-02.json"
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-24-256-05 - Web Version",
-        "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-24-256-05"
+        "summary": "ICS Advisory ICSA-24-338-02 - Web Version",
+        "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-24-338-02"
       },
       {
         "category": "external",
@@ -169,57 +161,27 @@
         "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
-    "title": "Siemens Mendix Runtime",
+    "title": "Siemens RUGGEDCOM APE1808",
     "tracking": {
-      "current_release_date": "2024-11-26T00:00:00.000000Z",
+      "current_release_date": "2024-11-22T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
           "version": "1.0.0"
         }
       },
-      "id": "ICSA-24-256-05",
-      "initial_release_date": "2024-09-10T00:00:00.000000Z",
+      "id": "ICSA-24-338-02",
+      "initial_release_date": "2024-11-22T00:00:00.000000Z",
       "revision_history": [
         {
-          "date": "2024-09-10T00:00:00.000000Z",
+          "date": "2024-11-22T00:00:00.000000Z",
           "legacy_version": "1.0",
           "number": "1",
           "summary": "Publication Date"
-        },
-        {
-          "date": "2024-09-12T00:00:00.000000Z",
-          "legacy_version": "1.1",
-          "number": "2",
-          "summary": "Added fix for Mendix Runtime V8; updated Acknowledgements"
-        },
-        {
-          "date": "2024-10-08T00:00:00.000000Z",
-          "legacy_version": "1.2",
-          "number": "3",
-          "summary": "Fixed a bug in the csaf output"
-        },
-        {
-          "date": "2024-10-10T00:00:00.000000Z",
-          "legacy_version": "1.3",
-          "number": "4",
-          "summary": "Corrected fix version information for all Mendix Runtime version lines (fix releases not yet available, except for V8)"
-        },
-        {
-          "date": "2024-11-12T00:00:00.000000Z",
-          "legacy_version": "1.4",
-          "number": "5",
-          "summary": "Added fix releases for remaining Mendix Runtime version lines"
-        },
-        {
-          "date": "2024-11-26T00:00:00.000000Z",
-          "legacy_version": "1.5",
-          "number": "6",
-          "summary": "Added information about additional required actions after having installed a fix release"
         }
       ],
       "status": "final",
-      "version": "6"
+      "version": "1"
     }
   },
   "product_tree": {
@@ -230,71 +192,23 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/<V8.18.32",
+                "name": "vers:all/*",
                 "product": {
-                  "name": "Mendix Runtime V8",
+                  "name": "RUGGEDCOM APE1808",
                   "product_id": "CSAFPID-0001"
                 }
-              }
-            ],
-            "category": "product_name",
-            "name": "Mendix Runtime V8"
-          },
-          {
-            "branches": [
+              },
               {
                 "category": "product_version_range",
-                "name": "vers:all/<V9.24.29",
+                "name": "vers:all/*",
                 "product": {
-                  "name": "Mendix Runtime V9",
+                  "name": "RUGGEDCOM APE1808",
                   "product_id": "CSAFPID-0002"
                 }
               }
             ],
             "category": "product_name",
-            "name": "Mendix Runtime V9"
-          },
-          {
-            "branches": [
-              {
-                "category": "product_version_range",
-                "name": "vers:all/<V10.16.0",
-                "product": {
-                  "name": "Mendix Runtime V10",
-                  "product_id": "CSAFPID-0003"
-                }
-              }
-            ],
-            "category": "product_name",
-            "name": "Mendix Runtime V10"
-          },
-          {
-            "branches": [
-              {
-                "category": "product_version_range",
-                "name": "vers:all/<V10.6.16",
-                "product": {
-                  "name": "Mendix Runtime V10.6",
-                  "product_id": "CSAFPID-0004"
-                }
-              }
-            ],
-            "category": "product_name",
-            "name": "Mendix Runtime V10.6"
-          },
-          {
-            "branches": [
-              {
-                "category": "product_version_range",
-                "name": "vers:all/<V10.12.7",
-                "product": {
-                  "name": "Mendix Runtime V10.12",
-                  "product_id": "CSAFPID-0005"
-                }
-              }
-            ],
-            "category": "product_name",
-            "name": "Mendix Runtime V10.12"
+            "name": "RUGGEDCOM APE1808"
           }
         ],
         "category": "vendor",
@@ -304,93 +218,186 @@
   },
   "vulnerabilities": [
     {
-      "cve": "CVE-2023-49069",
+      "cve": "CVE-2024-0012",
       "cwe": {
-        "id": "CWE-204",
-        "name": "Observable Response Discrepancy"
+        "id": "CWE-306",
+        "name": "Missing Authentication for Critical Function"
       },
       "notes": [
         {
           "category": "summary",
-          "text": "The authentication mechanism of affected applications contains an observable response discrepancy vulnerability when validating usernames. This could allow unauthenticated remote attackers to distinguish between valid and invalid usernames.",
+          "text": "An authentication bypass in Palo Alto Networks PAN-OS software enables an unauthenticated attacker with network access to the management web interface to gain PAN-OS administrator privileges to perform administrative actions, tamper with the configuration, or exploit other authenticated privilege escalation vulnerabilities like CVE-2024-9474.",
           "title": "Summary"
         }
       ],
       "product_status": {
         "known_affected": [
-          "CSAFPID-0003",
-          "CSAFPID-0005",
-          "CSAFPID-0004",
-          "CSAFPID-0001",
           "CSAFPID-0002"
         ]
       },
       "remediations": [
         {
           "category": "mitigation",
-          "details": "Do not use basic authentication, but setup an alternative authentication module (e.g. SAML, MendixSSO), or your own Identity Provider (IDP)",
-          "product_ids": [
-            "CSAFPID-0003",
-            "CSAFPID-0005",
-            "CSAFPID-0004",
-            "CSAFPID-0001",
-            "CSAFPID-0002"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V8.18.32 or later version. Note that after installing the fix version, the issue still occurs and is only fully resolved after a first successful login. A successful login is also required after every app restart.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V9.24.29 or later version. Note that after installing the fix version, the issue still occurs and is only fully resolved after a first successful login. A successful login is also required after every app restart.",
+          "details": "Exposure can be reduced by limiting access to the management interface to trusted internal IP addresses as described in \nPalo Alto Networks' Security Advisory",
           "product_ids": [
             "CSAFPID-0002"
           ]
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V10.16.0 or later version. Note that after installing the fix version, the issue still occurs and is only fully resolved after a first successful login. A successful login is also required after every app restart.",
+          "details": "Contact customer support to receive patch and update information",
           "product_ids": [
-            "CSAFPID-0003"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V10.6.16 or later version. Note that after installing the fix version, the issue still occurs and is only fully resolved after a first successful login. A successful login is also required after every app restart.",
-          "product_ids": [
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V10.12.7 or later version. Note that after installing the fix version, the issue still occurs and is only fully resolved after a first successful login. A successful login is also required after every app restart.",
-          "product_ids": [
-            "CSAFPID-0005"
+            "CSAFPID-0002"
           ]
         }
       ],
       "scores": [
         {
           "cvss_v3": {
-            "baseScore": 5.3,
-            "baseSeverity": "MEDIUM",
-            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+            "baseScore": 10.0,
+            "baseSeverity": "CRITICAL",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
             "version": "3.1"
           },
           "products": [
-            "CSAFPID-0003",
-            "CSAFPID-0005",
-            "CSAFPID-0004",
-            "CSAFPID-0001",
             "CSAFPID-0002"
           ]
         }
       ],
-      "title": "CVE-2023-49069"
+      "title": "CVE-2024-0012"
+    },
+    {
+      "cve": "CVE-2024-2550",
+      "cwe": {
+        "id": "CWE-476",
+        "name": "NULL Pointer Dereference"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "A null pointer dereference vulnerability in the GlobalProtect gateway in Palo Alto Networks PAN-OS software enables an unauthenticated attacker to stop the GlobalProtect service on the firewall by sending a specially crafted packet that causes a denial of service (DoS) condition. Repeated attempts to trigger this condition result in the firewall entering maintenance mode.",
+          "title": "Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0001"
+        ]
+      },
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "details": "Contact customer support to receive patch and update information",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "title": "CVE-2024-2550"
+    },
+    {
+      "cve": "CVE-2024-2552",
+      "cwe": {
+        "id": "CWE-22",
+        "name": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "A command injection vulnerability in Palo Alto Networks PAN-OS software enables an authenticated administrator to bypass system restrictions in the management plane and delete files on the firewall.",
+          "title": "Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0002"
+        ]
+      },
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "details": "Contact customer support to receive patch and update information",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 6.0,
+            "baseSeverity": "MEDIUM",
+            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0002"
+          ]
+        }
+      ],
+      "title": "CVE-2024-2552"
+    },
+    {
+      "cve": "CVE-2024-9474",
+      "cwe": {
+        "id": "CWE-78",
+        "name": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "A privilege escalation vulnerability in Palo Alto Networks PAN-OS software allows a PAN-OS administrator with access to the management web interface to perform actions on the firewall with root privileges.",
+          "title": "Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0002"
+        ]
+      },
+      "remediations": [
+        {
+          "category": "mitigation",
+          "details": "Exposure can be reduced by limiting access to the management interface to trusted internal IP addresses as described in \nPalo Alto Networks' Security Advisory",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Contact customer support to receive patch and update information",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 4.9,
+            "baseSeverity": "MEDIUM",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0002"
+          ]
+        }
+      ],
+      "title": "CVE-2024-9474"
     }
   ]
 }
