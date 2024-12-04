@@ -15,9 +15,9 @@
       "generator": {
         "engine": {
           "name": "Secvisogram",
-          "version": "2.5.14"
+          "version": "2.5.15"
         },
-        "date": "2024-11-14T00:59:43Z"
+        "date": "2024-11-27T04:03:47Z"
       },
       "id": "VA-24-254-01",
       "initial_release_date": "2024-09-10T20:08:00Z",
@@ -79,7 +79,8 @@
         "summary": "Vulnerability Advisory VA-24-254-01 CSAF",
         "category": "self"
       }
-    ]
+    ],
+    "lang": "en-US"
   },
   "product_tree": {
     "branches": [

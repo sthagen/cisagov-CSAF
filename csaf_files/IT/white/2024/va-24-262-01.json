@@ -15,9 +15,9 @@
       "generator": {
         "engine": {
           "name": "Secvisogram",
-          "version": "2.5.14"
+          "version": "2.5.15"
         },
-        "date": "2024-11-14T01:13:17Z"
+        "date": "2024-11-27T04:05:34Z"
       },
       "id": "VA-24-262-01",
       "initial_release_date": "2024-09-18T15:26:00Z",
@@ -59,7 +59,7 @@
       },
       {
         "text": "Upgrade to Planet Fitness Workouts 9.8.12.",
-        "title": "Recommended Practice",
+        "title": "Recommended Practices",
         "category": "general"
       },
       {
@@ -69,7 +69,7 @@
       },
       {
         "text": "Information Technology",
-        "title": "Critical Infastructure Sectors",
+        "title": "Critical Infrastructure Sectors",
         "category": "description"
       }
     ],
@@ -79,7 +79,8 @@
         "summary": "Vulnerability Advisory VA-24-262-01 CSAF",
         "category": "self"
       }
-    ]
+    ],
+    "lang": "en-US"
   },
   "product_tree": {
     "branches": [
