@@ -196,7 +196,7 @@
           "date": "2024-11-12T07:00:00.000000Z",
           "legacy_version": "Update A",
           "number": "2",
-          "summary": "Update A - Additional vulnerability and fixes"
+          "summary": "Update A - Additional vulnerabilities and fixes"
         }
       ],
       "status": "final",
@@ -231,8 +231,8 @@
     {
       "cve": "CVE-2023-28649",
       "cwe": {
-        "id": "CWE-20",
-        "name": "Improper Input Validation"
+        "id": "CWE-413",
+        "name": "Improper Resource Locking"
       },
       "notes": [
         {
@@ -405,8 +405,8 @@
     {
       "cve": "CVE-2023-31241",
       "cwe": {
-        "id": "CWE-284",
-        "name": "Improper Access Control"
+        "id": "CWE-420",
+        "name": "Unprotected Alternate Channel"
       },
       "notes": [
         {
@@ -579,8 +579,8 @@
     {
       "cve": "CVE-2023-28386",
       "cwe": {
-        "id": "CWE-345",
-        "name": "Insufficient Verification of Data Authenticity"
+        "id": "CWE-354",
+        "name": "Improper Validation of Integrity Check Value"
       },
       "notes": [
         {
@@ -753,8 +753,8 @@
     {
       "cve": "CVE-2023-31240",
       "cwe": {
-        "id": "CWE-798",
-        "name": "Use of Hard-coded Credentials"
+        "id": "CWE-1391",
+        "name": "Use of Weak Credentials"
       },
       "notes": [
         {
