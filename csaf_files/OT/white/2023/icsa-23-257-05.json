@@ -2,7 +2,7 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens ProductCERT",
+        "organization": "Siemens",
         "summary": "reporting this vulnerability to CISA."
       }
     ],
@@ -19,7 +19,7 @@
     "notes": [
       {
         "category": "summary",
-        "text": "Several Intel-CPU based SIMATIC IPCs are affected by an information exposure vulnerability (CVE-2022-40982) in the CPU that could allow an authenticated local user to potentially read other users' data [1].\n\nThe issue is also known as \"Gather Data Sampling\" (GDS) or Downfall Attacks. For details refer to the chapter \"Additional Information\".\n\nSiemens is preparing updates and recommends specific countermeasures for products where updates are not, or not yet available.\n\n[1] \nhttps://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00828.html",
+        "text": "Several Intel-CPU based SIMATIC IPCs are affected by an information exposure vulnerability (CVE-2022-40982) in the CPU that could allow an authenticated local user to potentially read other users' data [1].\n\nThe issue is also known as \"Gather Data Sampling\" (GDS) or Downfall Attacks. For details refer to the chapter \"Additional Information\".\n\nSiemens has released new versions for several affected products and recommends to update to the latest versions. Siemens recommends specific countermeasures for products where fixes are not, or not yet available.\n\n[1] \nhttps://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-00828.html",
         "title": "Summary"
       },
       {
@@ -34,7 +34,7 @@
       },
       {
         "category": "legal_disclaimer",
-        "text": "Siemens Security Advisories are subject to the terms and conditions contained in Siemens' underlying license terms or other applicable agreements previously agreed to with Siemens (hereinafter \"License Terms\"). To the extent applicable to information, software or documentation made available in or through a Siemens Security Advisory, the Terms of Use of Siemens' Global Website (https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), in particular Sections 8-10 of the Terms of Use, shall apply additionally. In case of conflicts, the License Terms shall prevail over the Terms of Use.",
+        "text": "The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use.",
         "title": "Terms of Use"
       },
       {
@@ -49,7 +49,7 @@
       },
       {
         "category": "other",
-        "text": "Multiple",
+        "text": "Critical Manufacturing",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -122,16 +122,6 @@
       },
       {
         "category": "self",
-        "summary": "SSA-981975: Information Disclosure Vulnerability in Intel-CPUs (CVE-2022-40982) Impacting SIMATIC IPCs - PDF Version",
-        "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-981975.pdf"
-      },
-      {
-        "category": "self",
-        "summary": "SSA-981975: Information Disclosure Vulnerability in Intel-CPUs (CVE-2022-40982) Impacting SIMATIC IPCs - TXT Version",
-        "url": "https://cert-portal.siemens.com/productcert/txt/ssa-981975.txt"
-      },
-      {
-        "category": "self",
         "summary": "ICS Advisory ICSA-23-257-05 JSON",
         "url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2023/icsa-23-257-05.json"
       },
@@ -173,25 +163,49 @@
     ],
     "title": "Siemens SIMATIC IPCs",
     "tracking": {
-      "current_release_date": "2023-09-12T00:00:00Z",
+      "current_release_date": "2024-12-10T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
-          "version": "1"
+          "version": "1.0.0"
         }
       },
       "id": "ICSA-23-257-05",
-      "initial_release_date": "2023-09-12T00:00:00Z",
+      "initial_release_date": "2023-09-12T00:00:00.000000Z",
       "revision_history": [
         {
-          "date": "2023-09-12T00:00:00Z",
+          "date": "2023-09-12T00:00:00.000000Z",
           "legacy_version": "1.0",
           "number": "1",
           "summary": "Publication Date"
+        },
+        {
+          "date": "2023-11-14T00:00:00.000000Z",
+          "legacy_version": "1.1",
+          "number": "2",
+          "summary": "Added SIMATIC IPC 1047/1047E"
+        },
+        {
+          "date": "2024-07-09T00:00:00.000000Z",
+          "legacy_version": "1.2",
+          "number": "3",
+          "summary": "Added fix for SIMATIC IPC627E / IPC647E / IPC677E / IPC847E and for SIMATIC IPC RW-543A"
+        },
+        {
+          "date": "2024-08-13T00:00:00.000000Z",
+          "legacy_version": "1.3",
+          "number": "4",
+          "summary": "Added fix for SIMATIC Field PG M6 and SIMATIC IPC BX-39A / IPC PX-39A / IPC PX-39A PRO"
+        },
+        {
+          "date": "2024-12-10T00:00:00.000000Z",
+          "legacy_version": "1.4",
+          "number": "5",
+          "summary": "Added fix for SIMATIC IPC1047E"
         }
       ],
-      "status": "interim",
-      "version": "1"
+      "status": "final",
+      "version": "5"
     }
   },
   "product_tree": {
@@ -202,10 +216,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V26.01.11",
                 "product": {
                   "name": "SIMATIC Field PG M6",
-                  "product_id": "1"
+                  "product_id": "CSAFPID-0001"
                 }
               }
             ],
@@ -216,66 +230,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
-                "product": {
-                  "name": "SIMATIC IPC BX-39A",
-                  "product_id": "2"
-                }
-              }
-            ],
-            "category": "product_name",
-            "name": "SIMATIC IPC BX-39A"
-          },
-          {
-            "branches": [
-              {
-                "category": "product_version_range",
-                "name": "vers:all/*",
-                "product": {
-                  "name": "SIMATIC IPC PX-39A",
-                  "product_id": "3"
-                }
-              }
-            ],
-            "category": "product_name",
-            "name": "SIMATIC IPC PX-39A"
-          },
-          {
-            "branches": [
-              {
-                "category": "product_version_range",
-                "name": "vers:all/*",
-                "product": {
-                  "name": "SIMATIC IPC PX-39A PRO",
-                  "product_id": "4"
-                }
-              }
-            ],
-            "category": "product_name",
-            "name": "SIMATIC IPC PX-39A PRO"
-          },
-          {
-            "branches": [
-              {
-                "category": "product_version_range",
-                "name": "vers:all/*",
-                "product": {
-                  "name": "SIMATIC IPC RW-543A",
-                  "product_id": "5"
-                }
-              }
-            ],
-            "category": "product_name",
-            "name": "SIMATIC IPC RW-543A"
-          },
-          {
-            "branches": [
-              {
-                "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V25.02.14",
                 "product": {
                   "name": "SIMATIC IPC627E",
-                  "product_id": "6"
+                  "product_id": "CSAFPID-0002"
                 }
               }
             ],
@@ -286,10 +244,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V25.02.14",
                 "product": {
                   "name": "SIMATIC IPC647E",
-                  "product_id": "7"
+                  "product_id": "CSAFPID-0003"
                 }
               }
             ],
@@ -300,10 +258,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V25.02.14",
                 "product": {
                   "name": "SIMATIC IPC677E",
-                  "product_id": "8"
+                  "product_id": "CSAFPID-0004"
                 }
               }
             ],
@@ -314,15 +272,99 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V25.02.14",
                 "product": {
                   "name": "SIMATIC IPC847E",
-                  "product_id": "9"
+                  "product_id": "CSAFPID-0005"
                 }
               }
             ],
             "category": "product_name",
             "name": "SIMATIC IPC847E"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "vers:all/*",
+                "product": {
+                  "name": "SIMATIC IPC1047",
+                  "product_id": "CSAFPID-0006"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SIMATIC IPC1047"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "vers:all/<V4.2",
+                "product": {
+                  "name": "SIMATIC IPC1047E",
+                  "product_id": "CSAFPID-0007"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SIMATIC IPC1047E"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "vers:all/<V29.01.04",
+                "product": {
+                  "name": "SIMATIC IPC BX-39A",
+                  "product_id": "CSAFPID-0008"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SIMATIC IPC BX-39A"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "vers:all/<V29.01.04",
+                "product": {
+                  "name": "SIMATIC IPC PX-39A",
+                  "product_id": "CSAFPID-0009"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SIMATIC IPC PX-39A"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "vers:all/<V29.01.04",
+                "product": {
+                  "name": "SIMATIC IPC PX-39A PRO",
+                  "product_id": "CSAFPID-0010"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SIMATIC IPC PX-39A PRO"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "vers:all/<V1.1.2",
+                "product": {
+                  "name": "SIMATIC IPC RW-543A",
+                  "product_id": "CSAFPID-0011"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SIMATIC IPC RW-543A"
           }
         ],
         "category": "vendor",
@@ -346,15 +388,17 @@
       ],
       "product_status": {
         "known_affected": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9"
+          "CSAFPID-0001",
+          "CSAFPID-0008",
+          "CSAFPID-0009",
+          "CSAFPID-0010",
+          "CSAFPID-0011",
+          "CSAFPID-0006",
+          "CSAFPID-0007",
+          "CSAFPID-0002",
+          "CSAFPID-0003",
+          "CSAFPID-0004",
+          "CSAFPID-0005"
         ]
       },
       "remediations": [
@@ -362,30 +406,64 @@
           "category": "mitigation",
           "details": "Ensure that only trusted persons have access to the system and avoid the configuration of additional accounts",
           "product_ids": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
+            "CSAFPID-0001",
+            "CSAFPID-0008",
+            "CSAFPID-0009",
+            "CSAFPID-0010",
+            "CSAFPID-0011",
+            "CSAFPID-0006",
+            "CSAFPID-0007",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
           ]
         },
         {
-          "category": "none_available",
-          "details": "Currently no fix is available",
+          "category": "no_fix_planned",
+          "details": "Currently no fix is planned",
           "product_ids": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
+            "CSAFPID-0006"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V1.1.2 or later version",
+          "product_ids": [
+            "CSAFPID-0011"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V25.02.14 or later version",
+          "product_ids": [
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V26.01.11 or later version",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V29.01.04 or later version",
+          "product_ids": [
+            "CSAFPID-0008",
+            "CSAFPID-0009",
+            "CSAFPID-0010"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V4.2 or later version",
+          "product_ids": [
+            "CSAFPID-0007"
           ]
         }
       ],
@@ -398,15 +476,17 @@
             "version": "3.1"
           },
           "products": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
+            "CSAFPID-0001",
+            "CSAFPID-0008",
+            "CSAFPID-0009",
+            "CSAFPID-0010",
+            "CSAFPID-0011",
+            "CSAFPID-0006",
+            "CSAFPID-0007",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
           ]
         }
       ],

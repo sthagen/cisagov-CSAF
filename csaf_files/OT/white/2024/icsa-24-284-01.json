@@ -2,14 +2,8 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens ProductCERT",
-        "summary": "reporting this vulnerability to CISA."
-      },
-      {
-        "names": [
-          "David Henrique Estevam de Andrade"
-        ],
-        "summary": "reporting the vulnerability and coordination efforts with Siemens."
+        "names": ["David Henrique Estevam de Andrade"],
+        "summary": "reporting this vulnerability to Siemens."
       }
     ],
     "category": "csaf_security_advisory",
@@ -55,7 +49,7 @@
       },
       {
         "category": "other",
-        "text": "Multiple",
+        "text": "Critical Manufacturing",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -169,7 +163,7 @@
     ],
     "title": "Siemens SIMATIC S7-1500 and S7-1200 CPUs",
     "tracking": {
-      "current_release_date": "2024-11-12T00:00:00.000000Z",
+      "current_release_date": "2024-12-10T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -190,10 +184,16 @@
           "legacy_version": "1.1",
           "number": "2",
           "summary": "Added remediations for SIMATIC S7-1500 CPU 1518-4 PN/DP MFP, CPU 1518-4 PN/DP MFP, CPU 1518F-4 PN/DP MFP, CPU 1518F-4 PN/DP MFP and CPU 1518-4 PN/DP MFP. Added SIPLUS variants for S7-1200 CPUs"
+        },
+        {
+          "date": "2024-12-10T00:00:00.000000Z",
+          "legacy_version": "1.2",
+          "number": "3",
+          "summary": "Added remediation for SIMATIC S7-1200 CPU family V4 (incl. SIPLUS variants)"
         }
       ],
       "status": "final",
-      "version": "2"
+      "version": "3"
     }
   },
   "product_tree": {
@@ -256,7 +256,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1211C AC/DC/Rly (6ES7211-1BE40-0XB0)",
                   "product_id": "CSAFPID-0004",
@@ -275,7 +275,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1211C DC/DC/DC (6ES7211-1AE40-0XB0)",
                   "product_id": "CSAFPID-0005",
@@ -294,7 +294,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1211C DC/DC/Rly (6ES7211-1HE40-0XB0)",
                   "product_id": "CSAFPID-0006",
@@ -313,7 +313,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1212C AC/DC/Rly (6ES7212-1BE40-0XB0)",
                   "product_id": "CSAFPID-0007",
@@ -332,7 +332,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1212C DC/DC/DC (6ES7212-1AE40-0XB0)",
                   "product_id": "CSAFPID-0008",
@@ -351,7 +351,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1212C DC/DC/Rly (6ES7212-1HE40-0XB0)",
                   "product_id": "CSAFPID-0009",
@@ -370,7 +370,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1212FC DC/DC/DC (6ES7212-1AF40-0XB0)",
                   "product_id": "CSAFPID-0010",
@@ -389,7 +389,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1212FC DC/DC/Rly (6ES7212-1HF40-0XB0)",
                   "product_id": "CSAFPID-0011",
@@ -408,7 +408,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1214C AC/DC/Rly (6ES7214-1BG40-0XB0)",
                   "product_id": "CSAFPID-0012",
@@ -427,7 +427,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1214C DC/DC/DC (6ES7214-1AG40-0XB0)",
                   "product_id": "CSAFPID-0013",
@@ -446,7 +446,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1214C DC/DC/Rly (6ES7214-1HG40-0XB0)",
                   "product_id": "CSAFPID-0014",
@@ -465,7 +465,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1214FC DC/DC/DC (6ES7214-1AF40-0XB0)",
                   "product_id": "CSAFPID-0015",
@@ -484,7 +484,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1214FC DC/DC/Rly (6ES7214-1HF40-0XB0)",
                   "product_id": "CSAFPID-0016",
@@ -503,7 +503,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1215C AC/DC/Rly (6ES7215-1BG40-0XB0)",
                   "product_id": "CSAFPID-0017",
@@ -522,7 +522,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1215C DC/DC/DC (6ES7215-1AG40-0XB0)",
                   "product_id": "CSAFPID-0018",
@@ -541,7 +541,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1215C DC/DC/Rly (6ES7215-1HG40-0XB0)",
                   "product_id": "CSAFPID-0019",
@@ -560,7 +560,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1215FC DC/DC/DC (6ES7215-1AF40-0XB0)",
                   "product_id": "CSAFPID-0020",
@@ -579,7 +579,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1215FC DC/DC/Rly (6ES7215-1HF40-0XB0)",
                   "product_id": "CSAFPID-0021",
@@ -598,7 +598,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIMATIC S7-1200 CPU 1217C DC/DC/DC (6ES7217-1AG40-0XB0)",
                   "product_id": "CSAFPID-0022",
@@ -2490,7 +2490,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1212 AC/DC/RLY (6AG1212-1BE40-2XB0)",
                   "product_id": "CSAFPID-0125",
@@ -2509,7 +2509,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1212 AC/DC/RLY (6AG1212-1BE40-4XB0)",
                   "product_id": "CSAFPID-0126",
@@ -2528,7 +2528,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1212 DC/DC/RLY (6AG1212-1HE40-2XB0)",
                   "product_id": "CSAFPID-0127",
@@ -2547,7 +2547,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1212 DC/DC/RLY (6AG1212-1HE40-4XB0)",
                   "product_id": "CSAFPID-0128",
@@ -2566,7 +2566,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1212C DC/DC/DC (6AG1212-1AE40-2XB0)",
                   "product_id": "CSAFPID-0129",
@@ -2585,7 +2585,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1212C DC/DC/DC (6AG1212-1AE40-4XB0)",
                   "product_id": "CSAFPID-0130",
@@ -2604,7 +2604,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1212C DC/DC/DC RAIL (6AG2212-1AE40-1XB0)",
                   "product_id": "CSAFPID-0131",
@@ -2623,7 +2623,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1214 AC/DC/RLY (6AG1214-1BG40-2XB0)",
                   "product_id": "CSAFPID-0132",
@@ -2642,7 +2642,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1214 AC/DC/RLY (6AG1214-1BG40-4XB0)",
                   "product_id": "CSAFPID-0133",
@@ -2661,7 +2661,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1214 AC/DC/RLY (6AG1214-1BG40-5XB0)",
                   "product_id": "CSAFPID-0134",
@@ -2680,7 +2680,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1214 DC/DC/DC (6AG1214-1AG40-2XB0)",
                   "product_id": "CSAFPID-0135",
@@ -2699,7 +2699,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1214 DC/DC/DC (6AG1214-1AG40-4XB0)",
                   "product_id": "CSAFPID-0136",
@@ -2718,7 +2718,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1214 DC/DC/DC (6AG1214-1AG40-5XB0)",
                   "product_id": "CSAFPID-0137",
@@ -2737,7 +2737,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1214 DC/DC/RLY (6AG1214-1HG40-2XB0)",
                   "product_id": "CSAFPID-0138",
@@ -2756,7 +2756,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1214 DC/DC/RLY (6AG1214-1HG40-4XB0)",
                   "product_id": "CSAFPID-0139",
@@ -2775,7 +2775,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1214 DC/DC/RLY (6AG1214-1HG40-5XB0)",
                   "product_id": "CSAFPID-0140",
@@ -2794,7 +2794,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1214C DC/DC/DC RAIL (6AG2214-1AG40-1XB0)",
                   "product_id": "CSAFPID-0141",
@@ -2813,7 +2813,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1214FC DC/DC/DC (6AG1214-1AF40-5XB0)",
                   "product_id": "CSAFPID-0142",
@@ -2832,7 +2832,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1214FC DC/DC/RLY (6AG1214-1HF40-5XB0)",
                   "product_id": "CSAFPID-0143",
@@ -2851,7 +2851,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1215 AC/DC/RLY (6AG1215-1BG40-2XB0)",
                   "product_id": "CSAFPID-0144",
@@ -2870,7 +2870,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1215 AC/DC/RLY (6AG1215-1BG40-4XB0)",
                   "product_id": "CSAFPID-0145",
@@ -2889,7 +2889,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1215 AC/DC/RLY (6AG1215-1BG40-5XB0)",
                   "product_id": "CSAFPID-0146",
@@ -2908,7 +2908,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1215 DC/DC/DC (6AG1215-1AG40-2XB0)",
                   "product_id": "CSAFPID-0147",
@@ -2927,7 +2927,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1215 DC/DC/DC (6AG1215-1AG40-4XB0)",
                   "product_id": "CSAFPID-0148",
@@ -2946,7 +2946,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1215 DC/DC/RLY (6AG1215-1HG40-2XB0)",
                   "product_id": "CSAFPID-0149",
@@ -2965,7 +2965,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1215 DC/DC/RLY (6AG1215-1HG40-4XB0)",
                   "product_id": "CSAFPID-0150",
@@ -2984,7 +2984,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1215 DC/DC/RLY (6AG1215-1HG40-5XB0)",
                   "product_id": "CSAFPID-0151",
@@ -3003,7 +3003,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1215C DC/DC/DC (6AG1215-1AG40-5XB0)",
                   "product_id": "CSAFPID-0152",
@@ -3022,7 +3022,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "vers:all/<V4.7",
                 "product": {
                   "name": "SIPLUS S7-1200 CPU 1215FC DC/DC/DC (6AG1215-1AF40-5XB0)",
                   "product_id": "CSAFPID-0153",
@@ -4093,25 +4093,6 @@
           "details": "Currently no fix is available",
           "product_ids": [
             "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005",
-            "CSAFPID-0006",
-            "CSAFPID-0007",
-            "CSAFPID-0008",
-            "CSAFPID-0009",
-            "CSAFPID-0010",
-            "CSAFPID-0011",
-            "CSAFPID-0012",
-            "CSAFPID-0013",
-            "CSAFPID-0014",
-            "CSAFPID-0015",
-            "CSAFPID-0016",
-            "CSAFPID-0017",
-            "CSAFPID-0018",
-            "CSAFPID-0019",
-            "CSAFPID-0020",
-            "CSAFPID-0021",
-            "CSAFPID-0022",
             "CSAFPID-0023",
             "CSAFPID-0025",
             "CSAFPID-0027",
@@ -4173,35 +4154,6 @@
             "CSAFPID-0122",
             "CSAFPID-0123",
             "CSAFPID-0124",
-            "CSAFPID-0125",
-            "CSAFPID-0126",
-            "CSAFPID-0127",
-            "CSAFPID-0128",
-            "CSAFPID-0129",
-            "CSAFPID-0130",
-            "CSAFPID-0131",
-            "CSAFPID-0132",
-            "CSAFPID-0133",
-            "CSAFPID-0134",
-            "CSAFPID-0135",
-            "CSAFPID-0136",
-            "CSAFPID-0137",
-            "CSAFPID-0138",
-            "CSAFPID-0139",
-            "CSAFPID-0140",
-            "CSAFPID-0141",
-            "CSAFPID-0142",
-            "CSAFPID-0143",
-            "CSAFPID-0144",
-            "CSAFPID-0145",
-            "CSAFPID-0146",
-            "CSAFPID-0147",
-            "CSAFPID-0148",
-            "CSAFPID-0149",
-            "CSAFPID-0150",
-            "CSAFPID-0151",
-            "CSAFPID-0152",
-            "CSAFPID-0153",
             "CSAFPID-0154",
             "CSAFPID-0155",
             "CSAFPID-0156",
@@ -4293,6 +4245,68 @@
             "CSAFPID-0001",
             "CSAFPID-0002"
           ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V4.7 or later version",
+          "product_ids": [
+            "CSAFPID-0125",
+            "CSAFPID-0126",
+            "CSAFPID-0127",
+            "CSAFPID-0128",
+            "CSAFPID-0129",
+            "CSAFPID-0130",
+            "CSAFPID-0131",
+            "CSAFPID-0132",
+            "CSAFPID-0133",
+            "CSAFPID-0134",
+            "CSAFPID-0135",
+            "CSAFPID-0136",
+            "CSAFPID-0137",
+            "CSAFPID-0138",
+            "CSAFPID-0139",
+            "CSAFPID-0140",
+            "CSAFPID-0141",
+            "CSAFPID-0142",
+            "CSAFPID-0143",
+            "CSAFPID-0144",
+            "CSAFPID-0145",
+            "CSAFPID-0146",
+            "CSAFPID-0147",
+            "CSAFPID-0148",
+            "CSAFPID-0149",
+            "CSAFPID-0150",
+            "CSAFPID-0151",
+            "CSAFPID-0152",
+            "CSAFPID-0153"
+          ],
+          "url": "https://support.industry.siemens.com/cs/ww/en/view/109976907/"
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V4.7 or later version",
+          "product_ids": [
+            "CSAFPID-0004",
+            "CSAFPID-0005",
+            "CSAFPID-0006",
+            "CSAFPID-0007",
+            "CSAFPID-0008",
+            "CSAFPID-0009",
+            "CSAFPID-0010",
+            "CSAFPID-0011",
+            "CSAFPID-0012",
+            "CSAFPID-0013",
+            "CSAFPID-0014",
+            "CSAFPID-0015",
+            "CSAFPID-0016",
+            "CSAFPID-0017",
+            "CSAFPID-0018",
+            "CSAFPID-0019",
+            "CSAFPID-0020",
+            "CSAFPID-0021",
+            "CSAFPID-0022"
+          ],
+          "url": "https://support.industry.siemens.com/cs/ww/en/view/109976907/"
         }
       ],
       "scores": [

@@ -2,8 +2,15 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens ProductCERT",
-        "summary": "reporting this vulnerability to CISA."
+        "names": [
+          "Eli Biham",
+          "Sara Bitan",
+          "Alon Dankner",
+          "Arnon Lazerson",
+          "Assaf Rosenbaum"
+        ],
+        "organization": "Faculty of Computer Science, Technion Haifa",
+        "summary": "reporting this vulnerability to Siemens."
       }
     ],
     "category": "csaf_security_advisory",
@@ -18,13 +25,8 @@
     "lang": "en",
     "notes": [
       {
-        "category": "general",
-        "text": "This CSAF advisory was extracted from unstructured data and may contain inaccuracies. If you notice any errors, please reach out to the designated contact at CISA CSAF: central@cisa.dhs.gov",
-        "title": "CISA Disclaimer"
-      },
-      {
         "category": "summary",
-        "text": "The know-how protection feature in Totally Integrated Automation Portal (TIA Portal) does not properly update the encryption of existing program blocks when a project file is updated. This could allow attackers with access to the project file to recover previous - yet unprotected - versions of the project without the knowledge of the know-how protection password.\n\nSiemens recommends specific countermeasures for products where updates are not, or not yet available.",
+        "text": "The know-how protection feature in Totally Integrated Automation Portal (TIA Portal) does not properly update the encryption of existing program blocks when a project file is updated. This could allow attackers with access to the project file to recover previous - yet unprotected - versions of the project without the knowledge of the know-how protection password.\n\nSiemens recommends specific countermeasures for products where fixes are not, or not yet available.",
         "title": "Summary"
       },
       {
@@ -39,7 +41,7 @@
       },
       {
         "category": "legal_disclaimer",
-        "text": "Siemens Security Advisories are subject to the terms and conditions contained in Siemens' underlying license terms or other applicable agreements previously agreed to with Siemens (hereinafter \"License Terms\"). To the extent applicable to information, software or documentation made available in or through a Siemens Security Advisory, the Terms of Use of Siemens' Global Website (https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), in particular Sections 8-10 of the Terms of Use, shall apply additionally. In case of conflicts, the License Terms shall prevail over the Terms of Use.",
+        "text": "The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use.",
         "title": "Terms of Use"
       },
       {
@@ -54,7 +56,7 @@
       },
       {
         "category": "other",
-        "text": "Multiple",
+        "text": "Critical Manufacturing",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -74,17 +76,17 @@
       },
       {
         "category": "general",
-        "text": "Minimizing network exposure for all control system devices and/or systems, ensuring they are not accessible from the internet.",
+        "text": "Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the internet.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "Locating control system networks and remote devices behind firewalls and isolating them from business networks.",
+        "text": "Locate control system networks and remote devices behind firewalls and isolate them from business networks.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "When remote access is required, using more secure methods, such as Virtual Private Networks (VPNs). Recognize VPNs may have vulnerabilities, should be updated to the most recent version available, and are only as secure as the connected devices.",
+        "text": "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. Also recognize VPN is only as secure as its connected devices.",
         "title": "Recommended Practices"
       },
       {
@@ -106,16 +108,11 @@
         "category": "general",
         "text": "Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.",
         "title": "Recommended Practices"
-      },
-      {
-        "category": "other",
-        "text": "No known public exploits specifically target this vulnerability. This vulnerability is not exploitable remotely.",
-        "title": "Exploitability"
       }
     ],
     "publisher": {
       "category": "other",
-      "contact_details": "Email: CISAservicedesk@cisa.dhs.gov;\n Toll Free: 1-888-282-0870",
+      "contact_details": "central@cisa.dhs.gov",
       "name": "CISA",
       "namespace": "https://www.cisa.gov/"
     },
@@ -123,27 +120,17 @@
       {
         "category": "self",
         "summary": "SSA-042050: Know-How Protection Mechanism Failure in TIA Portal - CSAF Version",
-        "url": "https://cert-portal.siemens.com/productcert/csaf/ssa-42050.json"
+        "url": "https://cert-portal.siemens.com/productcert/csaf/ssa-042050.json"
+      },
+      {
+        "category": "self",
+        "summary": "SSA-042050: Know-How Protection Mechanism Failure in TIA Portal - HTML Version",
+        "url": "https://cert-portal.siemens.com/productcert/html/ssa-042050.html"
       },
       {
         "category": "self",
         "summary": "ICS Advisory ICSA-23-166-06 JSON",
         "url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2023/icsa-23-166-06.json"
-      },
-      {
-        "category": "self",
-        "summary": "SSA-042050: Know-How Protection Mechanism Failure in TIA Portal - HTML Version",
-        "url": "https://cert-portal.siemens.com/productcert/html/ssa-42050.html"
-      },
-      {
-        "category": "self",
-        "summary": "SSA-042050: Know-How Protection Mechanism Failure in TIA Portal - PDF Version",
-        "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-42050.pdf"
-      },
-      {
-        "category": "self",
-        "summary": "SSA-042050: Know-How Protection Mechanism Failure in TIA Portal - TXT Version",
-        "url": "https://cert-portal.siemens.com/productcert/txt/ssa-42050.txt"
       },
       {
         "category": "self",
@@ -181,13 +168,13 @@
         "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
-    "title": "Siemens TIA Portal",
+    "title": "Siemens TIA Portal ",
     "tracking": {
-      "current_release_date": "2023-06-13T00:00:00.000000Z",
+      "current_release_date": "2024-12-10T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
-          "version": "1"
+          "version": "1.0.0"
         }
       },
       "id": "ICSA-23-166-06",
@@ -198,10 +185,22 @@
           "legacy_version": "1.0",
           "number": "1",
           "summary": "Publication Date"
+        },
+        {
+          "date": "2023-12-12T00:00:00.000000Z",
+          "legacy_version": "1.1",
+          "number": "2",
+          "summary": "Added Totally Integrated Automation Portal (TIA Portal) V19 as affected product"
+        },
+        {
+          "date": "2024-12-10T00:00:00.000000Z",
+          "legacy_version": "1.2",
+          "number": "3",
+          "summary": "No fix planned for Totally Integrated Automation Portal (TIA Portal) V19; Added Totally Integrated Automation Portal (TIA Portal) V20 as affected product"
         }
       ],
       "status": "final",
-      "version": "1"
+      "version": "3"
     }
   },
   "product_tree": {
@@ -215,7 +214,7 @@
                 "name": "vers:all/*",
                 "product": {
                   "name": "Totally Integrated Automation Portal (TIA Portal) V14",
-                  "product_id": "1"
+                  "product_id": "CSAFPID-0001"
                 }
               }
             ],
@@ -229,7 +228,7 @@
                 "name": "vers:all/*",
                 "product": {
                   "name": "Totally Integrated Automation Portal (TIA Portal) V15",
-                  "product_id": "2"
+                  "product_id": "CSAFPID-0002"
                 }
               }
             ],
@@ -243,7 +242,7 @@
                 "name": "vers:all/*",
                 "product": {
                   "name": "Totally Integrated Automation Portal (TIA Portal) V15.1",
-                  "product_id": "3"
+                  "product_id": "CSAFPID-0003"
                 }
               }
             ],
@@ -257,7 +256,7 @@
                 "name": "vers:all/*",
                 "product": {
                   "name": "Totally Integrated Automation Portal (TIA Portal) V16",
-                  "product_id": "4"
+                  "product_id": "CSAFPID-0004"
                 }
               }
             ],
@@ -271,7 +270,7 @@
                 "name": "vers:all/*",
                 "product": {
                   "name": "Totally Integrated Automation Portal (TIA Portal) V17",
-                  "product_id": "5"
+                  "product_id": "CSAFPID-0005"
                 }
               }
             ],
@@ -285,12 +284,40 @@
                 "name": "vers:all/*",
                 "product": {
                   "name": "Totally Integrated Automation Portal (TIA Portal) V18",
-                  "product_id": "6"
+                  "product_id": "CSAFPID-0006"
                 }
               }
             ],
             "category": "product_name",
             "name": "Totally Integrated Automation Portal (TIA Portal) V18"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "vers:all/*",
+                "product": {
+                  "name": "Totally Integrated Automation Portal (TIA Portal) V19",
+                  "product_id": "CSAFPID-0007"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Totally Integrated Automation Portal (TIA Portal) V19"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "vers:all/*",
+                "product": {
+                  "name": "Totally Integrated Automation Portal (TIA Portal) V20",
+                  "product_id": "CSAFPID-0008"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Totally Integrated Automation Portal (TIA Portal) V20"
           }
         ],
         "category": "vendor",
@@ -314,67 +341,85 @@
       ],
       "product_status": {
         "known_affected": [
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6"
+          "CSAFPID-0001",
+          "CSAFPID-0002",
+          "CSAFPID-0003",
+          "CSAFPID-0004",
+          "CSAFPID-0005",
+          "CSAFPID-0006",
+          "CSAFPID-0007",
+          "CSAFPID-0008"
         ]
       },
       "remediations": [
         {
           "category": "mitigation",
+          "details": "Archive the project: the optimization of project data during archiving removes older, possibly unprotected project content; see also the chapter \"Protecting Blocks\" in the system manual (\nhttps://docs.tia.siemens.cloud/r/en-us/v20/protecting-blocks)",
+          "product_ids": [
+            "CSAFPID-0008"
+          ]
+        },
+        {
+          "category": "mitigation",
           "details": "Archive the project: the optimization of project data during archiving removes older, possibly unprotected project content; see also the chapter \"Protecting Blocks\" in the system manual (\nhttps://support.industry.siemens.com/cs/mdm/109742284?c=87347935883)",
           "product_ids": [
-            "1"
+            "CSAFPID-0001"
           ]
         },
         {
           "category": "mitigation",
           "details": "Archive the project: the optimization of project data during archiving removes older, possibly unprotected project content; see also the chapter \"Protecting Blocks\" in the system manual (\nhttps://support.industry.siemens.com/cs/mdm/109755202?c=105012867723)",
           "product_ids": [
-            "3"
+            "CSAFPID-0003"
           ]
         },
         {
           "category": "mitigation",
           "details": "Archive the project: the optimization of project data during archiving removes older, possibly unprotected project content; see also the chapter \"Protecting Blocks\" in the system manual (\nhttps://support.industry.siemens.com/cs/mdm/109764516?c=105012867723)",
           "product_ids": [
-            "2"
+            "CSAFPID-0002"
           ]
         },
         {
           "category": "mitigation",
           "details": "Archive the project: the optimization of project data during archiving removes older, possibly unprotected project content; see also the chapter \"Protecting Blocks\" in the system manual (\nhttps://support.industry.siemens.com/cs/mdm/109773506?c=126979557387)",
           "product_ids": [
-            "4"
+            "CSAFPID-0004"
           ]
         },
         {
           "category": "mitigation",
           "details": "Archive the project: the optimization of project data during archiving removes older, possibly unprotected project content; see also the chapter \"Protecting Blocks\" in the system manual (\nhttps://support.industry.siemens.com/cs/mdm/109798671?c=132780438283)",
           "product_ids": [
-            "5"
+            "CSAFPID-0005"
           ]
         },
         {
           "category": "mitigation",
           "details": "Archive the project: the optimization of project data during archiving removes older, possibly unprotected project content; see also the chapter \"Protecting Blocks\" in the system manual (\nhttps://support.industry.siemens.com/cs/mdm/109815056?c=132780438283)",
           "product_ids": [
-            "6"
+            "CSAFPID-0006"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Archive the project: the optimization of project data during archiving removes older, possibly unprotected project content; see also the chapters \"Security information\" and \"Protecting Blocks\" in the system manual (\nhttps://support.industry.siemens.com/cs/ww/en/view/109826862/)",
+          "product_ids": [
+            "CSAFPID-0007"
           ]
         },
         {
           "category": "no_fix_planned",
           "details": "Currently no fix is planned",
           "product_ids": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6"
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005",
+            "CSAFPID-0006",
+            "CSAFPID-0007",
+            "CSAFPID-0008"
           ]
         }
       ],
@@ -387,12 +432,14 @@
             "version": "3.1"
           },
           "products": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6"
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005",
+            "CSAFPID-0006",
+            "CSAFPID-0007",
+            "CSAFPID-0008"
           ]
         }
       ],

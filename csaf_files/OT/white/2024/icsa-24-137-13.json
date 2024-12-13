@@ -2,10 +2,6 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens ProductCERT",
-        "summary": "reporting this vulnerability to CISA."
-      },
-      {
         "names": [
           "Jongseong Kim",
           "Byunghyun Kang",
@@ -14,7 +10,7 @@
           "Kwon Yul",
           "Seungchan Kim"
         ],
-        "organization": "Team today-0day (bob 12th)",
+        "organization": "Team today-0day",
         "summary": "reporting this vulnerability to Siemens."
       }
     ],
@@ -61,7 +57,7 @@
       },
       {
         "category": "other",
-        "text": "Multiple",
+        "text": "Critical Manufacturing",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -175,7 +171,7 @@
     ],
     "title": "Siemens Industrial Products",
     "tracking": {
-      "current_release_date": "2024-11-12T00:00:00.000000Z",
+      "current_release_date": "2024-12-10T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -214,10 +210,16 @@
           "legacy_version": "1.4",
           "number": "5",
           "summary": "Added fix for SINUMERIK PLC Programming Tool"
+        },
+        {
+          "date": "2024-12-10T00:00:00.000000Z",
+          "legacy_version": "1.5",
+          "number": "6",
+          "summary": "Added fix for SIMATIC S7-PCT, SIMATIC STEP 7 V5, SIMATIC WinCC Runtime Advanced and Totally Integrated Automation Portal (TIA Portal) V17"
         }
       ],
       "status": "final",
-      "version": "5"
+      "version": "6"
     }
   },
   "product_tree": {
@@ -230,22 +232,8 @@
                 "category": "product_version_range",
                 "name": "vers:all/*",
                 "product": {
-                  "name": "S7-PCT",
-                  "product_id": "CSAFPID-0001"
-                }
-              }
-            ],
-            "category": "product_name",
-            "name": "S7-PCT"
-          },
-          {
-            "branches": [
-              {
-                "category": "product_version_range",
-                "name": "vers:all/*",
-                "product": {
                   "name": "Security Configuration Tool (SCT)",
-                  "product_id": "CSAFPID-0002"
+                  "product_id": "CSAFPID-0001"
                 }
               }
             ],
@@ -259,7 +247,7 @@
                 "name": "<V5.0_SP2",
                 "product": {
                   "name": "SIMATIC Automation Tool",
-                  "product_id": "CSAFPID-0003"
+                  "product_id": "CSAFPID-0002"
                 }
               }
             ],
@@ -273,7 +261,7 @@
                 "name": "<V9.1_SP2_Upd5",
                 "product": {
                   "name": "SIMATIC BATCH V9.1",
-                  "product_id": "CSAFPID-0004"
+                  "product_id": "CSAFPID-0003"
                 }
               }
             ],
@@ -287,7 +275,7 @@
                 "name": "<V16_Update_8",
                 "product": {
                   "name": "SIMATIC NET PC Software V16",
-                  "product_id": "CSAFPID-0005"
+                  "product_id": "CSAFPID-0004"
                 }
               }
             ],
@@ -301,7 +289,7 @@
                 "name": "vers:all/*",
                 "product": {
                   "name": "SIMATIC NET PC Software V17",
-                  "product_id": "CSAFPID-0006"
+                  "product_id": "CSAFPID-0005"
                 }
               }
             ],
@@ -315,7 +303,7 @@
                 "name": "<V18_SP1",
                 "product": {
                   "name": "SIMATIC NET PC Software V18",
-                  "product_id": "CSAFPID-0007"
+                  "product_id": "CSAFPID-0006"
                 }
               }
             ],
@@ -329,7 +317,7 @@
                 "name": "<V19_Update_2",
                 "product": {
                   "name": "SIMATIC NET PC Software V19",
-                  "product_id": "CSAFPID-0008"
+                  "product_id": "CSAFPID-0007"
                 }
               }
             ],
@@ -343,7 +331,7 @@
                 "name": "<V9.1_SP2_UC05",
                 "product": {
                   "name": "SIMATIC PCS 7 V9.1",
-                  "product_id": "CSAFPID-0009"
+                  "product_id": "CSAFPID-0008"
                 }
               }
             ],
@@ -357,7 +345,7 @@
                 "name": "<V9.2_SP2_Upd3",
                 "product": {
                   "name": "SIMATIC PDM V9.2",
-                  "product_id": "CSAFPID-0010"
+                  "product_id": "CSAFPID-0009"
                 }
               }
             ],
@@ -371,7 +359,7 @@
                 "name": "<V9.1_SP2_Upd3",
                 "product": {
                   "name": "SIMATIC Route Control V9.1",
-                  "product_id": "CSAFPID-0011"
+                  "product_id": "CSAFPID-0010"
                 }
               }
             ],
@@ -382,7 +370,21 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<V3.5_SP3_Update_6",
+                "product": {
+                  "name": "SIMATIC S7-PCT",
+                  "product_id": "CSAFPID-0011"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SIMATIC S7-PCT"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<V5.7_SP3",
                 "product": {
                   "name": "SIMATIC STEP 7 V5",
                   "product_id": "CSAFPID-0012"
@@ -438,7 +440,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<V17_Update_8",
                 "product": {
                   "name": "SIMATIC WinCC Runtime Advanced",
                   "product_id": "CSAFPID-0016"
@@ -510,22 +512,8 @@
                 "category": "product_version_range",
                 "name": "vers:all/*",
                 "product": {
-                  "name": "SIMATIC WinCC Unified PC Runtime V18",
-                  "product_id": "CSAFPID-0021"
-                }
-              }
-            ],
-            "category": "product_name",
-            "name": "SIMATIC WinCC Unified PC Runtime V18"
-          },
-          {
-            "branches": [
-              {
-                "category": "product_version_range",
-                "name": "vers:all/*",
-                "product": {
                   "name": "SIMATIC WinCC V7.4",
-                  "product_id": "CSAFPID-0022"
+                  "product_id": "CSAFPID-0021"
                 }
               }
             ],
@@ -539,7 +527,7 @@
                 "name": "<V7.5_SP2_Update_17",
                 "product": {
                   "name": "SIMATIC WinCC V7.5",
-                  "product_id": "CSAFPID-0023"
+                  "product_id": "CSAFPID-0022"
                 }
               }
             ],
@@ -553,7 +541,7 @@
                 "name": "<V8.0_Update_5",
                 "product": {
                   "name": "SIMATIC WinCC V8.0",
-                  "product_id": "CSAFPID-0024"
+                  "product_id": "CSAFPID-0023"
                 }
               }
             ],
@@ -567,7 +555,7 @@
                 "name": "<V19_SP1",
                 "product": {
                   "name": "SINAMICS Startdrive",
-                  "product_id": "CSAFPID-0025"
+                  "product_id": "CSAFPID-0024"
                 }
               }
             ],
@@ -581,7 +569,7 @@
                 "name": "vers:all/<V6.23",
                 "product": {
                   "name": "SINUMERIK ONE virtual",
-                  "product_id": "CSAFPID-0026"
+                  "product_id": "CSAFPID-0025"
                 }
               }
             ],
@@ -595,7 +583,7 @@
                 "name": "vers:all/<V3.3.12",
                 "product": {
                   "name": "SINUMERIK PLC Programming Tool",
-                  "product_id": "CSAFPID-0027"
+                  "product_id": "CSAFPID-0026"
                 }
               }
             ],
@@ -609,7 +597,7 @@
                 "name": "vers:all/<V2.0",
                 "product": {
                   "name": "TIA Portal Cloud Connector",
-                  "product_id": "CSAFPID-0028"
+                  "product_id": "CSAFPID-0027"
                 }
               }
             ],
@@ -623,7 +611,7 @@
                 "name": "vers:all/*",
                 "product": {
                   "name": "Totally Integrated Automation Portal (TIA Portal) V15.1",
-                  "product_id": "CSAFPID-0029"
+                  "product_id": "CSAFPID-0028"
                 }
               }
             ],
@@ -637,7 +625,7 @@
                 "name": "vers:all/*",
                 "product": {
                   "name": "Totally Integrated Automation Portal (TIA Portal) V16",
-                  "product_id": "CSAFPID-0030"
+                  "product_id": "CSAFPID-0029"
                 }
               }
             ],
@@ -648,10 +636,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<V17_Update_8",
                 "product": {
                   "name": "Totally Integrated Automation Portal (TIA Portal) V17",
-                  "product_id": "CSAFPID-0031"
+                  "product_id": "CSAFPID-0030"
                 }
               }
             ],
@@ -665,7 +653,7 @@
                 "name": "<V18_Update_4",
                 "product": {
                   "name": "Totally Integrated Automation Portal (TIA Portal) V18",
-                  "product_id": "CSAFPID-0032"
+                  "product_id": "CSAFPID-0031"
                 }
               }
             ],
@@ -679,7 +667,7 @@
                 "name": "<V19_Update_2",
                 "product": {
                   "name": "Totally Integrated Automation Portal (TIA Portal) V19",
-                  "product_id": "CSAFPID-0033"
+                  "product_id": "CSAFPID-0032"
                 }
               }
             ],
@@ -739,8 +727,7 @@
           "CSAFPID-0029",
           "CSAFPID-0030",
           "CSAFPID-0031",
-          "CSAFPID-0032",
-          "CSAFPID-0033"
+          "CSAFPID-0032"
         ]
       },
       "remediations": [
@@ -748,23 +735,18 @@
           "category": "no_fix_planned",
           "details": "Currently no fix is planned",
           "product_ids": [
-            "CSAFPID-0002",
+            "CSAFPID-0001",
             "CSAFPID-0013",
-            "CSAFPID-0022",
-            "CSAFPID-0029",
-            "CSAFPID-0030"
+            "CSAFPID-0021",
+            "CSAFPID-0028",
+            "CSAFPID-0029"
           ]
         },
         {
           "category": "none_available",
           "details": "Currently no fix is available",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0006",
-            "CSAFPID-0012",
-            "CSAFPID-0016",
-            "CSAFPID-0021",
-            "CSAFPID-0031"
+            "CSAFPID-0005"
           ]
         },
         {
@@ -778,7 +760,7 @@
           "category": "vendor_fix",
           "details": "Update to V16 Update 8 or later version",
           "product_ids": [
-            "CSAFPID-0005"
+            "CSAFPID-0004"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109974091/"
         },
@@ -791,9 +773,16 @@
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V18 Update 4 or later version",
+          "details": "Update to V17 Update 8 or later version",
           "product_ids": [
-            "CSAFPID-0032"
+            "CSAFPID-0016"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V17 Update 8 or later version",
+          "product_ids": [
+            "CSAFPID-0030"
           ]
         },
         {
@@ -807,15 +796,15 @@
           "category": "vendor_fix",
           "details": "Update to V18 SP1 or later version",
           "product_ids": [
-            "CSAFPID-0007"
+            "CSAFPID-0006"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109972655/"
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V19 Update 2 or later version",
+          "details": "Update to V18 Update 4 or later version",
           "product_ids": [
-            "CSAFPID-0033"
+            "CSAFPID-0031"
           ]
         },
         {
@@ -829,15 +818,22 @@
           "category": "vendor_fix",
           "details": "Update to V19 Update 2 or later version",
           "product_ids": [
-            "CSAFPID-0008"
+            "CSAFPID-0007"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109975600/"
         },
         {
           "category": "vendor_fix",
+          "details": "Update to V19 Update 2 or later version",
+          "product_ids": [
+            "CSAFPID-0032"
+          ]
+        },
+        {
+          "category": "vendor_fix",
           "details": "Update to V19 SP1 or later version",
           "product_ids": [
-            "CSAFPID-0025"
+            "CSAFPID-0024"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109963196/"
         },
@@ -845,7 +841,7 @@
           "category": "vendor_fix",
           "details": "Update to V2.0 or later version",
           "product_ids": [
-            "CSAFPID-0028"
+            "CSAFPID-0027"
           ]
         },
         {
@@ -868,29 +864,44 @@
           "category": "vendor_fix",
           "details": "Update to V3.3.12 or later version\nPLC Programming Tool V3.3.12 or later versions are integrated in SINUMERIK 828D Toolbox version V5.24 or later; Updated software version can be obtained from Siemens customer support or a local partner.",
           "product_ids": [
-            "CSAFPID-0027"
+            "CSAFPID-0026"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V3.5 SP3 Update 6 or later version",
+          "product_ids": [
+            "CSAFPID-0011"
           ]
         },
         {
           "category": "vendor_fix",
           "details": "Update to V5.0 SP2 or later version",
           "product_ids": [
-            "CSAFPID-0003"
+            "CSAFPID-0002"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/98161300/"
         },
         {
           "category": "vendor_fix",
+          "details": "Update to V5.7 SP3 or later version",
+          "product_ids": [
+            "CSAFPID-0012"
+          ],
+          "url": "https://support.industry.siemens.com/cs/ww/en/view/109973519/"
+        },
+        {
+          "category": "vendor_fix",
           "details": "Update to V6.23 or later version",
           "product_ids": [
-            "CSAFPID-0026"
+            "CSAFPID-0025"
           ]
         },
         {
           "category": "vendor_fix",
           "details": "Update to V7.5 SP2 Update 17 or later version",
           "product_ids": [
-            "CSAFPID-0023"
+            "CSAFPID-0022"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109793460/"
         },
@@ -898,14 +909,14 @@
           "category": "vendor_fix",
           "details": "Update to V8.0 Update 5 or later version",
           "product_ids": [
-            "CSAFPID-0024"
+            "CSAFPID-0023"
           ]
         },
         {
           "category": "vendor_fix",
           "details": "Update to V9.1 SP2 UC05 or later version",
           "product_ids": [
-            "CSAFPID-0009"
+            "CSAFPID-0008"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109812242/"
         },
@@ -913,7 +924,7 @@
           "category": "vendor_fix",
           "details": "Update to V9.1 SP2 Upd3 or later version",
           "product_ids": [
-            "CSAFPID-0011"
+            "CSAFPID-0010"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109812242/"
         },
@@ -921,7 +932,7 @@
           "category": "vendor_fix",
           "details": "Update to V9.1 SP2 Upd5 or later version",
           "product_ids": [
-            "CSAFPID-0004"
+            "CSAFPID-0003"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109812242/"
         },
@@ -929,7 +940,7 @@
           "category": "vendor_fix",
           "details": "Update to V9.2 SP2 Upd3 or later version",
           "product_ids": [
-            "CSAFPID-0010"
+            "CSAFPID-0009"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109812242/"
         }
@@ -974,8 +985,7 @@
             "CSAFPID-0029",
             "CSAFPID-0030",
             "CSAFPID-0031",
-            "CSAFPID-0032",
-            "CSAFPID-0033"
+            "CSAFPID-0032"
           ]
         }
       ],
