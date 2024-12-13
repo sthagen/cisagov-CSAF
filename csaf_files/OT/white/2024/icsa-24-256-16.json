@@ -2,10 +2,6 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens ProductCERT",
-        "summary": "reporting this vulnerability to CISA."
-      },
-      {
         "names": [
           "Humza Ahmand",
           "Albert Spruyt"
@@ -27,7 +23,7 @@
     "notes": [
       {
         "category": "summary",
-        "text": "Multiple SICAM products are affected by buffer overflow vulnerability in the IEC 61850 Client libraries from Triangle MicroWorks that could allow an unauthenticated remote attacker to create a denial of service condition by sending specially crafted MMS messages.\n\nAffected SICAM and SITIPE products:\n\n- \nSICAM A8000 Device firmware \n\n- ETI5 for CP-8031/CP-8050\n\n\n- \nSICAM EGS Device firmware \n\n- ETI5\n\n\n- \nSICAM 8 Software Solution \n\n- ETI5 \n\n\n- \nSICAM SCC\n\n\n- SITIPE AT\n\nSiemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fix versions and recommends countermeasures for products where fixes are not, or not yet available.",
+        "text": "Multiple SICAM products are affected by buffer overflow vulnerability in the IEC 61850 Client libraries from Triangle MicroWorks that could allow an unauthenticated remote attacker to create a denial of service condition by sending specially crafted MMS messages.\n\nAffected SICAM and SITIPE products:\n\n- \nSICAM A8000 Device firmware \n\n- ET85 for CP-8000/CP-8021/CP-8022\n- ETI5 for CP-8031/CP-8050\n\n\n- \nSICAM EGS Device firmware \n\n- ETI5\n\n\n- \nSICAM 8 Software Solution \n\n- ETI5 \n\n\n- \nSICAM SCC\n\n\n- SITIPE AT\n\nSiemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fix versions and recommends countermeasures for products where fixes are not, or not yet available.",
         "title": "Summary"
       },
       {
@@ -42,7 +38,7 @@
       },
       {
         "category": "legal_disclaimer",
-        "text": "Siemens Security Advisories are subject to the terms and conditions contained in Siemens' underlying license terms or other applicable agreements previously agreed to with Siemens (hereinafter \"License Terms\"). To the extent applicable to information, software or documentation made available in or through a Siemens Security Advisory, the Terms of Use of Siemens' Global Website (https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), in particular Sections 8-10 of the Terms of Use, shall apply additionally. In case of conflicts, the License Terms shall prevail over the Terms of Use.",
+        "text": "The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use.",
         "title": "Terms of Use"
       },
       {
@@ -57,7 +53,7 @@
       },
       {
         "category": "other",
-        "text": "Multiple",
+        "text": "Chemical, Critical Manufacturing, Energy, Food and Agriculture, Water and Wastewater Systems",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -169,9 +165,9 @@
         "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
-    "title": "Siemens Third Party Component in SICAM and SITIPE Products",
+    "title": "Siemens SICAM and SITIPE Products",
     "tracking": {
-      "current_release_date": "2024-09-10T00:00:00.000000Z",
+      "current_release_date": "2024-12-10T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -186,10 +182,16 @@
           "legacy_version": "1.0",
           "number": "1",
           "summary": "Publication Date"
+        },
+        {
+          "date": "2024-12-10T00:00:00.000000Z",
+          "legacy_version": "1.1",
+          "number": "2",
+          "summary": "Changed fix version for SICAM SCC from V10.0 to V9.14 HF2, which is now also released; Added ET85 for SICAM A8000 CP-8000/CP-8021/CP-8022 as affected product; Updated CVE data from meanwhile published official source (https://cveawg.mitre.org/api/cve/CVE-2024-34057)"
         }
       ],
       "status": "final",
-      "version": "1"
+      "version": "2"
     }
   },
   "product_tree": {
@@ -200,10 +202,24 @@
             "branches": [
               {
                 "category": "product_version_range",
+                "name": "vers:all/*",
+                "product": {
+                  "name": "ET85 Ethernet Interface IEC61850 Ed.2",
+                  "product_id": "CSAFPID-0001"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "ET85 Ethernet Interface IEC61850 Ed.2"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
                 "name": "vers:all/<V05.30",
                 "product": {
                   "name": "ETI5 Ethernet Int. 1x100TX IEC61850",
-                  "product_id": "CSAFPID-0001"
+                  "product_id": "CSAFPID-0002"
                 }
               }
             ],
@@ -214,10 +230,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/<V10.0",
+                "name": "<V9.14_HF2",
                 "product": {
                   "name": "SICAM SCC",
-                  "product_id": "CSAFPID-0002"
+                  "product_id": "CSAFPID-0003"
                 }
               }
             ],
@@ -231,7 +247,7 @@
                 "name": "vers:all/*",
                 "product": {
                   "name": "SITIPE AT",
-                  "product_id": "CSAFPID-0003"
+                  "product_id": "CSAFPID-0004"
                 }
               }
             ],
@@ -254,7 +270,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "The IEC 61850 Client libraries as integrated in affected products improperly check buffer sizes when processing received MMS messages. This could allow an unauthenticated remote attacker to create a denial of service condition by sending specially crafted MMS messages.",
+          "text": "Triangle Microworks TMW IEC 61850 Client source code libraries before 12.2.0 lack a buffer size check when processing received messages. The resulting buffer overflow can cause a crash, resulting in a denial of service.",
           "title": "Summary"
         }
       ],
@@ -262,7 +278,8 @@
         "known_affected": [
           "CSAFPID-0001",
           "CSAFPID-0002",
-          "CSAFPID-0003"
+          "CSAFPID-0003",
+          "CSAFPID-0004"
         ]
       },
       "remediations": [
@@ -270,22 +287,22 @@
           "category": "none_available",
           "details": "Currently no fix is available",
           "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V9.14 HF2 or later version",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V10.0 or later version",
+          "details": "Update to V05.30 or later version\n\nThe firmware ETI5 V5.30 is present within “CP-8031/CP-8050 Package” V5.30\n\n\nhttps://support.industry.siemens.com/cs/ww/en/view/109804985/",
           "product_ids": [
             "CSAFPID-0002"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109973586/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V05.30 or later version\n\nThe firmware ETI5 V5.30 is present within \u201cCP-8031/CP-8050 Package\u201d V5.30\n\n\nhttps://support.industry.siemens.com/cs/ww/en/view/109804985/",
-          "product_ids": [
-            "CSAFPID-0001"
           ]
         }
       ],
@@ -300,7 +317,8 @@
           "products": [
             "CSAFPID-0001",
             "CSAFPID-0002",
-            "CSAFPID-0003"
+            "CSAFPID-0003",
+            "CSAFPID-0004"
           ]
         }
       ],

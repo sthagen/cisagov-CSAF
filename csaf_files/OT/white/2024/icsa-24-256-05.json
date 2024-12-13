@@ -2,16 +2,12 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens ProductCERT",
-        "summary": "reporting this vulnerability to CISA."
-      },
-      {
         "names": [
           "Raquel Gálvez",
           "Julián Menéndez"
         ],
         "organization": "Hispasec Sistemas",
-        "summary": "reporting the vulnerability to Siemens"
+        "summary": "reporting this vulnerability to Siemens."
       }
     ],
     "category": "csaf_security_advisory",
@@ -27,7 +23,7 @@
     "notes": [
       {
         "category": "summary",
-        "text": "Mendix Runtime contains an observable response discrepancy vulnerability when validating usernames during authentication. This could allow unauthenticated remote attackers to distinguish between valid and invalid usernames.\n\nSiemens has released new versions for the affected products and recommends to update to the latest versions.",
+        "text": "Mendix Runtime contains an observable response discrepancy vulnerability when validating usernames during authentication. This could allow unauthenticated remote attackers to distinguish between valid and invalid usernames.\n\nSiemens has released new versions for the affected products and recommends to update to the latest versions. Note that some, Mendix Runtime version lines (main branch or LTS or MTS versions) provide a complete fix, while others still require additional actions after updating to the latest available version.",
         "title": "Summary"
       },
       {
@@ -57,7 +53,7 @@
       },
       {
         "category": "other",
-        "text": "Multiple",
+        "text": "Critical Manufacturing",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -171,7 +167,7 @@
     ],
     "title": "Siemens Mendix Runtime",
     "tracking": {
-      "current_release_date": "2024-11-26T00:00:00.000000Z",
+      "current_release_date": "2024-12-10T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -216,10 +212,16 @@
           "legacy_version": "1.5",
           "number": "6",
           "summary": "Added information about additional required actions after having installed a fix release"
+        },
+        {
+          "date": "2024-12-10T00:00:00.000000Z",
+          "legacy_version": "1.6",
+          "number": "7",
+          "summary": "Added complete fix for Mendix Runtime V10 and the note that other versions still require additional actions after updating to the latest available version"
         }
       ],
       "status": "final",
-      "version": "6"
+      "version": "7"
     }
   },
   "product_tree": {
@@ -258,7 +260,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/<V10.16.0",
+                "name": "vers:all/<V10.17.0",
                 "product": {
                   "name": "Mendix Runtime V10",
                   "product_id": "CSAFPID-0003"
@@ -328,13 +330,20 @@
       "remediations": [
         {
           "category": "mitigation",
-          "details": "Do not use basic authentication, but setup an alternative authentication module (e.g. SAML, MendixSSO), or your own Identity Provider (IDP)",
+          "details": "Do not use basic authentication, but setup an alternative authentication module (e.g. OIDC SSO, Mendix SSO), or your own Identity Provider (IDP).",
           "product_ids": [
             "CSAFPID-0003",
             "CSAFPID-0005",
             "CSAFPID-0004",
             "CSAFPID-0001",
             "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V10.17.0 or later version",
+          "product_ids": [
+            "CSAFPID-0003"
           ]
         },
         {
@@ -349,13 +358,6 @@
           "details": "Update to V9.24.29 or later version. Note that after installing the fix version, the issue still occurs and is only fully resolved after a first successful login. A successful login is also required after every app restart.",
           "product_ids": [
             "CSAFPID-0002"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V10.16.0 or later version. Note that after installing the fix version, the issue still occurs and is only fully resolved after a first successful login. A successful login is also required after every app restart.",
-          "product_ids": [
-            "CSAFPID-0003"
           ]
         },
         {

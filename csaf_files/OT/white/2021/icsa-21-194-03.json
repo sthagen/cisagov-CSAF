@@ -2,7 +2,7 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens ProductCERT",
+        "organization": "Siemens",
         "summary": "reporting this vulnerability to CISA."
       }
     ],
@@ -19,7 +19,7 @@
     "notes": [
       {
         "category": "summary",
-        "text": "A vulnerability in affected devices could allow an attacker to perform a denial-of-service attack if\na large amount of Profinet Discovery and Configuration Protocol (DCP) reset packets is sent to the affected devices.\n\nSiemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fix versions and recommends specific countermeasures for products where fixes are not, or not yet available.",
+        "text": "A vulnerability in affected devices could allow an attacker to perform a denial ofservice attack if a large amount of Profinet Discovery and Configuration Protocol (DCP) reset packets is sent to the affected devices.\n\nSiemens has released new versions for several affected products and recommends to update to the latest versions. Siemens recommends specific countermeasures for products where fixes are not, or not yet available.",
         "title": "Summary"
       },
       {
@@ -49,7 +49,7 @@
       },
       {
         "category": "other",
-        "text": "Multiple",
+        "text": "Chemical, Critical Manufacturing, Energy, Food and Agriculture, Water and Wastewater Systems",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -112,12 +112,12 @@
     "references": [
       {
         "category": "self",
-        "summary": "SSA-599968: Denial-of-Service Vulnerability in Profinet Devices - CSAF Version",
+        "summary": "SSA-599968: Denial of Service Vulnerability in Profinet Devices - CSAF Version",
         "url": "https://cert-portal.siemens.com/productcert/csaf/ssa-599968.json"
       },
       {
         "category": "self",
-        "summary": "SSA-599968: Denial-of-Service Vulnerability in Profinet Devices - HTML Version",
+        "summary": "SSA-599968: Denial of Service Vulnerability in Profinet Devices - HTML Version",
         "url": "https://cert-portal.siemens.com/productcert/html/ssa-599968.html"
       },
       {
@@ -163,7 +163,7 @@
     ],
     "title": "Siemens PROFINET Devices",
     "tracking": {
-      "current_release_date": "2024-11-12T00:00:00.000000Z",
+      "current_release_date": "2024-12-10T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -220,10 +220,16 @@
           "legacy_version": "1.7",
           "number": "8",
           "summary": "Added fix for SCALANCE XR-300WG family (was no longer listed since V1.5 of the SSA); consolidated and expanded list of affected SCALANCE product families, incl. MLFB information"
+        },
+        {
+          "date": "2024-12-10T00:00:00.000000Z",
+          "legacy_version": "1.8",
+          "number": "9",
+          "summary": "Clarified that no fix is planned for SIMATIC IE/PB-LINK; Added CVSSv4.0 vector"
         }
       ],
       "status": "final",
-      "version": "8"
+      "version": "9"
     }
   },
   "product_tree": {
@@ -5986,7 +5992,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "Affected devices contain a vulnerability that allows an unauthenticated attacker to trigger a denial-of-service condition. The vulnerability can be triggered if a large amount of DCP reset packets are sent to the device.",
+          "text": "Affected devices contain a vulnerability that allows an unauthenticated attacker to trigger a denial of service condition. The vulnerability can be triggered if a large amount of DCP reset packets are sent to the device.",
           "title": "Summary"
         }
       ],
@@ -6980,16 +6986,10 @@
             "CSAFPID-0284",
             "CSAFPID-0285",
             "CSAFPID-0286",
+            "CSAFPID-0287",
             "CSAFPID-0294",
             "CSAFPID-0295",
             "CSAFPID-0305"
-          ]
-        },
-        {
-          "category": "none_available",
-          "details": "Currently no fix is available",
-          "product_ids": [
-            "CSAFPID-0287"
           ]
         },
         {
@@ -7355,7 +7355,7 @@
           "cvss_v3": {
             "baseScore": 7.5,
             "baseSeverity": "HIGH",
-            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P/RL:O/RC:C",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
             "version": "3.1"
           },
           "products": [

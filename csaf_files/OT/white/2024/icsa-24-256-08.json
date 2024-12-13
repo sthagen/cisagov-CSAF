@@ -2,7 +2,7 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens ProductCERT",
+        "organization": "Siemens",
         "summary": "reporting this vulnerability to CISA."
       }
     ],
@@ -49,7 +49,7 @@
       },
       {
         "category": "other",
-        "text": "Multiple",
+        "text": "Critical Manufacturing",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -163,7 +163,7 @@
     ],
     "title": "Siemens Industrial Products",
     "tracking": {
-      "current_release_date": "2024-11-12T00:00:00.000000Z",
+      "current_release_date": "2024-12-10T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -184,10 +184,16 @@
           "legacy_version": "1.1",
           "number": "2",
           "summary": "Added fix releases for SIMATIC WinCC V8.0, SIMATIC WinCC V7.5, and SIMATIC WinCC Runtime Professional V18"
+        },
+        {
+          "date": "2024-12-10T00:00:00.000000Z",
+          "legacy_version": "1.2",
+          "number": "3",
+          "summary": "Added fix release for WinCC Runtime Professional V19"
         }
       ],
       "status": "final",
-      "version": "2"
+      "version": "3"
     }
   },
   "product_tree": {
@@ -301,7 +307,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<V19_Update_3",
                 "product": {
                   "name": "SIMATIC WinCC Runtime Professional V19",
                   "product_id": "CSAFPID-0008"
@@ -317,22 +323,8 @@
                 "category": "product_version_range",
                 "name": "vers:all/*",
                 "product": {
-                  "name": "SIMATIC WinCC Runtime Professional V20",
-                  "product_id": "CSAFPID-0009"
-                }
-              }
-            ],
-            "category": "product_name",
-            "name": "SIMATIC WinCC Runtime Professional V20"
-          },
-          {
-            "branches": [
-              {
-                "category": "product_version_range",
-                "name": "vers:all/*",
-                "product": {
                   "name": "SIMATIC WinCC V7.4",
-                  "product_id": "CSAFPID-0010"
+                  "product_id": "CSAFPID-0009"
                 }
               }
             ],
@@ -346,7 +338,7 @@
                 "name": "<V7.5_SP2_Update_18",
                 "product": {
                   "name": "SIMATIC WinCC V7.5",
-                  "product_id": "CSAFPID-0011"
+                  "product_id": "CSAFPID-0010"
                 }
               }
             ],
@@ -360,7 +352,7 @@
                 "name": "<V8.0_Update_5",
                 "product": {
                   "name": "SIMATIC WinCC V8.0",
-                  "product_id": "CSAFPID-0012"
+                  "product_id": "CSAFPID-0011"
                 }
               }
             ],
@@ -371,10 +363,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "<V3.0_SP3",
+                "name": "vers:all/<V3.0.3",
                 "product": {
                   "name": "TIA Administrator",
-                  "product_id": "CSAFPID-0013"
+                  "product_id": "CSAFPID-0012"
                 }
               }
             ],
@@ -414,8 +406,7 @@
           "CSAFPID-0009",
           "CSAFPID-0010",
           "CSAFPID-0011",
-          "CSAFPID-0012",
-          "CSAFPID-0013"
+          "CSAFPID-0012"
         ]
       },
       "remediations": [
@@ -424,16 +415,14 @@
           "details": "Currently no fix is planned",
           "product_ids": [
             "CSAFPID-0006",
-            "CSAFPID-0010"
+            "CSAFPID-0009"
           ]
         },
         {
           "category": "none_available",
           "details": "Currently no fix is available",
           "product_ids": [
-            "CSAFPID-0005",
-            "CSAFPID-0008",
-            "CSAFPID-0009"
+            "CSAFPID-0005"
           ]
         },
         {
@@ -460,6 +449,13 @@
         },
         {
           "category": "vendor_fix",
+          "details": "Update to V19 Update 3 or later version",
+          "product_ids": [
+            "CSAFPID-0008"
+          ]
+        },
+        {
+          "category": "vendor_fix",
           "details": "Update to V2.4 or later version",
           "product_ids": [
             "CSAFPID-0003"
@@ -467,9 +463,9 @@
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V3.0 SP3 or later version",
+          "details": "Update to V3.0.3 or later version",
           "product_ids": [
-            "CSAFPID-0013"
+            "CSAFPID-0012"
           ]
         },
         {
@@ -483,7 +479,7 @@
           "category": "vendor_fix",
           "details": "Update to V7.5 SP2 Update 18 or later version",
           "product_ids": [
-            "CSAFPID-0011"
+            "CSAFPID-0010"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109793460/"
         },
@@ -491,7 +487,7 @@
           "category": "vendor_fix",
           "details": "Update to V8.0 Update 5 or later version",
           "product_ids": [
-            "CSAFPID-0012"
+            "CSAFPID-0011"
           ]
         }
       ],
@@ -515,8 +511,7 @@
             "CSAFPID-0009",
             "CSAFPID-0010",
             "CSAFPID-0011",
-            "CSAFPID-0012",
-            "CSAFPID-0013"
+            "CSAFPID-0012"
           ]
         }
       ],

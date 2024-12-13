@@ -2,7 +2,7 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens ProductCERT",
+        "organization": "Siemens",
         "summary": "reporting these vulnerabilities to CISA."
       }
     ],
@@ -49,7 +49,7 @@
       },
       {
         "category": "other",
-        "text": "Multiple",
+        "text": "Critical Manufacturing",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -163,7 +163,7 @@
     ],
     "title": "Siemens RUGGEDCOM APE 1808",
     "tracking": {
-      "current_release_date": "2024-11-12T00:00:00.000000Z",
+      "current_release_date": "2024-12-10T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -196,10 +196,16 @@
           "legacy_version": "1.3",
           "number": "4",
           "summary": "Added newly published CVE-2024-9468 and CVE-2024-9471. Added CVSSv4.0 vector to CVE-2024-5913"
+        },
+        {
+          "date": "2024-12-10T00:00:00.000000Z",
+          "legacy_version": "1.4",
+          "number": "5",
+          "summary": "Added newly published CVE-2024-5920"
         }
       ],
       "status": "final",
-      "version": "4"
+      "version": "5"
     }
   },
   "product_tree": {
@@ -381,6 +387,48 @@
         }
       ],
       "title": "CVE-2024-5913"
+    },
+    {
+      "cve": "CVE-2024-5920",
+      "cwe": {
+        "id": "CWE-79",
+        "name": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "A cross-site scripting (XSS) vulnerability in Palo Alto Networks PAN-OS software enables an authenticated read-write Panorama administrator to push a specially crafted configuration to a PAN-OS node. This enables impersonation of a legitimate PAN-OS administrator who can perform restricted actions on the PAN-OS node after the execution of JavaScript in the legitimate PAN-OS administrator's browser.",
+          "title": "Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0002"
+        ]
+      },
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "details": "Upgrade Palo Alto Networks Virtual NGFW V11.1.4-h1. Contact customer support to receive patch and update information",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 2.4,
+            "baseSeverity": "LOW",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:N/I:L/A:N",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0002"
+          ]
+        }
+      ],
+      "title": "CVE-2024-5920"
     },
     {
       "cve": "CVE-2024-9468",

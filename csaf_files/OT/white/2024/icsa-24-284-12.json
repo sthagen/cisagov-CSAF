@@ -2,7 +2,7 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens ProductCERT",
+        "organization": "Siemens",
         "summary": "reporting this vulnerability to CISA."
       }
     ],
@@ -19,7 +19,7 @@
     "notes": [
       {
         "category": "summary",
-        "text": "A vulnerability in Sentron Powercenter 1000 with 3RV2921-5M accessory could allow an attacker to cause a denial of service condition.\n\nSiemens is preparing fix versions and recommends specific countermeasures for products where fixes are not, or not yet available.",
+        "text": "A vulnerability in SENTRON Powercenter 1000/1100 with 3RV2921-5M accessory could allow an attacker to cause a denial of service condition.\n\nSiemens is preparing fix versions and recommends specific countermeasures for products where fixes are not, or not yet available.",
         "title": "Summary"
       },
       {
@@ -34,7 +34,7 @@
       },
       {
         "category": "legal_disclaimer",
-        "text": "Siemens Security Advisories are subject to the terms and conditions contained in Siemens' underlying license terms or other applicable agreements previously agreed to with Siemens (hereinafter \"License Terms\"). To the extent applicable to information, software or documentation made available in or through a Siemens Security Advisory, the Terms of Use of Siemens' Global Website (https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), in particular Sections 8-10 of the Terms of Use, shall apply additionally. In case of conflicts, the License Terms shall prevail over the Terms of Use.",
+        "text": "The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use.",
         "title": "Terms of Use"
       },
       {
@@ -49,7 +49,7 @@
       },
       {
         "category": "other",
-        "text": "Multiple",
+        "text": "Energy",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -112,12 +112,12 @@
     "references": [
       {
         "category": "self",
-        "summary": "SSA-340240: Denial of Service Vulnerability in Sentron Powercenter 1000 with 3RV2921-5M accessory - CSAF Version",
+        "summary": "SSA-340240: Denial of Service Vulnerability in SENTRON Powercenter 1000/1100 With 3RV2921-5M Accessory - CSAF Version",
         "url": "https://cert-portal.siemens.com/productcert/csaf/ssa-340240.json"
       },
       {
         "category": "self",
-        "summary": "SSA-340240: Denial of Service Vulnerability in Sentron Powercenter 1000 with 3RV2921-5M accessory - HTML Version",
+        "summary": "SSA-340240: Denial of Service Vulnerability in SENTRON Powercenter 1000/1100 With 3RV2921-5M Accessory - HTML Version",
         "url": "https://cert-portal.siemens.com/productcert/html/ssa-340240.html"
       },
       {
@@ -163,7 +163,7 @@
     ],
     "title": "Siemens Sentron Powercenter 1000",
     "tracking": {
-      "current_release_date": "2024-10-08T00:00:00.000000Z",
+      "current_release_date": "2024-12-10T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -178,10 +178,16 @@
           "legacy_version": "1.0",
           "number": "1",
           "summary": "Publication Date"
+        },
+        {
+          "date": "2024-12-10T00:00:00.000000Z",
+          "legacy_version": "1.1",
+          "number": "2",
+          "summary": "Added SENTRON Powercenter 1100 as affected product; clarified that no fix is planned for SENTRON Powercenter 1000; updated product-specific CVSS vectors"
         }
       ],
       "status": "final",
-      "version": "1"
+      "version": "2"
     }
   },
   "product_tree": {
@@ -206,6 +212,25 @@
             ],
             "category": "product_name",
             "name": "SENTRON Powercenter 1000 (7KN1110-0MC00)"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "vers:all/*",
+                "product": {
+                  "name": "SENTRON Powercenter 1100 (7KN1111-0MC00)",
+                  "product_id": "CSAFPID-0002",
+                  "product_identification_helper": {
+                    "model_numbers": [
+                      "7KN1111-0MC00"
+                    ]
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SENTRON Powercenter 1100 (7KN1111-0MC00)"
           }
         ],
         "category": "vendor",
@@ -223,24 +248,28 @@
       "notes": [
         {
           "category": "summary",
-          "text": "Prior to v7.4.0, Ember ZNet is vulnerable to a denial of service attack through manipulation of the NWK sequence number",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
           "text": "The product is vulnerable through the manipulation of a component sequence number, other devices/networks are not affected, only the same powercenter/network is affected.",
-          "title": "For SENTRON Powercenter 1000"
+          "title": "Summary"
         }
       ],
       "product_status": {
         "known_affected": [
-          "CSAFPID-0001"
+          "CSAFPID-0001",
+          "CSAFPID-0002"
         ]
       },
       "remediations": [
         {
           "category": "mitigation",
           "details": "Mitigate through physical isolation",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "no_fix_planned",
+          "details": "Currently no fix is planned",
           "product_ids": [
             "CSAFPID-0001"
           ]
@@ -249,20 +278,21 @@
           "category": "none_available",
           "details": "Currently no fix is available",
           "product_ids": [
-            "CSAFPID-0001"
+            "CSAFPID-0002"
           ]
         }
       ],
       "scores": [
         {
           "cvss_v3": {
-            "baseScore": 8.6,
+            "baseScore": 7.5,
             "baseSeverity": "HIGH",
-            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
             "version": "3.1"
           },
           "products": [
-            "CSAFPID-0001"
+            "CSAFPID-0001",
+            "CSAFPID-0002"
           ]
         }
       ],
