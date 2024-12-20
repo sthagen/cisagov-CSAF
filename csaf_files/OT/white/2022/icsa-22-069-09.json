@@ -2,11 +2,11 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens",
-        "summary": "reporting this vulnerability to CISA"
+        "organization": "Siemens ProductCERT",
+        "summary": "reporting these vulnerabilities to CISA."
       }
     ],
-    "category": "csaf_security_advisory",
+    "category": "Siemens Security Advisory",
     "csaf_version": "2.0",
     "distribution": {
       "text": "Disclosure is not limited",
@@ -15,12 +15,26 @@
         "url": "https://us-cert.cisa.gov/tlp/"
       }
     },
-    "lang": "en-US",
     "notes": [
       {
+        "category": "summary",
+        "text": "71 vulnerabilities in third-party components as Node.js, cURL, SQLite, CivetWeb and DNS(ISC BIND) could allow an attacker to interfere with the affected product in various ways.\n\nSiemens has released an update for SINEC INS and recommends to update to the latest versions.",
+        "title": "Summary"
+      },
+      {
         "category": "general",
-        "text": "This CSAF advisory was extracted from unstructured data and may contain inaccuracies. If you notice any errors, please reach out to the designated contact at CISA CSAF: central@cisa.dhs.gov",
-        "title": "CISA Disclaimer"
+        "text": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+        "title": "General Recommendations"
+      },
+      {
+        "category": "general",
+        "text": "For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories",
+        "title": "Additional Resources"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "Siemens Security Advisories are subject to the terms and conditions contained in Siemens' underlying license terms or other applicable agreements previously agreed to with Siemens (hereinafter \"License Terms\"). To the extent applicable to information, software or documentation made available in or through a Siemens Security Advisory, the Terms of Use of Siemens' Global Website (https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), in particular Sections 8-10 of the Terms of Use, shall apply additionally. In case of conflicts, the License Terms shall prevail over the Terms of Use.",
+        "title": "Terms of Use"
       },
       {
         "category": "legal_disclaimer",
@@ -28,13 +42,13 @@
         "title": "Legal Notice"
       },
       {
-        "category": "summary",
-        "text": "Successful exploitation of this vulnerability in third-party components could allow an attacker to interfere with the affected product in various ways.",
-        "title": "Risk evaluation"
+        "category": "other",
+        "text": "This CISA CSAF advisory was converted from Siemens ProductCERT's CSAF advisory.",
+        "title": "Advisory Conversion Disclaimer"
       },
       {
         "category": "other",
-        "text": "Energy",
+        "text": "Multiple",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -49,41 +63,66 @@
       },
       {
         "category": "general",
-        "text": "CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability. Specifically, users should:",
+        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\nCISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov. Several recommended practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "text": "Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the internet.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage on cisa.gov in the Technical Information Paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.\nOrganizations observing any suspected malicious activity should follow their established internal procedures and report their findings to CISA for tracking and correlation against other incidents.",
+        "text": "Locate control system networks and remote devices behind firewalls and isolate them from business networks.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. Also recognize VPN is only as secure as its connected devices.",
+        "title": "Recommended Practices"
       },
       {
-        "category": "other",
-        "text": "No known public exploits specifically target this vulnerability.",
-        "title": "Exploitability"
+        "category": "general",
+        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov. Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.",
+        "title": "Recommended Practices"
       }
     ],
     "publisher": {
-      "category": "coordinator",
-      "contact_details": "Email: CISAservicedesk@cisa.dhs.gov;\n Toll Free: 1-888-282-0870",
+      "category": "other",
+      "contact_details": "central@cisa.dhs.gov",
       "name": "CISA",
       "namespace": "https://www.cisa.gov/"
     },
     "references": [
       {
-        "category": "external",
+        "category": "self",
         "summary": "SSA-389290: Third-Party Component Vulnerabilities in SINEC INS - CSAF Version",
         "url": "https://cert-portal.siemens.com/productcert/csaf/ssa-389290.json"
+      },
+      {
+        "category": "self",
+        "summary": "SSA-389290: Third-Party Component Vulnerabilities in SINEC INS - TXT Version",
+        "url": "https://cert-portal.siemens.com/productcert/txt/ssa-389290.txt"
+      },
+      {
+        "category": "self",
+        "summary": "SSA-389290: Third-Party Component Vulnerabilities in SINEC INS - PDF Version",
+        "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf"
       },
       {
         "category": "self",
@@ -92,7 +131,7 @@
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-22-069-09 Web Version",
+        "summary": "ICS Advisory ICSA-22-069-09 - Web Version",
         "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-22-069-09"
       },
       {
@@ -103,27 +142,32 @@
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.cisa.gov/uscert/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/topics/industrial-control-systems"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://us-cert.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
         "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
-      },
-      {
-        "category": "external",
-        "summary": "SSA-389290: Third-Party Component Vulnerabilities in SINEC INS - PDF Version",
-        "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf"
-      },
-      {
-        "category": "external",
-        "summary": "SSA-389290: Third-Party Component Vulnerabilities in SINEC INS - TXT Version",
-        "url": "https://cert-portal.siemens.com/productcert/txt/ssa-389290.txt"
       }
     ],
     "title": "Siemens SINEC INS",
     "tracking": {
-      "current_release_date": "2022-03-10T00:00:00.000000Z",
+      "current_release_date": "2022-03-08T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -131,13 +175,13 @@
         }
       },
       "id": "ICSA-22-069-09",
-      "initial_release_date": "2022-03-10T00:00:00.000000Z",
+      "initial_release_date": "2022-03-08T00:00:00.000000Z",
       "revision_history": [
         {
-          "date": "2022-03-10T00:00:00.000000Z",
-          "legacy_version": "Initial",
+          "date": "2022-03-08T00:00:00.000000Z",
+          "legacy_version": "1.0",
           "number": "1",
-          "summary": "ICSA-22-069-09 Siemens SINEC INS"
+          "summary": "Publication Date"
         }
       ],
       "status": "final",
@@ -152,7 +196,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "< V1.0.1.1",
+                "name": "<V1.0.1.1",
                 "product": {
                   "name": "SINEC INS",
                   "product_id": "CSAFPID-0001"
@@ -195,366 +239,6 @@
         {
           "summary": "CVE-2019-19242 Mitre 5.0 json",
           "url": "https://cert-portal.siemens.com/productcert/mitre/CVE-2019-19242.json"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-19242"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-19244"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-19317"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-19603"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-19645"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-19646"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-19880"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-19923"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-19924"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-19925"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-19926"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-1971"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-7774"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8169"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8177"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8231"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8265"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8284"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8285"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8286"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8287"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-8625"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-9327"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-11655"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-11656"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-13630"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-13631"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-13632"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-13871"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-15358"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-27304"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3449"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3450"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3672"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3711"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-3712"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22876"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22883"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22884"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22890"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22897"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22898"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22901"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22918"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22921"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22922"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22923"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22924"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22925"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22926"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22930"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22931"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22939"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22940"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22945"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22946"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-22947"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-23362"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-23840"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-25214"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-25215"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-25216"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-25219"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-27290"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-32803"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-32804"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-37701"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-37712"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-37713"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-39134"
-        },
-        {
-          "category": "external",
-          "summary": "nvd.nist.gov",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-39135"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
         }
       ],
       "remediations": [
@@ -565,13 +249,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -625,13 +302,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -685,13 +355,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -745,13 +408,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -805,13 +461,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -865,13 +514,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -925,13 +567,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -985,13 +620,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1045,13 +673,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1105,13 +726,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1165,13 +779,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1225,13 +832,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1285,13 +885,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1345,13 +938,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1405,13 +991,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1465,13 +1044,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1525,13 +1097,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1585,13 +1150,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1645,13 +1203,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1705,13 +1256,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1765,13 +1309,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1825,13 +1362,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1885,13 +1415,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -1945,13 +1468,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2005,13 +1521,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2065,13 +1574,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2125,13 +1627,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2185,13 +1680,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2245,13 +1733,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2305,13 +1786,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2365,13 +1839,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2425,13 +1892,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2485,13 +1945,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2545,13 +1998,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2605,13 +2051,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2665,13 +2104,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2725,13 +2157,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2785,13 +2210,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2818,7 +2236,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "Node.js before 10.24.0, 12.21.0, 14.16.0, and 15.10.0 is vulnerable to DNS rebinding attacks as the whitelist includes “localhost6”. When “localhost6” is not present in /etc/hosts, it is just an ordinary domain that is resolved via DNS, i.e., over network. If the attacker controls the victim's DNS server or can spoof its responses, the DNS rebinding protection can be bypassed by using the “localhost6” domain. As long as the attacker uses the “localhost6” domain, they can still apply the attack described in CVE-2018-7160.",
+          "text": "Node.js before 10.24.0, 12.21.0, 14.16.0, and 15.10.0 is vulnerable to DNS rebinding attacks as the whitelist includes \u201clocalhost6\u201d. When \u201clocalhost6\u201d is not present in /etc/hosts, it is just an ordinary domain that is resolved via DNS, i.e., over network. If the attacker controls the victim's DNS server or can spoof its responses, the DNS rebinding protection can be bypassed by using the \u201clocalhost6\u201d domain. As long as the attacker uses the \u201clocalhost6\u201d domain, they can still apply the attack described in CVE-2018-7160.",
           "title": "Summary"
         }
       ],
@@ -2845,13 +2263,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2905,13 +2316,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -2965,13 +2369,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3025,13 +2422,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3085,13 +2475,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3145,13 +2528,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3205,13 +2581,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3265,13 +2634,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3325,13 +2687,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3385,13 +2740,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3445,13 +2793,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3505,13 +2846,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3565,13 +2899,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3625,13 +2952,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3685,13 +3005,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3745,13 +3058,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3805,13 +3111,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3865,13 +3164,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3925,13 +3217,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -3985,13 +3270,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -4045,13 +3323,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -4105,13 +3376,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -4165,13 +3429,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -4225,13 +3482,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -4285,13 +3535,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -4345,13 +3588,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -4405,13 +3641,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -4465,13 +3694,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -4525,13 +3747,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -4585,13 +3800,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -4645,13 +3853,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -4705,13 +3906,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [
@@ -4765,13 +3959,6 @@
             "CSAFPID-0001"
           ],
           "url": "https://support.industry.siemens.com/cs/ww/en/view/109806100/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.\n\nAdditional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
         }
       ],
       "scores": [

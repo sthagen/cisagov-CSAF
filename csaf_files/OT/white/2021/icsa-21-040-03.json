@@ -2,11 +2,16 @@
   "document": {
     "acknowledgments": [
       {
-        "names": [
-          "rgod"
-        ],
-        "organization": "Trend Micro 's Zero Day Initiative",
-        "summary": "reporting this vulnerability to CISA"
+        "organization": "Siemens ProductCERT",
+        "summary": "reporting this vulnerability to CISA."
+      },
+      {
+        "organization": "Trend Micro Zero Day Initiative",
+        "summary": "for coordinating disclosure"
+      },
+      {
+        "organization": "Cybersecurity and Infrastructure Security Agency (CISA)",
+        "summary": "for coordination efforts"
       }
     ],
     "category": "csaf_security_advisory",
@@ -18,12 +23,22 @@
         "url": "https://us-cert.cisa.gov/tlp/"
       }
     },
-    "lang": "en-US",
+    "lang": "en",
     "notes": [
       {
         "category": "general",
-        "text": "This CSAF advisory was extracted from unstructured data and may contain inaccuracies. If you notice any errors, please reach out to the designated contact at CISA CSAF: central@cisa.dhs.gov",
-        "title": "CISA Disclaimer"
+        "text": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.",
+        "title": "General Recommendations"
+      },
+      {
+        "category": "general",
+        "text": "Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+        "title": "Additional Resources"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "Siemens Security Advisories are subject to the terms and conditions contained in Siemens' underlying license terms or other applicable agreements previously agreed to with Siemens (hereinafter \"License Terms\"). To the extent applicable to information, software or documentation made available in or through a Siemens Security Advisory, the Terms of Use of Siemens' Global Website (https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), in particular Sections 8-10 of the Terms of Use, shall apply additionally. In case of conflicts, the License Terms shall prevail over the Terms of Use.",
+        "title": "Terms of Use"
       },
       {
         "category": "legal_disclaimer",
@@ -31,13 +46,13 @@
         "title": "Legal Notice"
       },
       {
-        "category": "summary",
-        "text": "Successful exploitation of this vulnerability could allow arbitrary code execution on an affected system.",
-        "title": "Risk evaluation"
+        "category": "other",
+        "text": "This CISA CSAF advisory was converted from a Siemens ProductCERT's advisory.",
+        "title": "Advisory Conversion Disclaimer"
       },
       {
         "category": "other",
-        "text": "Chemical, Energy, Food and Agriculture, Water and Wastewater Systems",
+        "text": "Multiple",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -52,42 +67,57 @@
       },
       {
         "category": "general",
-        "text": "CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability. Specifically, users should:",
+        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\nCISA also provides a section for control systems security recommended practices on the ICS webpage onus-cert.cisa.gov. Several recommended practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "text": "Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the internet.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage on us-cert.cisa.gov in the Technical Information Paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.\nOrganizations observing any suspected malicious activity should follow their established internal procedures and report their findings to CISA for tracking and correlation against other incidents.",
+        "text": "Locate control system networks and remote devices behind firewalls and isolate them from business networks.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and \nsolutions, please contact the Siemens ProductCERT:\n\nhttps://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. Also recognize VPN is only as secure as its connected devices.",
+        "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and  solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.",
+        "title": "Recommended Practices"
       },
       {
-        "category": "other",
-        "text": "No known public exploits specifically target this vulnerability.",
-        "title": "Exploitability"
+        "category": "general",
+        "text": "CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov. Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.",
+        "title": "Recommended Practices"
       }
     ],
     "publisher": {
-      "category": "coordinator",
-      "contact_details": "Email: CISAservicedesk@cisa.dhs.gov;\n Toll Free: 1-888-282-0870",
+      "category": "other",
+      "contact_details": "central@cisa.dhs.gov",
       "name": "CISA",
       "namespace": "https://www.cisa.gov/"
     },
     "references": [
+      {
+        "category": "self",
+        "summary": "SSA-156833: Zip-Slip Directory Traversal Vulnerability in SINEMA Server and SINEC\n        NMS - HTML Version",
+        "url": "https://cert-portal.siemens.com/productcert/html/ssa-156833.html"
+      },
       {
         "category": "self",
         "summary": "ICS Advisory ICSA-21-040-03 JSON",
@@ -95,13 +125,23 @@
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-21-040-03 Web Version",
+        "summary": "ICS Advisory ICSA-21-040-03 - Web Version",
         "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-21-040-03"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://us-cert.cisa.gov/ics/alerts/ICS-ALERT-10-301-01"
+        "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/topics/industrial-control-systems"
       },
       {
         "category": "external",
@@ -111,12 +151,12 @@
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://us-cert.cisa.gov/ics/tips/ICS-TIP-12-146-01B"
+        "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
       },
       {
         "category": "external",
-        "summary": "SSA-496604: SSA-156833: Zip-Slip Directory Traversal Vulnerability in SINEMA Server and SINEC NMS - TXT Version",
-        "url": "https://cert-portal.siemens.com/productcert/txt/SSA-156833.txt"
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
     "title": "Siemens SINEMA Server & SINEC NMS",
@@ -133,9 +173,9 @@
       "revision_history": [
         {
           "date": "2021-02-09T00:00:00.000000Z",
-          "legacy_version": "Initial",
+          "legacy_version": "1.0",
           "number": "1",
-          "summary": "ICSA-21-040-03 Siemens SINEMA Server & SINEC NMS"
+          "summary": "Publication Date"
         }
       ],
       "status": "final",
@@ -150,9 +190,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V1.0 SP1 Update 1",
+                "name": "<V1.0_SP1_Update_1",
                 "product": {
-                  "name": "SINEC NMS: All versions < V1.0 SP1 Update 1",
+                  "name": "Siemens SINEC NMS: All versions < V1.0 SP1 Update 1",
                   "product_id": "CSAFPID-0001"
                 }
               }
@@ -164,9 +204,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V14.0 SP2 Update 2",
+                "name": "<V14.0_SP2_Update_2",
                 "product": {
-                  "name": "SINEMA Server: All versions < V14.0 SP2 Update 2",
+                  "name": "Siemens SINEMA Server: All versions < V14.0 SP2 Update 2",
                   "product_id": "CSAFPID-0002"
                 }
               }
@@ -200,26 +240,9 @@
           "CSAFPID-0002"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "https://support.industry.siemens.com/cs/ww/en/view/109792920/",
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109792920/"
-        },
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-25237"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
+          "category": "mitigation",
           "details": "Restrict access to the affected components to trusted personnel.",
           "product_ids": [
             "CSAFPID-0001",
@@ -228,25 +251,15 @@
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V1.0 SP1 Update 1 or later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109792922/ ",
+          "details": "Update to V1.0 SP1 Update 1 or later version",
           "product_ids": [
             "CSAFPID-0001"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109792922/"
+          ]
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V14.0 SP2 Update 2 or later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109792920/ ",
+          "details": "Update to V14.0 SP2 Update 2 or later version",
           "product_ids": [
-            "CSAFPID-0002"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109792920/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001",
             "CSAFPID-0002"
           ]
         }
@@ -264,7 +277,8 @@
             "CSAFPID-0002"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2020-25237"
     }
   ]
 }
