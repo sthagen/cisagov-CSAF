@@ -2,8 +2,8 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens",
-        "summary": "reporting this vulnerability to CISA"
+        "organization": "Siemens ProductCERT",
+        "summary": "reporting this vulnerability to CISA."
       }
     ],
     "category": "csaf_security_advisory",
@@ -15,12 +15,22 @@
         "url": "https://us-cert.cisa.gov/tlp/"
       }
     },
-    "lang": "en-US",
+    "lang": "en",
     "notes": [
       {
         "category": "general",
-        "text": "This CSAF advisory was extracted from unstructured data and may contain inaccuracies. If you notice any errors, please reach out to the designated contact at CISA CSAF: central@cisa.dhs.gov",
-        "title": "CISA Disclaimer"
+        "text": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.",
+        "title": "General Recommendations"
+      },
+      {
+        "category": "general",
+        "text": "Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+        "title": "Additional Resources"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "Siemens Security Advisories are subject to the terms and conditions contained in Siemens' underlying license terms or other applicable agreements previously agreed to with Siemens (hereinafter \"License Terms\"). To the extent applicable to information, software or documentation made available in or through a Siemens Security Advisory, the Terms of Use of Siemens' Global Website (https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), in particular Sections 8-10 of the Terms of Use, shall apply additionally. In case of conflicts, the License Terms shall prevail over the Terms of Use.",
+        "title": "Terms of Use"
       },
       {
         "category": "legal_disclaimer",
@@ -28,13 +38,13 @@
         "title": "Legal Notice"
       },
       {
-        "category": "summary",
-        "text": "Successful exploitation of this vulnerability may allow an attacker to perform a denial-of-service attack.",
-        "title": "Risk evaluation"
+        "category": "other",
+        "text": "This CISA CSAF advisory was converted from a Siemens ProductCERT's advisory.",
+        "title": "Advisory Conversion Disclaimer"
       },
       {
         "category": "other",
-        "text": "Chemical, Commercial Facilities, Critical Manufacturing, Energy, Food and Agriculture, Healthcare and Public Health, Transportation Systems, Water and Wastewater Systems",
+        "text": "Multiple",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -49,42 +59,57 @@
       },
       {
         "category": "general",
-        "text": "CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability. Specifically, users should:",
+        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\nCISA also provides a section for control systems security recommended practices on the ICS webpage onus-cert.gov. Several recommended practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "text": "Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the internet.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage on us-cert.gov in the Technical Information Paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.\nOrganizations observing any suspected malicious activity should follow their established internal procedures and report their findings to CISA for tracking and correlation against other incidents.",
+        "text": "Locate control system networks and remote devices behind firewalls and isolate them from business networks.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and \nsolutions, please contact the Siemens ProductCERT:\n\nhttps://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. Also recognize VPN is only as secure as its connected devices.",
+        "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and  solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.",
+        "title": "Recommended Practices"
       },
       {
-        "category": "other",
-        "text": "No known public exploits specifically target this vulnerability.",
-        "title": "Exploitability"
+        "category": "general",
+        "text": "CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov. Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.",
+        "title": "Recommended Practices"
       }
     ],
     "publisher": {
-      "category": "coordinator",
-      "contact_details": "Email: CISAservicedesk@cisa.dhs.gov;\n Toll Free: 1-888-282-0870",
+      "category": "other",
+      "contact_details": "central@cisa.dhs.gov",
       "name": "CISA",
       "namespace": "https://www.cisa.gov/"
     },
     "references": [
+      {
+        "category": "self",
+        "summary": "SSA-530931: Denial-of-Service in Webserver of Industrial Products - HTML Version",
+        "url": "https://cert-portal.siemens.com/productcert/html/ssa-530931.html"
+      },
       {
         "category": "self",
         "summary": "ICS Advisory ICSA-19-227-04 JSON",
@@ -92,28 +117,38 @@
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-19-227-04 Web Version",
+        "summary": "ICS Advisory ICSA-19-227-04 - Web Version",
         "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-19-227-04"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-19-227-04"
+        "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/ics/tips/ICS-TIP-12-146-01B"
+        "url": "https://www.cisa.gov/topics/industrial-control-systems"
       },
       {
         "category": "external",
-        "summary": "SSA-496604: SSA-530931: Denial-of-Service in Webserver of Industrial Products - TXT Version",
-        "url": "https://cert-portal.siemens.com/productcert/txt/SSA-530931.txt"
+        "summary": "Recommended Practices",
+        "url": "https://us-cert.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
     "title": "Siemens SINAMICS (Update C)",
@@ -126,31 +161,31 @@
         }
       },
       "id": "ICSA-19-227-04",
-      "initial_release_date": "2019-08-15T00:00:00.000000Z",
+      "initial_release_date": "2019-08-13T00:00:00.000000Z",
       "revision_history": [
         {
-          "date": "2019-08-15T00:00:00.000000Z",
-          "legacy_version": "Initial",
+          "date": "2019-08-13T00:00:00.000000Z",
+          "legacy_version": "1.0",
           "number": "1",
-          "summary": "ICSA-19-227-04 Siemens SINAMICS"
+          "summary": "Publication Date"
         },
         {
           "date": "2019-11-12T00:00:00.000000Z",
-          "legacy_version": "A",
+          "legacy_version": "1.1",
           "number": "2",
-          "summary": "ICSA-19-227-04 Siemens SINAMICS (Update A)"
+          "summary": "Added solution for SINAMICS SL150 V4.7"
         },
         {
           "date": "2019-12-10T00:00:00.000000Z",
-          "legacy_version": "B",
+          "legacy_version": "1.2",
           "number": "3",
-          "summary": "ICSA-19-227-04 Siemens SINAMICS (Update B)"
+          "summary": "Added solution for SINAMICS SM120 V4.7 and SINAMICS SM120 V4.8"
         },
         {
           "date": "2020-05-12T00:00:00.000000Z",
-          "legacy_version": "C",
+          "legacy_version": "1.3",
           "number": "4",
-          "summary": "ICSA-19-227-04 Siemens SINAMICS (Update C)"
+          "summary": "Added solution for SINAMICS SL150 V4.8"
         }
       ],
       "status": "final",
@@ -165,9 +200,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions",
+                "name": "vers:all/*",
                 "product": {
-                  "name": "SINAMICS GH150 V4.7 (Control Unit): All versions",
+                  "name": "Siemens SINAMICS GH150 V4.7 (Control Unit): All versions",
                   "product_id": "CSAFPID-0001"
                 }
               }
@@ -179,9 +214,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V4.8 SP2 HF9",
+                "name": "<V4.8_SP2_HF9",
                 "product": {
-                  "name": "SINAMICS GH150 V4.8 (Control Unit): All versions < V4.8 SP2 HF9",
+                  "name": "Siemens SINAMICS GH150 V4.8 (Control Unit): All versions < V4.8 SP2 HF9",
                   "product_id": "CSAFPID-0002"
                 }
               }
@@ -193,9 +228,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions",
+                "name": "vers:all/*",
                 "product": {
-                  "name": "SINAMICS GL150 V4.7 (Control Unit): All versions",
+                  "name": "Siemens SINAMICS GL150 V4.7 (Control Unit): All versions",
                   "product_id": "CSAFPID-0003"
                 }
               }
@@ -207,9 +242,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V4.8 SP2 HF9",
+                "name": "<V4.8_SP2_HF9",
                 "product": {
-                  "name": "SINAMICS GL150 V4.8 (Control Unit): All versions < V4.8 SP2 HF9",
+                  "name": "Siemens SINAMICS GL150 V4.8 (Control Unit): All versions < V4.8 SP2 HF9",
                   "product_id": "CSAFPID-0004"
                 }
               }
@@ -221,9 +256,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions",
+                "name": "vers:all/*",
                 "product": {
-                  "name": "SINAMICS GM150 V4.7 (Control Unit): All versions",
+                  "name": "Siemens SINAMICS GM150 V4.7 (Control Unit): All versions",
                   "product_id": "CSAFPID-0005"
                 }
               }
@@ -235,9 +270,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V4.8 SP2 HF9",
+                "name": "<V4.8_SP2_HF9",
                 "product": {
-                  "name": "SINAMICS GM150 V4.8 (Control Unit): All versions < V4.8 SP2 HF9",
+                  "name": "Siemens SINAMICS GM150 V4.8 (Control Unit): All versions < V4.8 SP2 HF9",
                   "product_id": "CSAFPID-0006"
                 }
               }
@@ -249,9 +284,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V4.7 HF33",
+                "name": "<V4.7_HF33",
                 "product": {
-                  "name": "SINAMICS SL150 V4.7 (Control Unit): All versions < V4.7 HF33",
+                  "name": "Siemens SINAMICS SL150 V4.7 (Control Unit): All versions < V4.7 HF33",
                   "product_id": "CSAFPID-0007"
                 }
               }
@@ -263,9 +298,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions",
+                "name": "vers:all/*",
                 "product": {
-                  "name": "SINAMICS SL150 V4.8 (Control Unit): All versions",
+                  "name": "Siemens SINAMICS SL150 V4.8 (Control Unit): All versions",
                   "product_id": "CSAFPID-0008"
                 }
               }
@@ -277,9 +312,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions",
+                "name": "vers:all/*",
                 "product": {
-                  "name": "SINAMICS SM120 V4.7 (Control Unit): All versions",
+                  "name": "Siemens SINAMICS SM120 V4.7 (Control Unit): All versions",
                   "product_id": "CSAFPID-0009"
                 }
               }
@@ -291,10 +326,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V4.8 SP2 HF10",
+                "name": "<V4.8_SP2_HF10",
                 "product": {
-                  "name": "SINAMICS SM120 V4.8 (Control Unit): All versions < V4.8 SP2 HF10",
-                  "product_id": "CSAFPID-00010"
+                  "name": "Siemens SINAMICS SM120 V4.8 (Control Unit): All versions < V4.8 SP2 HF10",
+                  "product_id": "CSAFPID-0010"
                 }
               }
             ],
@@ -305,10 +340,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions",
+                "name": "vers:all/*",
                 "product": {
-                  "name": "SINAMICS SM150 V4.8 (Control Unit): All versions",
-                  "product_id": "CSAFPID-00011"
+                  "name": "Siemens SINAMICS SM150 V4.8 (Control Unit): All versions",
+                  "product_id": "CSAFPID-0011"
                 }
               }
             ],
@@ -331,17 +366,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "The webserver of the affected devices contains a vulnerability that may lead to a denial-of-service condition. An attacker may cause a denial-of-service situation which leads to a restart of the webserver of the affected device.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an attacker with network access to the affected systems. Successful exploitation requires no system privileges and no user interaction. An attacker could use the vulnerability to compromise availability of the device.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known.",
+          "text": "The webserver of the affected devices contains a vulnerability that may lead to a denial-of-service condition. An attacker may cause a denial-of-service situation which leads to a restart of the webserver of the affected device. The security vulnerability could be exploited by an attacker with network access to the affected systems. Successful exploitation requires no system privileges and no user interaction. An attacker could use the vulnerability to compromise availability of the device. At the time of advisory publication no public exploitation of this security vulnerability was known.",
           "title": "Summary"
         }
       ],
@@ -356,26 +381,14 @@
           "CSAFPID-0007",
           "CSAFPID-0008",
           "CSAFPID-0009",
-          "CSAFPID-00010",
-          "CSAFPID-00011"
+          "CSAFPID-0010",
+          "CSAFPID-0011"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-6568"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Apply appropriate strategies for mitigation as described in the General\nSecurity Recommendation section.",
+          "category": "mitigation",
+          "details": "Apply appropriate strategies for mitigation as described in the General Security Recommendation section.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -386,12 +399,12 @@
             "CSAFPID-0007",
             "CSAFPID-0008",
             "CSAFPID-0009",
-            "CSAFPID-00010",
-            "CSAFPID-00011"
+            "CSAFPID-0010",
+            "CSAFPID-0011"
           ]
         },
         {
-          "category": "vendor_fix",
+          "category": "mitigation",
           "details": "Restrict network access to the integrated webserver.",
           "product_ids": [
             "CSAFPID-0001",
@@ -403,30 +416,13 @@
             "CSAFPID-0007",
             "CSAFPID-0008",
             "CSAFPID-0009",
-            "CSAFPID-00010",
-            "CSAFPID-00011"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Deactivate the webserver if not required, and if deactivation is\nsupported by the product. For SINAMICS products: Deactivate webserver\nwith parameter P8986 = 0.",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005",
-            "CSAFPID-0006",
-            "CSAFPID-0007",
-            "CSAFPID-0008",
-            "CSAFPID-0009",
-            "CSAFPID-00010",
-            "CSAFPID-00011"
+            "CSAFPID-0010",
+            "CSAFPID-0011"
           ]
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Deactivate the webserver if not required, and if deactivation is supported by the product. For SINAMICS products: Deactivate webserver with parameter P8986 = 0.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -437,8 +433,48 @@
             "CSAFPID-0007",
             "CSAFPID-0008",
             "CSAFPID-0009",
-            "CSAFPID-00010",
-            "CSAFPID-00011"
+            "CSAFPID-0010",
+            "CSAFPID-0011"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Upgrade to V4.8 SP2 HF9 or later version. The software can be obtained from your Siemens representative or via Siemens customer service.",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0006"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V4.7 HF33 or upgrade to V5.2 SP2. The software can be obtained from your Siemens representative or via Siemens customer service.",
+          "product_ids": [
+            "CSAFPID-0007"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Upgrade to V5.2 SP2. The software can be obtained from your Siemens representative or via Siemens customer service",
+          "product_ids": [
+            "CSAFPID-0008"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Upgrade to V4.8 SP2 HF10 or later version. The software can be obtained from your Siemens representative or via Siemens customer service.",
+          "product_ids": [
+            "CSAFPID-0009",
+            "CSAFPID-0010"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Upgrade to V5.1 SP2 HF3 or later version. The software can be obtained from your Siemens representative or via Siemens customer service.",
+          "product_ids": [
+            "CSAFPID-0011"
           ]
         }
       ],
@@ -460,11 +496,12 @@
             "CSAFPID-0007",
             "CSAFPID-0008",
             "CSAFPID-0009",
-            "CSAFPID-00010",
-            "CSAFPID-00011"
+            "CSAFPID-0010",
+            "CSAFPID-0011"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-6568"
     }
   ]
 }

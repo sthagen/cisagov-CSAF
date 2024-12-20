@@ -2,8 +2,8 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens",
-        "summary": "reporting these vulnerabilities to CISA"
+        "organization": "Siemens ProductCERT",
+        "summary": "reporting these vulnerabilities to CISA."
       }
     ],
     "category": "csaf_security_advisory",
@@ -15,12 +15,22 @@
         "url": "https://us-cert.cisa.gov/tlp/"
       }
     },
-    "lang": "en-US",
+    "lang": "en",
     "notes": [
       {
         "category": "general",
-        "text": "This CSAF advisory was extracted from unstructured data and may contain inaccuracies. If you notice any errors, please reach out to the designated contact at CISA CSAF: central@cisa.dhs.gov",
-        "title": "CISA Disclaimer"
+        "text": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.",
+        "title": "General Recommendations"
+      },
+      {
+        "category": "general",
+        "text": "Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+        "title": "Additional Resources"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "Siemens Security Advisories are subject to the terms and conditions contained in Siemens' underlying license terms or other applicable agreements previously agreed to with Siemens (hereinafter \"License Terms\"). To the extent applicable to information, software or documentation made available in or through a Siemens Security Advisory, the Terms of Use of Siemens' Global Website (https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), in particular Sections 8-10 of the Terms of Use, shall apply additionally. In case of conflicts, the License Terms shall prevail over the Terms of Use.",
+        "title": "Terms of Use"
       },
       {
         "category": "legal_disclaimer",
@@ -28,13 +38,13 @@
         "title": "Legal Notice"
       },
       {
-        "category": "summary",
-        "text": "Successful exploitation of these vulnerabilities could lead to a denial of service or could allow an authenticated local userwith physical access to the device to execute arbitrary commands on the device.",
-        "title": "Risk evaluation"
+        "category": "other",
+        "text": "This CISA CSAF advisory was converted from a Siemens ProductCERT's advisory.",
+        "title": "Advisory Conversion Disclaimer"
       },
       {
         "category": "other",
-        "text": "Chemical, Critical Manufacturing, Energy, Food and Agriculture, and Water and Wastewater Systems",
+        "text": "Multiple",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -49,37 +59,57 @@
       },
       {
         "category": "general",
-        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\nCISA also provides a section for control systems security recommended practices on the ICS webpage onus-cert.gov. Several recommended practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage on us-cert.gov in the Technical Information Paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.\nOrganizations observing any suspected malicious activity should follow their established internal procedures and report their findings to CISA for tracking and correlation against other incidents.",
+        "text": "Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the internet.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and \nsolutions, please contact the Siemens ProductCERT:\n\nhttps://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "Locate control system networks and remote devices behind firewalls and isolate them from business networks.",
+        "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and  solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. Also recognize VPN is only as secure as its connected devices.",
+        "title": "Recommended Practices"
       },
       {
-        "category": "other",
-        "text": "No known public exploits specifically target these vulnerabilities.",
-        "title": "Exploitability"
+        "category": "general",
+        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov. Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.",
+        "title": "Recommended Practices"
       }
     ],
     "publisher": {
-      "category": "coordinator",
-      "contact_details": "Email: CISAservicedesk@cisa.dhs.gov;\n Toll Free: 1-888-282-0870",
+      "category": "other",
+      "contact_details": "central@cisa.dhs.gov",
       "name": "CISA",
       "namespace": "https://www.cisa.gov/"
     },
     "references": [
+      {
+        "category": "self",
+        "summary": "SSA-671286: Multiple Vulnerabilities in SCALANCE Products - HTML Version",
+        "url": "https://cert-portal.siemens.com/productcert/html/ssa-671286.html"
+      },
       {
         "category": "self",
         "summary": "ICS Advisory ICSA-19-227-03 JSON",
@@ -87,23 +117,38 @@
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-19-227-03 Web Version",
+        "summary": "ICS Advisory ICSA-19-227-03 - Web Version",
         "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-19-227-03"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/ics/tips/ICS-TIP-12-146-01B"
+        "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
       },
       {
         "category": "external",
-        "summary": "SSA-496604: SSA-671286: Multiple Vulnerabilities in SCALANCE Products - TXT Version",
-        "url": "https://cert-portal.siemens.com/productcert/txt/SSA-671286.txt"
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/topics/industrial-control-systems"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://us-cert.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
     "title": "Siemens SCALANCE Products (Update A)",
@@ -116,19 +161,19 @@
         }
       },
       "id": "ICSA-19-227-03",
-      "initial_release_date": "2019-08-15T00:00:00.000000Z",
+      "initial_release_date": "2019-08-13T00:00:00.000000Z",
       "revision_history": [
         {
-          "date": "2019-08-15T00:00:00.000000Z",
-          "legacy_version": "Initial",
+          "date": "2019-08-13T00:00:00.000000Z",
+          "legacy_version": "1.0",
           "number": "1",
-          "summary": "ICSA-19-227-03 Siemens SCALANCE Products"
+          "summary": "Publication Date"
         },
         {
           "date": "2020-07-14T00:00:00.000000Z",
-          "legacy_version": "A",
+          "legacy_version": "1.1",
           "number": "2",
-          "summary": "ICSA-19-227-03 Siemens SCALANCE Products (Update A)"
+          "summary": "Added solution for SCALANCE XB-200, XC-200, XP-200,XF-200BA and XR-300WG"
         }
       ],
       "status": "final",
@@ -145,7 +190,7 @@
                 "category": "product_version",
                 "name": "V2.0",
                 "product": {
-                  "name": "SCALANCE SC-600: V2.0",
+                  "name": "Siemens SCALANCE SC-600: V2.0",
                   "product_id": "CSAFPID-0001"
                 }
               }
@@ -159,7 +204,7 @@
                 "category": "product_version",
                 "name": "V4.1",
                 "product": {
-                  "name": "SCALANCE XB-200: V4.1",
+                  "name": "Siemens SCALANCE XB-200: V4.1",
                   "product_id": "CSAFPID-0002"
                 }
               }
@@ -173,7 +218,7 @@
                 "category": "product_version",
                 "name": "V4.1",
                 "product": {
-                  "name": "SCALANCE XC-200: V4.1",
+                  "name": "Siemens SCALANCE XC-200: V4.1",
                   "product_id": "CSAFPID-0003"
                 }
               }
@@ -187,7 +232,7 @@
                 "category": "product_version",
                 "name": "V4.1",
                 "product": {
-                  "name": "SCALANCE XF-200BA: V4.1",
+                  "name": "Siemens SCALANCE XF-200BA: V4.1",
                   "product_id": "CSAFPID-0004"
                 }
               }
@@ -201,7 +246,7 @@
                 "category": "product_version",
                 "name": "V4.1",
                 "product": {
-                  "name": "SCALANCE XP-200: V4.1",
+                  "name": "Siemens SCALANCE XP-200: V4.1",
                   "product_id": "CSAFPID-0005"
                 }
               }
@@ -215,7 +260,7 @@
                 "category": "product_version",
                 "name": "V4.1",
                 "product": {
-                  "name": "SCALANCE XR-300WG: V4.1",
+                  "name": "Siemens SCALANCE XR-300WG: V4.1",
                   "product_id": "CSAFPID-0006"
                 }
               }
@@ -239,18 +284,12 @@
       "notes": [
         {
           "category": "summary",
-          "text": "An authenticated attacker with network access to to port 22/tcp of an affected device may cause a Denial-of-Service condition.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an authenticated attacker with network access to the affected device. No user interaction is required to exploit this vulnerability. The vulnerability impacts the availability of the affected device.",
+          "text": "An authenticated attacker with network access to to port 22/tcp of an affected device may cause a Denial-of-Service condition. The security vulnerability could be exploited by an authenticated attacker with network access to the affected device. No user interaction is required to exploit this vulnerability. The vulnerability impacts the availability of the affected device.",
           "title": "Summary"
         }
       ],
       "product_status": {
         "known_affected": [
-          "CSAFPID-0001",
           "CSAFPID-0002",
           "CSAFPID-0003",
           "CSAFPID-0004",
@@ -258,101 +297,40 @@
           "CSAFPID-0006"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "https://support.industry.siemens.com/cs/ww/en/view/109779919/",
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109779919/"
-        },
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-10927"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Protect access to port 22/tcp (using the build-in firewall for SCALANCE\nSC-600)",
+          "category": "mitigation",
+          "details": "Protect access to port 22/tcp (using the build-in firewall for SCALANCE SC-600)",
           "product_ids": [
-            "CSAFPID-0001",
             "CSAFPID-0002",
             "CSAFPID-0003",
             "CSAFPID-0004",
             "CSAFPID-0005",
             "CSAFPID-0006"
           ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Protect physical access to the device",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005",
-            "CSAFPID-0006"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V2.0.1 - Download: https://support.industry.siemens.com/cs/ww/en/view/109769665 ",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109769665"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V4.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109779919/ ",
-          "product_ids": [
-            "CSAFPID-0002"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109779919/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V4.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109779919/ ",
-          "product_ids": [
-            "CSAFPID-0003"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109779919/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V4.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109779919/ ",
-          "product_ids": [
-            "CSAFPID-0004"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109779919/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V4.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109779919/ ",
-          "product_ids": [
-            "CSAFPID-0005"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109779919/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V4.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109779919/ ",
-          "product_ids": [
-            "CSAFPID-0006"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109779919/"
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Protect physical access to the device",
           "product_ids": [
-            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005",
+            "CSAFPID-0006"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V2.0.1 https://support.industry.siemens.com/cs/ww/en/view/109769665",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V4.2 https://support.industry.siemens.com/cs/ww/en/view/109779919/",
+          "product_ids": [
             "CSAFPID-0002",
             "CSAFPID-0003",
             "CSAFPID-0004",
@@ -370,7 +348,6 @@
             "version": "3.1"
           },
           "products": [
-            "CSAFPID-0001",
             "CSAFPID-0002",
             "CSAFPID-0003",
             "CSAFPID-0004",
@@ -378,7 +355,8 @@
             "CSAFPID-0006"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-10927"
     },
     {
       "cve": "CVE-2019-10928",
@@ -389,12 +367,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "An authenticated attacker with access to port 22/tcp as well as physical access to an affected device may trigger the device to allow execution of arbitrary commands.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an authenticated attacker with physical access to the affected device. No user interaction is required to exploit this vulnerability. The vulnerability impacts the confidentiality, integrity and availability of the affected device.",
+          "text": "An authenticated attacker with network access to to port 22/tcp of an affected device may cause a Denial-of-Service condition. The security vulnerability could be exploited by an authenticated attacker with network access to the affected device. No user interaction is required to exploit this vulnerability. The vulnerability impacts the availability of the affected device.",
           "title": "Summary"
         }
       ],
@@ -408,27 +381,10 @@
           "CSAFPID-0006"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "https://support.industry.siemens.com/cs/ww/en/view/109779919/",
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109779919/"
-        },
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-10928"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:P/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Protect access to port 22/tcp (using the build-in firewall for SCALANCE\nSC-600)",
+          "category": "mitigation",
+          "details": "Protect access to port 22/tcp (using the build-in firewall for SCALANCE SC-600)",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -439,7 +395,7 @@
           ]
         },
         {
-          "category": "vendor_fix",
+          "category": "mitigation",
           "details": "Protect physical access to the device",
           "product_ids": [
             "CSAFPID-0001",
@@ -452,17 +408,15 @@
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V2.0.1 - Download: https://support.industry.siemens.com/cs/ww/en/view/109769665 ",
+          "details": "Update to V2.0.1 https://support.industry.siemens.com/cs/ww/en/view/109769665",
           "product_ids": [
             "CSAFPID-0001"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109769665"
+          ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.2 https://support.industry.siemens.com/cs/ww/en/view/109779919/",
           "product_ids": [
-            "CSAFPID-0001",
             "CSAFPID-0002",
             "CSAFPID-0003",
             "CSAFPID-0004",
@@ -488,7 +442,8 @@
             "CSAFPID-0006"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-10928"
     }
   ]
 }

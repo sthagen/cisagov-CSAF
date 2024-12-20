@@ -2,8 +2,8 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens",
-        "summary": "reporting these vulnerabilities to CISA"
+        "organization": "Siemens ProductCERT",
+        "summary": "reporting these vulnerabilities to CISA."
       }
     ],
     "category": "csaf_security_advisory",
@@ -15,12 +15,22 @@
         "url": "https://us-cert.cisa.gov/tlp/"
       }
     },
-    "lang": "en-US",
+    "lang": "en",
     "notes": [
       {
         "category": "general",
-        "text": "This CSAF advisory was extracted from unstructured data and may contain inaccuracies. If you notice any errors, please reach out to the designated contact at CISA CSAF: central@cisa.dhs.gov",
-        "title": "CISA Disclaimer"
+        "text": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.",
+        "title": "General Recommendations"
+      },
+      {
+        "category": "general",
+        "text": "Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+        "title": "Additional Resources"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "Siemens Security Advisories are subject to the terms and conditions contained in Siemens' underlying license terms or other applicable agreements previously agreed to with Siemens (hereinafter \"License Terms\"). To the extent applicable to information, software or documentation made available in or through a Siemens Security Advisory, the Terms of Use of Siemens' Global Website (https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), in particular Sections 8-10 of the Terms of Use, shall apply additionally. In case of conflicts, the License Terms shall prevail over the Terms of Use.",
+        "title": "Terms of Use"
       },
       {
         "category": "legal_disclaimer",
@@ -28,13 +38,13 @@
         "title": "Legal Notice"
       },
       {
-        "category": "summary",
-        "text": "Successful exploitation of these vulnerabilities may allow an attacker to obtain session cookies, read and modify application data, read internal information, perform unauthorized changes, and obtain passwords of currently logged in users. Should the attacker gain access to the session cookies, they could then hijack the session and perform arbitrary actions in the name of the victim.",
-        "title": "Risk evaluation"
+        "category": "other",
+        "text": "This CISA CSAF advisory was converted from a Siemens ProductCERT's advisory.",
+        "title": "Advisory Conversion Disclaimer"
       },
       {
         "category": "other",
-        "text": "Critical Manufacturing",
+        "text": "Multiple",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -49,42 +59,57 @@
       },
       {
         "category": "general",
-        "text": "CISA recommends users take the following measures to protect themselves from social engineering attacks:",
+        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\nCISA also provides a section for control systems security recommended practices on the ICS webpage onus-cert.cisa.gov. Several recommended practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "text": "Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the internet.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage on us-cert.cisa.gov in the Technical Information Paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.\nOrganizations observing any suspected malicious activity should follow their established internal procedures and report their findings to CISA for tracking and correlation against other incidents.",
+        "text": "Locate control system networks and remote devices behind firewalls and isolate them from business networks.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "These vulnerabilities have been discovered internally by Siemens.\n\nFor further inquiries on security vulnerabilities in Siemens products and \nsolutions, please contact the Siemens ProductCERT:\n\nhttps://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. Also recognize VPN is only as secure as its connected devices.",
+        "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "These vulnerabilities have been discovered internally by Siemens. For further inquiries on security vulnerabilities in Siemens products and  solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.",
+        "title": "Recommended Practices"
       },
       {
-        "category": "other",
-        "text": "No known public exploits specifically target these vulnerabilities.",
-        "title": "Exploitability"
+        "category": "general",
+        "text": "CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov. Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.",
+        "title": "Recommended Practices"
       }
     ],
     "publisher": {
-      "category": "coordinator",
-      "contact_details": "Email: CISAservicedesk@cisa.dhs.gov;\n Toll Free: 1-888-282-0870",
+      "category": "other",
+      "contact_details": "central@cisa.dhs.gov",
       "name": "CISA",
       "namespace": "https://www.cisa.gov/"
     },
     "references": [
+      {
+        "category": "self",
+        "summary": "SSA-604937: Multiple Web Server Vulnerabilities in Opcenter Execution Core - HTML Version",
+        "url": "https://cert-portal.siemens.com/productcert/html/ssa-604937.html"
+      },
       {
         "category": "self",
         "summary": "ICS Advisory ICSA-20-196-07 JSON",
@@ -92,13 +117,23 @@
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-20-196-07 Web Version",
+        "summary": "ICS Advisory ICSA-20-196-07 - Web Version",
         "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-20-196-07"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://us-cert.cisa.gov/ncas/tips/ST04-014"
+        "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/topics/industrial-control-systems"
       },
       {
         "category": "external",
@@ -108,17 +143,17 @@
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://us-cert.cisa.gov/ics/tips/ICS-TIP-12-146-01B"
+        "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
       },
       {
         "category": "external",
-        "summary": "SSA-496604: SSA-604937: Multiple Web Server Vulnerabilities in Opcenter Execution Core - TXT Version",
-        "url": "https://cert-portal.siemens.com/productcert/txt/SSA-604937.txt"
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
     "title": "Siemens Opcenter Execution Core (Update B)",
     "tracking": {
-      "current_release_date": "2021-01-12T00:00:00.000000Z",
+      "current_release_date": "2020-08-11T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -130,25 +165,19 @@
       "revision_history": [
         {
           "date": "2020-07-14T00:00:00.000000Z",
-          "legacy_version": "Initial",
+          "legacy_version": "1.0",
           "number": "1",
-          "summary": "ICSA-20-196-07 Siemens Opcenter Execution Core"
+          "summary": "Publication Date"
         },
         {
           "date": "2020-08-11T00:00:00.000000Z",
-          "legacy_version": "A",
+          "legacy_version": "1.1",
           "number": "2",
-          "summary": "ICSA-20-196-07 Siemens Opcenter Execution Core (Update A)"
-        },
-        {
-          "date": "2021-01-12T00:00:00.000000Z",
-          "legacy_version": "B",
-          "number": "3",
-          "summary": "ICSA-20-196-07 Siemens Opcenter Execution Core (Update B)"
+          "summary": "Errata"
         }
       ],
       "status": "final",
-      "version": "3"
+      "version": "2"
     }
   },
   "product_tree": {
@@ -159,9 +188,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions",
+                "name": "vers:all/*",
                 "product": {
-                  "name": "Camstar Enterprise Platform: All versions",
+                  "name": "Siemens Camstar Enterprise Platform: All versions",
                   "product_id": "CSAFPID-0001"
                 }
               }
@@ -173,9 +202,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V8.2",
+                "name": "<V8.2",
                 "product": {
-                  "name": "Opcenter Execution Core: All versions < V8.2",
+                  "name": "Siemens Opcenter Execution Core: All versions < V8.2",
                   "product_id": "CSAFPID-0002"
                 }
               }
@@ -189,7 +218,7 @@
                 "category": "product_version",
                 "name": "V8.2",
                 "product": {
-                  "name": "Opcenter Execution Core: V8.2",
+                  "name": "Siemens Opcenter Execution Core: V8.2",
                   "product_id": "CSAFPID-0003"
                 }
               }
@@ -203,7 +232,7 @@
                 "category": "product_version",
                 "name": "V8.3",
                 "product": {
-                  "name": "Opcenter Execution Core: V8.3",
+                  "name": "Siemens Opcenter Execution Core: V8.3",
                   "product_id": "CSAFPID-0004"
                 }
               }
@@ -227,12 +256,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "An authenticated user with the ability to create containers, packages or register defects could perform stored Cross-Site Scripting (XSS) attacks within the vulnerable software.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The impact of this attack could result in the session cookies of legitimate users being stolen. Should the attacker gain access to these cookies, they could then hijack the session and perform arbitrary actions in the name of the victim.",
+          "text": "An authenticated user with the ability to create containers, packages or register defects could perform stored Cross-Site Scripting (XSS) attacks within the vulnerable software. The impact of this attack could result in the session cookies of legitimate users being stolen. Should the attacker gain access to these cookies, they could then hijack the session and perform arbitrary actions in the name of the victim.",
           "title": "Summary"
         }
       ],
@@ -240,100 +264,44 @@
         "known_affected": [
           "CSAFPID-0001",
           "CSAFPID-0002",
-          "CSAFPID-0003",
-          "CSAFPID-0004"
+          "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "https://support.sw.siemens.com/ (login required)",
-          "url": "https://support.sw.siemens.com/"
-        },
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-7576"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Configure a web application firewall to filter traffic containing XSS\nInjection and SQL Injections",
+          "category": "mitigation",
+          "details": "Configure a web application firewall to filter traffic containing XSS Injection and SQL Injections",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
+            "CSAFPID-0003"
           ]
         },
         {
-          "category": "vendor_fix",
+          "category": "mitigation",
           "details": "Restrict access to application webserver for trusted users only",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "CVE-2020-7576: Review access permissions for the application and limit\nthe number of users with the ability to create containers, packages, or\nto register defects",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "CVE-2020-28390: Ensure that only trusted persons have access to Opcenter\nExecution Core servers",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to Opcenter Execution Core V8.4 or later version - Download: https://support.sw.siemens.com/ (login required) ",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://support.sw.siemens.com/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to Opcenter Execution Core V8.4 or later version - Download: https://support.sw.siemens.com/ (login required) ",
-          "product_ids": [
-            "CSAFPID-0002"
-          ],
-          "url": "https://support.sw.siemens.com/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to Opcenter Execution Core V8.4 or later version - Download: https://support.sw.siemens.com/ (login required) ",
-          "product_ids": [
             "CSAFPID-0003"
-          ],
-          "url": "https://support.sw.siemens.com/"
+          ]
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "CVE-2020-7576: Review access permissions for the application and limit the number of users with the ability to create containers, packages, or to register defects",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
+            "CSAFPID-0003"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to Opcenter Execution Core V8.4 or later version",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003"
           ]
         }
       ],
@@ -348,11 +316,11 @@
           "products": [
             "CSAFPID-0001",
             "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
+            "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2020-7576"
     },
     {
       "cve": "CVE-2020-7577",
@@ -363,105 +331,39 @@
       "notes": [
         {
           "category": "summary",
-          "text": "Through the use of several vulnerable fields of the application, an authenticated user could perform an SQL Injection attack by passing a modified SQL query downstream to the back-end server.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The exploit of this vulnerability could be used to read, and potentially modify application data to which the user has access to.",
+          "text": "An authenticated user with the ability to create containers, packages or register defects could perform stored Cross-Site Scripting (XSS) attacks within the vulnerable software. The impact of this attack could result in the session cookies of legitimate users being stolen. Should the attacker gain access to these cookies, they could then hijack the session and perform arbitrary actions in the name of the victim.",
           "title": "Summary"
         }
       ],
       "product_status": {
         "known_affected": [
           "CSAFPID-0001",
-          "CSAFPID-0002",
-          "CSAFPID-0003",
-          "CSAFPID-0004"
+          "CSAFPID-0002"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "https://support.sw.siemens.com/ (login required)",
-          "url": "https://support.sw.siemens.com/"
-        },
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-7577"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Configure a web application firewall to filter traffic containing XSS\nInjection and SQL Injections",
+          "category": "mitigation",
+          "details": "Configure a web application firewall to filter traffic containing XSS Injection and SQL Injections",
           "product_ids": [
             "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Restrict access to application webserver for trusted users only",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "CVE-2020-7576: Review access permissions for the application and limit\nthe number of users with the ability to create containers, packages, or\nto register defects",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "CVE-2020-28390: Ensure that only trusted persons have access to Opcenter\nExecution Core servers",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to Opcenter Execution Core V8.4 or later version - Download: https://support.sw.siemens.com/ (login required) ",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://support.sw.siemens.com/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to Opcenter Execution Core V8.4 or later version - Download: https://support.sw.siemens.com/ (login required) ",
-          "product_ids": [
             "CSAFPID-0002"
-          ],
-          "url": "https://support.sw.siemens.com/"
+          ]
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Restrict access to application webserver for trusted users only",
           "product_ids": [
             "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to Opcenter Execution Core V8.4 or later version",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002"
           ]
         }
       ],
@@ -475,12 +377,11 @@
           },
           "products": [
             "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
+            "CSAFPID-0002"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2020-7577"
     },
     {
       "cve": "CVE-2020-7578",
@@ -491,100 +392,39 @@
       "notes": [
         {
           "category": "summary",
-          "text": "Authenticated users could have access to resources they normally would not have. This vulnerability could allow an attacker to view internal information and perform unauthorized changes.",
+          "text": "An authenticated user with the ability to create containers, packages or register defects could perform stored Cross-Site Scripting (XSS) attacks within the vulnerable software. The impact of this attack could result in the session cookies of legitimate users being stolen. Should the attacker gain access to these cookies, they could then hijack the session and perform arbitrary actions in the name of the victim.",
           "title": "Summary"
         }
       ],
       "product_status": {
         "known_affected": [
           "CSAFPID-0001",
-          "CSAFPID-0002",
-          "CSAFPID-0003",
-          "CSAFPID-0004"
+          "CSAFPID-0002"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "https://support.sw.siemens.com/ (login required)",
-          "url": "https://support.sw.siemens.com/"
-        },
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-7578"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Configure a web application firewall to filter traffic containing XSS\nInjection and SQL Injections",
+          "category": "mitigation",
+          "details": "Configure a web application firewall to filter traffic containing XSS Injection and SQL Injections",
           "product_ids": [
             "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Restrict access to application webserver for trusted users only",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "CVE-2020-7576: Review access permissions for the application and limit\nthe number of users with the ability to create containers, packages, or\nto register defects",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "CVE-2020-28390: Ensure that only trusted persons have access to Opcenter\nExecution Core servers",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to Opcenter Execution Core V8.4 or later version - Download: https://support.sw.siemens.com/ (login required) ",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://support.sw.siemens.com/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to Opcenter Execution Core V8.4 or later version - Download: https://support.sw.siemens.com/ (login required) ",
-          "product_ids": [
             "CSAFPID-0002"
-          ],
-          "url": "https://support.sw.siemens.com/"
+          ]
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Restrict access to application webserver for trusted users only",
           "product_ids": [
             "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to Opcenter Execution Core V8.4 or later version",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002"
           ]
         }
       ],
@@ -598,12 +438,11 @@
           },
           "products": [
             "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
+            "CSAFPID-0002"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2020-7578"
     },
     {
       "cve": "CVE-2020-28390",
@@ -614,103 +453,45 @@
       "notes": [
         {
           "category": "summary",
-          "text": "The application contains an information leakage vulnerability in the handling of web client sessions.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "A local attacker who has access to the Web Client Session Storage could disclose the passwords of currently logged-in users.",
+          "text": "An authenticated user with the ability to create containers, packages or register defects could perform stored Cross-Site Scripting (XSS) attacks within the vulnerable software. The impact of this attack could result in the session cookies of legitimate users being stolen. Should the attacker gain access to these cookies, they could then hijack the session and perform arbitrary actions in the name of the victim.",
           "title": "Summary"
         }
       ],
       "product_status": {
         "known_affected": [
-          "CSAFPID-0001",
-          "CSAFPID-0002",
           "CSAFPID-0003",
           "CSAFPID-0004"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "https://support.sw.siemens.com/ (login required)",
-          "url": "https://support.sw.siemens.com/"
-        },
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-28390"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Configure a web application firewall to filter traffic containing XSS\nInjection and SQL Injections",
+          "category": "mitigation",
+          "details": "Configure a web application firewall to filter traffic containing XSS Injection and SQL Injections",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
             "CSAFPID-0003",
             "CSAFPID-0004"
           ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Restrict access to application webserver for trusted users only",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "CVE-2020-7576: Review access permissions for the application and limit\nthe number of users with the ability to create containers, packages, or\nto register defects",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "CVE-2020-28390: Ensure that only trusted persons have access to Opcenter\nExecution Core servers",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to Opcenter Execution Core V8.4 or later version - Download: https://support.sw.siemens.com/ (login required) ",
-          "product_ids": [
-            "CSAFPID-0003"
-          ],
-          "url": "https://support.sw.siemens.com/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to Opcenter Execution Core V8.4 or later version - Download: https://support.sw.siemens.com/ (login required) ",
-          "product_ids": [
-            "CSAFPID-0004"
-          ],
-          "url": "https://support.sw.siemens.com/"
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Restrict access to application webserver for trusted users only",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "CVE-2020-28390: Ensure that only trusted persons have access to Opcenter Execution Core servers",
+          "product_ids": [
+            "CSAFPID-0003",
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to Opcenter Execution Core V8.4 or later version",
+          "product_ids": [
             "CSAFPID-0003",
             "CSAFPID-0004"
           ]
@@ -725,13 +506,12 @@
             "version": "3.1"
           },
           "products": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
             "CSAFPID-0003",
             "CSAFPID-0004"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2020-28390"
     }
   ]
 }

@@ -2,12 +2,23 @@
   "document": {
     "acknowledgments": [
       {
+        "organization": "Siemens ProductCERT",
+        "summary": "reporting these vulnerabilities to CISA."
+      },
+      {
         "names": [
           "Manuel Stotz",
           "Matthias Deeg"
         ],
         "organization": "SySS GmbH",
-        "summary": "reporting these vulnerabilities to Siemens"
+        "summary": "for coordinating disclosure"
+      },
+      {
+        "names": [
+          "Artem Zinenko"
+        ],
+        "organization": "Kaspersky",
+        "summary": "for pointing out that SIPLUS should also be mentioned"
       }
     ],
     "category": "csaf_security_advisory",
@@ -19,12 +30,22 @@
         "url": "https://us-cert.cisa.gov/tlp/"
       }
     },
-    "lang": "en-US",
+    "lang": "en",
     "notes": [
       {
         "category": "general",
-        "text": "This CSAF advisory was extracted from unstructured data and may contain inaccuracies. If you notice any errors, please reach out to the designated contact at CISA CSAF: central@cisa.dhs.gov",
-        "title": "CISA Disclaimer"
+        "text": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.",
+        "title": "General Recommendations"
+      },
+      {
+        "category": "general",
+        "text": "Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+        "title": "Additional Resources"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "Siemens Security Advisories are subject to the terms and conditions contained in Siemens' underlying license terms or other applicable agreements previously agreed to with Siemens (hereinafter \"License Terms\"). To the extent applicable to information, software or documentation made available in or through a Siemens Security Advisory, the Terms of Use of Siemens' Global Website (https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), in particular Sections 8-10 of the Terms of Use, shall apply additionally. In case of conflicts, the License Terms shall prevail over the Terms of Use.",
+        "title": "Terms of Use"
       },
       {
         "category": "legal_disclaimer",
@@ -32,13 +53,13 @@
         "title": "Legal Notice"
       },
       {
-        "category": "summary",
-        "text": "Successful exploitation of these vulnerabilities could allow device reconfiguration, access to project files, decryption of files, and access to passwords.",
-        "title": "Risk evaluation"
+        "category": "other",
+        "text": "This CISA CSAF advisory was converted from a Siemens ProductCERT's advisory.",
+        "title": "Advisory Conversion Disclaimer"
       },
       {
         "category": "other",
-        "text": "Commercial Facilities, Transportation Systems",
+        "text": "Multiple",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -53,42 +74,57 @@
       },
       {
         "category": "general",
-        "text": "CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability. Specifically, users should:",
+        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\nCISA also provides a section for control systems security recommended practices on the ICS webpage onus-cert.cisa.gov. Several recommended practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "text": "Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the internet.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage on us-cert.cisa.gov in the Technical Information Paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.\nOrganizations observing any suspected malicious activity should follow their established internal procedures and report their findings to CISA for tracking and correlation against other incidents.",
+        "text": "Locate control system networks and remote devices behind firewalls and isolate them from business networks.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and \nsolutions, please contact the Siemens ProductCERT:\n\nhttps://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. Also recognize VPN is only as secure as its connected devices.",
+        "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and  solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.",
+        "title": "Recommended Practices"
       },
       {
-        "category": "other",
-        "text": "No known public exploits specifically target these vulnerabilities.",
-        "title": "Exploitability"
+        "category": "general",
+        "text": "CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov. Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.",
+        "title": "Recommended Practices"
       }
     ],
     "publisher": {
-      "category": "coordinator",
-      "contact_details": "Email: CISAservicedesk@cisa.dhs.gov;\n Toll Free: 1-888-282-0870",
+      "category": "other",
+      "contact_details": "central@cisa.dhs.gov",
       "name": "CISA",
       "namespace": "https://www.cisa.gov/"
     },
     "references": [
+      {
+        "category": "self",
+        "summary": "SSA-542701: Vulnerabilities in SIEMENS LOGO! - HTML Version",
+        "url": "https://cert-portal.siemens.com/productcert/html/ssa-542701.html"
+      },
       {
         "category": "self",
         "summary": "ICS Advisory ICSA-19-134-04 JSON",
@@ -96,13 +132,23 @@
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-19-134-04 Web Version",
+        "summary": "ICS Advisory ICSA-19-134-04 - Web Version",
         "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-19-134-04"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://us-cert.cisa.gov/ics/alerts/ICS-ALERT-10-301-01"
+        "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/topics/industrial-control-systems"
       },
       {
         "category": "external",
@@ -112,12 +158,12 @@
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://us-cert.cisa.gov/ics/tips/ICS-TIP-12-146-01B"
+        "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
       },
       {
         "category": "external",
-        "summary": "SSA-496604: SSA-542701: Vulnerabilities in SIEMENS LOGO! - TXT Version",
-        "url": "https://cert-portal.siemens.com/productcert/txt/SSA-542701.txt"
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
     "title": "Siemens LOGO! 8 BM (Update A)",
@@ -134,19 +180,25 @@
       "revision_history": [
         {
           "date": "2019-05-14T00:00:00.000000Z",
-          "legacy_version": "Initial",
+          "legacy_version": "1.0",
           "number": "1",
-          "summary": "ICSA-19-134-04 Siemens LOGO!8 BM"
+          "summary": "Publication Date"
+        },
+        {
+          "date": "2020-02-10T00:00:00.000000Z",
+          "legacy_version": "1.1",
+          "number": "2",
+          "summary": "SIPLUS devices now explicitly mentioned in the list of affected products"
         },
         {
           "date": "2020-12-08T00:00:00.000000Z",
-          "legacy_version": "A",
-          "number": "2",
-          "summary": "ICSA-19-134-04 Siemens LOGO! 8 BM (Update A)"
+          "legacy_version": "1.2",
+          "number": "3",
+          "summary": "Add solution for LOGO! 8 BM"
         }
       ],
       "status": "final",
-      "version": "2"
+      "version": "3"
     }
   },
   "product_tree": {
@@ -157,15 +209,15 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V8.3",
+                "name": "<V8.3",
                 "product": {
-                  "name": "LOGO! 8 BM (incl. SIPLUS variants): All versions < V8.3",
+                  "name": "Siemens LOGO! 8 BM (incl.'SIPLUS variants): All versions < V8.3",
                   "product_id": "CSAFPID-0001"
                 }
               }
             ],
             "category": "product_name",
-            "name": "LOGO! 8 BM (incl. SIPLUS variants)"
+            "name": "LOGO! 8 BM (incl.'SIPLUS variants)"
           }
         ],
         "category": "vendor",
@@ -183,17 +235,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "Attackers with access to port 10005/tcp could perform device reconfigurations and obtain project files from the devices. The system manual recommends to protect access to this port.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an unauthenticated attacker with network access to port 10005/tcp. No user interaction is required to exploit this security vulnerability. The vulnerability impacts confidentiality, integrity, and availability of the device.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known.",
+          "text": "Attackers with access to port 10005/tcp could perform device reconfigurations and obtain project files from the devices. The system manual recommends to protect access to this port. The security vulnerability could be exploited by an unauthenticated attacker with network access to port 10005/tcp. No user interaction is required to exploit this security vulnerability. The vulnerability impacts confidentiality, integrity, and availability of the device. At the time of advisory publication no public exploitation of this security vulnerability was known.",
           "title": "Summary"
         }
       ],
@@ -202,42 +244,17 @@
           "CSAFPID-0001"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "https://support.industry.siemens.com/cs/ww/en/view/109783346/",
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109783346/"
-        },
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-10919"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Apply Defense-in-Depth concept, including protection concept outlined in\nthe system manual.",
+          "category": "mitigation",
+          "details": "Apply Defense-in-Depth concept, including protection concept outlined in the system manual.",
           "product_ids": [
             "CSAFPID-0001"
           ]
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V8.3. Notice that in order to update, a new hardware version is required. - Download: https://support.industry.siemens.com/cs/ww/en/view/109783346/ ",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109783346/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Update to V8.3. Notice that in order to update, a new hardware version is required. https://support.industry.siemens.com/cs/ww/en/view/109783346/",
           "product_ids": [
             "CSAFPID-0001"
           ]
@@ -255,7 +272,8 @@
             "CSAFPID-0001"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-10919"
     },
     {
       "cve": "CVE-2019-10920",
@@ -266,17 +284,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "Project data stored on the device, which is accessible via port 10005/tcp, can be decrypted due to a hardcoded encryption key.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an unauthenticated attacker with network access to port 10005/tcp. No user interaction is required to exploit this security vulnerability. The vulnerability impacts confidentiality of the device.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known.",
+          "text": "Attackers with access to port 10005/tcp could perform device reconfigurations and obtain project files from the devices. The system manual recommends to protect access to this port. The security vulnerability could be exploited by an unauthenticated attacker with network access to port 10005/tcp. No user interaction is required to exploit this security vulnerability. The vulnerability impacts confidentiality, integrity, and availability of the device. At the time of advisory publication no public exploitation of this security vulnerability was known.",
           "title": "Summary"
         }
       ],
@@ -285,42 +293,17 @@
           "CSAFPID-0001"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "https://support.industry.siemens.com/cs/ww/en/view/109783346/",
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109783346/"
-        },
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-10920"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Apply Defense-in-Depth concept, including protection concept outlined in\nthe system manual.",
+          "category": "mitigation",
+          "details": "Apply Defense-in-Depth concept, including protection concept outlined in the system manual.",
           "product_ids": [
             "CSAFPID-0001"
           ]
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V8.3. Notice that in order to update, a new hardware version is required. - Download: https://support.industry.siemens.com/cs/ww/en/view/109783346/ ",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109783346/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Update to V8.3. Notice that in order to update",
           "product_ids": [
             "CSAFPID-0001"
           ]
@@ -338,7 +321,8 @@
             "CSAFPID-0001"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-10920"
     },
     {
       "cve": "CVE-2019-10921",
@@ -349,17 +333,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "Unencrypted storage of passwords in the project could allow an attacker with access to port 10005/tcp to obtain passwords of the device.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an unauthenticated attacker with network access to port 10005/tcp. No user interaction is required to exploit this security vulnerability. The vulnerability impacts confidentiality of the device.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known",
+          "text": "Attackers with access to port 10005/tcp could perform device reconfigurations and obtain project files from the devices. The system manual recommends to protect access to this port. The security vulnerability could be exploited by an unauthenticated attacker with network access to port 10005/tcp. No user interaction is required to exploit this security vulnerability. The vulnerability impacts confidentiality, integrity, and availability of the device. At the time of advisory publication no public exploitation of this security vulnerability was known.",
           "title": "Summary"
         }
       ],
@@ -368,42 +342,17 @@
           "CSAFPID-0001"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "https://support.industry.siemens.com/cs/ww/en/view/109783346/",
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109783346/"
-        },
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-10921"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Apply Defense-in-Depth concept, including protection concept outlined in\nthe system manual.",
+          "category": "mitigation",
+          "details": "Apply Defense-in-Depth concept, including protection concept outlined in the system manual.",
           "product_ids": [
             "CSAFPID-0001"
           ]
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V8.3. Notice that in order to update, a new hardware version is required. - Download: https://support.industry.siemens.com/cs/ww/en/view/109783346/ ",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109783346/"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Update to V8.3. Notice that in order to update, a new hardware version is required. https://support.industry.siemens.com/cs/ww/en/view/109783346/",
           "product_ids": [
             "CSAFPID-0001"
           ]
@@ -421,7 +370,8 @@
             "CSAFPID-0001"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-10921"
     }
   ]
 }

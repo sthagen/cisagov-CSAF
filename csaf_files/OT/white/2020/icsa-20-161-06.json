@@ -2,8 +2,8 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens",
-        "summary": "reporting these vulnerabilities to CISA"
+        "organization": "Siemens ProductCERT",
+        "summary": "reporting these vulnerabilities to CISA."
       }
     ],
     "category": "csaf_security_advisory",
@@ -15,12 +15,22 @@
         "url": "https://us-cert.cisa.gov/tlp/"
       }
     },
-    "lang": "en-US",
+    "lang": "en",
     "notes": [
       {
         "category": "general",
-        "text": "This CSAF advisory was extracted from unstructured data and may contain inaccuracies. If you notice any errors, please reach out to the designated contact at CISA CSAF: central@cisa.dhs.gov",
-        "title": "CISA Disclaimer"
+        "text": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.",
+        "title": "General Recommendations"
+      },
+      {
+        "category": "general",
+        "text": "Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+        "title": "Additional Resources"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "Siemens Security Advisories are subject to the terms and conditions contained in Siemens' underlying license terms or other applicable agreements previously agreed to with Siemens (hereinafter \"License Terms\"). To the extent applicable to information, software or documentation made available in or through a Siemens Security Advisory, the Terms of Use of Siemens' Global Website (https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), in particular Sections 8-10 of the Terms of Use, shall apply additionally. In case of conflicts, the License Terms shall prevail over the Terms of Use.",
+        "title": "Terms of Use"
       },
       {
         "category": "legal_disclaimer",
@@ -28,13 +38,13 @@
         "title": "Legal Notice"
       },
       {
-        "category": "summary",
-        "text": "Successful exploitation of these vulnerabilities could allow remote code execution, information disclosure, and denial-of-service attacks under certain conditions.",
-        "title": "Risk evaluation"
+        "category": "other",
+        "text": "This CISA CSAF advisory was converted from a Siemens ProductCERT's advisory.",
+        "title": "Advisory Conversion Disclaimer"
       },
       {
         "category": "other",
-        "text": "Chemical, Energy, Food and Agriculture, Water and Wastewater Systems",
+        "text": "Multiple",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -49,42 +59,57 @@
       },
       {
         "category": "general",
-        "text": "CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability. Specifically, users should:",
+        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\nCISA also provides a section for control systems security recommended practices on the ICS webpage onus-cert.gov. Several recommended practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "text": "Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the internet.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage on us-cert.gov in the Technical Information Paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.\nOrganizations observing any suspected malicious activity should follow their established internal procedures and report their findings to CISA for tracking and correlation against other incidents.",
+        "text": "Locate control system networks and remote devices behind firewalls and isolate them from business networks.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "Listed vulnerabilities are part of a Kaspersky report. See VNC\nvulnerability research for related security advisories and additional\ninformation on the vulnerabilites.\n\nFor further inquiries on security vulnerabilities in Siemens products and \nsolutions, please contact the Siemens ProductCERT:\n\nhttps://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. Also recognize VPN is only as secure as its connected devices.",
+        "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "Listed vulnerabilities are part of a Kaspersky report. See VNC vulnerability research for related security advisories and additional information on the vulnerabilites. For further inquiries on security vulnerabilities in Siemens products and  solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.",
+        "title": "Recommended Practices"
       },
       {
-        "category": "other",
-        "text": "No known public exploits specifically target these vulnerabilities.",
-        "title": "Exploitability"
+        "category": "general",
+        "text": "CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov. Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.",
+        "title": "Recommended Practices"
       }
     ],
     "publisher": {
-      "category": "coordinator",
-      "contact_details": "Email: CISAservicedesk@cisa.dhs.gov;\n Toll Free: 1-888-282-0870",
+      "category": "other",
+      "contact_details": "central@cisa.dhs.gov",
       "name": "CISA",
       "namespace": "https://www.cisa.gov/"
     },
     "references": [
+      {
+        "category": "self",
+        "summary": "SSA-927095: UltraVNC Vulnerabilities in SINUMERIK Products - HTML Version",
+        "url": "https://cert-portal.siemens.com/productcert/html/ssa-927095.html"
+      },
       {
         "category": "self",
         "summary": "ICS Advisory ICSA-20-161-06 JSON",
@@ -92,28 +117,38 @@
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-20-161-06 Web Version",
+        "summary": "ICS Advisory ICSA-20-161-06 - Web Version",
         "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-20-161-06"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/ics/alerts/ICS-ALERT-10-301-01"
+        "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/ics/tips/ICS-TIP-12-146-01B"
+        "url": "https://www.cisa.gov/topics/industrial-control-systems"
       },
       {
         "category": "external",
-        "summary": "SSA-496604: SSA-927095: UltraVNC Vulnerabilities in SINUMERIK Products - TXT Version",
-        "url": "https://cert-portal.siemens.com/productcert/txt/SSA-927095.txt"
+        "summary": "Recommended Practices",
+        "url": "https://us-cert.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
     "title": "Siemens SINUMERIK",
@@ -130,9 +165,9 @@
       "revision_history": [
         {
           "date": "2020-06-09T00:00:00.000000Z",
-          "legacy_version": "Initial",
+          "legacy_version": "1.0",
           "number": "1",
-          "summary": "ICSA-20-161-06 Siemens SINUMERIK"
+          "summary": "Publication Date"
         }
       ],
       "status": "final",
@@ -147,9 +182,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V4.8",
+                "name": "<V4.8",
                 "product": {
-                  "name": "SINUMERIK Access MyMachine /P2P: All versions < V4.8",
+                  "name": "Siemens SINUMERIK Access MyMachine /P2P: All versions < V4.8",
                   "product_id": "CSAFPID-0001"
                 }
               }
@@ -161,9 +196,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V14.00",
+                "name": "<V14.00",
                 "product": {
-                  "name": "SINUMERIK PCU base Win10 software /IPC: All versions < V14.00",
+                  "name": "Siemens SINUMERIK PCU base Win10 software /IPC: All versions < V14.00",
                   "product_id": "CSAFPID-0002"
                 }
               }
@@ -175,9 +210,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V12.01 HF4",
+                "name": "<V12.01_HF4",
                 "product": {
-                  "name": "SINUMERIK PCU base Win7 software /IPC: All versions < V12.01 HF4",
+                  "name": "Siemens SINUMERIK PCU base Win7 software /IPC: All versions < V12.01 HF4",
                   "product_id": "CSAFPID-0003"
                 }
               }
@@ -212,22 +247,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-15361"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -235,11 +258,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -258,7 +293,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2018-15361"
     },
     {
       "cve": "CVE-2019-8258",
@@ -269,7 +305,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1198 has a heap buffer overflow vulnerability in VNC client code which results code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -280,22 +316,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8258"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -303,11 +327,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -326,7 +362,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8258"
     },
     {
       "cve": "CVE-2019-8259",
@@ -337,7 +374,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1198 contains multiple memory leaks in VNC client code, which allow an attacker to read stack memory and can be abused for information disclosure. Combined with another vulnerability, it can be used to leak stack memory and bypass ASLR. This attack appears to be exploitable via network connectivity. These vulnerabilities have been fixed in revision 1199.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -348,22 +385,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8259"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -371,11 +396,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -394,7 +431,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8259"
     },
     {
       "cve": "CVE-2019-8260",
@@ -405,7 +443,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1199 has a out-of-bounds read vulnerability in VNC client RRE decoder code, caused by multiplication overflow. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1200.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -416,22 +454,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8260"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -439,11 +465,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -462,7 +500,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8260"
     },
     {
       "cve": "CVE-2019-8261",
@@ -473,7 +512,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1199 has a out-of-bounds read vulnerability in VNC code inside client CoRRE decoder, caused by multiplication overflow. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1200.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -484,22 +523,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8261"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -507,11 +534,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -530,7 +569,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8261"
     },
     {
       "cve": "CVE-2019-8262",
@@ -541,7 +581,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1203 has multiple heap buffer overflow vulnerabilities in VNC client code inside Ultra decoder, which results in code execution. This attack appears to be exploitable via network connectivity. These vulnerabilities have been fixed in revision 1204.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -552,22 +592,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8262"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -575,11 +603,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -598,7 +638,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8262"
     },
     {
       "cve": "CVE-2019-8263",
@@ -609,7 +650,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1205 has stack-based buffer overflow vulnerability in VNC client code inside ShowConnInfo routine, which leads to a denial of service (DoS) condition. This attack appear to be exploitable via network connectivity. User interaction is required to trigger this vulnerability. This vulnerability has been fixed in revision 1206.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -620,22 +661,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8263"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -643,11 +672,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -666,7 +707,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8263"
     },
     {
       "cve": "CVE-2019-8264",
@@ -677,7 +719,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1203 has out-of-bounds access vulnerability in VNC client inside Ultra2 decoder, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1204.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -688,22 +730,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8264"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -711,11 +741,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -734,7 +776,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8264"
     },
     {
       "cve": "CVE-2019-8265",
@@ -745,7 +788,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1207 has multiple out-of-bounds access vulnerabilities connected with improper usage of SETPIXELS macro in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. These vulnerabilities have been fixed in revision 1208.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -756,22 +799,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8265"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -779,11 +810,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -802,7 +845,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8265"
     },
     {
       "cve": "CVE-2019-8266",
@@ -813,7 +857,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1207 has multiple out-of-bounds access vulnerabilities connected with improper usage of ClientConnection::Copybuffer function in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. User interaction is required to trigger these vulnerabilities. These vulnerabilities have been fixed in revision 1208.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -824,22 +868,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8266"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -847,11 +879,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -870,7 +914,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8266"
     },
     {
       "cve": "CVE-2019-8267",
@@ -881,7 +926,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1207 has out-of-bounds read vulnerability in VNC client code inside TextChat module, which results in a denial of service (DoS) condition. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1208.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -892,22 +937,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8267"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -915,11 +948,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -938,7 +983,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8267"
     },
     {
       "cve": "CVE-2019-8268",
@@ -949,7 +995,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1206 has multiple off-by-one vulnerabilities in VNC client code connected with improper usage of ClientConnection::ReadString function, which can potentially result code execution. This attack appears to be exploitable via network connectivity. These vulnerabilities have been fixed in revision 1207.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -960,22 +1006,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8268"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -983,11 +1017,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -1006,7 +1052,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8268"
     },
     {
       "cve": "CVE-2019-8269",
@@ -1017,7 +1064,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1206 has stack-based Buffer overflow vulnerability in VNC client code inside FileTransfer module, which leads to a denial of service (DoS) condition. This attack appear to be exploitable via network connectivity. This vulnerability has been fixed in revision 1207.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -1028,22 +1075,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8269"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1051,11 +1086,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -1074,7 +1121,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8269"
     },
     {
       "cve": "CVE-2019-8270",
@@ -1085,7 +1133,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1210 has out-of-bounds read vulnerability in VNC client code inside Ultra decoder, which results in a denial of service (DoS) condition. This attack appear to be exploitable via network connectivity. This vulnerability has been fixed in revision 1211.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -1096,22 +1144,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8270"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1119,11 +1155,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -1142,7 +1190,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8270"
     },
     {
       "cve": "CVE-2019-8271",
@@ -1153,7 +1202,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1211 has a heap buffer overflow vulnerability in VNC server code inside file transfer handler, which can potentially result code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1212.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -1164,22 +1213,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8271"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1187,11 +1224,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -1210,7 +1259,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8271"
     },
     {
       "cve": "CVE-2019-8272",
@@ -1221,7 +1271,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1211 has multiple off-by-one vulnerabilities in VNC server code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. These vulnerabilities have been fixed in revision 1212.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -1232,22 +1282,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8272"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1255,11 +1293,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -1278,7 +1328,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8272"
     },
     {
       "cve": "CVE-2019-8273",
@@ -1289,7 +1340,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1211 has a heap buffer overflow vulnerability in VNC server code inside file transfer request handler, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1212.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -1300,22 +1351,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8273"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1323,11 +1362,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -1346,7 +1397,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8273"
     },
     {
       "cve": "CVE-2019-8274",
@@ -1357,7 +1409,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1211 has a heap buffer overflow vulnerability in VNC server code inside file transfer offer handler, which can potentially in result code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1212.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -1368,22 +1420,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8274"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1391,11 +1431,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -1414,7 +1466,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8274"
     },
     {
       "cve": "CVE-2019-8275",
@@ -1425,7 +1478,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1211 has multiple improper null termination vulnerabilities in VNC server code, which result in out-of-bound data being accessed by remote users. This attack appears to be exploitable via network connectivity. These vulnerabilities have been fixed in revision 1212.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -1436,22 +1489,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8275"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1459,11 +1500,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -1482,7 +1535,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8275"
     },
     {
       "cve": "CVE-2019-8276",
@@ -1493,7 +1547,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1211 has a stack buffer overflow vulnerability in VNC server code inside file transfer request handler, which can result in Denial of Service (DoS). This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1212.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -1504,22 +1558,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8276"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1527,11 +1569,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -1550,7 +1604,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8276"
     },
     {
       "cve": "CVE-2019-8277",
@@ -1561,7 +1616,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1211 contains multiple memory leaks in VNC server code, which allows an attacker to read stack memory and can be abused for information disclosure. Combined with another vulnerability, it can be used to leak stack memory and bypass ASLR. This attack appears to be exploitable via network connectivity. These vulnerabilities have been fixed in revision 1212.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -1572,22 +1627,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8277"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1595,11 +1638,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -1618,7 +1673,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8277"
     },
     {
       "cve": "CVE-2019-8280",
@@ -1629,7 +1685,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "UltraVNC revision 1203 has out-of-bounds access vulnerability in VNC client inside RAW decoder, which can potentially result code execution. This attack appear to be exploitable via network connectivity. This vulnerability has been fixed in revision 1204.",
+          "text": "UltraVNC revision 1198 has a buffer underflow vulnerability in VNC client code, which can potentially result in code execution. This attack appears to be exploitable via network connectivity. This vulnerability has been fixed in revision 1199.",
           "title": "Summary"
         }
       ],
@@ -1640,22 +1696,10 @@
           "CSAFPID-0003"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-8280"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Restrict access to the device to the internal or VPN network and to\ntrusted IP addresses only.",
+          "category": "mitigation",
+          "details": "Restrict access to the device to the internal or VPN network and to trusted IP addresses only.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1663,11 +1707,23 @@
           ]
         },
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "category": "vendor_fix",
+          "details": "Update to V4.8",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V14.00",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V12.01 HF4",
+          "product_ids": [
             "CSAFPID-0003"
           ]
         }
@@ -1686,7 +1742,8 @@
             "CSAFPID-0003"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-8280"
     }
   ]
 }

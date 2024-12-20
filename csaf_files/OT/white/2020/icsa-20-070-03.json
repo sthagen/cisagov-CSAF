@@ -2,12 +2,12 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "The Kudelski Security Pen-testing Team",
-        "summary": "coordinating this vulnerability with Siemens"
+        "organization": "Siemens ProductCERT",
+        "summary": "reporting this vulnerability to CISA."
       },
       {
-        "organization": "Siemens",
-        "summary": "reporting this vulnerability to CISA"
+        "organization": "Kudelski Security Pentesting Team",
+        "summary": "for coordinating disclosure"
       }
     ],
     "category": "csaf_security_advisory",
@@ -19,12 +19,22 @@
         "url": "https://us-cert.cisa.gov/tlp/"
       }
     },
-    "lang": "en-US",
+    "lang": "en",
     "notes": [
       {
         "category": "general",
-        "text": "This CSAF advisory was extracted from unstructured data and may contain inaccuracies. If you notice any errors, please reach out to the designated contact at CISA CSAF: central@cisa.dhs.gov",
-        "title": "CISA Disclaimer"
+        "text": "Operators of critical power systems (e.g. TSOs or DSOs) worldwide are usually required by regulations to build resilience into the power grids by applying multi-level redundant secondary protection schemes. It is therefore recommended that the operators check whether appropriate resilient protection measures are in place. The risk of cyber incidents impacting the grid's reliability can thus be minimized by virtue of the grid design. Siemens strongly recommends applying the provided security updates using the corresponding tooling and documented procedures made available with the product. If supported by the product, an automated means to apply the security updates across multiple product instances may be used. Siemens strongly recommends prior validation of any security update before being applied, and supervision by trained staff of the update process in the target environment. As a general security measure Siemens strongly recommends to protect network access with appropriate mechanisms (e.g. firewalls, segmentation, VPN). It is advised to configure the environment according to our operational guidelines in order to run the devices in a protected IT environment. Recommended security guidelines to Digital Grid Products can be found at:",
+        "title": "General Recommendations"
+      },
+      {
+        "category": "general",
+        "text": "https://www.siemens.com/gridsecurity",
+        "title": "Additional Resources"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "Siemens Security Advisories are subject to the terms and conditions contained in Siemens' underlying license terms or other applicable agreements previously agreed to with Siemens (hereinafter \"License Terms\"). To the extent applicable to information, software or documentation made available in or through a Siemens Security Advisory, the Terms of Use of Siemens' Global Website (https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), in particular Sections 8-10 of the Terms of Use, shall apply additionally. In case of conflicts, the License Terms shall prevail over the Terms of Use.",
+        "title": "Terms of Use"
       },
       {
         "category": "legal_disclaimer",
@@ -32,13 +42,13 @@
         "title": "Legal Notice"
       },
       {
-        "category": "summary",
-        "text": "Successful exploitation of this vulnerability could affect the confidentiality or integrity of the data and programming of the device.",
-        "title": "Risk evaluation"
+        "category": "other",
+        "text": "This CISA CSAF advisory was converted from a Siemens ProductCERT's advisory.",
+        "title": "Advisory Conversion Disclaimer"
       },
       {
         "category": "other",
-        "text": "Critical Manufacturing",
+        "text": "Multiple",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -53,42 +63,57 @@
       },
       {
         "category": "general",
-        "text": "CISA recommends users take defensive measures to protect themselves from social engineering attacks:",
+        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\nCISA also provides a section for control systems security recommended practices on the ICS webpage onus-cert.gov. Several recommended practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "text": "Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the internet.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage on us-cert.gov in the Technical Information Paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.\nOrganizations observing any suspected malicious activity should follow their established internal procedures and report their findings to CISA for tracking and correlation against other incidents.",
+        "text": "Locate control system networks and remote devices behind firewalls and isolate them from business networks.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and \nsolutions, please contact the Siemens ProductCERT:\n\nhttps://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. Also recognize VPN is only as secure as its connected devices.",
+        "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and  solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.",
+        "title": "Recommended Practices"
       },
       {
-        "category": "other",
-        "text": "No known public exploits specifically target this vulnerability.",
-        "title": "Exploitability"
+        "category": "general",
+        "text": "CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov. Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.",
+        "title": "Recommended Practices"
       }
     ],
     "publisher": {
-      "category": "coordinator",
-      "contact_details": "Email: CISAservicedesk@cisa.dhs.gov;\n Toll Free: 1-888-282-0870",
+      "category": "other",
+      "contact_details": "central@cisa.dhs.gov",
       "name": "CISA",
       "namespace": "https://www.cisa.gov/"
     },
     "references": [
+      {
+        "category": "self",
+        "summary": "SSA-938930: Cross-Site Scripting Vulnerability in Spectrum Power\u2122 5 - HTML Version",
+        "url": "https://cert-portal.siemens.com/productcert/html/ssa-938930.html"
+      },
       {
         "category": "self",
         "summary": "ICS Advisory ICSA-20-070-03 JSON",
@@ -96,28 +121,38 @@
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-20-070-03 Web Version",
+        "summary": "ICS Advisory ICSA-20-070-03 - Web Version",
         "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-20-070-03"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/ncas/tips/ST04-014"
+        "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/ics/tips/ICS-TIP-12-146-01B"
+        "url": "https://www.cisa.gov/topics/industrial-control-systems"
       },
       {
         "category": "external",
-        "summary": "SSA-496604: SSA-938930: Cross-Site Scripting Vulnerability in Spectrum Power™ 5 - TXT Version",
-        "url": "https://cert-portal.siemens.com/productcert/txt/SSA-938930.txt"
+        "summary": "Recommended Practices",
+        "url": "https://us-cert.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
     "title": "Siemens Spectrum Power 5",
@@ -134,9 +169,9 @@
       "revision_history": [
         {
           "date": "2020-03-10T00:00:00.000000Z",
-          "legacy_version": "Initial",
+          "legacy_version": "1.0",
           "number": "1",
-          "summary": "ICSA-20-070-03 Siemens Spectrum Power 5"
+          "summary": "Publication Date"
         }
       ],
       "status": "final",
@@ -151,15 +186,15 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < v5.50 HF02",
+                "name": "<v5.50_HF02",
                 "product": {
-                  "name": "Spectrum Power™ 5: All versions < v5.50 HF02",
+                  "name": "Siemens Spectrum Power\u2122 5: All versions < v5.50 HF02",
                   "product_id": "CSAFPID-0001"
                 }
               }
             ],
             "category": "product_name",
-            "name": "Spectrum Power™ 5"
+            "name": "Spectrum Power\u2122 5"
           }
         ],
         "category": "vendor",
@@ -177,17 +212,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "The web server could allow Cross-Site Scripting (XSS) attacks if unsuspecting users are tricked into accessing a malicious link.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "User interaction is required for a successful exploitation.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "If deployed according to recommended system configuration, Siemens considers the environmental vector as CR:L/IR:M/AR:H/MAV:A (4.1).",
+          "text": "The web server could allow Cross-Site Scripting (XSS) attacks if unsuspecting users are tricked into accessing a malicious link. User interaction is required for a successful exploitation. If deployed according to recommended system configuration, Siemens considers the environmental vector as CR:L/IR:M/AR:H/MAV:A (4.1).",
           "title": "Summary"
         }
       ],
@@ -196,36 +221,10 @@
           "CSAFPID-0001"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-7579"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Do not open unknown links while working on Spectrum Power™ 5.",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Please contact Siemens Energy Customer Support Center at: support.energy@siemens.com or your local Siemens representative. ",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
           "category": "mitigation",
-          "details": "Operators of critical power systems (e.g. TSOs or DSOs) worldwide are usually required by regulations to build resilience into the power grids by applying multi-level redundant secondary protection schemes. It is therefore recommended that the operators check whether appropriate resilient protection measures are in place. The risk of cyber incidents impacting the grid's reliability can thus be minimized by virtue of the grid design. Siemens strongly recommends applying the provided security updates using the corresponding tooling and documented procedures made available with the product. If supported by the product, an automated means to apply the security updates across multiple product instances may be used. Siemens strongly recommends prior validation of any security update before being applied, and supervision by trained staff of the update process in the target environment. As a general security measure Siemens strongly recommends to protect network access with appropriate mechanisms (e.g. firewalls, segmentation, VPN). It is advised to configure the environment according to our operational guidelines in order to run the devices in a protected IT environment. Recommended security guidelines to Digital Grid Products can be found at: https://www.siemens.com/gridsecurity",
+          "details": "Do not open unknown links while working on Spectrum Power\u2122 5.",
           "product_ids": [
             "CSAFPID-0001"
           ]
@@ -243,7 +242,8 @@
             "CSAFPID-0001"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2020-7579"
     }
   ]
 }
