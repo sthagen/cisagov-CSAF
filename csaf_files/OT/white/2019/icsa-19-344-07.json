@@ -2,8 +2,8 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens",
-        "summary": "reporting these vulnerabilities to CISA"
+        "organization": "Siemens ProductCERT",
+        "summary": "reporting these vulnerabilities to CISA."
       }
     ],
     "category": "csaf_security_advisory",
@@ -15,12 +15,22 @@
         "url": "https://us-cert.cisa.gov/tlp/"
       }
     },
-    "lang": "en-US",
+    "lang": "en",
     "notes": [
       {
         "category": "general",
-        "text": "This CSAF advisory was extracted from unstructured data and may contain inaccuracies. If you notice any errors, please reach out to the designated contact at CISA CSAF: central@cisa.dhs.gov",
-        "title": "CISA Disclaimer"
+        "text": "Operators of critical power systems (e.g. TSOs) worldwide are usually required by regulations to build resilience into the power grids by applying multi-level redundant secondary protection schemes. It is therefore recommended that the operators check whether appropriate resilient protection measures are in place. The risk of cyber incidents impacting the grid's reliability can thus be minimized by virtue of the grid design. Siemens strongly recommends applying the provided security updates using the corresponding tooling and documented procedures made available with the product. If supported by the product, an automated means to apply the security updates across multiple product instances may be used. Siemens strongly recommends prior validation of any security update before being applied, and supervision by trained staff of the update process in the target environment. As a general security measure Siemens strongly recommends to protect network access with appropriate mechanisms (e.g. firewalls, segmentation, VPN). It is advised to configure the environment according to our operational guidelines in order to run the devices in a protected IT environment. Recommended security guidelines to Secure Substations can be found at:",
+        "title": "General Recommendations"
+      },
+      {
+        "category": "general",
+        "text": "https://www.siemens.com/gridsecurity",
+        "title": "Additional Resources"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "Siemens Security Advisories are subject to the terms and conditions contained in Siemens' underlying license terms or other applicable agreements previously agreed to with Siemens (hereinafter \"License Terms\"). To the extent applicable to information, software or documentation made available in or through a Siemens Security Advisory, the Terms of Use of Siemens' Global Website (https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), in particular Sections 8-10 of the Terms of Use, shall apply additionally. In case of conflicts, the License Terms shall prevail over the Terms of Use.",
+        "title": "Terms of Use"
       },
       {
         "category": "legal_disclaimer",
@@ -28,13 +38,13 @@
         "title": "Legal Notice"
       },
       {
-        "category": "summary",
-        "text": "Successful exploitation of these vulnerabilities could allow an attacker to execute remote code, cause a denial-of-service condition, and obtain sensitive information about the device.",
-        "title": "Risk evaluation"
+        "category": "other",
+        "text": "This CISA CSAF advisory was converted from a Siemens ProductCERT's advisory.",
+        "title": "Advisory Conversion Disclaimer"
       },
       {
         "category": "other",
-        "text": "Chemical, Critical Manufacturing, Energy, Food and Agriculture, Water and Wastewater Systems",
+        "text": "Multiple",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -49,47 +59,57 @@
       },
       {
         "category": "general",
-        "text": "CISA recommends users take defensive measures to minimize the risk of exploitation of this vulnerability. Specifically, users should:",
+        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\nCISA also provides a section for control systems security recommended practices on the ICS webpage onus-cert.gov. Several recommended practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "text": "Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the internet.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage on us-cert.gov in the Technical Information Paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.\nOrganizations observing any suspected malicious activity should follow their established internal procedures and report their findings to CISA for tracking and correlation against other incidents.",
+        "text": "Locate control system networks and remote devices behind firewalls and isolate them from business networks.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "CISA also recommends users take the following measures to protect themselves from social engineering attacks:",
+        "text": "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. Also recognize VPN is only as secure as its connected devices.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and \nsolutions, please contact the Siemens ProductCERT:\n\nhttps://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.",
+        "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and  solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov. Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "title": "Recommended Practices"
       },
       {
-        "category": "other",
-        "text": "No known public exploits specifically target these vulnerabilities.",
-        "title": "Exploitability"
+        "category": "general",
+        "text": "CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.",
+        "title": "Recommended Practices"
       }
     ],
     "publisher": {
-      "category": "coordinator",
-      "contact_details": "Email: CISAservicedesk@cisa.dhs.gov;\n Toll Free: 1-888-282-0870",
+      "category": "other",
+      "contact_details": "central@cisa.dhs.gov",
       "name": "CISA",
       "namespace": "https://www.cisa.gov/"
     },
     "references": [
+      {
+        "category": "self",
+        "summary": "SSA-418979: Vulnerabilities in EN100 Ethernet Communication Module - HTML Version",
+        "url": "https://cert-portal.siemens.com/productcert/html/ssa-418979.html"
+      },
       {
         "category": "self",
         "summary": "ICS Advisory ICSA-19-344-07 JSON",
@@ -97,28 +117,38 @@
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-19-344-07 Web Version",
+        "summary": "ICS Advisory ICSA-19-344-07 - Web Version",
         "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-19-344-07"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/ncas/tips/ST04-014"
+        "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/ics/tips/ICS-TIP-12-146-01B"
+        "url": "https://www.cisa.gov/topics/industrial-control-systems"
       },
       {
         "category": "external",
-        "summary": "SSA-496604: SSA-418979: Vulnerabilities in EN100 Ethernet Communication Module - TXT Version",
-        "url": "https://cert-portal.siemens.com/productcert/txt/SSA-418979.txt"
+        "summary": "Recommended Practices",
+        "url": "https://us-cert.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
     "title": "Siemens EN100 Ethernet Module (Update A)",
@@ -135,15 +165,15 @@
       "revision_history": [
         {
           "date": "2019-12-10T00:00:00.000000Z",
-          "legacy_version": "Initial",
+          "legacy_version": "1.0",
           "number": "1",
-          "summary": "ICSA-19-344-07 Siemens EN100 Ethernet Module"
+          "summary": "Publication Date"
         },
         {
           "date": "2020-01-14T00:00:00.000000Z",
-          "legacy_version": "A",
+          "legacy_version": "1.1",
           "number": "2",
-          "summary": "ICSA-19-344-07 Siemens EN100 Ethernet Module (Update A)"
+          "summary": "Included SWT3000 in the product description section"
         }
       ],
       "status": "final",
@@ -158,9 +188,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V4.37",
+                "name": "<V4.37",
                 "product": {
-                  "name": "EN100 Ethernet module IEC 61850 variant: All versions < V4.37",
+                  "name": "Siemens EN100 Ethernet module IEC 61850 variant: All versions < V4.37",
                   "product_id": "CSAFPID-0001"
                 }
               }
@@ -172,9 +202,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions",
+                "name": "vers:all/*",
                 "product": {
-                  "name": "EN100 Ethernet module PROFINET IO variant: All versions",
+                  "name": "Siemens EN100 Ethernet module PROFINET IO variant: All versions",
                   "product_id": "CSAFPID-0002"
                 }
               }
@@ -186,9 +216,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions",
+                "name": "vers:all/*",
                 "product": {
-                  "name": "EN100 Ethernet module Modbus TCP variant: All versions",
+                  "name": "Siemens EN100 Ethernet module Modbus TCP variant: All versions",
                   "product_id": "CSAFPID-0003"
                 }
               }
@@ -200,9 +230,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions",
+                "name": "vers:all/*",
                 "product": {
-                  "name": "EN100 Ethernet module DNP3 variant: All versions",
+                  "name": "Siemens EN100 Ethernet module DNP3 variant: All versions",
                   "product_id": "CSAFPID-0004"
                 }
               }
@@ -214,9 +244,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions",
+                "name": "vers:all/*",
                 "product": {
-                  "name": "EN100 Ethernet module IEC104 variant: All versions",
+                  "name": "Siemens EN100 Ethernet module IEC104 variant: All versions",
                   "product_id": "CSAFPID-0005"
                 }
               }
@@ -240,12 +270,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "An unauthorized user could exploit a buffer overflow vulnerability in the webserver. Specially crafted packets sent could cause a Denial-of-Service condition and if certain conditions are met, the affected devices must be restarted manually to fully recover.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known.",
+          "text": "An unauthorized user could exploit a buffer overflow vulnerability in the webserver. Specially crafted packets sent could cause a Denial-of-Service condition and if certain conditions are met, the affected devices must be restarted manually to fully recover. At the time of advisory publication no public exploitation of this security vulnerability was known.",
           "title": "Summary"
         }
       ],
@@ -258,21 +283,9 @@
           "CSAFPID-0005"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-13942"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
+          "category": "mitigation",
           "details": "Block access to port 80/tcp and 443/tcp e.g. with an external firewall.",
           "product_ids": [
             "CSAFPID-0001",
@@ -284,49 +297,9 @@
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V4.37 - Download: https://support.industry.siemens.com/cs/us/en/view/109745821 ",
+          "details": "Update to V4.37 https://support.industry.siemens.com/cs/us/en/view/109745821",
           "product_ids": [
             "CSAFPID-0001"
-          ],
-          "url": "https://support.industry.siemens.com/cs/us/en/view/109745821"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "See recommendations from section Workaround and Mitigations ",
-          "product_ids": [
-            "CSAFPID-0002"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "See recommendations from section Workaround and Mitigations ",
-          "product_ids": [
-            "CSAFPID-0003"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "See recommendations from section Workaround and Mitigations ",
-          "product_ids": [
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "See recommendations from section Workaround and Mitigations ",
-          "product_ids": [
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "mitigation",
-          "details": "Operators of critical power systems (e.g. TSOs) worldwide are usually required by regulations to build resilience into the power grids by applying multi-level redundant secondary protection schemes. It is therefore recommended that the operators check whether appropriate resilient protection measures are in place. The risk of cyber incidents impacting the grid's reliability can thus be minimized by virtue of the grid design. Siemens strongly recommends applying the provided security updates using the corresponding tooling and documented procedures made available with the product. If supported by the product, an automated means to apply the security updates across multiple product instances may be used. Siemens strongly recommends prior validation of any security update before being applied, and supervision by trained staff of the update process in the target environment. As a general security measure Siemens strongly recommends to protect network access with appropriate mechanisms (e.g. firewalls, segmentation, VPN). It is advised to configure the environment according to our operational guidelines in order to run the devices in a protected IT environment. Recommended security guidelines to Secure Substations can be found at: https://www.siemens.com/gridsecurity",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
           ]
         }
       ],
@@ -346,7 +319,8 @@
             "CSAFPID-0005"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-13942"
     },
     {
       "cve": "CVE-2019-13943",
@@ -357,12 +331,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "The web interface could allow Cross-Site Scripting (XSS) attacks if an attacker is able to modify content of particular web pages, causing the application to behave in unexpected ways for legitimate users. Successful exploitation does not require for an attacker to be authenticated to the web interface. This could allow the attacker to read or modify contents of the web application.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security. vulnerability was known.",
+          "text": "An unauthorized user could exploit a buffer overflow vulnerability in the webserver. Specially crafted packets sent could cause a Denial-of-Service condition and if certain conditions are met, the affected devices must be restarted manually to fully recover. At the time of advisory publication no public exploitation of this security vulnerability was known.",
           "title": "Summary"
         }
       ],
@@ -375,21 +344,9 @@
           "CSAFPID-0005"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-13943"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:L"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
+          "category": "mitigation",
           "details": "Block access to port 80/tcp and 443/tcp e.g. with an external firewall.",
           "product_ids": [
             "CSAFPID-0001",
@@ -401,49 +358,9 @@
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V4.37 - Download: https://support.industry.siemens.com/cs/us/en/view/109745821 ",
+          "details": "Update to V4.37 https://support.industry.siemens.com/cs/us/en/view/109745821",
           "product_ids": [
             "CSAFPID-0001"
-          ],
-          "url": "https://support.industry.siemens.com/cs/us/en/view/109745821"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "See recommendations from section Workaround and Mitigations ",
-          "product_ids": [
-            "CSAFPID-0002"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "See recommendations from section Workaround and Mitigations ",
-          "product_ids": [
-            "CSAFPID-0003"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "See recommendations from section Workaround and Mitigations ",
-          "product_ids": [
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "See recommendations from section Workaround and Mitigations ",
-          "product_ids": [
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "mitigation",
-          "details": "Operators of critical power systems (e.g. TSOs) worldwide are usually required by regulations to build resilience into the power grids by applying multi-level redundant secondary protection schemes. It is therefore recommended that the operators check whether appropriate resilient protection measures are in place. The risk of cyber incidents impacting the grid's reliability can thus be minimized by virtue of the grid design. Siemens strongly recommends applying the provided security updates using the corresponding tooling and documented procedures made available with the product. If supported by the product, an automated means to apply the security updates across multiple product instances may be used. Siemens strongly recommends prior validation of any security update before being applied, and supervision by trained staff of the update process in the target environment. As a general security measure Siemens strongly recommends to protect network access with appropriate mechanisms (e.g. firewalls, segmentation, VPN). It is advised to configure the environment according to our operational guidelines in order to run the devices in a protected IT environment. Recommended security guidelines to Secure Substations can be found at: https://www.siemens.com/gridsecurity",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
           ]
         }
       ],
@@ -463,7 +380,8 @@
             "CSAFPID-0005"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-13943"
     },
     {
       "cve": "CVE-2019-13944",
@@ -474,12 +392,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "A vulnerability in the integrated web server of the affected devices could allow unauthorized attackers to obtain sensitive information about the device, including logs and configurations.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known.",
+          "text": "An unauthorized user could exploit a buffer overflow vulnerability in the webserver. Specially crafted packets sent could cause a Denial-of-Service condition and if certain conditions are met, the affected devices must be restarted manually to fully recover. At the time of advisory publication no public exploitation of this security vulnerability was known.",
           "title": "Summary"
         }
       ],
@@ -492,21 +405,9 @@
           "CSAFPID-0005"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2019-13944"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
+          "category": "mitigation",
           "details": "Block access to port 80/tcp and 443/tcp e.g. with an external firewall.",
           "product_ids": [
             "CSAFPID-0001",
@@ -518,49 +419,9 @@
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V4.37 - Download: https://support.industry.siemens.com/cs/us/en/view/109745821 ",
+          "details": "Update to V4.37 https://support.industry.siemens.com/cs/us/en/view/109745821",
           "product_ids": [
             "CSAFPID-0001"
-          ],
-          "url": "https://support.industry.siemens.com/cs/us/en/view/109745821"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "See recommendations from section Workaround and Mitigations ",
-          "product_ids": [
-            "CSAFPID-0002"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "See recommendations from section Workaround and Mitigations ",
-          "product_ids": [
-            "CSAFPID-0003"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "See recommendations from section Workaround and Mitigations ",
-          "product_ids": [
-            "CSAFPID-0004"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "See recommendations from section Workaround and Mitigations ",
-          "product_ids": [
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "mitigation",
-          "details": "Operators of critical power systems (e.g. TSOs) worldwide are usually required by regulations to build resilience into the power grids by applying multi-level redundant secondary protection schemes. It is therefore recommended that the operators check whether appropriate resilient protection measures are in place. The risk of cyber incidents impacting the grid's reliability can thus be minimized by virtue of the grid design. Siemens strongly recommends applying the provided security updates using the corresponding tooling and documented procedures made available with the product. If supported by the product, an automated means to apply the security updates across multiple product instances may be used. Siemens strongly recommends prior validation of any security update before being applied, and supervision by trained staff of the update process in the target environment. As a general security measure Siemens strongly recommends to protect network access with appropriate mechanisms (e.g. firewalls, segmentation, VPN). It is advised to configure the environment according to our operational guidelines in order to run the devices in a protected IT environment. Recommended security guidelines to Secure Substations can be found at: https://www.siemens.com/gridsecurity",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
           ]
         }
       ],
@@ -580,7 +441,8 @@
             "CSAFPID-0005"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2019-13944"
     }
   ]
 }
