@@ -2,8 +2,8 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens",
-        "summary": "reporting to CISA that these publicly known vulnerabilities also affect these products"
+        "organization": "Siemens ProductCERT",
+        "summary": "reporting these vulnerabilities to CISA."
       }
     ],
     "category": "csaf_security_advisory",
@@ -15,12 +15,22 @@
         "url": "https://us-cert.cisa.gov/tlp/"
       }
     },
-    "lang": "en-US",
+    "lang": "en",
     "notes": [
       {
         "category": "general",
-        "text": "This CSAF advisory was extracted from unstructured data and may contain inaccuracies. If you notice any errors, please reach out to the designated contact at CISA CSAF: central@cisa.dhs.gov",
-        "title": "CISA Disclaimer"
+        "text": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.",
+        "title": "General Recommendations"
+      },
+      {
+        "category": "general",
+        "text": "Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+        "title": "Additional Resources"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "Siemens Security Advisories are subject to the terms and conditions contained in Siemens' underlying license terms or other applicable agreements previously agreed to with Siemens (hereinafter \"License Terms\"). To the extent applicable to information, software or documentation made available in or through a Siemens Security Advisory, the Terms of Use of Siemens' Global Website (https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), in particular Sections 8-10 of the Terms of Use, shall apply additionally. In case of conflicts, the License Terms shall prevail over the Terms of Use.",
+        "title": "Terms of Use"
       },
       {
         "category": "legal_disclaimer",
@@ -28,13 +38,13 @@
         "title": "Legal Notice"
       },
       {
-        "category": "summary",
-        "text": "Successful exploitation of these vulnerabilities could allow remote attackers to affect the availability of the devices under certain conditions.",
-        "title": "Risk evaluation"
+        "category": "other",
+        "text": "This CISA CSAF advisory was converted from a Siemens ProductCERT's advisory.",
+        "title": "Advisory Conversion Disclaimer"
       },
       {
         "category": "other",
-        "text": "Chemical, Energy, Food and Agriculture, Water and Wastewater Systems",
+        "text": "Multiple",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -49,37 +59,57 @@
       },
       {
         "category": "general",
-        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\nCISA also provides a section for control systems security recommended practices on the ICS webpage onus-cert.gov. Several recommended practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage on us-cert.gov in the Technical Information Paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.\nOrganizations observing any suspected malicious activity should follow their established internal procedures and report their findings to CISA for tracking and correlation against other incidents.",
+        "text": "Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the internet.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and \nsolutions, please contact the Siemens ProductCERT:\n\nhttps://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "Locate control system networks and remote devices behind firewalls and isolate them from business networks.",
+        "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and  solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. Also recognize VPN is only as secure as its connected devices.",
+        "title": "Recommended Practices"
       },
       {
-        "category": "other",
-        "text": "No known public exploits specifically target these vulnerabilities.",
-        "title": "Exploitability"
+        "category": "general",
+        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov. Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.",
+        "title": "Recommended Practices"
       }
     ],
     "publisher": {
-      "category": "coordinator",
-      "contact_details": "Email: CISAservicedesk@cisa.dhs.gov;\n Toll Free: 1-888-282-0870",
+      "category": "other",
+      "contact_details": "central@cisa.dhs.gov",
       "name": "CISA",
       "namespace": "https://www.cisa.gov/"
     },
     "references": [
+      {
+        "category": "self",
+        "summary": "SSA-377115: SegmentSmack in Linux IP-Stack based Industrial Devices - HTML Version",
+        "url": "https://cert-portal.siemens.com/productcert/html/ssa-377115.html"
+      },
       {
         "category": "self",
         "summary": "ICS Advisory ICSA-20-105-05 JSON",
@@ -87,23 +117,38 @@
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-20-105-05 Web Version",
+        "summary": "ICS Advisory ICSA-20-105-05 - Web Version",
         "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-20-105-05"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/ics/tips/ICS-TIP-12-146-01B"
+        "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
       },
       {
         "category": "external",
-        "summary": "SSA-496604: SSA-377115: SegmentSmack in Linux IP-Stack based Industrial Devices - TXT Version",
-        "url": "https://cert-portal.siemens.com/productcert/txt/SSA-377115.txt"
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/topics/industrial-control-systems"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://us-cert.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
     "title": "Siemens RUGGEDCOM, SCALANCE, SIMATIC, SINEMA (Update B)",
@@ -120,21 +165,21 @@
       "revision_history": [
         {
           "date": "2020-04-14T00:00:00.000000Z",
-          "legacy_version": "Initial",
+          "legacy_version": "1.0",
           "number": "1",
-          "summary": "ICSA-20-105-05 Siemens IE PB-Link, RUGGEDCOM, SCALANCE, SIMATIC, and SINEMA"
+          "summary": "Publication Date"
         },
         {
           "date": "2020-05-12T00:00:00.000000Z",
-          "legacy_version": "A",
+          "legacy_version": "1.1",
           "number": "2",
-          "summary": "ICSA-20-105-05 Siemens RUGGEDCOM, SCALANCE, SIMATIC, SINEMA (Update A)"
+          "summary": "Removed IE/PB-Link V3 from affected products"
         },
         {
           "date": "2020-09-08T00:00:00.000000Z",
-          "legacy_version": "B",
+          "legacy_version": "1.2",
           "number": "3",
-          "summary": "ICSA-20-105-05 Siemens RUGGEDCOM, SCALANCE, SIMATIC, SINEMA (Update B)"
+          "summary": "Added solution for SIMATIC RF18xC/CI"
         }
       ],
       "status": "final",
@@ -149,9 +194,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All Versions < V6.1",
+                "name": "<V6.1",
                 "product": {
-                  "name": "RUGGEDCOM RM1224: All Versions < V6.1",
+                  "name": "Siemens RUGGEDCOM RM1224: All Versions < V6.1",
                   "product_id": "CSAFPID-0001"
                 }
               }
@@ -163,9 +208,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V2.13.3",
+                "name": "<V2.13.3",
                 "product": {
-                  "name": "RUGGEDCOM ROX II: All versions < V2.13.3",
+                  "name": "Siemens RUGGEDCOM ROX II: All versions < V2.13.3",
                   "product_id": "CSAFPID-0002"
                 }
               }
@@ -177,9 +222,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All Versions < V6.1",
+                "name": "<V6.1",
                 "product": {
-                  "name": "SCALANCE M-800 / S615: All Versions < V6.1",
+                  "name": "Siemens SCALANCE M-800 / S615: All Versions < V6.1",
                   "product_id": "CSAFPID-0003"
                 }
               }
@@ -191,9 +236,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All Versions < V2.0",
+                "name": "<V2.0",
                 "product": {
-                  "name": "SCALANCE SC-600: All Versions < V2.0",
+                  "name": "Siemens SCALANCE SC-600: All Versions < V2.0",
                   "product_id": "CSAFPID-0004"
                 }
               }
@@ -205,9 +250,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All Versions < V2.0",
+                "name": "<V2.0",
                 "product": {
-                  "name": "SCALANCE W1700 IEEE 802.11ac: All Versions < V2.0",
+                  "name": "Siemens SCALANCE W1700 IEEE 802.11ac: All Versions < V2.0",
                   "product_id": "CSAFPID-0005"
                 }
               }
@@ -219,9 +264,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All Versions < V6.4",
+                "name": "<V6.4",
                 "product": {
-                  "name": "SCALANCE W700 IEEE 802.11a/b/g/n: All Versions < V6.4",
+                  "name": "Siemens SCALANCE W700 IEEE 802.11a/b/g/n: All Versions < V6.4",
                   "product_id": "CSAFPID-0006"
                 }
               }
@@ -233,9 +278,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V3.2",
+                "name": "<V3.2",
                 "product": {
-                  "name": "SIMATIC NET CP 1242-7: All versions < V3.2",
+                  "name": "Siemens SIMATIC NET CP 1242-7: All versions < V3.2",
                   "product_id": "CSAFPID-0007"
                 }
               }
@@ -247,23 +292,23 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V3.2",
+                "name": "<V3.2",
                 "product": {
-                  "name": "SIMATIC NET CP 1243-1 (incl. SIPLUS variants): All versions < V3.2",
+                  "name": "Siemens SIMATIC NET CP 1243-1 (incl.'SIPLUS variants): All versions < V3.2",
                   "product_id": "CSAFPID-0008"
                 }
               }
             ],
             "category": "product_name",
-            "name": "SIMATIC NET CP 1243-1 (incl. SIPLUS variants)"
+            "name": "SIMATIC NET CP 1243-1 (incl.'SIPLUS variants)"
           },
           {
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V3.2",
+                "name": "<V3.2",
                 "product": {
-                  "name": "SIMATIC NET CP 1243-7 LTE EU: All versions < V3.2",
+                  "name": "Siemens SIMATIC NET CP 1243-7 LTE EU: All versions < V3.2",
                   "product_id": "CSAFPID-0009"
                 }
               }
@@ -275,10 +320,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V3.2",
+                "name": "<V3.2",
                 "product": {
-                  "name": "SIMATIC NET CP 1243-7 LTE US: All versions < V3.2",
-                  "product_id": "CSAFPID-00010"
+                  "name": "Siemens SIMATIC NET CP 1243-7 LTE US: All versions < V3.2",
+                  "product_id": "CSAFPID-0010"
                 }
               }
             ],
@@ -289,10 +334,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V3.2",
+                "name": "<V3.2",
                 "product": {
-                  "name": "SIMATIC NET CP 1243-8 IRC: All versions < V3.2",
-                  "product_id": "CSAFPID-00011"
+                  "name": "Siemens SIMATIC NET CP 1243-8 IRC: All versions < V3.2",
+                  "product_id": "CSAFPID-0011"
                 }
               }
             ],
@@ -303,10 +348,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V2.1",
+                "name": "<V2.1",
                 "product": {
-                  "name": "SIMATIC NET CP 1542SP-1: All versions < V2.1",
-                  "product_id": "CSAFPID-00012"
+                  "name": "Siemens SIMATIC NET CP 1542SP-1: All versions < V2.1",
+                  "product_id": "CSAFPID-0012"
                 }
               }
             ],
@@ -317,52 +362,52 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V2.1",
+                "name": "<V2.1",
                 "product": {
-                  "name": "SIMATIC NET CP 1542SP-1 IRC (incl. SIPLUS variants): All versions < V2.1",
-                  "product_id": "CSAFPID-00013"
+                  "name": "Siemens SIMATIC NET CP 1542SP-1 IRC (incl.'SIPLUS variants): All versions < V2.1",
+                  "product_id": "CSAFPID-0013"
                 }
               }
             ],
             "category": "product_name",
-            "name": "SIMATIC NET CP 1542SP-1 IRC (incl. SIPLUS variants)"
+            "name": "SIMATIC NET CP 1542SP-1 IRC (incl.'SIPLUS variants)"
           },
           {
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V2.2",
+                "name": "<V2.2",
                 "product": {
-                  "name": "SIMATIC NET CP 1543-1 (incl. SIPLUS variants): All versions < V2.2",
-                  "product_id": "CSAFPID-00014"
+                  "name": "Siemens SIMATIC NET CP 1543-1 (incl.'SIPLUS variants): All versions < V2.2",
+                  "product_id": "CSAFPID-0014"
                 }
               }
             ],
             "category": "product_name",
-            "name": "SIMATIC NET CP 1543-1 (incl. SIPLUS variants)"
+            "name": "SIMATIC NET CP 1543-1 (incl.'SIPLUS variants)"
           },
           {
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V2.1",
+                "name": "<V2.1",
                 "product": {
-                  "name": "SIMATIC NET CP 1543SP-1 (incl. SIPLUS variants): All versions < V2.1",
-                  "product_id": "CSAFPID-00015"
+                  "name": "Siemens SIMATIC NET CP 1543SP-1 (incl.'SIPLUS variants): All versions < V2.1",
+                  "product_id": "CSAFPID-0015"
                 }
               }
             ],
             "category": "product_name",
-            "name": "SIMATIC NET CP 1543SP-1 (incl. SIPLUS variants)"
+            "name": "SIMATIC NET CP 1543SP-1 (incl.'SIPLUS variants)"
           },
           {
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V1.3",
+                "name": "<V1.3",
                 "product": {
-                  "name": "SIMATIC RF185C: All versions < V1.3",
-                  "product_id": "CSAFPID-00016"
+                  "name": "Siemens SIMATIC RF185C: All versions < V1.3",
+                  "product_id": "CSAFPID-0016"
                 }
               }
             ],
@@ -373,10 +418,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V1.3",
+                "name": "<V1.3",
                 "product": {
-                  "name": "SIMATIC RF186C: All versions < V1.3",
-                  "product_id": "CSAFPID-00017"
+                  "name": "Siemens SIMATIC RF186C: All versions < V1.3",
+                  "product_id": "CSAFPID-0017"
                 }
               }
             ],
@@ -387,10 +432,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V1.3",
+                "name": "<V1.3",
                 "product": {
-                  "name": "SIMATIC RF186CI: All versions < V1.3",
-                  "product_id": "CSAFPID-00018"
+                  "name": "Siemens SIMATIC RF186CI: All versions < V1.3",
+                  "product_id": "CSAFPID-0018"
                 }
               }
             ],
@@ -401,10 +446,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V1.3",
+                "name": "<V1.3",
                 "product": {
-                  "name": "SIMATIC RF188C: All versions < V1.3",
-                  "product_id": "CSAFPID-00019"
+                  "name": "Siemens SIMATIC RF188C: All versions < V1.3",
+                  "product_id": "CSAFPID-0019"
                 }
               }
             ],
@@ -415,10 +460,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V1.3",
+                "name": "<V1.3",
                 "product": {
-                  "name": "SIMATIC RF188CI: All versions < V1.3",
-                  "product_id": "CSAFPID-00020"
+                  "name": "Siemens SIMATIC RF188CI: All versions < V1.3",
+                  "product_id": "CSAFPID-0020"
                 }
               }
             ],
@@ -429,10 +474,10 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions >V1.1 and <V2.0.1",
+                "name": ">V1.1|<V2.0.1",
                 "product": {
-                  "name": "SINEMA Remote Connect Server: All versions >V1.1 and <V2.0.1",
-                  "product_id": "CSAFPID-00021"
+                  "name": "Siemens SINEMA Remote Connect Server: All versions >V1.1 and <V2.0.1",
+                  "product_id": "CSAFPID-0021"
                 }
               }
             ],
@@ -462,7 +507,6 @@
       "product_status": {
         "known_affected": [
           "CSAFPID-0001",
-          "CSAFPID-0002",
           "CSAFPID-0003",
           "CSAFPID-0004",
           "CSAFPID-0005",
@@ -470,250 +514,93 @@
           "CSAFPID-0007",
           "CSAFPID-0008",
           "CSAFPID-0009",
-          "CSAFPID-00010",
-          "CSAFPID-00011",
-          "CSAFPID-00012",
-          "CSAFPID-00013",
-          "CSAFPID-00014",
-          "CSAFPID-00015",
-          "CSAFPID-00016",
-          "CSAFPID-00017",
-          "CSAFPID-00018",
-          "CSAFPID-00019",
-          "CSAFPID-00020",
-          "CSAFPID-00021"
+          "CSAFPID-0010",
+          "CSAFPID-0011",
+          "CSAFPID-0012",
+          "CSAFPID-0013",
+          "CSAFPID-0014",
+          "CSAFPID-0015",
+          "CSAFPID-0016",
+          "CSAFPID-0017",
+          "CSAFPID-0018",
+          "CSAFPID-0019",
+          "CSAFPID-0020",
+          "CSAFPID-0021"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "https://support.industry.siemens.com/cs/ww/en/view/109777247",
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109777247"
-        },
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-5390"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens recommends protecting network access to devices with appropriate mechanisms. To operate the devices in a protected IT environment, Siemens recommends configuring the environment according to Siemens ' operational guidelines for industrial security and following recommendations in the product manuals.",
+          "category": "vendor_fix",
+          "details": "Update to V6.1",
           "product_ids": [
             "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005",
-            "CSAFPID-0006",
-            "CSAFPID-0007",
-            "CSAFPID-0008",
-            "CSAFPID-0009",
-            "CSAFPID-00010",
-            "CSAFPID-00011",
-            "CSAFPID-00012",
-            "CSAFPID-00013",
-            "CSAFPID-00014",
-            "CSAFPID-00015",
-            "CSAFPID-00016",
-            "CSAFPID-00017",
-            "CSAFPID-00018",
-            "CSAFPID-00019",
-            "CSAFPID-00020",
-            "CSAFPID-00021"
+            "CSAFPID-0003"
           ]
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V6.1 - Download: https://support.industry.siemens.com/cs/ww/en/view/109778305/ ",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109778305/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V6.1 - Download: https://support.industry.siemens.com/cs/ww/en/view/109778305/ ",
-          "product_ids": [
-            "CSAFPID-0003"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109778305/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V2.0 or a later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109769665/ ",
+          "details": "Update to V2.0 or a later version",
           "product_ids": [
             "CSAFPID-0004"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109769665/"
+          ]
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V2.0 - Download: https://support.industry.siemens.com/cs/ww/en/view/109773734/ ",
+          "details": "Update to V2.0",
           "product_ids": [
             "CSAFPID-0005"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109773734/"
+          ]
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V6.4 - Download: https://support.industry.siemens.com/cs/ww/en/view/109773308/ ",
+          "details": "Update to V6.4",
           "product_ids": [
             "CSAFPID-0006"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109773308/"
+          ]
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V3.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109775640/ ",
+          "details": "Update to V3.2",
           "product_ids": [
-            "CSAFPID-0007"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109775640/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V3.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109775640/ ",
-          "product_ids": [
-            "CSAFPID-0008"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109775640/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V3.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109775640/ ",
-          "product_ids": [
-            "CSAFPID-0009"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109775640/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V3.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109775640/ ",
-          "product_ids": [
-            "CSAFPID-00010"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109775640/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V3.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109775640/ ",
-          "product_ids": [
-            "CSAFPID-00011"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109775640/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V2.1 - Download: https://support.industry.siemens.com/cs/ww/en/view/109774207/ ",
-          "product_ids": [
-            "CSAFPID-00012"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109774207/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V2.1 - Download: https://support.industry.siemens.com/cs/ww/en/view/109774207/ ",
-          "product_ids": [
-            "CSAFPID-00013"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109774207/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V2.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109775642/ ",
-          "product_ids": [
-            "CSAFPID-00014"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109775642/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V2.1 - Download: https://support.industry.siemens.com/cs/ww/en/view/109774207/ ",
-          "product_ids": [
-            "CSAFPID-00015"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109774207/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V1.3 or later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109781665 ",
-          "product_ids": [
-            "CSAFPID-00016"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109781665"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V1.3 or later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109781665 ",
-          "product_ids": [
-            "CSAFPID-00017"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109781665"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V1.3 or later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109781665 ",
-          "product_ids": [
-            "CSAFPID-00018"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109781665"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V1.3 or later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109781665 ",
-          "product_ids": [
-            "CSAFPID-00019"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109781665"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V1.3 or later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109781665 ",
-          "product_ids": [
-            "CSAFPID-00020"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109781665"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V2.1 or later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109777247 ",
-          "product_ids": [
-            "CSAFPID-00021"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109777247"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005",
-            "CSAFPID-0006",
             "CSAFPID-0007",
             "CSAFPID-0008",
             "CSAFPID-0009",
-            "CSAFPID-00010",
-            "CSAFPID-00011",
-            "CSAFPID-00012",
-            "CSAFPID-00013",
-            "CSAFPID-00014",
-            "CSAFPID-00015",
-            "CSAFPID-00016",
-            "CSAFPID-00017",
-            "CSAFPID-00018",
-            "CSAFPID-00019",
-            "CSAFPID-00020",
-            "CSAFPID-00021"
+            "CSAFPID-0010",
+            "CSAFPID-0011"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V2.1",
+          "product_ids": [
+            "CSAFPID-0012",
+            "CSAFPID-0013",
+            "CSAFPID-0015"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V2.2",
+          "product_ids": [
+            "CSAFPID-0014"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V1.3 or later version",
+          "product_ids": [
+            "CSAFPID-0016",
+            "CSAFPID-0017",
+            "CSAFPID-0018",
+            "CSAFPID-0019",
+            "CSAFPID-0020"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V2.1 or later version",
+          "product_ids": [
+            "CSAFPID-0021"
           ]
         }
       ],
@@ -727,7 +614,6 @@
           },
           "products": [
             "CSAFPID-0001",
-            "CSAFPID-0002",
             "CSAFPID-0003",
             "CSAFPID-0004",
             "CSAFPID-0005",
@@ -735,21 +621,22 @@
             "CSAFPID-0007",
             "CSAFPID-0008",
             "CSAFPID-0009",
-            "CSAFPID-00010",
-            "CSAFPID-00011",
-            "CSAFPID-00012",
-            "CSAFPID-00013",
-            "CSAFPID-00014",
-            "CSAFPID-00015",
-            "CSAFPID-00016",
-            "CSAFPID-00017",
-            "CSAFPID-00018",
-            "CSAFPID-00019",
-            "CSAFPID-00020",
-            "CSAFPID-00021"
+            "CSAFPID-0010",
+            "CSAFPID-0011",
+            "CSAFPID-0012",
+            "CSAFPID-0013",
+            "CSAFPID-0014",
+            "CSAFPID-0015",
+            "CSAFPID-0016",
+            "CSAFPID-0017",
+            "CSAFPID-0018",
+            "CSAFPID-0019",
+            "CSAFPID-0020",
+            "CSAFPID-0021"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2018-5390"
     },
     {
       "cve": "CVE-2018-5391",
@@ -760,7 +647,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "The Linux kernel, versions 3.9+, is vulnerable to a denial of service attack with low rates of specially modified packets targeting IP fragment re-assembly. An attacker may cause a denial of service condition by sending specially crafted IP fragments. Various vulnerabilities in IP fragmentation have been discovered and fixed over the years. The current vulnerability (CVE-2018-5391) became exploitable in the Linux kernel with the increase of the IP fragment reassembly queue size.",
+          "text": "Linux kernel versions 4.9+ can be forced to make very expensive calls to tcp_collapse_ofo_queue() and tcp_prune_ofo_queue() for every incoming packet which can lead to a denial of service.",
           "title": "Summary"
         }
       ],
@@ -775,258 +662,100 @@
           "CSAFPID-0007",
           "CSAFPID-0008",
           "CSAFPID-0009",
-          "CSAFPID-00010",
-          "CSAFPID-00011",
-          "CSAFPID-00012",
-          "CSAFPID-00013",
-          "CSAFPID-00014",
-          "CSAFPID-00015",
-          "CSAFPID-00016",
-          "CSAFPID-00017",
-          "CSAFPID-00018",
-          "CSAFPID-00019",
-          "CSAFPID-00020",
-          "CSAFPID-00021"
+          "CSAFPID-0010",
+          "CSAFPID-0011",
+          "CSAFPID-0012",
+          "CSAFPID-0013",
+          "CSAFPID-0014",
+          "CSAFPID-0015",
+          "CSAFPID-0016",
+          "CSAFPID-0017",
+          "CSAFPID-0018",
+          "CSAFPID-0019",
+          "CSAFPID-0020",
+          "CSAFPID-0021"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "https://support.industry.siemens.com/cs/ww/en/view/109777247",
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109777247"
-        },
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-5391"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        }
-      ],
       "remediations": [
         {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens recommends protecting network access to devices with appropriate mechanisms. To operate the devices in a protected IT environment, Siemens recommends configuring the environment according to Siemens ' operational guidelines for industrial security and following recommendations in the product manuals.",
+          "category": "vendor_fix",
+          "details": "Update to V2.13.3",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005",
-            "CSAFPID-0006",
-            "CSAFPID-0007",
-            "CSAFPID-0008",
-            "CSAFPID-0009",
-            "CSAFPID-00010",
-            "CSAFPID-00011",
-            "CSAFPID-00012",
-            "CSAFPID-00013",
-            "CSAFPID-00014",
-            "CSAFPID-00015",
-            "CSAFPID-00016",
-            "CSAFPID-00017",
-            "CSAFPID-00018",
-            "CSAFPID-00019",
-            "CSAFPID-00020",
-            "CSAFPID-00021"
+            "CSAFPID-0002"
           ]
         },
         {
           "category": "vendor_fix",
-          "details": "Update to V6.1 - Download: https://support.industry.siemens.com/cs/ww/en/view/109778305/ ",
-          "product_ids": [
-            "CSAFPID-0001"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109778305/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V2.13.3 - Download: https://support.industry.siemens.com/cs/ww/en/view/109778537/ ",
-          "product_ids": [
-            "CSAFPID-0002"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109778537/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V6.1 - Download: https://support.industry.siemens.com/cs/ww/en/view/109778305/ ",
-          "product_ids": [
-            "CSAFPID-0003"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109778305/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V2.0 or a later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109769665/ ",
-          "product_ids": [
-            "CSAFPID-0004"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109769665/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V2.0 - Download: https://support.industry.siemens.com/cs/ww/en/view/109773734/ ",
-          "product_ids": [
-            "CSAFPID-0005"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109773734/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V6.4 - Download: https://support.industry.siemens.com/cs/ww/en/view/109773308/ ",
-          "product_ids": [
-            "CSAFPID-0006"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109773308/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V3.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109775640/ ",
-          "product_ids": [
-            "CSAFPID-0007"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109775640/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V3.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109775640/ ",
-          "product_ids": [
-            "CSAFPID-0008"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109775640/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V3.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109775640/ ",
-          "product_ids": [
-            "CSAFPID-0009"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109775640/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V3.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109775640/ ",
-          "product_ids": [
-            "CSAFPID-00010"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109775640/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V3.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109775640/ ",
-          "product_ids": [
-            "CSAFPID-00011"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109775640/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V2.1 - Download: https://support.industry.siemens.com/cs/ww/en/view/109774207/ ",
-          "product_ids": [
-            "CSAFPID-00012"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109774207/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V2.1 - Download: https://support.industry.siemens.com/cs/ww/en/view/109774207/ ",
-          "product_ids": [
-            "CSAFPID-00013"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109774207/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V2.2 - Download: https://support.industry.siemens.com/cs/ww/en/view/109775642/ ",
-          "product_ids": [
-            "CSAFPID-00014"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109775642/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V2.1 - Download: https://support.industry.siemens.com/cs/ww/en/view/109774207/ ",
-          "product_ids": [
-            "CSAFPID-00015"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109774207/"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V1.3 or later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109781665 ",
-          "product_ids": [
-            "CSAFPID-00016"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109781665"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V1.3 or later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109781665 ",
-          "product_ids": [
-            "CSAFPID-00017"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109781665"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V1.3 or later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109781665 ",
-          "product_ids": [
-            "CSAFPID-00018"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109781665"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V1.3 or later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109781665 ",
-          "product_ids": [
-            "CSAFPID-00019"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109781665"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V1.3 or later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109781665 ",
-          "product_ids": [
-            "CSAFPID-00020"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109781665"
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Update to V2.1 or later version - Download: https://support.industry.siemens.com/cs/ww/en/view/109777247 ",
-          "product_ids": [
-            "CSAFPID-00021"
-          ],
-          "url": "https://support.industry.siemens.com/cs/ww/en/view/109777247"
-        },
-        {
-          "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Update to V6.1",
           "product_ids": [
             "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005",
-            "CSAFPID-0006",
+            "CSAFPID-0003"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V2.0 or a later version",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V2.0",
+          "product_ids": [
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V6.4",
+          "product_ids": [
+            "CSAFPID-0006"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V3.2",
+          "product_ids": [
             "CSAFPID-0007",
             "CSAFPID-0008",
             "CSAFPID-0009",
-            "CSAFPID-00010",
-            "CSAFPID-00011",
-            "CSAFPID-00012",
-            "CSAFPID-00013",
-            "CSAFPID-00014",
-            "CSAFPID-00015",
-            "CSAFPID-00016",
-            "CSAFPID-00017",
-            "CSAFPID-00018",
-            "CSAFPID-00019",
-            "CSAFPID-00020",
-            "CSAFPID-00021"
+            "CSAFPID-0010",
+            "CSAFPID-0011"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V2.1",
+          "product_ids": [
+            "CSAFPID-0012",
+            "CSAFPID-0013",
+            "CSAFPID-0015"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V2.2",
+          "product_ids": [
+            "CSAFPID-0014"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V1.3 or later version",
+          "product_ids": [
+            "CSAFPID-0016",
+            "CSAFPID-0017",
+            "CSAFPID-0018",
+            "CSAFPID-0019",
+            "CSAFPID-0020"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V2.1 or later version",
+          "product_ids": [
+            "CSAFPID-0021"
           ]
         }
       ],
@@ -1048,21 +777,22 @@
             "CSAFPID-0007",
             "CSAFPID-0008",
             "CSAFPID-0009",
-            "CSAFPID-00010",
-            "CSAFPID-00011",
-            "CSAFPID-00012",
-            "CSAFPID-00013",
-            "CSAFPID-00014",
-            "CSAFPID-00015",
-            "CSAFPID-00016",
-            "CSAFPID-00017",
-            "CSAFPID-00018",
-            "CSAFPID-00019",
-            "CSAFPID-00020",
-            "CSAFPID-00021"
+            "CSAFPID-0010",
+            "CSAFPID-0011",
+            "CSAFPID-0012",
+            "CSAFPID-0013",
+            "CSAFPID-0014",
+            "CSAFPID-0015",
+            "CSAFPID-0016",
+            "CSAFPID-0017",
+            "CSAFPID-0018",
+            "CSAFPID-0019",
+            "CSAFPID-0020",
+            "CSAFPID-0021"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2018-5391"
     }
   ]
 }

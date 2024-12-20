@@ -2,10 +2,15 @@
   "document": {
     "acknowledgments": [
       {
+        "organization": "Siemens ProductCERT",
+        "summary": "reporting these vulnerabilities to CISA."
+      },
+      {
         "names": [
           "Li Yifan"
         ],
-        "summary": "reporting these vulnerabilities to Siemens"
+        "organization": "Bolean Technology LTD",
+        "summary": "for coordinating disclosure"
       }
     ],
     "category": "csaf_security_advisory",
@@ -17,12 +22,22 @@
         "url": "https://us-cert.cisa.gov/tlp/"
       }
     },
-    "lang": "en-US",
+    "lang": "en",
     "notes": [
       {
         "category": "general",
-        "text": "This CSAF advisory was extracted from unstructured data and may contain inaccuracies. If you notice any errors, please reach out to the designated contact at CISA CSAF: central@cisa.dhs.gov",
-        "title": "CISA Disclaimer"
+        "text": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals.",
+        "title": "General Recommendations"
+      },
+      {
+        "category": "general",
+        "text": "Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+        "title": "Additional Resources"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "Siemens Security Advisories are subject to the terms and conditions contained in Siemens' underlying license terms or other applicable agreements previously agreed to with Siemens (hereinafter \"License Terms\"). To the extent applicable to information, software or documentation made available in or through a Siemens Security Advisory, the Terms of Use of Siemens' Global Website (https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), in particular Sections 8-10 of the Terms of Use, shall apply additionally. In case of conflicts, the License Terms shall prevail over the Terms of Use.",
+        "title": "Terms of Use"
       },
       {
         "category": "legal_disclaimer",
@@ -30,13 +45,13 @@
         "title": "Legal Notice"
       },
       {
-        "category": "summary",
-        "text": "Successful exploitation of these vulnerabilities where an attacker injects client-side script to induce the victim to issue an HTTP request could lead to a state-changing operation.",
-        "title": "Risk evaluation"
+        "category": "other",
+        "text": "This CISA CSAF advisory was converted from a Siemens ProductCERT's advisory.",
+        "title": "Advisory Conversion Disclaimer"
       },
       {
         "category": "other",
-        "text": "Energy",
+        "text": "Multiple",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -51,42 +66,57 @@
       },
       {
         "category": "general",
-        "text": "CISA also recommends users take the following measures to protect themselves from social engineering attacks:",
+        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.\nCISA also provides a section for control systems security recommended practices on the ICS webpage onus-cert.gov. Several recommended practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "text": "Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the internet.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "Additional mitigation guidance and recommended practices are publicly available on the ICS webpage on us-cert.gov in the Technical Information Paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.\nOrganizations observing any suspected malicious activity should follow their established internal procedures and report their findings to CISA for tracking and correlation against other incidents.",
+        "text": "Locate control system networks and remote devices behind firewalls and isolate them from business networks.",
         "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and \nsolutions, please contact the Siemens ProductCERT:\n\nhttps://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. Also recognize VPN is only as secure as its connected devices.",
+        "title": "Recommended Practices"
       },
       {
         "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and  solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.",
+        "title": "Recommended Practices"
       },
       {
-        "category": "other",
-        "text": "No known public exploits specifically target these vulnerabilities.",
-        "title": "Exploitability"
+        "category": "general",
+        "text": "CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov. Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.",
+        "title": "Recommended Practices"
       }
     ],
     "publisher": {
-      "category": "coordinator",
-      "contact_details": "Email: CISAservicedesk@cisa.dhs.gov;\n Toll Free: 1-888-282-0870",
+      "category": "other",
+      "contact_details": "central@cisa.dhs.gov",
       "name": "CISA",
       "namespace": "https://www.cisa.gov/"
     },
     "references": [
+      {
+        "category": "self",
+        "summary": "SSA-436520: XSS and CSRF Vulnerabilities in Polarion Subversion Webclient - HTML Version",
+        "url": "https://cert-portal.siemens.com/productcert/html/ssa-436520.html"
+      },
       {
         "category": "self",
         "summary": "ICS Advisory ICSA-20-252-08 JSON",
@@ -94,28 +124,38 @@
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-20-252-08 Web Version",
+        "summary": "ICS Advisory ICSA-20-252-08 - Web Version",
         "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-20-252-08"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/ncas/tips/ST04-014"
+        "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.us-cert.gov/ics/tips/ICS-TIP-12-146-01B"
+        "url": "https://www.cisa.gov/topics/industrial-control-systems"
       },
       {
         "category": "external",
-        "summary": "SSA-496604: SSA-436520: XSS and CSRF Vulnerabilities in Polarion Subversion Webclient - TXT Version",
-        "url": "https://cert-portal.siemens.com/productcert/txt/SSA-436520.txt"
+        "summary": "Recommended Practices",
+        "url": "https://us-cert.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
     "title": "Siemens Polarion Subversion Webclient",
@@ -132,9 +172,9 @@
       "revision_history": [
         {
           "date": "2020-09-08T00:00:00.000000Z",
-          "legacy_version": "Initial",
+          "legacy_version": "1.0",
           "number": "1",
-          "summary": "ICSA-20-252-08 Siemens Polarion Subversion Webclient "
+          "summary": "Publication Date"
         }
       ],
       "status": "final",
@@ -149,9 +189,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions",
+                "name": "vers:all/*",
                 "product": {
-                  "name": "Polarion Subversion Webclient: All versions",
+                  "name": "Siemens Polarion Subversion Webclient: All versions",
                   "product_id": "CSAFPID-0001"
                 }
               }
@@ -175,17 +215,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "The Polarion subversion web application does not filter user input in a way that prevents Cross-Site Scripting.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "If a user is enticed into passing specially crafted, malicious input to the web client (e.g. by clicking on a malicious URL with embedded JavaScript), then JavaScript code can be returned and may then be executed by the user's client.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "Various actions could be triggered by running malicious JavaScript code.",
+          "text": "The Polarion subversion web application does not filter user input in a way that prevents Cross-Site Scripting. If a user is enticed into passing specially crafted, malicious input to the web client (e.g.'by clicking on a malicious URL with embedded JavaScript), then JavaScript code can be returned and may then be executed by the user's client. Various actions could be triggered by running malicious JavaScript code.",
           "title": "Summary"
         }
       ],
@@ -194,36 +224,10 @@
           "CSAFPID-0001"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-15788"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Do not open unknown links while working on Polarion Subversion webclient",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "The tool is considered shareware, distributed \"as is\" and there will not be a fix as it is no longer supported ",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Do not open unknown links while working on Polarion Subversion webclient",
           "product_ids": [
             "CSAFPID-0001"
           ]
@@ -241,7 +245,8 @@
             "CSAFPID-0001"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2020-15788"
     },
     {
       "cve": "CVE-2020-15789",
@@ -252,12 +257,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "The web interface could allow a Cross-Site Request Forgery (CSRF) attack if an unsuspecting user is tricked into accessing a malicious link.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "Successful exploitation requires user interaction by a legitimate user, who must be authenticated to the web interface. A successful attack could allow an attacker to trigger actions via the web interface that the legitimate user is allowed to perform. This could allow the attacker to read or modify contents of the web application.",
+          "text": "The Polarion subversion web application does not filter user input in a way that prevents Cross-Site Scripting. If a user is enticed into passing specially crafted, malicious input to the web client (e.g.'by clicking on a malicious URL with embedded JavaScript), then JavaScript code can be returned and may then be executed by the user's client. Various actions could be triggered by running malicious JavaScript code.",
           "title": "Summary"
         }
       ],
@@ -266,36 +266,10 @@
           "CSAFPID-0001"
         ]
       },
-      "references": [
-        {
-          "category": "external",
-          "summary": "web.nvd.nist.gov",
-          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2020-15789"
-        },
-        {
-          "category": "external",
-          "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
-        }
-      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Do not open unknown links while working on Polarion Subversion webclient",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "The tool is considered shareware, distributed \"as is\" and there will not be a fix as it is no longer supported ",
-          "product_ids": [
-            "CSAFPID-0001"
-          ]
-        },
-        {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Do not open unknown links while working on Polarion Subversion webclient",
           "product_ids": [
             "CSAFPID-0001"
           ]
@@ -313,7 +287,8 @@
             "CSAFPID-0001"
           ]
         }
-      ]
+      ],
+      "title": "CVE-2020-15789"
     }
   ]
 }
