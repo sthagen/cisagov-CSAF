@@ -2,10 +2,6 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Siemens",
-        "summary": "reporting these vulnerabilities to NCCIC"
-      },
-      {
         "names": [
           "Anton Kalinin",
           "Danila Parnishchev",
@@ -16,7 +12,7 @@
           "Sergey Sidorov"
         ],
         "organization": "Kaspersky Lab",
-        "summary": "reporting these vulnerabilities to NCCIC"
+        "summary": "coordinating disclosure of vulnerabilities CVE-2018-11457, CVE-2018-11458, CVE-2018-11459, CVE-2018-11460, CVE-2018-11461, CVE-2018-11463, CVE-2018-11464, CVE-2018-11465, and CVE-2018-11466"
       }
     ],
     "category": "csaf_security_advisory",
@@ -25,101 +21,146 @@
       "text": "Disclosure is not limited",
       "tlp": {
         "label": "WHITE",
-        "url": "https://us-cert.cisa.gov/tlp/"
+        "url": "https://us-cert.cisa.gov/tlp"
       }
     },
     "lang": "en-US",
     "notes": [
-      {
-        "category": "general",
-        "text": "This CSAF advisory was extracted from unstructured data and may contain inaccuracies. If you notice any errors, please reach out to the designated contact at CISA CSAF: central@cisa.dhs.gov",
-        "title": "CISA Disclaimer"
-      },
       {
         "category": "legal_disclaimer",
         "text": "All information products included in https://us-cert.cisa.gov/ics are provided \"as is\" for informational purposes only. The Department of Homeland Security (DHS) does not provide any warranties of any kind regarding any information contained within. DHS does not endorse any commercial product or service, referenced in this product or otherwise. Further dissemination of this product is governed by the Traffic Light Protocol (TLP) marking in the header. For more information about TLP, see https://us-cert.cisa.gov/tlp/.",
         "title": "Legal Notice"
       },
       {
-        "category": "general",
-        "text": "NCCIC recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Specifically, users should:",
-        "title": "Recommended Practices"
-      },
-      {
-        "category": "general",
-        "text": "NCCIC reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.",
-        "title": "Recommended Practices"
-      },
-      {
-        "category": "general",
-        "text": "NCCIC also provides a section for control systems security recommended practices on the ICS-CERT web page. Several recommended practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
-        "title": "Recommended Practices"
-      },
-      {
-        "category": "general",
-        "text": "Organizations observing any suspected malicious activity should follow their established internal procedures and report their findings to NCCIC for tracking and correlation against other incidents.",
-        "title": "Recommended Practices"
-      },
-      {
-        "category": "general",
-        "text": "NCCIC also recommends that users take the following measures to protect themselves from social engineering attacks:",
-        "title": "Recommended Practices"
-      },
-      {
-        "category": "general",
-        "text": "Additional mitigation guidance and recommended practices are publicly available on the ICS-CERT website in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.",
-        "title": "Recommended Practices"
-      },
-      {
-        "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and \nsolutions, please contact the Siemens ProductCERT:\n\nhttps://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
-      },
-      {
-        "category": "general",
-        "text": "For further inquiries on security vulnerabilities in Siemens products and  solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories",
-        "title": "Additional Resources"
+        "category": "other",
+        "text": "This CISA CSAF advisory was converted from Siemens ProductCERT's TXT advisory.",
+        "title": "Advisory Conversion Disclaimer"
       },
       {
         "category": "other",
-        "text": "No known public exploits specifically target these vulnerabilities.",
-        "title": "Exploitability"
+        "text": "Multiple",
+        "title": "Critical infrastructure sectors"
+      },
+      {
+        "category": "other",
+        "text": "Worldwide",
+        "title": "Countries/areas deployed"
+      },
+      {
+        "category": "other",
+        "text": "Germany",
+        "title": "Company headquarters location"
+      },
+      {
+        "category": "general",
+        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "Minimize network exposure for all control system devices and/or systems, and ensure they are not accessible from the internet.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "Locate control system networks and remote devices behind firewalls and isolate them from business networks.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most recent version available. Also recognize VPN is only as secure as its connected devices.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov. Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "CISA encourages organizations to implement recommended cybersecurity strategies for proactive defense of ICS assets. Additional mitigation guidance and recommended practices are publicly available on the ICS webpage at cisa.gov in the technical information paper, ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "Organizations observing suspected malicious activity should follow established internal procedures and report findings to CISA for tracking and correlation against other incidents.",
+        "title": "Recommended Practices"
+      },
+      {
+        "category": "general",
+        "text": "As a general security measure, Siemens strongly recommends to protectnetwork access to devices with appropriate mechanisms. In order tooperate the devices in a protected IT environment, Siemens recommends toconfigure the environment according to Siemens' operational guidelinesfor Industrial Security (Download:https://www.siemens.com/cert/operational-guidelines-industrial-security),and to follow the recommendations in the product manuals.",
+        "title": "General Recommendations"
+      },
+      {
+        "category": "general",
+        "text": "Additional information on Industrial Security by Siemens can be foundat: https://www.siemens.com/industrialsecurity",
+        "title": "General Recommendations"
+      },
+      {
+        "category": "legal_disclaimer",
+        "text": "Siemens Security Advisories are subject to the terms and conditions containedin Siemens' underlying license terms or other applicable agreements previouslyagreed to with Siemens (hereinafter \"License Terms\"). To the extent applicableto information, software or documentation made available in or through aSiemens Security Advisory, the Terms of Use of Siemens' Global Website(https://www.siemens.com/terms_of_use, hereinafter \"Terms of Use\"), inparticular Sections 8-10 of the Terms of Use, shall apply additionally. In caseof conflicts, the License Terms shall prevail over the Terms of Use.",
+        "title": "Terms of Use"
       }
     ],
     "publisher": {
       "category": "coordinator",
-      "contact_details": "Email: CISAservicedesk@cisa.dhs.gov;\n Toll Free: 1-888-282-0870",
+      "contact_details": "central@cisa.dhs.gov;\n Toll Free: 1-888-282-0870",
       "name": "CISA",
       "namespace": "https://www.cisa.gov/"
     },
     "references": [
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-18-345-02 JSON",
-        "url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2018/icsa-18-345-02.json"
+        "summary": "SSA-170881: Vulnerabilities in SINUMERIK Controllers",
+        "url": "https://cert-portal.siemens.com/productcert/txt/ssa-170881.txt"
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-18-345-02 Web Version",
+        "summary": "ICS Advisory ICSA-18-345-02 JSON",
+        "url": "https://raw.githubusercontent.com/cisagov/CSAF/refs/heads/develop/csaf_files/OT/white/2018/icsa-18-345-02.json"
+      },
+      {
+        "category": "self",
+        "summary": "ICSA Advisory ICSA-18-345-02 - Web Version",
         "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-18-345-02"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-18-345-02"
+        "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
       },
       {
         "category": "external",
         "summary": "Recommended Practices",
-        "url": "https://www.cisa.gov/uscert/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
       },
       {
         "category": "external",
-        "summary": "SSA-496604: SSA-170881: Vulnerabilities in SINUMERIK Controllers - TXT Version",
-        "url": "https://cert-portal.siemens.com/productcert/txt/SSA-170881.txt"
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/topics/industrial-control-systems"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://us-cert.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Recommended Practices",
+        "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
-    "title": "Siemens SINUMERIK Controllers (Update A)",
+    "title": "ICSA-18-345-02 Siemens SINUMERIK Controllers (Update A)",
     "tracking": {
       "current_release_date": "2019-03-12T00:00:00.000000Z",
       "generator": {
@@ -133,15 +174,15 @@
       "revision_history": [
         {
           "date": "2018-12-11T00:00:00.000000Z",
-          "legacy_version": "Initial",
+          "legacy_version": "1.0",
           "number": "1",
-          "summary": "ICSA-18-345-02 Siemens SINUMERIK Controllers"
+          "summary": "Publication Date"
         },
         {
           "date": "2019-03-12T00:00:00.000000Z",
-          "legacy_version": "A",
+          "legacy_version": "1.1",
           "number": "2",
-          "summary": "ICSA-18-345-02 Siemens SINUMERIK Controllers (Update A)"
+          "summary": "Added update for SINUMERIK 808D"
         }
       ],
       "status": "final",
@@ -156,9 +197,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V4.91",
+                "name": "<V4.91",
                 "product": {
-                  "name": "SINUMERIK 808D V4.7: All versions < V4.91",
+                  "name": "SINUMERIK 808D V4.7",
                   "product_id": "CSAFPID-0001"
                 }
               }
@@ -170,9 +211,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V4.91",
+                "name": "<V4.91",
                 "product": {
-                  "name": "SINUMERIK 808D V4.8: All versions < V4.91",
+                  "name": "SINUMERIK 808D V4.8",
                   "product_id": "CSAFPID-0002"
                 }
               }
@@ -184,9 +225,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V4.7 SP6 HF1",
+                "name": "<V4.7_SP6_HF1",
                 "product": {
-                  "name": "SINUMERIK 828D V4.7: All versions < V4.7 SP6 HF1",
+                  "name": "SINUMERIK 828D V4.7",
                   "product_id": "CSAFPID-0003"
                 }
               }
@@ -198,9 +239,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V4.7 SP6 HF5",
+                "name": "<V4.7_SP6_HF5",
                 "product": {
-                  "name": "SINUMERIK 840D sl V4.7: All versions < V4.7 SP6 HF5",
+                  "name": "SINUMERIK 840D sl V4.7",
                   "product_id": "CSAFPID-0004"
                 }
               }
@@ -212,9 +253,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "All versions < V4.8 SP3",
+                "name": "<V4.8_SP3",
                 "product": {
-                  "name": "SINUMERIK 840D sl V4.8: All versions < V4.8 SP3",
+                  "name": "SINUMERIK 840D sl V4.8",
                   "product_id": "CSAFPID-0005"
                 }
               }
@@ -238,23 +279,8 @@
       "notes": [
         {
           "category": "summary",
-          "text": "The integrated web server on port 4842/tcp of the affected products could allow a remote attacker to execute code with privileged permissions on the system by sending specially crafted network requests to port 4842/tcp.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "Please note that this vulnerability is only exploitable if port 4842/tcp is manually opened in the firewall configuration of network port X130.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an attacker with network access to the affected devices on port 4842/tcp. Successful exploitation requires no privileges and no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the web server.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known.",
-          "title": "Summary"
+          "text": "The integrated web server on port 4842/tcp of the affected products could allow a remote attacker to execute code with privileged permissions on the system by sending specially crafted network requests to port 4842/tcp. Please note that this vulnerability is only exploitable if port 4842/tcp is manually opened in the firewall configuration of network port X130. The security vulnerability could be exploited by an attacker with network access to the affected devices on port 4842/tcp. Successful exploitation requires no privileges and no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the web server. At the time of advisory publication no public exploitation of this security vulnerability was known.",
+          "title": "Vulnerability Summary"
         }
       ],
       "product_status": {
@@ -266,54 +292,43 @@
           "CSAFPID-0005"
         ]
       },
+      "references": [
+        {
+          "category": "external",
+          "summary": "web.nvd.nist.gov",
+          "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2018-11457"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
+        }
+      ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Check and restore default settings (4842/tcp and 5900/tcp blocked) for\nfirewall on port X130",
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF1 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
+            "CSAFPID-0003"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF5 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.8 SP3 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
             "CSAFPID-0005"
           ]
         },
         {
-          "category": "vendor_fix",
-          "details": "Restrict system access to authorized personnel and follow a least\nprivilege approach",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply cell protection concept",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Use VPN for protecting network communication between cells",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply Defense-in-Depth",
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Check and restore default settings (4842/tcp and 5900/tcp blocked) for",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -324,7 +339,40 @@
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Restrict system access to authorized personnel and follow a least",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply cell protection concept",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Use VPN for protecting network communication between cells",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply Defense-in-Depth",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -361,23 +409,8 @@
       "notes": [
         {
           "category": "summary",
-          "text": "The integrated VNC server on port 5900/tcp of the affected products could allow a remote attacker to execute code with privileged permissions on the system by sending specially crafted network requests to port 5900/tcp.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "Please note that this vulnerability is only exploitable if port 5900/tcp is manually opened in the firewall configuration of network port X130.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an attacker with network access to the affected devices and port. Successful exploitation requires no privileges and no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the VNC server.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known.",
-          "title": "Summary"
+          "text": "The integrated VNC server on port 5900/tcp of the affected products could allow a remote attacker to execute code with privileged permissions on the system by sending specially crafted network requests to port 5900/tcp. Please note that this vulnerability is only exploitable if port 5900/tcp is manually opened in the firewall configuration of network port X130. The security vulnerability could be exploited by an attacker with network access to the affected devices and port. Successful exploitation requires no privileges and no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the VNC server. At the time of advisory publication no public exploitation of this security vulnerability was known.",
+          "title": "Vulnerability Summary"
         }
       ],
       "product_status": {
@@ -398,57 +431,34 @@
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
         }
       ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Check and restore default settings (4842/tcp and 5900/tcp blocked) for\nfirewall on port X130",
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF1 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
+            "CSAFPID-0003"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF5 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.8 SP3 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
             "CSAFPID-0005"
           ]
         },
         {
-          "category": "vendor_fix",
-          "details": "Restrict system access to authorized personnel and follow a least\nprivilege approach",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply cell protection concept",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Use VPN for protecting network communication between cells",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply Defense-in-Depth",
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Check and restore default settings (4842/tcp and 5900/tcp blocked) for",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -459,7 +469,40 @@
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Restrict system access to authorized personnel and follow a least",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply cell protection concept",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Use VPN for protecting network communication between cells",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply Defense-in-Depth",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -496,18 +539,8 @@
       "notes": [
         {
           "category": "summary",
-          "text": "A local attacker could modify a user-writeable configuration file so that after reboot or manual initiation the system reloads the modified configuration file and attacker-controlled code is executed with elevated privileges.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an attacker with local access to the affected system. Successful exploitation requires user privileges but no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the system.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known.",
-          "title": "Summary"
+          "text": "A local attacker could modify a user-writeable configuration file so that after reboot or manual initiation the system reloads the modified configuration file and attacker-controlled code is executed with elevated privileges. The security vulnerability could be exploited by an attacker with local access to the affected system. Successful exploitation requires user privileges but no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the system. At the time of advisory publication no public exploitation of this security vulnerability was known.",
+          "title": "Vulnerability Summary"
         }
       ],
       "product_status": {
@@ -528,57 +561,48 @@
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
         }
       ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Check and restore default settings (4842/tcp and 5900/tcp blocked) for\nfirewall on port X130",
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF1 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0003"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF5 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.8 SP3 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
             "CSAFPID-0005"
           ]
         },
         {
-          "category": "vendor_fix",
-          "details": "Restrict system access to authorized personnel and follow a least\nprivilege approach",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply cell protection concept",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Use VPN for protecting network communication between cells",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply Defense-in-Depth",
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Check and restore default settings (4842/tcp and 5900/tcp blocked) for",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -589,7 +613,40 @@
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Restrict system access to authorized personnel and follow a least",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply cell protection concept",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Use VPN for protecting network communication between cells",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply Defense-in-Depth",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -626,18 +683,8 @@
       "notes": [
         {
           "category": "summary",
-          "text": "A local attacker with elevated user privileges (manufact) could modify a CRAMFS archive so that after reboot the system loads the modified CRAMFS file and attacker-controlled code is executed with root privileges.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an attacker with local access to the affected systems. Successful exploitation requires elevated user privileges (manufact) but no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the system.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known.",
-          "title": "Summary"
+          "text": "A local attacker with elevated user privileges (manufact) could modify a CRAMFS archive so that after reboot the system loads the modified CRAMFS file and attacker-controlled code is executed with root privileges. The security vulnerability could be exploited by an attacker with local access to the affected systems. Successful exploitation requires elevated user privileges (manufact) but no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the system. At the time of advisory publication no public exploitation of this security vulnerability was known.",
+          "title": "Vulnerability Summary"
         }
       ],
       "product_status": {
@@ -658,57 +705,49 @@
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:T/RC:C"
         }
       ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Check and restore default settings (4842/tcp and 5900/tcp blocked) for\nfirewall on port X130",
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+          
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF1 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0003"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF5 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.8 SP3 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
             "CSAFPID-0005"
           ]
         },
         {
-          "category": "vendor_fix",
-          "details": "Restrict system access to authorized personnel and follow a least\nprivilege approach",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply cell protection concept",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Use VPN for protecting network communication between cells",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply Defense-in-Depth",
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Check and restore default settings (4842/tcp and 5900/tcp blocked) for",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -719,7 +758,40 @@
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Restrict system access to authorized personnel and follow a least",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply cell protection concept",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Use VPN for protecting network communication between cells",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply Defense-in-Depth",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -750,24 +822,14 @@
     {
       "cve": "CVE-2018-11461",
       "cwe": {
-        "id": "CWE-287",
-        "name": "Improper Authentication"
+        "id": "CWE-693",
+        "name": "Protection Mechanism Failure"
       },
       "notes": [
         {
           "category": "summary",
-          "text": "A local attacker with user privileges could use the service command application for privilege escalation to an elevated user but not root.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an attacker with local access to the affected systems. Successful exploitation requires user privileges but no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the system.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known.",
-          "title": "Summary"
+          "text": "A local attacker with user privileges could use the service command application for privilege escalation to an elevated user but not root. The security vulnerability could be exploited by an attacker with local access to the affected systems. Successful exploitation requires user privileges but no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the system. At the time of advisory publication no public exploitation of this security vulnerability was known.",
+          "title": "Vulnerability Summary"
         }
       ],
       "product_status": {
@@ -788,57 +850,48 @@
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L"
+          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:L/E:P/RL:O/RC:C"
         }
       ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Check and restore default settings (4842/tcp and 5900/tcp blocked) for\nfirewall on port X130",
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF1 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0003"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF5 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.8 SP3 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
             "CSAFPID-0005"
           ]
         },
         {
-          "category": "vendor_fix",
-          "details": "Restrict system access to authorized personnel and follow a least\nprivilege approach",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply cell protection concept",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Use VPN for protecting network communication between cells",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply Defense-in-Depth",
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Check and restore default settings (4842/tcp and 5900/tcp blocked) for",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -849,7 +902,40 @@
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Restrict system access to authorized personnel and follow a least",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply cell protection concept",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Use VPN for protecting network communication between cells",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply Defense-in-Depth",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -880,24 +966,14 @@
     {
       "cve": "CVE-2018-11462",
       "cwe": {
-        "id": "CWE-287",
-        "name": "Improper Authentication"
+        "id": "CWE-693",
+        "name": "Protection Mechanism Failure"
       },
       "notes": [
         {
           "category": "summary",
-          "text": "By sending a specially crafted authentication request to the affected systems a remote attacker could escalate his privileges to an elevated user account but not to root.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an attacker with network access to the affected systems. Successful exploitation requires no privileges and no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the system.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known.",
-          "title": "Summary"
+          "text": "By sending a specially crafted authentication request to the affected systems a remote attacker could escalate his privileges to an elevated user account but not to root. The security vulnerability could be exploited by an attacker with network access to the affected systems. Successful exploitation requires no privileges and no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the system. At the time of advisory publication no public exploitation of this security vulnerability was known.",
+          "title": "Vulnerability Summary"
         }
       ],
       "product_status": {
@@ -918,57 +994,48 @@
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
         }
       ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Check and restore default settings (4842/tcp and 5900/tcp blocked) for\nfirewall on port X130",
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF1 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0003"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF5 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.8 SP3 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
             "CSAFPID-0005"
           ]
         },
         {
-          "category": "vendor_fix",
-          "details": "Restrict system access to authorized personnel and follow a least\nprivilege approach",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply cell protection concept",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Use VPN for protecting network communication between cells",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply Defense-in-Depth",
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Check and restore default settings (4842/tcp and 5900/tcp blocked) for",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -979,7 +1046,40 @@
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Restrict system access to authorized personnel and follow a least",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply cell protection concept",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Use VPN for protecting network communication between cells",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply Defense-in-Depth",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1016,18 +1116,8 @@
       "notes": [
         {
           "category": "summary",
-          "text": "A buffer overflow in the service command application could allow a local attacker to execute code with elevated privileges.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an attacker with local access to the affected systems. Successful exploitation requires user privileges but no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the system.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known.",
-          "title": "Summary"
+          "text": "A buffer overflow in the service command application could allow a local attacker to execute code with elevated privileges. The security vulnerability could be exploited by an attacker with local access to the affected systems. Successful exploitation requires user privileges but no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the system. At the time of advisory publication no public exploitation of this security vulnerability was known.",
+          "title": "Vulnerability Summary"
         }
       ],
       "product_status": {
@@ -1048,57 +1138,48 @@
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
         }
       ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Check and restore default settings (4842/tcp and 5900/tcp blocked) for\nfirewall on port X130",
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF1 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0003"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF5 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.8 SP3 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
             "CSAFPID-0005"
           ]
         },
         {
-          "category": "vendor_fix",
-          "details": "Restrict system access to authorized personnel and follow a least\nprivilege approach",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply cell protection concept",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Use VPN for protecting network communication between cells",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply Defense-in-Depth",
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Check and restore default settings (4842/tcp and 5900/tcp blocked) for",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1109,7 +1190,40 @@
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Restrict system access to authorized personnel and follow a least",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply cell protection concept",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Use VPN for protecting network communication between cells",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply Defense-in-Depth",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1146,23 +1260,8 @@
       "notes": [
         {
           "category": "summary",
-          "text": "The integrated VNC server on port 5900/tcp of the affected products could allow a remote attacker to cause a Denial-of-Service condition of the VNC server.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "Please note that this vulnerability is only exploitable if port 5900/tcp is manually opened in the firewall configuration of network port X130.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an attacker with network access to the affected devices and port. Successful exploitation requires no privileges and no user interaction. The vulnerability could allow an attacker to compromise availability of the VNC server.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known.",
-          "title": "Summary"
+          "text": "The integrated VNC server on port 5900/tcp of the affected products could allow a remote attacker to cause a Denial-of-Service condition of the VNC server. Please note that this vulnerability is only exploitable if port 5900/tcp is manually opened in the firewall configuration of network port X130. The security vulnerability could be exploited by an attacker with network access to the affected devices and port. Successful exploitation requires no privileges and no user interaction. The vulnerability could allow an attacker to compromise availability of the VNC server. At the time of advisory publication no public exploitation of this security vulnerability was known.",
+          "title": "Vulnerability Summary"
         }
       ],
       "product_status": {
@@ -1183,57 +1282,48 @@
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L/E:P/RL:O/RC:C"
         }
       ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Check and restore default settings (4842/tcp and 5900/tcp blocked) for\nfirewall on port X130",
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF1 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0003"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF5 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.8 SP3 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
             "CSAFPID-0005"
           ]
         },
         {
-          "category": "vendor_fix",
-          "details": "Restrict system access to authorized personnel and follow a least\nprivilege approach",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply cell protection concept",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Use VPN for protecting network communication between cells",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply Defense-in-Depth",
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Check and restore default settings (4842/tcp and 5900/tcp blocked) for",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1244,7 +1334,40 @@
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Restrict system access to authorized personnel and follow a least",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply cell protection concept",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Use VPN for protecting network communication between cells",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply Defense-in-Depth",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1281,18 +1404,8 @@
       "notes": [
         {
           "category": "summary",
-          "text": "A local attacker could use ioctl calls to do out of bounds reads, arbitrary writes, or execute code in kernel mode.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an attacker with local access to the affected systems. Successful exploitation requires user privileges but no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the system.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known.",
-          "title": "Summary"
+          "text": "A local attacker could use ioctl calls to do out of bounds reads, arbitrary writes, or execute code in kernel mode. The security vulnerability could be exploited by an attacker with local access to the affected systems. Successful exploitation requires user privileges but no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the system. At the time of advisory publication no public exploitation of this security vulnerability was known.",
+          "title": "Vulnerability Summary"
         }
       ],
       "product_status": {
@@ -1313,57 +1426,48 @@
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
         }
       ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Check and restore default settings (4842/tcp and 5900/tcp blocked) for\nfirewall on port X130",
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF1 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0003"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF5 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.8 SP3 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
             "CSAFPID-0005"
           ]
         },
         {
-          "category": "vendor_fix",
-          "details": "Restrict system access to authorized personnel and follow a least\nprivilege approach",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply cell protection concept",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Use VPN for protecting network communication between cells",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply Defense-in-Depth",
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Check and restore default settings (4842/tcp and 5900/tcp blocked) for",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1374,7 +1478,40 @@
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Restrict system access to authorized personnel and follow a least",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply cell protection concept",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Use VPN for protecting network communication between cells",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply Defense-in-Depth",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1411,18 +1548,8 @@
       "notes": [
         {
           "category": "summary",
-          "text": "Specially crafted network packets sent to port 102/tcp (ISO-TSAP) could allow a remote attacker to either cause a Denial-of-Service condition of the integrated software firewall or allow to execute code in the context of the software firewall.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "The security vulnerability could be exploited by an attacker with network access to the affected systems on port 102/tcp. Successful exploitation requires no user privileges and no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the system.",
-          "title": "Summary"
-        },
-        {
-          "category": "summary",
-          "text": "At the time of advisory publication no public exploitation of this security vulnerability was known",
-          "title": "Summary"
+          "text": "Specially crafted network packets sent to port 102/tcp (ISO-TSAP) could allow a remote attacker to either cause a Denial-of-Service condition of the integrated software firewall or allow to execute code in the context of the software firewall. The security vulnerability could be exploited by an attacker with network access to the affected systems on port 102/tcp. Successful exploitation requires no user privileges and no user interaction. The vulnerability could allow an attacker to compromise confidentiality, integrity and availability of the system. At the time of advisory publication no public exploitation of this security vulnerability was known",
+          "title": "Vulnerability Summary"
         }
       ],
       "product_status": {
@@ -1443,57 +1570,48 @@
         {
           "category": "external",
           "summary": "www.first.org",
-          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+          "url": "https://www.first.org/cvss/calculator/3.0#CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H/E:P/RL:O/RC:C"
         }
       ],
       "remediations": [
         {
-          "category": "vendor_fix",
-          "details": "Check and restore default settings (4842/tcp and 5900/tcp blocked) for\nfirewall on port X130",
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.91 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF1 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0003"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.7 SP6 HF5 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Update to V4.8 SP3 and follow recommendations from section Workarounds and Mitigations. - Download: SINUMERIK software can be obtained from your local Siemens account manager.",
+          "product_ids": [
             "CSAFPID-0005"
           ]
         },
         {
-          "category": "vendor_fix",
-          "details": "Restrict system access to authorized personnel and follow a least\nprivilege approach",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply cell protection concept",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Use VPN for protecting network communication between cells",
-          "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002",
-            "CSAFPID-0003",
-            "CSAFPID-0004",
-            "CSAFPID-0005"
-          ]
-        },
-        {
-          "category": "vendor_fix",
-          "details": "Apply Defense-in-Depth",
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Check and restore default settings (4842/tcp and 5900/tcp blocked) for",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -1504,7 +1622,40 @@
         },
         {
           "category": "mitigation",
-          "details": "As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Restrict system access to authorized personnel and follow a least",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply cell protection concept",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Use VPN for protecting network communication between cells",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Siemens has identified the following specific workarounds and mitigations thatcustomers can apply to reduce the risk:firewall on port X130privilege approach Apply Defense-in-Depth",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
