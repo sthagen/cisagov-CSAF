@@ -179,9 +179,9 @@
         "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
-    "title": "Rockwell Automation Arena",
+    "title": "Rockwell Automation Arena (Update A)",
     "tracking": {
-      "current_release_date": "2024-12-10T07:00:00.000000Z",
+      "current_release_date": "2025-01-09T07:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -196,10 +196,16 @@
           "legacy_version": "Initial",
           "number": "1",
           "summary": "Initial Publication"
+        },
+        {
+          "date": "2025-01-09T07:00:00.000000Z",
+          "legacy_version": "Update A",
+          "number": "2",
+          "summary": "Update A - Added CVE-2024-11157, CVE-2024-12175, CVE-2024-12672, and CVE-2024-11364."
         }
       ],
       "status": "final",
-      "version": "1"
+      "version": "2"
     }
   },
   "product_tree": {
@@ -210,15 +216,85 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "<V16.20.06",
+                "name": "<=16.20.00",
                 "product": {
-                  "name": "Rockwell Automation Arena: <V16.20.06",
+                  "name": "Rockwell Automation Arena: <=16.20.00",
                   "product_id": "CSAFPID-0001"
                 }
               }
             ],
             "category": "product_name",
             "name": "Arena"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<=16.20.03",
+                "product": {
+                  "name": "Rockwell Automation Arena: <=16.20.03",
+                  "product_id": "CSAFPID-0002"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Arena"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<=16.20.05",
+                "product": {
+                  "name": "Rockwell Automation Arena: <=16.20.05",
+                  "product_id": "CSAFPID-0003"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Arena"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<=16.20.06",
+                "product": {
+                  "name": "Rockwell Automation Arena: <=16.20.06",
+                  "product_id": "CSAFPID-0004"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Arena"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<=16.20.07",
+                "product": {
+                  "name": "Rockwell Automation Arena 32 bit: <=16.20.07",
+                  "product_id": "CSAFPID-0005"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Arena 32 bit"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<=16.20.06",
+                "product": {
+                  "name": "Rockwell Automation Arena 32 bit: <=16.20.06",
+                  "product_id": "CSAFPID-0006"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Arena 32 bit"
           }
         ],
         "category": "vendor",
@@ -272,14 +348,28 @@
         },
         {
           "category": "mitigation",
-          "details": "Rockwell Automation recommends customers using the affected software are encouraged to apply these risk mitigations, if possible.",
+          "details": "Rockwell Automation encourages users of the affected software to apply the following risk mitigations, if possible.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Do not load untrusted Arena model files.",
           "product_ids": [
             "CSAFPID-0001"
           ]
         },
         {
           "category": "mitigation",
-          "details": "For information on how to mitigate security risks on industrial automation control systems, Rockwell Automation encourages users to implement their suggested security best practices to minimize the risk of the vulnerability.",
+          "details": "Hold the control key down when loading files to help prevent the VBA file stream from loading.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "For information on how to mitigate security risks on industrial automation control systems, Rockwell Automation encourages users to implement their suggested security best practices (login required) to minimize the risk of the vulnerability.",
           "product_ids": [
             "CSAFPID-0001"
           ],
@@ -287,7 +377,7 @@
         },
         {
           "category": "mitigation",
-          "details": "Customers can use Stakeholder-Specific Vulnerability Categorization can be used to generate more environment-specific prioritization.",
+          "details": "Stakeholder-Specific Vulnerability Categorization can be used to generate more environment-specific prioritization.",
           "product_ids": [
             "CSAFPID-0001"
           ],
@@ -299,7 +389,7 @@
           "product_ids": [
             "CSAFPID-0001"
           ],
-          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories.html"
+          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1713.html"
         }
       ],
       "scores": [
@@ -331,7 +421,7 @@
       ],
       "product_status": {
         "known_affected": [
-          "CSAFPID-0001"
+          "CSAFPID-0002"
         ]
       },
       "references": [
@@ -356,29 +446,43 @@
           "category": "mitigation",
           "details": "Rockwell Automation recommends users upgrade to V16.20.06 or later.",
           "product_ids": [
-            "CSAFPID-0001"
+            "CSAFPID-0002"
           ]
         },
         {
           "category": "mitigation",
-          "details": "Rockwell Automation recommends customers using the affected software are encouraged to apply these risk mitigations, if possible.",
+          "details": "Rockwell Automation encourages users of the affected software to apply the following risk mitigations, if possible.",
           "product_ids": [
-            "CSAFPID-0001"
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Do not load untrusted Arena model files.",
+          "product_ids": [
+            "CSAFPID-0002"
           ]
         },
         {
           "category": "mitigation",
-          "details": "For information on how to mitigate security risks on industrial automation control systems, Rockwell Automation encourages users to implement their suggested security best practices to minimize the risk of the vulnerability.",
+          "details": "Hold the control key down when loading files to help prevent the VBA file stream from loading.",
           "product_ids": [
-            "CSAFPID-0001"
+            "CSAFPID-0002"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "For information on how to mitigate security risks on industrial automation control systems, Rockwell Automation encourages users to implement their suggested security best practices (login required) to minimize the risk of the vulnerability.",
+          "product_ids": [
+            "CSAFPID-0002"
           ],
           "url": "https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1085012/loc/en_US#__highlight"
         },
         {
           "category": "mitigation",
-          "details": "Customers can use Stakeholder-Specific Vulnerability Categorization can be used to generate more environment-specific prioritization.",
+          "details": "Stakeholder-Specific Vulnerability Categorization can be used to generate more environment-specific prioritization.",
           "product_ids": [
-            "CSAFPID-0001"
+            "CSAFPID-0002"
           ],
           "url": "https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc"
         },
@@ -386,9 +490,9 @@
           "category": "mitigation",
           "details": "For more information about these issues, please see the Rockwell Automation security advisory.",
           "product_ids": [
-            "CSAFPID-0001"
+            "CSAFPID-0002"
           ],
-          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories.html"
+          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1713.html"
         }
       ],
       "scores": [
@@ -400,7 +504,7 @@
             "version": "3.1"
           },
           "products": [
-            "CSAFPID-0001"
+            "CSAFPID-0002"
           ]
         }
       ]
@@ -450,14 +554,28 @@
         },
         {
           "category": "mitigation",
-          "details": "Rockwell Automation recommends customers using the affected software are encouraged to apply these risk mitigations, if possible.",
+          "details": "Rockwell Automation encourages users of the affected software to apply the following risk mitigations, if possible.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Do not load untrusted Arena model files.",
           "product_ids": [
             "CSAFPID-0001"
           ]
         },
         {
           "category": "mitigation",
-          "details": "For information on how to mitigate security risks on industrial automation control systems, Rockwell Automation encourages users to implement their suggested security best practices to minimize the risk of the vulnerability.",
+          "details": "Hold the control key down when loading files to help prevent the VBA file stream from loading.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "For information on how to mitigate security risks on industrial automation control systems, Rockwell Automation encourages users to implement their suggested security best practices (login required) to minimize the risk of the vulnerability.",
           "product_ids": [
             "CSAFPID-0001"
           ],
@@ -465,7 +583,7 @@
         },
         {
           "category": "mitigation",
-          "details": "Customers can use Stakeholder-Specific Vulnerability Categorization can be used to generate more environment-specific prioritization.",
+          "details": "Stakeholder-Specific Vulnerability Categorization can be used to generate more environment-specific prioritization.",
           "product_ids": [
             "CSAFPID-0001"
           ],
@@ -477,7 +595,7 @@
           "product_ids": [
             "CSAFPID-0001"
           ],
-          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories.html"
+          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1713.html"
         }
       ],
       "scores": [
@@ -509,7 +627,7 @@
       ],
       "product_status": {
         "known_affected": [
-          "CSAFPID-0001"
+          "CSAFPID-0003"
         ]
       },
       "references": [
@@ -534,29 +652,43 @@
           "category": "mitigation",
           "details": "Rockwell Automation recommends users upgrade to V16.20.06 or later.",
           "product_ids": [
-            "CSAFPID-0001"
+            "CSAFPID-0003"
           ]
         },
         {
           "category": "mitigation",
-          "details": "Rockwell Automation recommends customers using the affected software are encouraged to apply these risk mitigations, if possible.",
+          "details": "Rockwell Automation encourages users of the affected software to apply the following risk mitigations, if possible.",
           "product_ids": [
-            "CSAFPID-0001"
+            "CSAFPID-0003"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Do not load untrusted Arena model files.",
+          "product_ids": [
+            "CSAFPID-0003"
           ]
         },
         {
           "category": "mitigation",
-          "details": "For information on how to mitigate security risks on industrial automation control systems, Rockwell Automation encourages users to implement their suggested security best practices to minimize the risk of the vulnerability.",
+          "details": "Hold the control key down when loading files to help prevent the VBA file stream from loading.",
           "product_ids": [
-            "CSAFPID-0001"
+            "CSAFPID-0003"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "For information on how to mitigate security risks on industrial automation control systems, Rockwell Automation encourages users to implement their suggested security best practices (login required) to minimize the risk of the vulnerability.",
+          "product_ids": [
+            "CSAFPID-0003"
           ],
           "url": "https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1085012/loc/en_US#__highlight"
         },
         {
           "category": "mitigation",
-          "details": "Customers can use Stakeholder-Specific Vulnerability Categorization can be used to generate more environment-specific prioritization.",
+          "details": "Stakeholder-Specific Vulnerability Categorization can be used to generate more environment-specific prioritization.",
           "product_ids": [
-            "CSAFPID-0001"
+            "CSAFPID-0003"
           ],
           "url": "https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc"
         },
@@ -564,9 +696,9 @@
           "category": "mitigation",
           "details": "For more information about these issues, please see the Rockwell Automation security advisory.",
           "product_ids": [
-            "CSAFPID-0001"
+            "CSAFPID-0003"
           ],
-          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories.html"
+          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1713.html"
         }
       ],
       "scores": [
@@ -578,7 +710,405 @@
             "version": "3.1"
           },
           "products": [
-            "CSAFPID-0001"
+            "CSAFPID-0003"
+          ]
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-11157",
+      "cwe": {
+        "id": "CWE-787",
+        "name": "Out-of-bounds Write"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "A third-party vulnerability exists in the affected products that could allow a threat actor to write beyond the boundaries of allocated memory in a DOE file. If exploited, a threat actor could leverage this vulnerability to execute arbitrary code. To exploit this vulnerability, a legitimate user must execute the malicious code crafted by the threat actor.",
+          "title": "Vulnerability Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0004"
+        ]
+      },
+      "references": [
+        {
+          "category": "external",
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-11157"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "remediations": [
+        {
+          "category": "mitigation",
+          "details": "Rockwell Automation recommends users upgrade to V16.20.06 or later.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Rockwell Automation encourages users of the affected software to apply the following risk mitigations, if possible.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Do not load untrusted Arena model files.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Hold the control key down when loading files to help prevent the VBA file stream from loading.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "For information on how to mitigate security risks on industrial automation control systems, Rockwell Automation encourages users to implement their suggested security best practices (login required) to minimize the risk of the vulnerability.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ],
+          "url": "https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1085012/loc/en_US#__highlight"
+        },
+        {
+          "category": "mitigation",
+          "details": "Stakeholder-Specific Vulnerability Categorization can be used to generate more environment-specific prioritization.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ],
+          "url": "https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc"
+        },
+        {
+          "category": "mitigation",
+          "details": "For more information about these issues, please see the Rockwell Automation security advisory.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ],
+          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1713.html"
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 7.8,
+            "baseSeverity": "HIGH",
+            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0004"
+          ]
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-12175",
+      "cwe": {
+        "id": "CWE-416",
+        "name": "Use After Free"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "Another \"use after free\" code execution vulnerability exists in the affected products that could allow a threat actor to craft a DOE file and force the software to use a resource that was already used. If exploited, a threat actor could   leverage this vulnerability to execute arbitrary code. To exploit this vulnerability, a legitimate user must execute the malicious code crafted by the threat actor.",
+          "title": "Vulnerability Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0004"
+        ]
+      },
+      "references": [
+        {
+          "category": "external",
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-12175"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "remediations": [
+        {
+          "category": "mitigation",
+          "details": "Rockwell Automation recommends users upgrade to V16.20.06 or later.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Rockwell Automation encourages users of the affected software to apply the following risk mitigations, if possible.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Do not load untrusted Arena model files.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Hold the control key down when loading files to help prevent the VBA file stream from loading.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "For information on how to mitigate security risks on industrial automation control systems, Rockwell Automation encourages users to implement their suggested security best practices (login required) to minimize the risk of the vulnerability.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ],
+          "url": "https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1085012/loc/en_US#__highlight"
+        },
+        {
+          "category": "mitigation",
+          "details": "Stakeholder-Specific Vulnerability Categorization can be used to generate more environment-specific prioritization.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ],
+          "url": "https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc"
+        },
+        {
+          "category": "mitigation",
+          "details": "For more information about these issues, please see the Rockwell Automation security advisory.",
+          "product_ids": [
+            "CSAFPID-0004"
+          ],
+          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1713.html"
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 7.8,
+            "baseSeverity": "HIGH",
+            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0004"
+          ]
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-12672",
+      "cwe": {
+        "id": "CWE-1395",
+        "name": "Dependency on Vulnerable Third-Party Component"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "A third-party vulnerability exists in the affected products that could allow a threat actor to write beyond the boundaries of allocated memory in a DOE file. If exploited, a threat actor could leverage this vulnerability to execute arbitrary code. To exploit this vulnerability, a legitimate user must execute the malicious code crafted by the threat actor.",
+          "title": "Vulnerability Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0005"
+        ]
+      },
+      "references": [
+        {
+          "category": "external",
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-12672"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "remediations": [
+        {
+          "category": "mitigation",
+          "details": "Rockwell Automation recommends users upgrade to V16.20.06 or later.",
+          "product_ids": [
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Rockwell Automation encourages users of the affected software to apply the following risk mitigations, if possible.",
+          "product_ids": [
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Hold the control key down when loading files to help prevent the VBA file stream from loading.",
+          "product_ids": [
+            "CSAFPID-0005"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "For information on how to mitigate security risks on industrial automation control systems, Rockwell Automation encourages users to implement their suggested security best practices (login required) to minimize the risk of the vulnerability.",
+          "product_ids": [
+            "CSAFPID-0005"
+          ],
+          "url": "https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1085012/loc/en_US#__highlight"
+        },
+        {
+          "category": "mitigation",
+          "details": "Stakeholder-Specific Vulnerability Categorization can be used to generate more environment-specific prioritization.",
+          "product_ids": [
+            "CSAFPID-0005"
+          ],
+          "url": "https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc"
+        },
+        {
+          "category": "mitigation",
+          "details": "For more information about these issues, please see the Rockwell Automation security advisory.",
+          "product_ids": [
+            "CSAFPID-0005"
+          ],
+          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1713.html"
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 7.8,
+            "baseSeverity": "HIGH",
+            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0005"
+          ]
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2024-11364",
+      "cwe": {
+        "id": "CWE-1395",
+        "name": "Dependency on Vulnerable Third-Party Component"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "Another \"uninitialized variable\" code execution vulnerability exists in the affected products that could allow a threat actor to craft a DOE file and force the software to access a variable prior to it being initialized. If exploited, a threat actor could leverage this vulnerability to execute arbitrary code. To exploit this vulnerability, a legitimate user must execute the malicious code crafted by the threat actor.",
+          "title": "Vulnerability Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0006"
+        ]
+      },
+      "references": [
+        {
+          "category": "external",
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-11364"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "remediations": [
+        {
+          "category": "mitigation",
+          "details": "Rockwell Automation recommends users upgrade to V16.20.06 or later.",
+          "product_ids": [
+            "CSAFPID-0006"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Rockwell Automation encourages users of the affected software to apply the following risk mitigations, if possible.",
+          "product_ids": [
+            "CSAFPID-0006"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Hold the control key down when loading files to help prevent the VBA file stream from loading.",
+          "product_ids": [
+            "CSAFPID-0006"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "For information on how to mitigate security risks on industrial automation control systems, Rockwell Automation encourages users to implement their suggested security best practices (login required) to minimize the risk of the vulnerability.",
+          "product_ids": [
+            "CSAFPID-0006"
+          ],
+          "url": "https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1085012/loc/en_US#__highlight"
+        },
+        {
+          "category": "mitigation",
+          "details": "Stakeholder-Specific Vulnerability Categorization can be used to generate more environment-specific prioritization.",
+          "product_ids": [
+            "CSAFPID-0006"
+          ],
+          "url": "https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc"
+        },
+        {
+          "category": "mitigation",
+          "details": "For more information about these issues, please see the Rockwell Automation security advisory.",
+          "product_ids": [
+            "CSAFPID-0006"
+          ],
+          "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1713.html"
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 7.8,
+            "baseSeverity": "HIGH",
+            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0006"
           ]
         }
       ]
