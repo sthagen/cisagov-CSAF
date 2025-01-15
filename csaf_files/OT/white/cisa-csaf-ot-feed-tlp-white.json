@@ -14,8 +14,36 @@
         "term": "csaf"
       }
     ],
-    "updated": "2025-01-09T21:55:28.230599Z",
+    "updated": "2025-01-14T23:44:51.184456Z",
     "entry": [
+      {
+        "id": "ICSA-25-014-04",
+        "title": "Belledonne Communications Linphone-Desktop",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-04.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-04.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-04.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-01-14T07:00:00.000000Z",
+        "updated": "2025-01-14T07:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-04.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
       {
         "id": "ICSA-24-345-06",
         "title": "Rockwell Automation Arena (Update A)",
@@ -2929,6 +2957,34 @@
         }
       },
       {
+        "id": "ICSA-25-014-01",
+        "title": "Hitachi Energy FOXMAN-UN",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-01.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-01.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-01.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2024-06-11T12:30:00.000000Z",
+        "updated": "2024-10-29T13:30:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-01.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
         "id": "ICSA-24-303-03",
         "title": "Delta Electronics InfraSuite Device Master",
         "link": [
@@ -5105,6 +5161,62 @@
         "updated": "2024-09-10T06:00:00.000000Z",
         "content": {
           "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-254-01.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-014-03",
+        "title": "Schneider Electric EcoStruxure",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-03.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-03.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-03.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2024-09-10T00:00:00.000000Z",
+        "updated": "2024-09-10T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-03.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-014-02",
+        "title": "Schneider Electric Vijeo Designer",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-02.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-02.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-02.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2024-09-10T00:00:00.000000Z",
+        "updated": "2024-09-10T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-02.json",
           "type": "application/json"
         },
         "format": {
