@@ -14,7 +14,7 @@
         "term": "csaf"
       }
     ],
-    "updated": "2025-01-16T23:20:15.671266Z",
+    "updated": "2025-01-17T15:43:36.035625Z",
     "entry": [
       {
         "id": "ICSA-25-016-05",
@@ -93,6 +93,34 @@
         "updated": "2025-01-16T07:00:00.000000Z",
         "content": {
           "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-191-05.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-24-058-01",
+        "title": "Mitsubishi Electric Multiple Factory Automation Products (Update A)",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-058-01.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-058-01.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-058-01.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2024-02-27T07:00:00.000000Z",
+        "updated": "2025-01-16T07:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-058-01.json",
           "type": "application/json"
         },
         "format": {
@@ -12945,34 +12973,6 @@
         "updated": "2024-02-27T07:00:00.000000Z",
         "content": {
           "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsma-24-058-01.json",
-          "type": "application/json"
-        },
-        "format": {
-          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
-          "version": "2.0"
-        }
-      },
-      {
-        "id": "ICSA-24-058-01",
-        "title": "Mitsubishi Electric Multiple Factory Automation Products",
-        "link": [
-          {
-            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-058-01.json",
-            "rel": "self"
-          },
-          {
-            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-058-01.json.asc",
-            "rel": "signature"
-          },
-          {
-            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-058-01.json.sha512",
-            "rel": "hash"
-          }
-        ],
-        "published": "2024-02-27T07:00:00.000000Z",
-        "updated": "2024-02-27T07:00:00.000000Z",
-        "content": {
-          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-058-01.json",
           "type": "application/json"
         },
         "format": {
