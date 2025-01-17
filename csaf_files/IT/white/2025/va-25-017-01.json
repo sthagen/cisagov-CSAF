@@ -18,7 +18,7 @@
           "name": "Secvisogram",
           "version": "2.5.16"
         },
-        "date": "2025-01-17T05:10:36.771Z"
+        "date": "2025-01-17T05:10:36Z"
       },
       "id": "VA-25-017-01",
       "initial_release_date": "2025-01-17T00:00:00Z",
@@ -164,7 +164,7 @@
           "product_ids": [
             "CSAFPID-0001"
           ],
-          "date": "2024-11-08T05:00:00.000Z"
+          "date": "2024-11-08T05:00:00Z"
         },
         {
           "category": "vendor_fix",
@@ -172,7 +172,7 @@
           "product_ids": [
             "CSAFPID-0002"
           ],
-          "date": "2024-11-08T05:00:00.000Z"
+          "date": "2024-11-08T05:00:00Z"
         }
       ],
       "acknowledgments": [
