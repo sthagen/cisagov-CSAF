@@ -2,8 +2,8 @@
   "document": {
     "acknowledgments": [
       {
-        "organization": "Schneider Electric CPCERT",
-        "summary": "reporting this vulnerability to CISA."
+        "organization": "Trend Micro Zero Day Initiative",
+        "summary": "reporting these vulnerabilities to Schneider Electric."
       }
     ],
     "category": "csaf_security_advisory",
@@ -39,7 +39,7 @@
       },
       {
         "category": "summary",
-        "text": "Schneider Electric is aware of a vulnerability in its Harmony HMIST6, HMISTM6, HMIG3U, HMIG3X, HMISTO7\r\nproducts used with EcoStruxure\u2122 Operator Terminal Expert Software and PFXST6000, PFXSTM6000, \r\nPFXSP5000, PFXGP4100 products used with Pro-face BLUE Software.\r\nHarmony HMI Panels and Pro-face HMI Panels are the main visible automation component that manage all \r\nvital machine features, including visualization, control, supervision, diagnostics, monitoring, and data logging.\r\nFailure to apply the mitigations provided below may risk various attack scenarios due to Third-Party \r\nComponent obsolescence, which could result in complete loss of control, Integrity and Confidentiality of the \r\ndevice and operational failure.",
+        "text": "Schneider Electric is aware of a vulnerability in its Data Center Expert product.\r\nThe Data Center Expert product is a scalable monitoring software that collects, organizes, and\r\ndistributes critical device information providing a comprehensive view of equipment.\r\nFailure to apply the fix provided below may risk information disclosure, which could result in\r\naccess to private data.",
         "title": "Overview"
       },
       {
@@ -54,7 +54,7 @@
       },
       {
         "category": "other",
-        "text": "Chemical, Critical Manufacturing, Energy, Water and Wastewater Systems",
+        "text": "Critical Manufacturing",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -69,7 +69,7 @@
       },
       {
         "category": "general",
-        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of these vulnerabilities.",
+        "text": "CISA recommends users take defensive measures to minimize the exploitation risk of this vulnerability.",
         "title": "Recommended Practices"
       },
       {
@@ -117,13 +117,13 @@
     "references": [
       {
         "category": "self",
-        "summary": "Harmony HMI and Pro-face HMI products - SEVD-2024-345-02 CSAF Version",
-        "url": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2024-345-02&p_enDocType=Security+and+Safety+Notice&p_File_Name=sevd-2024-345-02.json"
+        "summary": "Data Center Expert - SEVD-2024-282-01 CSAF Version",
+        "url": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2024-282-01&p_enDocType=Security+and+Safety+Notice&p_File_Name=sevd-2024-282-01.json"
       },
       {
         "category": "self",
-        "summary": "Harmony HMI and Pro-face HMI products - SEVD-2024-345-02 PDF Version",
-        "url": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2024-345-02&p_enDocType=Security+and+Safety+Notice&p_File_Name=sevd-2024-345-02.pdf"
+        "summary": "Data Center Expert - SEVD-2024-282-01 PDF Version",
+        "url": "https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2024-282-01&p_enDocType=Security+and+Safety+Notice&p_File_Name=sevd-2024-282-01.pdf"
       },
       {
         "category": "external",
@@ -132,13 +132,13 @@
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-25-009-02 JSON",
-        "url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-009-02.json"
+        "summary": "ICS Advisory ICSA-25-016-08 JSON",
+        "url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-016-08.json"
       },
       {
         "category": "self",
-        "summary": "ICS Advisory ICSA-25-009-02 - Web Version",
-        "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-25-009-02"
+        "summary": "ICS Advisory ICSA-25-016-08 - Web Version",
+        "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-25-016-08"
       },
       {
         "category": "external",
@@ -171,21 +171,21 @@
         "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
-    "title": "Schneider Electric Harmony HMI and Pro-Face HMI Products",
+    "title": "Schneider Electric Data Center Expert",
     "tracking": {
-      "current_release_date": "2024-12-10T00:00:00.000000Z",
+      "current_release_date": "2024-10-08T00:00:00.000000Z",
       "generator": {
-        "date": "2024-12-10T00:00:00.000000Z",
+        "date": "2024-10-08T00:00:00.000000Z",
         "engine": {
           "name": "CISA CSAF Generator",
           "version": "1.0.0"
         }
       },
-      "id": "ICSA-25-009-02",
-      "initial_release_date": "2024-12-10T00:00:00.000000Z",
+      "id": "ICSA-25-016-08",
+      "initial_release_date": "2024-10-08T00:00:00.000000Z",
       "revision_history": [
         {
-          "date": "2024-12-10T00:00:00.000000Z",
+          "date": "2024-10-08T00:00:00.000000Z",
           "number": "1.0.0",
           "summary": "Original Release"
         }
@@ -202,46 +202,29 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<=8.1.1.3",
                 "product": {
-                  "name": "Schneider Electric Harmony (Formerly Magelis) HMIST6, HMISTM6, HMIG3U, HMIG3X, HMISTO7  series with EcoStruxureTM Operator Terminal Expert runtime All versions",
-                  "product_id": "CSAFPID-0001",
-                  "product_identification_helper": {
-                    "model_numbers": [
-                      "HMIST6",
-                      "HMISTM6",
-                      "HMIG3U",
-                      "HMIG3X",
-                      "HMISTO7"
-                    ]
-                  }
+                  "name": "Schneider Electric Data Center Expert Versions 8.1.1.3 and prior",
+                  "product_id": "CSAFPID-0001"
                 }
               }
             ],
             "category": "product_name",
-            "name": "Harmony with EcoStruxureTM Operator Terminal Expert runtime"
+            "name": "Data Center Expert"
           },
           {
             "branches": [
               {
-                "category": "product_version_range",
-                "name": "vers:all/*",
+                "category": "product_version",
+                "name": "8.2",
                 "product": {
-                  "name": "Schneider Electric PFXST6000, PFXSTM6000, PFXSP5000, PFXGP4100 series with Pro-face BLUE runtime All versions",
-                  "product_id": "CSAFPID-0002",
-                  "product_identification_helper": {
-                    "model_numbers": [
-                      "PFXST6000",
-                      "PFXSTM6000",
-                      "PFXSP5000",
-                      "PFXGP4100"
-                    ]
-                  }
+                  "name": "Schneider Electric Data Center Expert 8.2",
+                  "product_id": "CSAFPID-0002"
                 }
               }
             ],
             "category": "product_name",
-            "name": "Pro-face HMI with Pro-face BLUE runtime"
+            "name": "Data Center Expert"
           }
         ],
         "category": "vendor",
@@ -251,31 +234,50 @@
   },
   "vulnerabilities": [
     {
-      "cve": "CVE-2024-11999",
+      "acknowledgments": [
+        {
+          "names": [
+            "Anonymous"
+          ],
+          "organization": "Trend Micro Zero Day Initiative"
+        }
+      ],
+      "cve": "CVE-2024-8531",
       "cwe": {
-        "id": "CWE-1104",
-        "name": "Use of Unmaintained Third Party Components"
+        "id": "CWE-347",
+        "name": "Improper Verification of Cryptographic Signature"
       },
       "notes": [
         {
           "category": "description",
-          "text": "CWE-1104: Use of Unmaintained Third-Party Components exists that could cause complete control of the \r\ndevice when an authenticated user installs malicious code into HMI product.",
+          "text": "CWE-347: Improper Verification of Cryptographic Signature vulnerability exists that could\r\ncompromise the Data Center Expert software when an upgrade bundle is manipulated to\r\ninclude arbitrary bash scripts that are executed as root.",
           "title": "CVE Description"
         }
       ],
       "product_status": {
-        "known_affected": [
-          "CSAFPID-0001",
+        "fixed": [
           "CSAFPID-0002"
+        ],
+        "known_affected": [
+          "CSAFPID-0001"
         ]
       },
       "remediations": [
         {
-          "category": "mitigation",
-          "details": "Customers should immediately apply the following mitigations to \r\nreduce the risk of exploit:\r\n\u2022 Use HMI only in a protected environment to minimize network \r\nexposure and ensure that they are not accessible from public \r\ninternet or untrusted networks.\r\n\u2022 Setup network segmentation and implement a firewall to block \r\nall unauthorized access.\r\n\u2022 Restrict usage of unverifiable portable media\r\n\u2022 Restricting the application access to limit the transfer of \r\nFirmware to HMIScanning of software/files for rootkits before \r\nusage and verifying the digital signature.\r\n\u2022 When exchanging files over the network, use secure \r\ncommunication protocols.",
+          "category": "vendor_fix",
+          "details": "Version 8.2 of EcoStruxure\u2122 IT Data Center Expert\r\nincludes fixes for these vulnerabilities and is available\r\nupon request from Schneider Electric\u2019s\r\nCustomer Care Center.",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002"
+            "CSAFPID-0001"
+          ],
+          "restart_required": {
+            "category": "none"
+          }
+        },
+        {
+          "category": "mitigation",
+          "details": "Ensure that the principals of least privilege are being followed so that only those with need\r\nhave account access and that the level of their respective account authorization aligns\r\nwith their role, including Privileged Accounts as described in the Data Center Expert\r\nSecurity Handbook.\r\n\u2022 Verify SHA1 checksums of upgrade bundles prior to executing upgrades as described in\r\nthe Upgrades section of the Data Center Expert Security Handbook..\r\n\u2022 Delete any existing \u201clogcapture\u201d archives present on the system and do not create any\r\nnew \u201clogcapture\u201d archives. Existing archives can be deleted from the\r\nhttps://server_ip/capturelogs web page after authenticating.",
+          "product_ids": [
+            "CSAFPID-0001"
           ],
           "restart_required": {
             "category": "none"
@@ -288,23 +290,96 @@
             "attackComplexity": "LOW",
             "attackVector": "NETWORK",
             "availabilityImpact": "HIGH",
-            "baseScore": 8.8,
+            "baseScore": 7.2,
             "baseSeverity": "HIGH",
             "confidentialityImpact": "HIGH",
             "integrityImpact": "HIGH",
-            "privilegesRequired": "LOW",
+            "privilegesRequired": "HIGH",
             "scope": "UNCHANGED",
             "userInteraction": "NONE",
-            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
             "version": "3.1"
           },
           "products": [
-            "CSAFPID-0001",
-            "CSAFPID-0002"
+            "CSAFPID-0001"
           ]
         }
       ],
-      "title": "CVE-2024-11999"
+      "title": "CVE-2024-8531"
+    },
+    {
+      "acknowledgments": [
+        {
+          "names": [
+            "Anonymous"
+          ],
+          "organization": "Trend Micro Zero Day Initiative"
+        }
+      ],
+      "cve": "CVE-2024-8530",
+      "cwe": {
+        "id": "CWE-306",
+        "name": "Missing Authentication for Critical Function"
+      },
+      "notes": [
+        {
+          "category": "description",
+          "text": "CWE-306: Missing Authentication for Critical Function vulnerability exists that could\r\ncause exposure of private data when an already generated \u201clogcaptures\u201d archive is accessed\r\ndirectly by HTTPS.",
+          "title": "CVE Description"
+        }
+      ],
+      "product_status": {
+        "fixed": [
+          "CSAFPID-0002"
+        ],
+        "known_affected": [
+          "CSAFPID-0001"
+        ]
+      },
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "details": "Version 8.2 of EcoStruxure\u2122 IT Data Center Expert\r\nincludes fixes for these vulnerabilities and is available\r\nupon request from Schneider Electric\u2019s\r\nCustomer Care Center.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ],
+          "restart_required": {
+            "category": "none"
+          }
+        },
+        {
+          "category": "mitigation",
+          "details": "Ensure that the principals of least privilege are being followed so that only those with need\r\nhave account access and that the level of their respective account authorization aligns\r\nwith their role, including Privileged Accounts as described in the Data Center Expert\r\nSecurity Handbook.\r\n\u2022 Verify SHA1 checksums of upgrade bundles prior to executing upgrades as described in\r\nthe Upgrades section of the Data Center Expert Security Handbook..\r\n\u2022 Delete any existing \u201clogcapture\u201d archives present on the system and do not create any\r\nnew \u201clogcapture\u201d archives. Existing archives can be deleted from the\r\nhttps://server_ip/capturelogs web page after authenticating.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ],
+          "restart_required": {
+            "category": "none"
+          }
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "attackComplexity": "HIGH",
+            "attackVector": "NETWORK",
+            "availabilityImpact": "NONE",
+            "baseScore": 5.9,
+            "baseSeverity": "MEDIUM",
+            "confidentialityImpact": "HIGH",
+            "integrityImpact": "NONE",
+            "privilegesRequired": "NONE",
+            "scope": "UNCHANGED",
+            "userInteraction": "NONE",
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "title": "CVE-2024-8530"
     }
   ]
 }
