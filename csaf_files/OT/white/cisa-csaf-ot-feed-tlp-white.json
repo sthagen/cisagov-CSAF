@@ -14,8 +14,36 @@
         "term": "csaf"
       }
     ],
-    "updated": "2025-01-17T15:43:36.035625Z",
+    "updated": "2025-01-21T21:59:09.532119Z",
     "entry": [
+      {
+        "id": "ICSA-25-021-03",
+        "title": "ZF Roll Stability Support Plus (RSSPlus)",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-021-03.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-021-03.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-021-03.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-01-21T07:00:00.000000Z",
+        "updated": "2025-01-21T07:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-021-03.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
       {
         "id": "ICSA-25-016-05",
         "title": "Fuji Electric Alpha5 SMART",
@@ -205,6 +233,34 @@
         "updated": "2025-01-14T07:00:00.000000Z",
         "content": {
           "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-014-04.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-021-02",
+        "title": "Siemens SIMATIC S7-1200 CPUs",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-021-02.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-021-02.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-021-02.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-01-14T00:00:00.000000Z",
+        "updated": "2025-01-14T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-021-02.json",
           "type": "application/json"
         },
         "format": {
@@ -14037,6 +14093,34 @@
         "updated": "2024-01-23T07:00:00.000000Z",
         "content": {
           "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-023-01.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-021-01",
+        "title": "Traffic Alert and Collision Avoidance System (TCAS) II",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-021-01.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-021-01.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-021-01.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2024-01-21T07:00:00.000000Z",
+        "updated": "2024-01-21T07:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-021-01.json",
           "type": "application/json"
         },
         "format": {
