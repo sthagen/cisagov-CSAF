@@ -18,11 +18,11 @@
           "name": "Secvisogram",
           "version": "2.5.17"
         },
-        "date": "2025-01-23T03:56:58Z"
+        "date": "2025-01-24T03:45:51Z"
       },
       "id": "VA-25-022-01",
       "initial_release_date": "2025-01-23T00:53:24Z",
-      "status": "draft",
+      "status": "final",
       "version": "1.0.0",
       "revision_history": [
         {
@@ -823,11 +823,6 @@
           "CSAFPID-0036",
           "CSAFPID-0035",
           "CSAFPID-0047"
-        ],
-        "under_investigation": [
-          "CSAFPID-0004",
-          "CSAFPID-0001",
-          "CSAFPID-0005"
         ]
       },
       "references": [
