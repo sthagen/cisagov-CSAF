@@ -1,3 +1,9 @@
+csaf_files/OT/white/2025/icsma-25-030-01.json
+csaf_files/OT/white/2025/icsa-25-030-05.json
+csaf_files/OT/white/2025/icsa-25-030-04.json
+csaf_files/OT/white/2025/icsa-25-030-03.json
+csaf_files/OT/white/2025/icsa-25-030-02.json
+csaf_files/OT/white/2025/icsa-25-030-01.json
 csaf_files/OT/white/2025/icsa-25-028-06.json
 csaf_files/OT/white/2025/icsa-25-028-05.json
 csaf_files/OT/white/2025/icsa-25-028-04.json
