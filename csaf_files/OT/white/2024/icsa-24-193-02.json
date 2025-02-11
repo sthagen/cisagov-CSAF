@@ -49,7 +49,7 @@
       },
       {
         "category": "other",
-        "text": "Communications, Critical Manufacturing, Energy, Transportation Systems",
+        "text": "Communications, Critical Manufacturing, Energy, and Transportation",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -163,7 +163,7 @@
     ],
     "title": "Siemens RUGGEDCOM APE 1808",
     "tracking": {
-      "current_release_date": "2024-12-10T00:00:00.000000Z",
+      "current_release_date": "2025-02-11T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -202,10 +202,16 @@
           "legacy_version": "1.4",
           "number": "5",
           "summary": "Added newly published upstream vulnerabilities CVE-2024-33510, CVE-2023-50176, CVE-2024-26011"
+        },
+        {
+          "date": "2025-02-11T00:00:00.000000Z",
+          "legacy_version": "1.5",
+          "number": "6",
+          "summary": "Added newly published upstream vulnerabilities CVE-2024-48886 and CVE-2024-50563"
         }
       ],
       "status": "final",
-      "version": "5"
+      "version": "6"
     }
   },
   "product_tree": {
@@ -666,6 +672,90 @@
         }
       ],
       "title": "CVE-2024-36505"
+    },
+    {
+      "cve": "CVE-2024-48886",
+      "cwe": {
+        "id": "CWE-1390",
+        "name": "Weak Authentication"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "A weak authentication in Fortinet FortiOS versions 7.4.0 through 7.4.4, 7.2.0 through 7.2.8, 7.0.0 through 7.0.15, 6.4.0 through 6.4.15, FortiProxy versions 7.4.0 through 7.4.4, 7.2.0 through 7.2.10, 7.0.0 through 7.0.17, 2.0.0 through 2.0.14, FortiManager versions 7.6.0 through 7.6.1, 7.4.1 through 7.4.3, FortiManager Cloud versions 7.4.1 through 7.4.3, FortiAnalyzer Cloud versions 7.4.1 through 7.4.3 allows attacker to execute unauthorized code or commands via a brute-force attack.",
+          "title": "Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0001"
+        ]
+      },
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "details": "Update Fortigate NGFW to V7.4.4. Contact customer support to receive patch and update information.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 9.0,
+            "baseSeverity": "CRITICAL",
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H/E:F/RL:O/RC:R",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "title": "CVE-2024-48886"
+    },
+    {
+      "cve": "CVE-2024-50563",
+      "cwe": {
+        "id": "CWE-1390",
+        "name": "Weak Authentication"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "A weak authentication in Fortinet FortiManager Cloud, FortiAnalyzer versions 7.6.0 through 7.6.1, 7.4.1 through 7.4.3, FortiAnalyzer Cloud versions 7.4.1 through 7.4.3, FortiManager versions 7.6.0 through 7.6.1, 7.4.1 through 7.4.3, FortiManager Cloud versions 7.4.1 through 7.4.3 allows attacker to execute unauthorized code or commands via a brute-force attack.",
+          "title": "Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0001"
+        ]
+      },
+      "remediations": [
+        {
+          "category": "vendor_fix",
+          "details": "Update Fortigate NGFW to V7.4.4. Contact customer support to receive patch and update information.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 7.3,
+            "baseSeverity": "HIGH",
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:P/RL:W/RC:C",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "title": "CVE-2024-50563"
     }
   ]
 }

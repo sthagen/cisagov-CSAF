@@ -3,11 +3,9 @@
     "acknowledgments": [
       {
         "names": [
-		"Steffen Robertz", 
-		"Stefan Viehböck",
-		"Constantin Schieber-Knöbl"
-		],
-		"organization": "SEC Consult Vulnerability Lab",
+          "Steffen Robertz", "Stefan Viehböck", "Constantin Schieber-Knöbl"
+        ],
+        "organization": "SEC Consult Vulnerability Lab",
         "summary": "reporting this vulnerability to Siemens."
       }
     ],
@@ -54,7 +52,7 @@
       },
       {
         "category": "other",
-        "text": "Critical Manufacturing",
+        "text": "Critical Manufacturing, Transportation Systems, Energy, Healthcare and Public Health, Financial Services, Government Services and Facilities",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -168,7 +166,7 @@
     ],
     "title": "Siemens SIPROTEC 5 Products",
     "tracking": {
-      "current_release_date": "2025-01-14T00:00:00.000000Z",
+      "current_release_date": "2025-02-11T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -183,10 +181,16 @@
           "legacy_version": "1.0",
           "number": "1",
           "summary": "Publication Date"
+        },
+        {
+          "date": "2025-02-11T00:00:00.000000Z",
+          "legacy_version": "1.1",
+          "number": "2",
+          "summary": "Added fix version for 6MD89 (CP300)"
         }
       ],
       "status": "final",
-      "version": "1"
+      "version": "2"
     }
   },
   "product_tree": {
@@ -239,7 +243,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/>=V7.80",
+                "name": "vers:all/>=V7.80|<V9.90",
                 "product": {
                   "name": "SIPROTEC 5 6MD89 (CP300)",
                   "product_id": "CSAFPID-0004"
@@ -867,7 +871,6 @@
           "category": "none_available",
           "details": "Currently no fix is available",
           "product_ids": [
-            "CSAFPID-0004",
             "CSAFPID-0007",
             "CSAFPID-0011",
             "CSAFPID-0015",
@@ -928,6 +931,13 @@
             "CSAFPID-0039",
             "CSAFPID-0040",
             "CSAFPID-0041"
+          ]
+        },
+        {
+          "category": "vendor_fix",
+          "details": "Update to V9.90 or later version",
+          "product_ids": [
+            "CSAFPID-0004"
           ]
         }
       ],
