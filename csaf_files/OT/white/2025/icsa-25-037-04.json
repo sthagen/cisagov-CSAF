@@ -29,7 +29,7 @@
       },
       {
         "category": "other",
-        "text": "Water and Wastewater Systems",
+        "text": "Water and Wastewater Systems, Energy, Transportation Systems, Government Services and Facilities, Communications",
         "title": "Critical infrastructure sectors"
       },
       {
@@ -151,9 +151,9 @@
         "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
-    "title": "Trimble Cityworks",
+    "title": "Trimble Cityworks (Update A)",
     "tracking": {
-      "current_release_date": "2025-02-06T07:00:00.000000Z",
+      "current_release_date": "2025-02-11T07:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -168,10 +168,16 @@
           "legacy_version": "Initial",
           "number": "1",
           "summary": "Initial Publication"
+        },
+        {
+          "date": "2025-02-11T07:00:00.000000Z",
+          "legacy_version": "Update A",
+          "number": "2",
+          "summary": "Update A - Update to the critical infrastructure sectors"
         }
       ],
       "status": "final",
-      "version": "1"
+      "version": "2"
     }
   },
   "product_tree": {
@@ -254,16 +260,14 @@
           "category": "vendor_fix",
           "details": "Cityworks has released the following update guidance for users:",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002"
+            "CSAFPID-0001"
           ]
         },
         {
           "category": "vendor_fix",
           "details": "Trimble will be releasing updated versions to both 15.x (15.8.9 available January 28, 2025) and Cityworks 23.x software releases (23.10 available January 29, 2025). Information on the updated versions will be available through the normal channels via the Cityworks Support Portal(Login required). On-premise customers should install the updated version immediately. These updates will be automatically applied to all Cityworks Online (CWOL) deployments.",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002"
+            "CSAFPID-0001"
           ],
           "url": "https://cityworks.my.site.com/"
         },
@@ -271,8 +275,7 @@
           "category": "vendor_fix",
           "details": "Trimble has observed that some on-premise deployments may have overprivileged  Internet Information Services (IIS) identity permissions. For avoidance of doubt, and in accordance with Trimble's technical documentation, IIS should not be run with local or domain level administrative privileges on any site. Please refer to the direction in the latest release notes in the Cityworks Support Portal(Login required) for more information on how to update IIS identity permissions. Trimble's CWOL customers have their IIS identity permissions set appropriately and do not need to take this action.",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002"
+            "CSAFPID-0001"
           ],
           "url": "https://cityworks.my.site.com/"
         },
@@ -280,8 +283,7 @@
           "category": "vendor_fix",
           "details": "Trimble has observed that some deployments have inappropriate attachment directory configurations. Trimble recommends that attachment directory root configuration should be limited to folders/subfolders which only contain attachments. Please refer to the direction in the latest release notes in the Cityworks Support Portal(Login required) for more information on how to ensure proper configuration of the attachment directory.",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002"
+            "CSAFPID-0001"
           ],
           "url": "https://cityworks.my.site.com/"
         },
@@ -298,8 +300,7 @@
           "category": "vendor_fix",
           "details": "Cityworks software is incapable of controlling industrial processes, and is not directly part of an ICS.",
           "product_ids": [
-            "CSAFPID-0001",
-            "CSAFPID-0002"
+            "CSAFPID-0001"
           ]
         }
       ],
