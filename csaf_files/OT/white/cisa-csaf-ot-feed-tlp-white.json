@@ -14,8 +14,176 @@
         "term": "csaf"
       }
     ],
-    "updated": "2025-02-11T20:57:21.025525Z",
+    "updated": "2025-02-13T18:58:09.812502Z",
     "entry": [
+      {
+        "id": "ICSMA-25-044-01",
+        "title": "Qardio Heart Health IOS and Android Application and QardioARM A100",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsma-25-044-01.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsma-25-044-01.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsma-25-044-01.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-13T07:00:00.000000Z",
+        "updated": "2025-02-13T07:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsma-25-044-01.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-18",
+        "title": "Dingtian DT-R0 Series",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-18.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-18.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-18.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-13T07:00:00.000000Z",
+        "updated": "2025-02-13T07:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-18.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-17",
+        "title": "Outback Power Mojave Inverter",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-17.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-17.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-17.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-13T07:00:00.000000Z",
+        "updated": "2025-02-13T07:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-17.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-15",
+        "title": "ORing IAP-420",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-15.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-15.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-15.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-13T07:00:00.000000Z",
+        "updated": "2025-02-13T07:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-15.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-24-044-16",
+        "title": "mySCADA myPRO Manager",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-044-16.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-044-16.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-044-16.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-13T07:00:00.000000Z",
+        "updated": "2025-02-13T07:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-044-16.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-24-030-02",
+        "title": "Mitsubishi Electric FA Engineering Software Products (Update C)",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-030-02.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-030-02.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-030-02.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2024-01-30T07:00:00.000000Z",
+        "updated": "2025-02-13T07:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-030-02.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
       {
         "id": "ICSA-25-037-04",
         "title": "Trimble Cityworks (Update A)",
@@ -65,6 +233,398 @@
         "updated": "2025-02-11T07:00:00.000000Z",
         "content": {
           "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-319-17.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-14",
+        "title": "Siemens Opcenter Intelligence",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-14.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-14.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-14.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-11T00:00:00.000000Z",
+        "updated": "2025-02-11T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-14.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-13",
+        "title": "Siemens SIMATIC PCS neo, TIA Administrator, and TIA Portal",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-13.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-13.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-13.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-11T00:00:00.000000Z",
+        "updated": "2025-02-11T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-13.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-12",
+        "title": "Siemens SIMATIC IPC DiagBase and SIMATIC IPC DiagMonitor",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-12.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-12.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-12.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-11T00:00:00.000000Z",
+        "updated": "2025-02-11T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-12.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-11",
+        "title": "Siemens Apogee PXC100 Devices",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-11.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-11.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-11.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-11T00:00:00.000000Z",
+        "updated": "2025-02-11T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-11.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-10",
+        "title": "Siemens Questa and ModelSim",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-10.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-10.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-10.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-11T00:00:00.000000Z",
+        "updated": "2025-02-11T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-10.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-09",
+        "title": "Siemens SCALANCE W700 IEEE 802.11ax",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-09.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-09.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-09.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-11T00:00:00.000000Z",
+        "updated": "2025-02-11T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-09.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-08",
+        "title": "Siemens OpenV2G",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-08.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-08.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-08.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-11T00:00:00.000000Z",
+        "updated": "2025-02-11T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-08.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-07",
+        "title": "Siemens Teamcenter ",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-07.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-07.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-07.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-11T00:00:00.000000Z",
+        "updated": "2025-02-11T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-07.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-06",
+        "title": "Siemens RUGGEDCOM APE1808 Devices",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-06.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-06.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-06.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-11T00:00:00.000000Z",
+        "updated": "2025-02-11T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-06.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-05",
+        "title": "Siemens SIPROTEC 5 Devices",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-05.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-05.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-05.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-11T00:00:00.000000Z",
+        "updated": "2025-02-11T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-05.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-04",
+        "title": "Siemens SIPROTEC 5",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-04.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-04.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-04.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-11T00:00:00.000000Z",
+        "updated": "2025-02-11T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-04.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-03",
+        "title": "Siemens SIPROTEC 5",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-03.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-03.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-03.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-11T00:00:00.000000Z",
+        "updated": "2025-02-11T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-03.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-02",
+        "title": "Siemens SIMATIC",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-02.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-02.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-02.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-11T00:00:00.000000Z",
+        "updated": "2025-02-11T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-02.json",
+          "type": "application/json"
+        },
+        "format": {
+          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
+          "version": "2.0"
+        }
+      },
+      {
+        "id": "ICSA-25-044-01",
+        "title": "Siemens SIMATIC S7-1200 CPU Family",
+        "link": [
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-01.json",
+            "rel": "self"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-01.json.asc",
+            "rel": "signature"
+          },
+          {
+            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-01.json.sha512",
+            "rel": "hash"
+          }
+        ],
+        "published": "2025-02-11T00:00:00.000000Z",
+        "updated": "2025-02-11T00:00:00.000000Z",
+        "content": {
+          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2025/icsa-25-044-01.json",
           "type": "application/json"
         },
         "format": {
@@ -1185,34 +1745,6 @@
         "updated": "2025-01-16T07:00:00.000000Z",
         "content": {
           "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-058-01.json",
-          "type": "application/json"
-        },
-        "format": {
-          "schema": "https://docs.oasis-open.org/csaf/csaf/v2.0/csaf_json_schema.json",
-          "version": "2.0"
-        }
-      },
-      {
-        "id": "ICSA-24-030-02",
-        "title": "Mitsubishi Electric FA Engineering Software Products (Update B)",
-        "link": [
-          {
-            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-030-02.json",
-            "rel": "self"
-          },
-          {
-            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-030-02.json.asc",
-            "rel": "signature"
-          },
-          {
-            "href": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-030-02.json.sha512",
-            "rel": "hash"
-          }
-        ],
-        "published": "2024-01-30T07:00:00.000000Z",
-        "updated": "2025-01-16T07:00:00.000000Z",
-        "content": {
-          "src": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2024/icsa-24-030-02.json",
           "type": "application/json"
         },
         "format": {
