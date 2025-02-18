@@ -208,10 +208,34 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "<V33.017_V34.014_V35.013_V36.011",
+                "name": "<V33.017",
                 "product": {
-                  "name": "Rockwell Automation GuardLogix 5580 (SIL 3 with the safety partner 3): <V33.017_V34.014_V35.013_V36.011",
+                  "name": "Rockwell Automation GuardLogix 5580 (SIL 3 with the safety partner 3): <V33.017",
                   "product_id": "CSAFPID-0001"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<V34.014",
+                "product": {
+                  "name": "Rockwell Automation GuardLogix 5580 (SIL 3 with the safety partner 3): <V34.014",
+                  "product_id": "CSAFPID-0002"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<V35.013",
+                "product": {
+                  "name": "Rockwell Automation GuardLogix 5580 (SIL 3 with the safety partner 3): <V35.013",
+                  "product_id": "CSAFPID-0003"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<V36.011",
+                "product": {
+                  "name": "Rockwell Automation GuardLogix 5580 (SIL 3 with the safety partner 3): <V36.011",
+                  "product_id": "CSAFPID-0004"
                 }
               }
             ],
@@ -222,10 +246,34 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "<V33.017_V34.014_V35.013_V36.011",
+                "name": "<V33.017",
                 "product": {
-                  "name": "Rockwell Automation Compact GuardLogix 5380 SIL 3: <V33.017_V34.014_V35.013_V36.011",
-                  "product_id": "CSAFPID-0002"
+                  "name": "Rockwell Automation Compact GuardLogix 5380 SIL 3: <V33.017",
+                  "product_id": "CSAFPID-0005"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<V34.014",
+                "product": {
+                  "name": "Rockwell Automation Compact GuardLogix 5380 SIL 3: <V34.014",
+                  "product_id": "CSAFPID-0006"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<V35.013",
+                "product": {
+                  "name": "Rockwell Automation Compact GuardLogix 5380 SIL 3: <V35.013",
+                  "product_id": "CSAFPID-0007"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<V36.011",
+                "product": {
+                  "name": "Rockwell Automation Compact GuardLogix 5380 SIL 3: <V36.011",
+                  "product_id": "CSAFPID-0008"
                 }
               }
             ],
@@ -255,7 +303,13 @@
       "product_status": {
         "known_affected": [
           "CSAFPID-0001",
-          "CSAFPID-0002"
+          "CSAFPID-0002",
+          "CSAFPID-0003",
+          "CSAFPID-0004",
+          "CSAFPID-0005",
+          "CSAFPID-0006",
+          "CSAFPID-0007",
+          "CSAFPID-0008"
         ]
       },
       "references": [
@@ -281,7 +335,13 @@
           "details": "Rockwell Automation recommends users of the affected software to apply the following risk mitigations, if possible.",
           "product_ids": [
             "CSAFPID-0001",
-            "CSAFPID-0002"
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005",
+            "CSAFPID-0006",
+            "CSAFPID-0007",
+            "CSAFPID-0008"
           ]
         },
         {
@@ -289,7 +349,13 @@
           "details": "Update to V33.017, V34.014, V35.013, V36.011, or the latest version.",
           "product_ids": [
             "CSAFPID-0001",
-            "CSAFPID-0002"
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005",
+            "CSAFPID-0006",
+            "CSAFPID-0007",
+            "CSAFPID-0008"
           ]
         },
         {
@@ -297,7 +363,13 @@
           "details": "Restrict access to the task object via CIP Security and Hard Run.",
           "product_ids": [
             "CSAFPID-0001",
-            "CSAFPID-0002"
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005",
+            "CSAFPID-0006",
+            "CSAFPID-0007",
+            "CSAFPID-0008"
           ]
         },
         {
@@ -305,7 +377,13 @@
           "details": "For information on how to mitigate security risks on industrial automation control systems, Rockwell Automation encourages users to implement their suggested security best practices to minimize the risk of the vulnerability.",
           "product_ids": [
             "CSAFPID-0001",
-            "CSAFPID-0002"
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005",
+            "CSAFPID-0006",
+            "CSAFPID-0007",
+            "CSAFPID-0008"
           ],
           "url": "https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1085012/loc/en_US#__highlight"
         },
@@ -314,7 +392,13 @@
           "details": "Stakeholder-Specific Vulnerability Categorization can be used to generate more environment-specific prioritization.",
           "product_ids": [
             "CSAFPID-0001",
-            "CSAFPID-0002"
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005",
+            "CSAFPID-0006",
+            "CSAFPID-0007",
+            "CSAFPID-0008"
           ],
           "url": "https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc"
         },
@@ -323,7 +407,13 @@
           "details": "For more information about this issue, please see the advisory on the Rockwell Automation security page.",
           "product_ids": [
             "CSAFPID-0001",
-            "CSAFPID-0002"
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005",
+            "CSAFPID-0006",
+            "CSAFPID-0007",
+            "CSAFPID-0008"
           ],
           "url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories.html"
         }
@@ -338,7 +428,13 @@
           },
           "products": [
             "CSAFPID-0001",
-            "CSAFPID-0002"
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005",
+            "CSAFPID-0006",
+            "CSAFPID-0007",
+            "CSAFPID-0008"
           ]
         }
       ]
