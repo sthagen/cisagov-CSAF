@@ -49,7 +49,7 @@
       },
       {
         "category": "general",
-        "text": "Minimize network exposure for all control system devices and/or systems, ensuring they are not accessible from the internet.",
+        "text": "Minimize network exposure for all control system devices and/or systems, ensuring they are not accessible from the Internet.",
         "title": "Recommended Practices"
       },
       {
@@ -176,9 +176,9 @@
         "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
-    "title": "Mitsubishi Electric CNC Series",
+    "title": "Mitsubishi Electric CNC Series (Update A)",
     "tracking": {
-      "current_release_date": "2024-10-17T06:00:00.000000Z",
+      "current_release_date": "2025-02-20T07:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -193,10 +193,16 @@
           "legacy_version": "Initial",
           "number": "1",
           "summary": "Initial Publication"
+        },
+        {
+          "date": "2025-02-20T07:00:00.000000Z",
+          "legacy_version": "Update A",
+          "number": "2",
+          "summary": "Update A - Updates to product list, mitigations, added CVSS v4 score."
         }
       ],
       "status": "final",
-      "version": "1"
+      "version": "2"
     }
   },
   "product_tree": {
@@ -207,9 +213,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<=B1",
                 "product": {
-                  "name": "Mitsubishi Electric M800VW (BND-2051W000-**): vers:all/*",
+                  "name": "Mitsubishi Electric M800VW (BND-2051W000-**): <=B1",
                   "product_id": "CSAFPID-0001"
                 }
               }
@@ -221,9 +227,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<=B1",
                 "product": {
-                  "name": "Mitsubishi Electric M800VS (BND-2052W000-**): vers:all/*",
+                  "name": "Mitsubishi Electric M800VS (BND-2052W000-**): <=B1",
                   "product_id": "CSAFPID-0002"
                 }
               }
@@ -235,9 +241,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<=B1",
                 "product": {
-                  "name": "Mitsubishi Electric M80V (BND-2053W000-**): vers:all/*",
+                  "name": "Mitsubishi Electric M80V (BND-2053W000-**): <=B1",
                   "product_id": "CSAFPID-0003"
                 }
               }
@@ -249,9 +255,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<=B1",
                 "product": {
-                  "name": "Mitsubishi Electric M80VW (BND-2054W000-**): vers:all/*",
+                  "name": "Mitsubishi Electric M80VW (BND-2054W000-**): <=B1",
                   "product_id": "CSAFPID-0004"
                 }
               }
@@ -263,9 +269,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<=FH",
                 "product": {
-                  "name": "Mitsubishi Electric M800W (BND-2005W000-**): vers:all/*",
+                  "name": "Mitsubishi Electric M800W (BND-2005W000-**): <=FH",
                   "product_id": "CSAFPID-0005"
                 }
               }
@@ -277,9 +283,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<=FH",
                 "product": {
-                  "name": "Mitsubishi Electric M800S (BND-2006W000-**): vers:all/*",
+                  "name": "Mitsubishi Electric M800S (BND-2006W000-**): <=FH",
                   "product_id": "CSAFPID-0006"
                 }
               }
@@ -291,9 +297,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<=FH",
                 "product": {
-                  "name": "Mitsubishi Electric M80 (BND-2007W000-**): vers:all/*",
+                  "name": "Mitsubishi Electric M80 (BND-2007W000-**): <=FH",
                   "product_id": "CSAFPID-0007"
                 }
               }
@@ -305,9 +311,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<=FH",
                 "product": {
-                  "name": "Mitsubishi Electric M80W (BND-2008W000-**): vers:all/*",
+                  "name": "Mitsubishi Electric M80W (BND-2008W000-**): <=FH",
                   "product_id": "CSAFPID-0008"
                 }
               }
@@ -319,9 +325,9 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/*",
+                "name": "<=FH",
                 "product": {
-                  "name": "Mitsubishi Electric E80 (BND-2009W000-**): vers:all/*",
+                  "name": "Mitsubishi Electric E80 (BND-2009W000-**): <=FH",
                   "product_id": "CSAFPID-0009"
                 }
               }
@@ -507,12 +513,17 @@
           "category": "external",
           "summary": "www.first.org",
           "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
         }
       ],
       "remediations": [
         {
           "category": "mitigation",
-          "details": "Mitsubishi Electric recommends that customers take the following mitigating measures to minimize the risk of exploiting thisvulnerability.",
+          "details": "Mitsubishi Electric recommends users take the following actions to minimize the risk of exploiting this vulnerability.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -536,7 +547,151 @@
         },
         {
           "category": "mitigation",
-          "details": "Use a firewall, virtual private network (VPN), etc. to prevent unauthorized access when internet access is required.",
+          "details": "M800VW (BND-2051W000-**): Update to B2 or later",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0010",
+            "CSAFPID-0011",
+            "CSAFPID-0012",
+            "CSAFPID-0013",
+            "CSAFPID-0014",
+            "CSAFPID-0015",
+            "CSAFPID-0016",
+            "CSAFPID-0017",
+            "CSAFPID-0018"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "M800VS (BND-2052W000-**): Update to B2 or later",
+          "product_ids": [
+            "CSAFPID-0002",
+            "CSAFPID-0010",
+            "CSAFPID-0011",
+            "CSAFPID-0012",
+            "CSAFPID-0013",
+            "CSAFPID-0014",
+            "CSAFPID-0015",
+            "CSAFPID-0016",
+            "CSAFPID-0017",
+            "CSAFPID-0018"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "M80V (BND-2053W000-**): Update to B2 or later",
+          "product_ids": [
+            "CSAFPID-0003",
+            "CSAFPID-0010",
+            "CSAFPID-0011",
+            "CSAFPID-0012",
+            "CSAFPID-0013",
+            "CSAFPID-0014",
+            "CSAFPID-0015",
+            "CSAFPID-0016",
+            "CSAFPID-0017",
+            "CSAFPID-0018"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "M80VW (BND-2054W000-**): Update to B2 or later",
+          "product_ids": [
+            "CSAFPID-0004",
+            "CSAFPID-0010",
+            "CSAFPID-0011",
+            "CSAFPID-0012",
+            "CSAFPID-0013",
+            "CSAFPID-0014",
+            "CSAFPID-0015",
+            "CSAFPID-0016",
+            "CSAFPID-0017",
+            "CSAFPID-0018"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "M800W (BND-2005W000-**): Update to FJ or later",
+          "product_ids": [
+            "CSAFPID-0005",
+            "CSAFPID-0010",
+            "CSAFPID-0011",
+            "CSAFPID-0012",
+            "CSAFPID-0013",
+            "CSAFPID-0014",
+            "CSAFPID-0015",
+            "CSAFPID-0016",
+            "CSAFPID-0017",
+            "CSAFPID-0018"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "M800S (BND-2006W000-**): Update to FJ or later",
+          "product_ids": [
+            "CSAFPID-0006",
+            "CSAFPID-0010",
+            "CSAFPID-0011",
+            "CSAFPID-0012",
+            "CSAFPID-0013",
+            "CSAFPID-0014",
+            "CSAFPID-0015",
+            "CSAFPID-0016",
+            "CSAFPID-0017",
+            "CSAFPID-0018"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "M80 (BND-2007W000-**): Update to FJ or later",
+          "product_ids": [
+            "CSAFPID-0007",
+            "CSAFPID-0010",
+            "CSAFPID-0011",
+            "CSAFPID-0012",
+            "CSAFPID-0013",
+            "CSAFPID-0014",
+            "CSAFPID-0015",
+            "CSAFPID-0016",
+            "CSAFPID-0017",
+            "CSAFPID-0018"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "M80W (BND-2008W000-**): Update to FJ or later",
+          "product_ids": [
+            "CSAFPID-0008",
+            "CSAFPID-0010",
+            "CSAFPID-0011",
+            "CSAFPID-0012",
+            "CSAFPID-0013",
+            "CSAFPID-0014",
+            "CSAFPID-0015",
+            "CSAFPID-0016",
+            "CSAFPID-0017",
+            "CSAFPID-0018"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "E80 (BND-2009W000-**): Update to FJ or later",
+          "product_ids": [
+            "CSAFPID-0009",
+            "CSAFPID-0010",
+            "CSAFPID-0011",
+            "CSAFPID-0012",
+            "CSAFPID-0013",
+            "CSAFPID-0014",
+            "CSAFPID-0015",
+            "CSAFPID-0016",
+            "CSAFPID-0017",
+            "CSAFPID-0018"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Additionally, Mitsubishi Electric recommends the following mitigations:",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -560,7 +715,31 @@
         },
         {
           "category": "mitigation",
-          "details": "Install anti-virus software on your PC that can access the product.",
+          "details": "Use a firewall, virtual private network (VPN), etc. to prevent unauthorized access when Internet access is required.",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004",
+            "CSAFPID-0005",
+            "CSAFPID-0006",
+            "CSAFPID-0007",
+            "CSAFPID-0008",
+            "CSAFPID-0009",
+            "CSAFPID-0010",
+            "CSAFPID-0011",
+            "CSAFPID-0012",
+            "CSAFPID-0013",
+            "CSAFPID-0014",
+            "CSAFPID-0015",
+            "CSAFPID-0016",
+            "CSAFPID-0017",
+            "CSAFPID-0018"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Install anti-virus software on the PC that can access the product.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -632,7 +811,7 @@
         },
         {
           "category": "mitigation",
-          "details": "Use IP filter function*1 to block access from untrusted hosts.",
+          "details": "Use IP filter function to block access from untrusted hosts.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -680,7 +859,7 @@
         },
         {
           "category": "mitigation",
-          "details": "For details about the IP filter function, please refer to the following manual for each product: M800V/M80V Series Instruction Manual \"16. Appendix 3 IP Address Filter Setting Function\" and M800/M80/E80 Series Instruction Manual \"15. Appendix 2 IP Address Filter Setting Function\"",
+          "details": "For details about the IP filter function, please refer to the following manual for each product: M800V/M80V Series Instruction Manual \"16. Appendix 3 IP Address Filter Setting Function\" and M800/M80/E80 Series Instruction Manual \"15. Appendix 2 IP Address Filter Setting Function.\"",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
