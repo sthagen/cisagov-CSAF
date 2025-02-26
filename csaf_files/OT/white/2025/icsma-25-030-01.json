@@ -5,7 +5,11 @@
         "names": [
           "an anonymous researcher"
         ],
-        "summary": "reporting these vulnerabilities to CISA"
+        "summary": "reporting CVE-2024-12248, CVE-2025-0626, and CVE-2025-0683 to CISA"
+      },
+      {
+        "organization": "Claroty - Team82",
+        "summary": "reporting CVE-2025-1024 to CISA"
       }
     ],
     "category": "csaf_security_advisory",
@@ -158,9 +162,9 @@
         "url": "https://www.cisa.gov/uscert/ncas/tips/ST04-014"
       }
     ],
-    "title": "Contec Health CMS8000 Patient Monitor",
+    "title": "Contec Health CMS8000 Patient Monitor (Update A)",
     "tracking": {
-      "current_release_date": "2025-01-30T07:00:00.000000Z",
+      "current_release_date": "2025-02-25T07:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -175,10 +179,16 @@
           "legacy_version": "Initial",
           "number": "1",
           "summary": "Initial Publication"
+        },
+        {
+          "date": "2025-02-25T07:00:00.000000Z",
+          "legacy_version": "Update A",
+          "number": "2",
+          "summary": "Update A - Added CVE-2025-1204, updated description for CVE-2025-0626. Added mitigations for the specific IP addresses. Added researcher credit to Claroty for CVE-2025-1204."
         }
       ],
       "status": "final",
-      "version": "1"
+      "version": "2"
     }
   },
   "product_tree": {
@@ -189,43 +199,43 @@
             "branches": [
               {
                 "category": "product_version",
-                "name": "Firmware__smart3250-2.6.27-wlan2.1.7.cramfs",
+                "name": "smart3250-2.6.27-wlan2.1.7.cramfs",
                 "product": {
-                  "name": "Contec Health CMS8000 Patient Monitor: Firmware__smart3250-2.6.27-wlan2.1.7.cramfs",
+                  "name": "Contec Health CMS8000 Patient Monitor Firmware: smart3250-2.6.27-wlan2.1.7.cramfs",
                   "product_id": "CSAFPID-0001"
                 }
               }
             ],
             "category": "product_name",
-            "name": "CMS8000 Patient Monitor"
+            "name": "CMS8000 Patient Monitor Firmware"
           },
           {
             "branches": [
               {
                 "category": "product_version",
-                "name": "Firmware___CMS7.820.075.08/0.74(0.75)",
+                "name": "CMS7.820.075.08/0.74(0.75)",
                 "product": {
-                  "name": "Contec Health CMS8000 Patient Monitor: Firmware___CMS7.820.075.08/0.74(0.75)",
+                  "name": "Contec Health CMS8000 Patient Monitor Firmware: CMS7.820.075.08/0.74(0.75)",
                   "product_id": "CSAFPID-0002"
                 }
               }
             ],
             "category": "product_name",
-            "name": "CMS8000 Patient Monitor"
+            "name": "CMS8000 Patient Monitor Firmware"
           },
           {
             "branches": [
               {
                 "category": "product_version",
-                "name": "Firmware___CMS7.820.120.01/0.93(0.95)",
+                "name": "CMS7.820.120.01/0.93(0.95)",
                 "product": {
-                  "name": "Contec Health CMS8000 Patient Monitor: Firmware___CMS7.820.120.01/0.93(0.95)",
+                  "name": "Contec Health CMS8000 Patient Monitor Firmware: CMS7.820.120.01/0.93(0.95)",
                   "product_id": "CSAFPID-0003"
                 }
               }
             ],
             "category": "product_name",
-            "name": "CMS8000 Patient Monitor"
+            "name": "CMS8000 Patient Monitor Firmware"
           },
           {
             "branches": [
@@ -297,6 +307,15 @@
         },
         {
           "category": "mitigation",
+          "details": "If asset owners cannot remove the devices from their networks, users should block 202.114.4.0/24 from their networks, or block 202.114.4.119 and 202.114.4.120.",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003"
+          ]
+        },
+        {
+          "category": "mitigation",
           "details": "Please note that this device may be re-labeled and sold by resellers. For a list of known re-labeled devices, please refer to FDA's safety communication.",
           "product_ids": [
             "CSAFPID-0001",
@@ -331,7 +350,7 @@
       "notes": [
         {
           "category": "summary",
-          "text": "The affected product sends out remote access requests to a hard-coded IP address, bypassing existing device network settings to do so. This could serve as a backdoor and lead to a malicious actor being able to upload and overwrite files on the device.",
+          "text": "The \"monitor\" binary in the firmware of the affected product attempts to mount to a hard-coded, routable IP address, bypassing existing device network settings to do so. The function also enables the network interface of the device if it is disabled. The function is triggered by attempting to update the device from the user menu. This could serve as a backdoor to the device, and could lead to a malicious actor being able to upload and overwrite files on the device.",
           "title": "Vulnerability Summary"
         }
       ],
@@ -364,6 +383,16 @@
         {
           "category": "mitigation",
           "details": "Per FDA recommendation, CISA recommends users remove any Contec CMS8000 devices from their networks.",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "If asset owners cannot remove the devices from their networks, users should block 202.114.4.0/24 from their networks, or block 202.114.4.119 and 202.114.4.120.",
           "product_ids": [
             "CSAFPID-0001",
             "CSAFPID-0002",
@@ -451,6 +480,16 @@
         },
         {
           "category": "mitigation",
+          "details": "If asset owners cannot remove the devices from their networks, users should block 202.114.4.0/24 from their networks, or block 202.114.4.119 and 202.114.4.120.",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
           "details": "Please note that this device may be re-labeled and sold by resellers. For a list of known re-labeled devices, please refer to FDA's safety communication.",
           "product_ids": [
             "CSAFPID-0001",
@@ -467,6 +506,94 @@
             "baseScore": 5.9,
             "baseSeverity": "MEDIUM",
             "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "version": "3.1"
+          },
+          "products": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004"
+          ]
+        }
+      ]
+    },
+    {
+      "cve": "CVE-2025-1204",
+      "cwe": {
+        "id": "CWE-912",
+        "name": "Hidden Functionality"
+      },
+      "notes": [
+        {
+          "category": "summary",
+          "text": "The \"update\" binary in the firmware of the affected product sends attempts to mount to a hard-coded, routable IP address, bypassing existing device network settings to do so. The function triggers if the 'C' button is pressed at a specific time during the boot process. If an attacker is able to control or impersonate this IP address, they could upload and overwrite files on the device.",
+          "title": "Vulnerability Summary"
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0001",
+          "CSAFPID-0002",
+          "CSAFPID-0003",
+          "CSAFPID-0004"
+        ]
+      },
+      "references": [
+        {
+          "category": "external",
+          "summary": "www.cve.org",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-1204"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "category": "external",
+          "summary": "www.first.org",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "remediations": [
+        {
+          "category": "mitigation",
+          "details": "Per FDA recommendation, CISA recommends users remove any Contec CMS8000 devices from their networks.",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "If asset owners cannot remove the devices from their networks, users should block 202.114.4.0/24 from their networks, or block 202.114.4.119 and 202.114.4.120.",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004"
+          ]
+        },
+        {
+          "category": "mitigation",
+          "details": "Please note that this device may be re-labeled and sold by resellers. For a list of known re-labeled devices, please refer to FDA's safety communication.",
+          "product_ids": [
+            "CSAFPID-0001",
+            "CSAFPID-0002",
+            "CSAFPID-0003",
+            "CSAFPID-0004"
+          ],
+          "url": "https://www.fda.gov/medical-devices/safety-communications/cybersecurity-vulnerabilities-certain-patient-monitors-contec-and-epsimed-fda-safety-communication"
+        }
+      ],
+      "scores": [
+        {
+          "cvss_v3": {
+            "baseScore": 7.5,
+            "baseSeverity": "HIGH",
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
             "version": "3.1"
           },
           "products": [
