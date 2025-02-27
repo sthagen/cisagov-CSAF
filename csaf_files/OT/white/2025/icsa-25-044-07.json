@@ -2,8 +2,14 @@
   "document": {
     "acknowledgments": [
       {
-        "names": ["Nicolo Vinci"],
+        "names": [
+          "Nicolo Vinci"
+        ],
         "summary": "reporting this vulnerability to Siemens."
+      },
+      {
+        "organization": "Siemens ProductCERT",
+        "summary": "reporting this vulnerability to CISA."
       }
     ],
     "category": "csaf_security_advisory",
@@ -19,7 +25,7 @@
     "notes": [
       {
         "category": "summary",
-        "text": "The SSO login service in Teamcenter contains an open redirect vulnerability that could allow an attacker to redirect the legitimate user to an attacker-chosen URL to steal valid session data.\n\nSiemens has released a new version for Teamcenter and recommends to update to the latest version.",
+        "text": "The SSO login service in Teamcenter contains an open redirect vulnerability that could allow an attacker to redirect the legitimate user to an attacker-chosen URL to steal valid session data.\n\nSiemens is preparing fix versions and recommends specific countermeasures for products where fixes are not, or not yet available.",
         "title": "Summary"
       },
       {
@@ -112,12 +118,12 @@
     "references": [
       {
         "category": "self",
-        "summary": "SSA-656895: Open Redirect Vulnerability in Teamcenter Before V14.3 - CSAF Version",
+        "summary": "SSA-656895: Open Redirect Vulnerability in Teamcenter - CSAF Version",
         "url": "https://cert-portal.siemens.com/productcert/csaf/ssa-656895.json"
       },
       {
         "category": "self",
-        "summary": "SSA-656895: Open Redirect Vulnerability in Teamcenter Before V14.3 - HTML Version",
+        "summary": "SSA-656895: Open Redirect Vulnerability in Teamcenter - HTML Version",
         "url": "https://cert-portal.siemens.com/productcert/html/ssa-656895.html"
       },
       {
@@ -161,9 +167,9 @@
         "url": "https://www.cisa.gov/uscert/ics/tips/ICS-TIP-12-146-01B"
       }
     ],
-    "title": "Siemens Teamcenter ",
+    "title": "Siemens Teamcenter",
     "tracking": {
-      "current_release_date": "2025-02-11T00:00:00.000000Z",
+      "current_release_date": "2025-02-25T00:00:00.000000Z",
       "generator": {
         "engine": {
           "name": "CISA CSAF Generator",
@@ -178,10 +184,16 @@
           "legacy_version": "1.0",
           "number": "1",
           "summary": "Publication Date"
+        },
+        {
+          "date": "2025-02-25T00:00:00.000000Z",
+          "legacy_version": "1.1",
+          "number": "2",
+          "summary": "Removed fix version information as the implemented fix was insufficient - final fix being worked on for future release(s)"
         }
       ],
       "status": "final",
-      "version": "1"
+      "version": "2"
     }
   },
   "product_tree": {
@@ -192,7 +204,7 @@
             "branches": [
               {
                 "category": "product_version_range",
-                "name": "vers:all/<V14.3.0.0",
+                "name": "vers:all/*",
                 "product": {
                   "name": "Teamcenter",
                   "product_id": "CSAFPID-0001"
@@ -236,8 +248,8 @@
           ]
         },
         {
-          "category": "vendor_fix",
-          "details": "Update to V14.3.0.0 or later version",
+          "category": "none_available",
+          "details": "Currently no fix is available",
           "product_ids": [
             "CSAFPID-0001"
           ]
